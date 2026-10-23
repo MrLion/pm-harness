@@ -2,28 +2,22 @@
 type: metrics
 status: draft
 confidence: none
+framework: Pichler (KPI selection)
 updated: 2026-10-23
 ---
 
-# Metrics
+# Metrics / KPI Selection
 
-## North Star
-| Metric | Definition | Current value | Source of truth |
-|---|---|---|---|
-| [FILL] | [FILL] | unknown | [FILL] |
-
-## Input metrics
-| Metric | Definition | Current value | Source |
-|---|---|---|---|
-| [FILL] | [FILL] | unknown | [FILL] |
-
-## Guardrail metrics
-| Metric | Definition | Threshold |
-|---|---|---|
-| [FILL] | [FILL] | [FILL] |
+| Layer | Metric | Definition | Current | Source of truth | Owner |
+|---|---|---|---|---|---|
+| Lagging (outcome) | [FILL] | | unknown | | |
+| Leading (behaviour) | [FILL] | | unknown | | |
+| Health (guardrail) | [FILL] | | unknown | | |
 
 ## Instrumentation gaps
-- [FILL] — which of the above we cannot currently measure.
+| Metric we need | Why we can't measure it yet | Fix |
+|---|---|---|
+| [FILL] | | |
 
 ## Related
 - [[Goals]]

@@ -1,16 +1,15 @@
 ---
-id: PROB-000
-type: problem
-status: discovery
-priority: unprioritized
-confidence: low
-frequency: unknown
-severity: unknown
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
+type: template
+artifact: problem
+framework: none
+note: both Pichler and SVPG start from the problem; neither formalises this note
 ---
 
-# Problem: <short name>
+# Problem
+
+> [!warning] Problem ≠ feature request
+> "We need X" is not a problem. Convert it before writing anything else. If the statement contains
+> a solution noun, rewrite it.
 
 ## Problem Statement
 <Who experiences what problem, under what circumstances, and why it matters. No solution language.>
@@ -22,29 +21,37 @@ updated: YYYY-MM-DD
 [[JTBD-000]]
 
 ## Evidence
-| Type | Source | Date | Says what |
-|---|---|---|---|
-| interview / metric / ticket / review / support | [[RESEARCH-000]] | | |
+| Type | Source | Date | Says what | Strength |
+|---|---|---|---|---|
+| interview / metric / ticket / review / support | [[RESEARCH-000]] | | | weak |
 
-> If this table is empty, the problem is a **hypothesis**, not a discovery. Say so in `confidence`.
+> Empty evidence table → this is a hypothesis. Set `confidence: low` and say so out loud.
 
 ## Frequency
-Unknown — how often does this occur, per user per period?
+<How often, per user per period.>
 
 ## Severity
-Unknown — what does it cost the user when it happens? (time, money, risk, abandonment)
+<What it costs when it happens: time, money, risk, abandonment.>
 
-## Current Workaround
-<What users do today instead. "Nothing" is a real answer and a signal.>
+## Current workaround
+<What users do today instead. "Nothing" is a signal.>
 
-## Business Impact
-<What this costs us: revenue, retention, support load, risk. Evidence, not vibes.>
+## Business impact
+<What it costs us. Evidence, not vibes.>
 
-## Assumptions
-- 
-
-## Unknowns
+## Assumptions / Unknowns
 - 
 
 ## Related Opportunities
 - [[OPP-000]]
+
+---
+
+> [!example]- Worked example — fictional
+> **Statement:** Practice managers in 5–20-staff clinics lose 3–6 hours a week phoning staff to
+> cover unexpected shift gaps, and still open short-staffed about one morning a month.
+> **Frequency:** 2–4 gaps per clinic per week. **Severity:** ~6 calls per gap, 45-min median; a
+> missed open costs half a day of appointments.
+> **Workaround:** a personal WhatsApp list of reliable staff, ordered from memory.
+> **Evidence:** 11 interviews (9 describe the phone tree), 3 weeks of support tickets.
+> Confidence: medium.

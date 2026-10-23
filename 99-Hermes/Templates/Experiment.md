@@ -1,48 +1,58 @@
 ---
-id: EXP-000
-type: experiment
-status: planned
-opportunity: OPP-000
-start: YYYY-MM-DD
-end: YYYY-MM-DD
-cost: unknown
-created: YYYY-MM-DD
+type: template
+artifact: experiment
+framework: SVPG
+source: https://www.svpg.com/four-big-risks/
 ---
 
-# Experiment: <name>
+# Experiment
+
+An experiment exists to retire **one named risk**. If you cannot name which of the four risks it
+targets, it is not an experiment — it is a build.
+
+> [!quote] Why experiments before builds
+> Product discovery retires value and business risk early, while the cost of being wrong is
+> still a prototype rather than a shipped feature.
+
+## Risk being retired
+| Field | Content |
+|---|---|
+| Risk type | value / usability / feasibility / business viability |
+| Assumption | [FILL] |
+| Opportunity | [[OPP-000]] |
 
 ## Hypothesis
 > We believe **<change>** will cause **<measured effect>** for **<population>**, measured by **<metric>**.
 
-## Assumption Being Tested
-<The single riskiest assumption. One.>
+## Design
+<Fake door / concierge / prototype test / A/B / 5 interviews. State the cheapest version that works.>
 
-## Experiment
-<What we will actually do — landing page, fake door, concierge, prototype, A/B test, 5 interviews.>
+| Field | Content |
+|---|---|
+| Population | |
+| Duration | <and why that is long enough to see signal> |
+| Cost | |
 
-## Population
-<Who, how many, how recruited.>
+## Pre-registered criteria
+| Success | Failure | Kill |
+|---|---|---|
+| <decide now, before data> | | |
 
-## Duration
-<And why that is long enough to see the signal.>
-
-## Success Criteria
-<Pre-registered threshold. Decide now, not after seeing data.>
-
-## Failure Criteria
-<What result means "stop".>
-
-## Kill Criteria
-<What would make us abandon mid-run.>
-
-## Expected Result
-<What you actually expect, so you can be surprised.>
-
-## Actual Result
+## Result
 Pending
 
-## What We Learned
+## What we learned
 Pending
 
-## Decision After Experiment
-Pending — and link the resulting [[DEC-000]] or updated opportunity.
+## Decision
+Pending — link the resulting [[DEC-000]] or updated [[OPP-000]].
+
+---
+
+> [!example]- Worked example — fictional
+> **Risk:** value — will staff accept a shift offer without being phoned?
+> **Hypothesis:** an offer sent to eligible staff will be accepted within 10 minutes in ≥50% of
+> gaps, for 2 pilot clinics over 2 weeks, measured by offer-acceptance rate.
+> **Design:** fake-door offer in the existing WhatsApp flow, one staff group, no app build.
+> **Success:** ≥50% acceptance in 10 min. **Failure:** <20%. **Kill:** <10% after week 1.
+> **Cost:** 2 days of build, no new infrastructure.

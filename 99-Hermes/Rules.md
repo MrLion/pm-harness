@@ -53,7 +53,24 @@ When new information materially changes understanding, update the artifact — f
 Flag artifacts past `review_after` / `review_cadence_days`, decisions whose expected outcome
 was never recorded, and metrics with no baseline. Silence about staleness is a failure.
 
-## 12. Respect the write boundary
+## 12. Declare the framework
+Every artifact's frontmatter names its framework (`framework: Pichler` / `framework: SVPG` / `none`).
+Do not invent a hybrid structure silently — if a note departs from its template, say which and why.
+
+## 13. No-go is an answer
+A Product Opportunity Assessment may recommend **no-go**, and that is a successful outcome — it
+saved the build. A `/pm challenge` run that never produces a no-go, a defer, or a kill is broken,
+not thorough.
+
+## 14. Risks need owners
+Name the four SVPG risks (value, usability, feasibility, business viability) and state which is
+load-bearing. A risk with no owner and no test is not risk management, it is decoration.
+
+## 15. One goal at a time
+Per Pichler: a roadmap row carries a single goal. Two concurrent goals in one row means the row is
+really two rows, or the goal is not yet understood.
+
+## 16. Respect the write boundary
 Free to write: `04-Research`, `02-Problems`, `03-Opportunities`, `07-Delivery/Experiments`,
 `08-Reviews`, `99-Hermes`.
 Draft only (propose, do not overwrite): `07-Delivery/PRDs`, `06-Roadmap`.

@@ -1,47 +1,39 @@
 ---
-id: PRD-000
-type: prd
-status: draft
-opportunity: OPP-000
-decision: DEC-000
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
+type: template
+artifact: solution-brief
+framework: Pichler (Product Canvas) + SVPG (prototype-as-spec)
+source: https://www.romanpichler.com/tools/the-product-canvas/ + https://www.svpg.com/four-big-risks/
 ---
 
-# PRD: <feature>
+# Solution Brief (replaces "PRD")
 
-## Problem
-[[PROB-000]]
+Cagan's position: a lightweight high-fidelity prototype is a better basis for a spec than a
+heavy-weight PRD, because it answers the questions a document only describes. So this note is a
+**canvas + acceptance criteria that links to a prototype** — not a requirements document.
 
-## Opportunity
-[[OPP-000]]
+> [!warning] Validation gate
+> Do not fill this in unless the opportunity has: an evidence table with at least one source,
+> a challenge review, named risks with owners, and a baseline for the primary metric.
+> An ungated brief is a draft for discussion, not a delivery document.
 
-## Validation gate
-- [ ] Opportunity has contradicting-evidence review
-- [ ] `/pm challenge` run and its objections answered
-- [ ] Success metric has a baseline
-> A PRD written before these are ticked is a draft for discussion, not a delivery document.
+## Canvas
+| Element | Content |
+|---|---|
+| Problem | [[PROB-000]] |
+| Opportunity | [[OPP-000]] |
+| Target user | [[PERSONA-000]] |
+| Outcome (one sentence) | [FILL] |
+| Prototype | <link to prototype / Figma / clickable> |
+| Epics (big capabilities) | [FILL] |
 
-## Objective
-<The outcome this ships to achieve. One sentence.>
+## Non-goals
+- <Be generous here — this is what prevents scope creep.>
 
-## Non-Goals
-- <Explicitly out of scope. Be generous here — this is what prevents scope creep.>
-
-## User Stories
+## User stories
 - As a **<segment>**, I want **<capability>**, so that **<outcome>**.
 
-## Proposed Experience
-<Flow or description. Link designs.>
-
-## Functional Requirements
-### FR-001
-<Testable statement.>
-### FR-002
-<Testable statement.>
-
-## Acceptance Criteria
-- [ ] 
+## Acceptance criteria
+- [ ] <Testable statement.>
 - [ ] 
 
 ## Metrics
@@ -49,19 +41,30 @@ updated: YYYY-MM-DD
 **Secondary:** 
 **Guardrails:** <what must not get worse>
 
-## Risks
-- 
+## Risks carried forward
+| Risk (value/usability/feasibility/viability) | Mitigation |
+|---|---|
+| | |
 
-## Open Questions
+## Open questions
 | Question | Owner | Needed by |
 |---|---|---|
 | | | |
 
-## Launch Plan
-- Rollout:
-- Comms:
-- Support readiness:
-- Rollback:
+## Launch plan
+- Rollout · Comms · Support readiness · Rollback
 
-## Related Decision
-[[DEC-000]]
+## Related
+- [[DEC-000]] · [[EXP-000]]
+
+---
+
+> [!example]- Worked example — fictional
+> **Outcome:** a manager fills a same-day gap in under 15 minutes without phoning anyone.
+> **Prototype:** clickable two-tap accept flow, tested with 4 staff.
+> **Epics:** gap detection · eligibility ranking · offer + accept · manager fallback.
+> **Non-goals:** payroll export, multi-site rota templates, shift swapping.
+> **Primary metric:** gaps filled without a manager call — 22% → 60% within 30 days of launch.
+> **Guardrail:** illegal assignments must not increase (baseline 0).
+> **Risks carried:** value (staff may ignore offers — mitigate with reminder cadence), usability
+> (accept must work one-handed — mitigate with prototype test).

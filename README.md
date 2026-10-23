@@ -31,6 +31,22 @@ Dashboard.md     live cockpit (Dataview)
 | `/pm decide <question>` | decision record, proposed not accepted |
 | `/pm review` | vault-wide audit: stale, orphaned, unsupported, contradictions, unrecorded outcomes |
 
+## Frameworks
+
+Templates are not invented. Each quotes a published method's structure and checklist, with attribution:
+
+| Layer | Method | Artifacts |
+|---|---|---|
+| What we're building, and how we plan it | **Roman Pichler** (*Strategize*) | Product Vision Board · strategy elements · goal-setting · KPI selection · **GO Product Roadmap** · persona · Product Canvas |
+| Should we build it, and what will kill it | **SVPG / Marty Cagan** (*Inspired*) | **Product Opportunity Assessment** (ten questions) · **four big risks** (value, usability, feasibility, business viability) · prototype over PRD |
+
+Pichler alone assumes the opportunity is sound. Cagan alone refuses to plan. The vault uses
+Pichler for artifacts that survive quarters, SVPG for the gate that stops you building the wrong
+thing. Every template carries a collapsible fictional worked example ("Lantern", a clinic
+scheduling tool) so the shape is obvious.
+
+Pichler material is quoted under **CC BY-SA 4.0** — see `99-Hermes/Templates/_Templates.md`.
+
 ## The loop
 
 ```

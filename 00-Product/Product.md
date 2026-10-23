@@ -2,44 +2,56 @@
 type: product
 status: draft
 confidence: none
+artifact: product-vision-board
+framework: Pichler
 updated: 2026-10-23
 ---
 
-# Product
+# Product Vision Board
 
-> **Scaffold, not fact.** Nothing below is filled in. Per `[[Rules]]` §8, the agent will not
-> invent product facts — every section marked `[FILL]` stays empty until you supply it.
-> `confidence: none` means `/pm` commands will refuse to make strategic recommendations
-> until this file reaches `confidence: medium`.
+> **Scaffold, not fact.** Nothing below is filled in. Per `[[Rules]]` §8 the agent will not invent
+> product facts — every `[FILL]` stays empty until you supply it. While `confidence: none`,
+> `/pm` refuses strategic recommendations.
+> Field definitions and checklist: `99-Hermes/Templates/Product-Vision-Board.md` (Pichler, CC BY-SA 4.0).
 
-## Product Name
+## VISION
+> The reason for creating the product, and the positive change it should create.
+
 [FILL]
 
-## Product Description
-[FILL] — one paragraph, plain language, no marketing adjectives.
+## TARGET GROUP
+> Which market or segment; who the target customers and users are.
 
-## Target Users
-[FILL] — who, specifically. Segment names, not "everyone".
+[FILL]
 
-## Core Problem
-[FILL] — who experiences what, under what circumstances, why it matters.
+## NEEDS
+> The problem solved or benefit offered. Prioritised, most important at the top.
 
-## Value Proposition
-[FILL] — the change in the user's world, stated as an outcome.
+| # | Need | Evidence | Confidence |
+|---|---|---|---|
+| 1 | [FILL] | | none |
 
-## Business Model
-[FILL] — how value converts to revenue or mission progress.
+## PRODUCT
+> What it is, and the 3–5 stand-out features that set it apart.
 
-## Strategic Context
-[FILL] — what is true about the market/company right now that constrains us.
+| # | Stand-out feature | Differentiator |
+|---|---|---|
+| 1 | [FILL] | |
 
-## Current Priorities
-1. [FILL]
-2. [FILL]
-3. [FILL]
+## BUSINESS GOALS
+> The company's reason for investing. Prioritised.
 
-## Constraints
-- [FILL]
+| # | Business goal | Rough target |
+|---|---|---|
+| 1 | [FILL] | |
+
+## Extended board
+| Field | Content |
+|---|---|
+| Competitors | [FILL] |
+| Revenue sources | [FILL] |
+| Cost factors | [FILL] |
+| Channels | [FILL] |
 
 ## Related
 - [[Vision]] · [[Strategy]] · [[Goals]] · [[Metrics]]

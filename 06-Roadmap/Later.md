@@ -2,16 +2,15 @@
 type: roadmap
 horizon: later
 status: draft
+framework: Pichler (GO Product Roadmap)
 updated: 2026-10-23
 ---
 
-# Later
+# Later — directional, not committed
 
-<Directional. Explicitly not committed.>
-
-| Item | Opportunity | Why it might matter | Why it might not |
+| NAME | GOAL (outcome) | Why it might matter | Why it might not |
 |---|---|---|---|
-| | [[OPP-000]] | | |
+| | | | |
 
 ## Related
 - [[Now]] · [[Next]]

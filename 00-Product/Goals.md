@@ -2,19 +2,28 @@
 type: goals
 status: draft
 confidence: none
+framework: Pichler
 updated: 2026-10-23
 ---
 
 # Goals
 
-Period: [FILL] (e.g. Q4 2026)
+> Pichler's goal qualities: outcome-based · specific · measurable · prioritised · **single** —
+> one goal at a time, not several concurrently.
 
-| Goal | Metric | Baseline | Target | Deadline | Status | Owner |
+| Horizon | Goal (outcome) | Metric | Baseline | Target | Deadline | Confidence |
 |---|---|---|---|---|---|---|
-| [FILL] | [FILL] | unknown | unknown | [FILL] | not started | [FILL] |
+| This quarter | [FILL] | [FILL] | unknown | [FILL] | [FILL] | none |
 
-## Non-goals for this period
+## Non-goals this horizon
 - [FILL]
 
+> A goal with no baseline is a wish, not a goal. Fill `Baseline` or state how you'll establish it.
+
+## Goal → roadmap traceability
+| Goal | Roadmap entry | Opportunity |
+|---|---|---|
+| [FILL] | [[Now]] | [[OPP-000]] |
+
 ## Related
-- [[Metrics]] · [[Strategy]] · [[Now]]
+- [[Metrics]] · [[Strategy]]

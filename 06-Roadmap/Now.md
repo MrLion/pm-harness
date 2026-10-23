@@ -2,19 +2,21 @@
 type: roadmap
 horizon: now
 status: draft
+framework: Pichler (GO Product Roadmap)
 updated: 2026-10-23
 ---
 
-# Now
+# Now — GO Product Roadmap
 
-<Work in progress or starting this cycle.>
+Rows are **goals**, not features. A feature list with dates is what this format exists to prevent.
+Full field definitions and checklist: `99-Hermes/Templates/GO-Roadmap.md`.
 
-| Item | Opportunity | Decision | Owner | Confidence | Target |
-|---|---|---|---|---|---|
-| | [[OPP-000]] | [[DEC-000]] | | | |
+| NAME | GOAL (outcome) | METRICS | DATE | FEATURES (max 3–5) |
+|---|---|---|---|---|
+| [FILL] | [FILL] | [FILL] | [FILL] | [FILL] |
 
-## Capacity check
-- Planned load vs. available capacity: unknown
+## Sequencing rationale
+<Why this order — dependencies, cost of delay, which risk gets retired first.>
 
 ## Related
 - [[Next]] · [[Later]] · [[Goals]]

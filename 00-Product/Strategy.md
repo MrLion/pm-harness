@@ -2,22 +2,38 @@
 type: strategy
 status: draft
 confidence: none
+framework: Pichler
 updated: 2026-10-23
 review_cadence_days: 90
 ---
 
 # Strategy
 
-## Strategic Bets
-| # | Bet | Why we believe it | Evidence | Confidence |
-|---|---|---|---|---|
-| 1 | [FILL] | [FILL] | [FILL] | none |
+The four strategy elements from the Vision Board, elaborated. The vision endures; **strategy
+changes as you learn** — so each element is an assumption with evidence, not a declaration.
+Template and checklist: `99-Hermes/Templates/Strategy.md`.
 
-## What we are deliberately NOT doing
+## Strategy elements
+| Element | Current position | Evidence | Confidence |
+|---|---|---|---|
+| Target group | [FILL] | | none |
+| Needs | [FILL] | | none |
+| Business goals | [FILL] | | none |
+| Stand-out features | [FILL] | | none |
+
+## Differentiation
+| Alternative | Does well | Fails our target group | Our answer |
+|---|---|---|---|
+| [FILL] | | | |
+
+## Deliberately not doing
 - [FILL]
 
-## Current priority thesis
-> If we do [FILL], then [measurable outcome], because [reason].
+## Priority thesis
+> If we do **[change]**, then **[measurable outcome]**, because **[reason/evidence]**.
+
+## What would invalidate this strategy
+- [FILL]
 
 ## Related
 - [[Product]] · [[Vision]] · [[Goals]] · [[Metrics]]
