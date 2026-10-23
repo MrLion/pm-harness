@@ -1,7 +1,8 @@
 ---
 type: agent-brief
 status: active
-vault_root: /Users/mintmrlion/Documents/Hermes-PM
+vault_root: /Users/mintmrlion/Library/Mobile Documents/iCloud~md~obsidian/Documents/PM vault
+git_dir: /Users/mintmrlion/Documents/pm-vault-git
 ---
 
 # Hermes PM — agent brief

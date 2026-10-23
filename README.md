@@ -53,3 +53,10 @@ No step is skippable. `99-Hermes/Rules.md` §3 and §7 enforce it.
 
 Every artifact is a diff. `git log -p 00-Product/` answers "what changed in my strategy, and when".
 Agent writes are reviewable, revertable, and attributable.
+
+**The git directory lives outside iCloud** — at `~/Documents/pm-vault-git`. `.git` in this folder is a
+one-line pointer file. This is deliberate: iCloud syncing git internals across devices corrupts
+object databases and collides indexes. Notes sync via iCloud; history stays on the Mac, safe.
+
+Never `git init` here again, never move the git dir into iCloud, and never clone this vault —
+it would create a second, diverging history.
