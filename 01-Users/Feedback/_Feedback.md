@@ -1,4 +1,20 @@
 # Feedback
 
-Raw customer signal. One note per session/source, or a monthly rollup.
-Keep verbatim quotes — they are evidence, paraphrases are not.
+Raw customer signal: support tickets, calls, reviews, churn reasons, feature requests.
+
+**Verbatim quotes only.** A paraphrase is your interpretation, not evidence. Keep the original
+wording, the date, and who said it.
+
+```dataview
+TABLE date, source, sentiment
+FROM "01-Users/Feedback"
+SORT date DESC
+LIMIT 15
+```
+
+## Two rules that matter more than the rest
+
+1. **A feature request is a symptom.** Log it as a problem: who asked, in what situation, what were
+   they trying to do. "Add bulk export" is not a problem statement.
+2. **Count, don't average.** One loud customer is one data point. Note how many distinct accounts
+   raised the same thing — that number is what makes it evidence rather than noise.
