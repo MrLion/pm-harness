@@ -20,17 +20,17 @@ SORT confidence ASC, severity DESC
 
 ## Opportunities
 ```dataview
-TABLE status, score, impact, effort, confidence
+TABLE status, confidence, recommendation
 FROM "03-Opportunities"
 WHERE type = "opportunity" AND status != "closed"
-SORT score DESC
+SORT confidence ASC
 ```
 
-## Opportunities with no evidence
+## Opportunities with no recommendation
 ```dataview
-TABLE status, confidence, review_after
+TABLE confidence, review_after
 FROM "03-Opportunities"
-WHERE type = "opportunity" AND !contains(string(Evidence), "[[") AND status != "closed"
+WHERE type = "opportunity" AND status != "closed" AND (recommendation = null OR recommendation = "Pending")
 ```
 
 ## Decisions
