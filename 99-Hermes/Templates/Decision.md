@@ -1,8 +1,14 @@
 ---
-type: template
+type: decision
 artifact: decision
-framework: none
-note: decision records are not part of either framework; this structure is kept because it works
+id: DEC-000
+status: proposed
+date: YYYY-MM-DD
+review_date: YYYY-MM-DD
+reversibility: medium
+expected_outcome: TBD
+actual_outcome: Pending
+framework: none"
 ---
 
 # Decision

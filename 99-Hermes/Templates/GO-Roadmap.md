@@ -1,6 +1,9 @@
 ---
-type: template
+type: roadmap
 artifact: go-roadmap
+horizon: now
+status: draft
+updated: YYYY-MM-DD
 framework: Pichler
 source: https://romanpichler.com/tools/the-go-product-roadmap/
 license: "CC BY-SA 4.0 — Roman Pichler, GO Product Roadmap v01/2023"

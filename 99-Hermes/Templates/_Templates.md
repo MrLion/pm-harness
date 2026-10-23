@@ -24,6 +24,33 @@ Delete the `[!example]` block before using a template for real work.
 | [[Review]] | `08-Reviews/` | Pichler + SVPG | goal vs outcome, risk retired vs not |
 | [[JTBD]] | `01-Users/JTBD/` | — | supporting lens for Problem and Persona |
 
+## Frontmatter contract
+
+Every Dataview table in this vault reads **frontmatter keys**, not headings. `TABLE a, b` renders
+columns from the `a:` and `b:` keys of each note; `WHERE type = "x"` filters on the `type:` key;
+`SORT date DESC` uses the frontmatter `date:`, not the file's modification time.
+
+Which is why every template's frontmatter **is** the instance schema — a note created from it is
+queryable immediately. Copy the frontmatter verbatim; never retype it.
+
+| Key | Feeds |
+|---|---|
+| `type` | every `WHERE type = "…"` filter — if this is wrong, the note is invisible |
+| `id` | note identity (`PROB-003`), wikilink targets |
+| `status` | most tables; drives "not closed" filters |
+| `confidence` | sorted ascending everywhere — weakest evidence surfaces first |
+| `date` / `updated` / `review_after` / `review_date` | sorting and staleness queries |
+| `category` (research) | `04-Research` per-category tables |
+| `reliability` (research) | evidence-ladder filtering |
+| `risk_type`, `risk_owner` (opportunity, experiment) | risk coverage |
+| `recommendation` (opportunity) | go / no-go / defer surfacing |
+| `primary_metric` (prd) | gate on "no baseline, no brief" |
+| `template: true` | **not used** — see below |
+
+**Templates carry their real `type`, not `type: template`.** That is deliberate: the schema stays
+correct when you copy the file, and these files sit in `99-Hermes/`, outside every folder-scoped
+query, so they never appear in a table. Do not move a template into `02-Problems/` or similar.
+
 ## Attribution
 
 Pichler field definitions and checklists are quoted from the official tools, **CC BY-SA 4.0**

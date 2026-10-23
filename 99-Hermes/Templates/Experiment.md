@@ -1,8 +1,16 @@
 ---
-type: template
+type: experiment
 artifact: experiment
+id: EXP-000
+status: planned
+risk_type: value
+opportunity: OPP-000
+start: YYYY-MM-DD
+end: YYYY-MM-DD
+cost: unknown
+created: YYYY-MM-DD
 framework: SVPG
-source: https://www.svpg.com/four-big-risks/
+source: https://www.svpg.com/four-big-risks/"
 ---
 
 # Experiment

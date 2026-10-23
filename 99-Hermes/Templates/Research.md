@@ -1,8 +1,13 @@
 ---
-type: template
+type: research
 artifact: research
-framework: none
-note: evidence layer for both frameworks — Pichler's needs and Cagan's risks both depend on it
+id: RESEARCH-000
+category: market
+status: complete
+date: YYYY-MM-DD
+source: TBD
+reliability: low
+framework: none"
 ---
 
 # Research

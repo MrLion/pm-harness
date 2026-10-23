@@ -1,8 +1,14 @@
 ---
-type: template
+type: prd
 artifact: solution-brief
-framework: Pichler (Product Canvas) + SVPG (prototype-as-spec)
-source: https://www.romanpichler.com/tools/the-product-canvas/ + https://www.svpg.com/four-big-risks/
+id: PRD-000
+status: draft
+opportunity: OPP-000
+decision: DEC-000
+primary_metric: TBD
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+framework: "Pichler (Product Canvas) + SVPG (prototype-as-spec)"
 ---
 
 # Solution Brief (replaces "PRD")

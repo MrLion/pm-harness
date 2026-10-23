@@ -1,8 +1,15 @@
 ---
-type: template
+type: problem
 artifact: problem
-framework: none
-note: both Pichler and SVPG start from the problem; neither formalises this note
+id: PROB-000
+status: discovery
+priority: unprioritized
+confidence: low
+frequency: unknown
+severity: unknown
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+framework: none"
 ---
 
 # Problem

@@ -1,8 +1,12 @@
 ---
-type: template
+type: strategy
 artifact: strategy
+status: draft
+confidence: none
+updated: YYYY-MM-DD
+review_cadence_days: 90
 framework: Pichler
-source: https://romanpichler.com/blog/my-product-strategy-model/
+source: https://romanpichler.com/blog/my-product-strategy-model/"
 ---
 
 # Strategy

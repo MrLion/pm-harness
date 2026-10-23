@@ -1,8 +1,11 @@
 ---
-type: template
+type: goals
 artifact: goals
+status: draft
+confidence: none
+updated: YYYY-MM-DD
 framework: Pichler
-source: https://romanpichler.com/blog/leading-through-shared-goals/
+source: https://romanpichler.com/blog/leading-through-shared-goals/"
 ---
 
 # Goals

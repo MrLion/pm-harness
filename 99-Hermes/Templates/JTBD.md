@@ -1,8 +1,11 @@
 ---
-type: template
+type: jtbd
 artifact: jtbd
-framework: none
-note: supporting lens for Problem and Persona; not a Pichler or SVPG artifact
+id: JTBD-000
+status: draft
+confidence: low
+created: YYYY-MM-DD
+framework: none"
 ---
 
 # JTBD

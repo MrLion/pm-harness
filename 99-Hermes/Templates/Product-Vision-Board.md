@@ -1,6 +1,9 @@
 ---
-type: template
+type: product
 artifact: product-vision-board
+status: draft
+confidence: none
+updated: YYYY-MM-DD
 framework: Pichler
 source: https://romanpichler.com/tools/product-vision-board/
 license: "CC BY-SA 4.0 — Roman Pichler, Product Vision Board v01/2023"

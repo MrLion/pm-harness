@@ -1,8 +1,14 @@
 ---
-type: template
+type: persona
 artifact: persona
+id: PERSONA-000
+status: draft
+confidence: low
+evidence_count: 0
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
 framework: Pichler
-source: https://www.romanpichler.com/the-persona-template/
+source: https://www.romanpichler.com/the-persona-template/"
 ---
 
 # Persona

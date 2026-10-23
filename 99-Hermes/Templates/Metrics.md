@@ -1,8 +1,11 @@
 ---
-type: template
+type: metrics
 artifact: metrics
+status: draft
+confidence: none
+updated: YYYY-MM-DD
 framework: Pichler
-source: https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/
+source: https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/"
 ---
 
 # Metrics / KPI Selection

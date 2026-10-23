@@ -1,8 +1,21 @@
 ---
-type: template
+type: opportunity
 artifact: opportunity-assessment
+id: OPP-000
+status: discovery
+confidence: low
+impact: unknown
+effort: unknown
+strategic_fit: unknown
+score: null
+recommendation: Pending
+risk_type: value
+risk_owner: PM
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+review_after: YYYY-MM-DD
 framework: SVPG
-source: https://www.svpg.com/assessing-product-opportunities/ + https://www.svpg.com/four-big-risks/
+source: https://www.svpg.com/assessing-product-opportunities/"
 ---
 
 # Opportunity (SVPG Product Opportunity Assessment)

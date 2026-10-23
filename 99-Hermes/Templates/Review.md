@@ -1,7 +1,11 @@
 ---
-type: template
+type: review
 artifact: review
-framework: Pichler (goal vs outcome) + SVPG (risk retired vs not)
+id: REVIEW-YYYY-MM
+period: YYYY-MM
+date: YYYY-MM-DD
+status: draft
+framework: "Pichler (goal vs outcome) + SVPG (risk retired vs not)"
 ---
 
 # Review — YYYY-MM
