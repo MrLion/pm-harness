@@ -33,7 +33,7 @@ load-bearing evidence.
 
 ```dataview
 TABLE category, date, reliability
-FROM "04-Research"
+FROM "PM vault/04-Research"
 WHERE type = "research"
 SORT date DESC
 ```
@@ -42,7 +42,7 @@ SORT date DESC
 
 ```dataview
 TABLE category, reliability
-FROM "04-Research"
+FROM "PM vault/04-Research"
 WHERE type = "research" AND (reliability = "low" OR reliability = null)
 ```
 

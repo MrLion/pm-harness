@@ -5,7 +5,7 @@ not substitute for talking to one.
 
 ```dataview
 TABLE status, confidence, evidence_count
-FROM "01-Users/Personas"
+FROM "PM vault/01-Users/Personas"
 WHERE type = "persona"
 SORT evidence_count ASC
 ```

@@ -5,7 +5,7 @@ the four big risks. **Purpose: kill weak opportunities cheaply**, not justify on
 
 ```dataview
 TABLE status, score, confidence, recommendation
-FROM "03-Opportunities"
+FROM "PM vault/03-Opportunities"
 WHERE type = "opportunity" AND status != "closed"
 SORT score DESC
 ```

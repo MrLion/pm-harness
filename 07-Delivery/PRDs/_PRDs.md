@@ -5,7 +5,7 @@ because Cagan's position is that the prototype is the spec.
 
 ```dataview
 TABLE status, opportunity, updated, primary_metric
-FROM "07-Delivery/PRDs"
+FROM "PM vault/07-Delivery/PRDs"
 SORT updated DESC
 ```
 

@@ -28,7 +28,7 @@ gives Pichler's GO Roadmap rows their METRICS a baseline.
 
 ```dataview
 TABLE date, reliability, source
-FROM "04-Research/Data"
+FROM "PM vault/04-Research/Data"
 WHERE type = "research"
 SORT date DESC
 ```

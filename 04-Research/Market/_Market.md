@@ -28,7 +28,7 @@ bad bets, not to decorate a deck.
 
 ```dataview
 TABLE date, reliability, source
-FROM "04-Research/Market"
+FROM "PM vault/04-Research/Market"
 WHERE type = "research"
 SORT date DESC
 ```

@@ -4,7 +4,7 @@ What shipped, when, and what happened afterwards.
 
 ```dataview
 TABLE date, goal, metric_result
-FROM "07-Delivery/Releases"
+FROM "PM vault/07-Delivery/Releases"
 SORT date DESC
 ```
 

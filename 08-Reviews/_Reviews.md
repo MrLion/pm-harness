@@ -8,7 +8,7 @@
 
 ```dataview
 LIST
-FROM "08-Reviews"
+FROM "PM vault/08-Reviews"
 SORT file.name DESC
 ```
 

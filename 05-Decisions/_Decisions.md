@@ -6,7 +6,7 @@ re-litigated in three weeks by someone who wasn't there.
 
 ```dataview
 TABLE status, date, reversibility, review_date
-FROM "05-Decisions"
+FROM "PM vault/05-Decisions"
 WHERE type = "decision"
 SORT date DESC
 LIMIT 12
@@ -16,7 +16,7 @@ LIMIT 12
 
 ```dataview
 TABLE date, review_date, expected_outcome
-FROM "05-Decisions"
+FROM "PM vault/05-Decisions"
 WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending")
 SORT review_date ASC
 ```

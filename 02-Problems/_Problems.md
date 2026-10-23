@@ -5,7 +5,7 @@ into "what problem would X solve" before anything is written.
 
 ```dataview
 TABLE status, confidence, frequency, severity
-FROM "02-Problems"
+FROM "PM vault/02-Problems"
 WHERE type = "problem" AND status != "closed"
 SORT confidence ASC
 ```

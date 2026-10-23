@@ -6,7 +6,7 @@ experiment.
 
 ```dataview
 TABLE status, risk_type, opportunity, start, end
-FROM "07-Delivery/Experiments"
+FROM "PM vault/07-Delivery/Experiments"
 WHERE status != "completed"
 SORT start ASC
 ```

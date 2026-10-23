@@ -5,7 +5,7 @@ SVPG artifact, but the clearest way to state what a user is actually trying to a
 
 ```dataview
 TABLE status, confidence
-FROM "01-Users/JTBD"
+FROM "PM vault/01-Users/JTBD"
 WHERE type = "jtbd"
 SORT confidence ASC
 ```

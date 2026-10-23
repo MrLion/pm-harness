@@ -26,7 +26,7 @@ not a feature grid — it is **where each alternative fails our target group**.
 
 ```dataview
 TABLE date, reliability, source
-FROM "04-Research/Competitors"
+FROM "PM vault/04-Research/Competitors"
 WHERE type = "research"
 SORT date DESC
 ```
