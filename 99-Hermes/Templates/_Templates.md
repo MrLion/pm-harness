@@ -51,6 +51,12 @@ queryable immediately. Copy the frontmatter verbatim; never retype it.
 correct when you copy the file, and these files sit in `99-Hermes/`, outside every folder-scoped
 query, so they never appear in a table. Do not move a template into `02-Problems/` or similar.
 
+## Folder mode
+
+This vault is a folder inside a larger Obsidian vault, so every query names its path
+(`FROM "PM vault/05-Decisions"`). If you ever open `PM vault` as its own vault, strip the
+`PM vault/` prefix from all 27 `FROM` clauses or the tables will match nothing.
+
 ## Attribution
 
 Pichler field definitions and checklists are quoted from the official tools, **CC BY-SA 4.0**

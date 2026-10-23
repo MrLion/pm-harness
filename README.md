@@ -31,6 +31,20 @@ Dashboard.md     live cockpit (Dataview)
 | `/pm decide <question>` | decision record, proposed not accepted |
 | `/pm review` | vault-wide audit: stale, orphaned, unsupported, contradictions, unrecorded outcomes |
 
+## Where this vault sits
+
+`PM vault` is a **folder inside the iCloud `Documents` Obsidian vault**, not a vault of its own.
+That matters for Dataview:
+
+- The plugin is installed and enabled in the **parent** vault (`Documents/.obsidian/plugins/dataview/`).
+- Every query therefore references the folder path: `FROM "PM vault/02-Problems"`.
+- `PM vault/.obsidian/` is inert — Obsidian ignores a nested folder's config. It is kept only so the
+  folder can be opened standalone later, if that ever becomes preferable. If you do that, every
+  `FROM` must lose its `PM vault/` prefix again.
+
+Trade-off accepted: one vault, one plugin install, one trust prompt — at the cost of PM notes
+sharing a graph and search index with whatever else lives in `Documents`.
+
 ## Frameworks
 
 Templates are not invented. Each quotes a published method's structure and checklist, with attribution:
