@@ -22,15 +22,6 @@ source: https://www.romanpichler.com/the-persona-template/
 >
 > Sourced example, not product evidence.
 
-## Example — cost-conscious HDHP adult
-
-> [!example]- Example — HDHP outpatient imaging
-> **Persona:** Patient on employer-sponsored HDHP choosing outpatient imaging.
-> **Observed behavior:** Checks provider availability, review quality, and out-of-pocket cost.
-> **Why:** Avoids surprise bills and postponed care.
->
-> Sourced example, not product evidence.
-
 > [!warning] Evidence rule
 > `evidence_count: 0` means this persona is a guess. A persona is a modelling technique, not a
 > substitute for talking to real users. Never let a guess-shaped persona drive a roadmap.
