@@ -17,6 +17,16 @@ updated: YYYY-MM-DD
 A delivery record tied to the GO Roadmap goal it was meant to move. Without a goal and a measured
 result, this is a deployment log rather than a learning artifact.
 
+## Example — outpatient cost estimator pilot
+
+> [!example]- Example — HDHP outpatient imaging
+> **Release:** Cost estimator MVP.
+> **Goal:** Reduce postponed care due to out-of-pocket uncertainty.
+> **Metric:** Accurate pre-care estimates delivered.
+> **Follow-up:** Add provider matching if pilot succeeds.
+>
+> Sourced example, not product evidence.
+
 ## Release
 
 | Field | Content |

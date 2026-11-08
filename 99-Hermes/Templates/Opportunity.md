@@ -20,6 +20,16 @@ source: https://www.svpg.com/assessing-product-opportunities/
 
 # Opportunity (SVPG Product Opportunity Assessment)
 
+## Example — cost transparency in outpatient imaging
+
+> [!example]- Example — HDHP outpatient imaging
+> **Problem:** Adults on employer-sponsored HDHPs cannot estimate out-of-pocket cost before outpatient imaging.
+> **Why it matters:** 43% postpone care without an accurate estimate, 66% with debt are in collections.
+> **Candidate solution:** Transparent outpatient cost estimator + provider matching.
+> **Smallest experiment:** 5 patient interviews.
+>
+> Sourced example, not product evidence.
+
 Ten questions, then the four risks. **The purpose is to kill weak opportunities cheaply**, not to
 justify ones you already want to build.
 

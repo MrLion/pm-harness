@@ -11,7 +11,25 @@ updated: YYYY-MM-DD
 source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/ + https://amplitude.com/books/north-star/about-north-star-framework"
 ---
 
-# Metrics — North Star + KPI Selection
+# Metrics
+
+## Example — transparent outpatient imaging
+
+> [!example]- Example — HDHP outpatient imaging
+> **North Star:** Patients who get an accurate pre-care cost estimate.
+> **Definition:** Number of accurate estimates delivered before care.
+> **Guardrail:** Accuracy must not decline.
+>
+> Sourced example, not product evidence.
+
+## Example — cost transparency for outpatient imaging
+
+> [!example]- Example — HDHP outpatient imaging
+> **North Star:** Patients who get an accurate pre-care cost estimate.
+> **Definition:** Number of accurate estimates delivered before care.
+> **Guardrail:** Accuracy must not decline.
+>
+> Sourced example, not product evidence.
 
 ## North Star Metric
 

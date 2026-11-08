@@ -11,6 +11,17 @@ license: "CC BY-SA 4.0 — Roman Pichler, GO Product Roadmap v01/2023"
 
 # GO Product Roadmap
 
+## Example — cost transparency pilot
+
+> [!example]- Example — HDHP outpatient imaging
+> **NAME:** Transparent Imaging MVP
+> **GOAL:** Reduce postponed care from unknown out-of-pocket cost.
+> **METRICS:** Accurate pre-care cost estimates delivered.
+> **DATE:** Q1 pilot in 2 outpatient clinics.
+> **FEATURES:** cost estimate · provider match · appointment scheduler.
+>
+> Sourced example, not product evidence.
+
 Replaces `06-Roadmap/Now.md`, `Next.md`, `Later.md`. Rows are **goals**, not features. A feature
 list with dates is the thing this template exists to prevent.
 

@@ -12,6 +12,28 @@ source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://w
 
 # Goals — OKR + Impact Map
 
+## Example — cost transparency for outpatient imaging
+
+> [!example]- Example — HDHP outpatient imaging
+> **Objective:** Reduce out-of-pocket cost uncertainty before elective outpatient imaging.
+> **KR 1:** Increase accurate pre-care cost estimates from unknown → at least 1 per patient before visit.
+> **Actor:** Patient selecting outpatient imaging.
+> **Behavior change:** Use accurate cost estimate before booking.
+> **Deliverable:** Cost estimator MVP.
+>
+> Sourced example, not product evidence.
+
+## Example — cost transparency for outpatient imaging
+
+> [!example]- Example — HDHP outpatient imaging
+> **Objective:** Reduce out-of-pocket cost uncertainty before elective outpatient imaging.
+> **KR 1:** Increase accurate pre-care cost estimates from unknown → at least 1 per patient before visit.
+> **Actor:** Patient selecting outpatient imaging.
+> **Behavior change:** Use accurate cost estimate before booking.
+> **Deliverable:** Cost estimator MVP.
+>
+> Sourced example, not product evidence.
+
 > One objective per horizon. Pichler's **single goal** rule still applies to each roadmap row;
 > OKR key results measure that objective rather than creating competing objectives.
 

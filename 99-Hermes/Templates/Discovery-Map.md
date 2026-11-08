@@ -9,6 +9,18 @@ source: https://www.producttalk.org/opportunity-solution-trees/
 
 # Discovery Map — Opportunity Solution Tree
 
+## Example — cost transparency + provider choice
+
+> [!example]- Example — HDHP outpatient imaging
+> **Problem:** Adults on employer-sponsored HDHPs cannot estimate out-of-pocket cost before outpatient imaging.
+> **Opportunity:** Transparent outpatient cost estimator + provider matching.
+> **Candidates:**
+>   - **CAND-001:** cost estimator
+>   - **CAND-002:** provider matching
+>   - **CAND-003:** self-service scheduler
+>
+> Sourced example, not product evidence.
+
 A **view of existing artifacts**, not another source of truth. Link `GOAL`, `PROB`, `OPP`, solution
 briefs and `EXP` notes rather than copying their contents. Torres's "opportunity" maps to this
 vault's problem plus its assessment; do not create a third opportunity category.

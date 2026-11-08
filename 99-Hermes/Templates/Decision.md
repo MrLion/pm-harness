@@ -14,6 +14,18 @@ updated: YYYY-MM-DD
 
 # Decision
 
+## Example — build vs partner for cost estimator
+
+> [!example]- Example — HDHP outpatient imaging
+> **Question:** Build a minimum viable outpatient cost estimator before broader patient-portal work?
+> **Context:** 43% postpone care without accurate estimate.
+> **Options:** Build · partner · defer
+> **Chosen:** Build a minimum reliable estimate MVP
+> **Reversibility:** medium
+> **Review:** after two pilot cycles
+>
+> Sourced example, not product evidence.
+
 ## Question
 
 [FILL: One sentence. If it contains "and", split it into two decisions.]

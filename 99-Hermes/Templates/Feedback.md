@@ -13,6 +13,16 @@ updated: YYYY-MM-DD
 
 # Feedback
 
+## Example — out-of-pocket cost uncertainty
+
+> [!example]- Example — HDHP outpatient imaging
+> **Source:** Patient on employer-sponsored HDHP after outpatient imaging.
+> **Verbatim:** They didn’t know final out-of-pocket cost until after visit.
+> **Situation:** Choosing outpatient imaging.
+> **Frequency:** Recurring complaint across accounts.
+>
+> Sourced example, not product evidence.
+
 Raw customer signal. Keep the original wording. A paraphrase is your interpretation, not evidence.
 
 ## Source

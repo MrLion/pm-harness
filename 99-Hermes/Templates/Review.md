@@ -11,6 +11,15 @@ updated: YYYY-MM-DD
 
 # Review — YYYY-MM
 
+## Example — post-pilot cost transparency review
+
+> [!example]- Example — HDHP outpatient imaging
+> **Goals vs outcomes:** Did accurate pre-care estimates reduce postponed care or unexpected bills?
+> **Risks retired:** Value risk tested; usability not yet.
+> **Met?** `unknown / not measured / measured hit/miss`
+>
+> Sourced example, not product evidence.
+
 ## Goals vs outcomes
 
 | Goal | Target | Actual | Measurement status | Met? |

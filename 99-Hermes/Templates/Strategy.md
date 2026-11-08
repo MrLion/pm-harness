@@ -11,6 +11,16 @@ source: https://romanpichler.com/blog/my-product-strategy-model/
 
 # Strategy
 
+## Example — cost transparency in outpatient imaging
+
+> [!example]- Example — HDHP outpatient imaging
+> **Target group:** Adults on employer-sponsored HDHPs choosing outpatient imaging.
+> **Differentiator:** Accurate upfront out-of-pocket cost estimate.
+> **Priority thesis:** Reduce postponed care and unexpected-bill volume through transparency.
+> **Falsifier:** If cost transparency does not reduce postponed care or unexpected bills, abandon it.
+>
+> Sourced example, not product evidence.
+
 The four strategy elements from the Vision Board, elaborated. Per Pichler the vision endures;
 **strategy changes as you learn** — so every claim here is an assumption carrying evidence.
 

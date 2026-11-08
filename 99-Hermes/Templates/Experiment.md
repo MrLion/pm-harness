@@ -17,6 +17,18 @@ updated: YYYY-MM-DD
 
 # Experiment
 
+## Example — cost estimate usability
+
+> [!example]- Example — HDHP outpatient imaging
+> **Risk:** usability.
+> **Hypothesis:** A chat-based cost estimate reduces prep friction and postponement.
+> **Design:** 5 patient interviews with HDHP members choosing outpatient imaging.
+> **Success:** ≥3 patients can explain the estimate after interview.
+> **Failure:** <2 can retain the estimate.
+> **Cost:** 5 interviews.
+>
+> Sourced example, not product evidence.
+
 An experiment exists to retire **one primary named risk**. If you cannot name which of the four
 risks it targets (value, usability, feasibility or viability), it is not an experiment — it is a
 build. Secondary observations may be recorded, but they do not redefine the experiment.

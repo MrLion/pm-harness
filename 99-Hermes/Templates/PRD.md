@@ -14,6 +14,16 @@ framework: "Pichler (Product Canvas) + SVPG (prototype-as-spec)"
 
 # Solution Brief (replaces "PRD")
 
+## Example — transparent outpatient imaging
+
+> [!example]- Example — HDHP outpatient imaging
+> **Problem:** Patient on HDHP can’t estimate out-of-pocket cost before colonoscopy.
+> **Solution:** Cost estimator + provider matching.
+> **Primary metric:** Number of accurate pre-care estimates delivered.
+> **Guardrail:** Accuracy must not decline.
+>
+> Sourced example, not product evidence.
+
 Cagan's position: a lightweight high-fidelity prototype is a better basis for a spec than a
 heavy-weight PRD, because it answers the questions a document only describes. So this note is a
 **canvas + acceptance criteria that links to a prototype** — not a requirements document.

@@ -14,9 +14,15 @@ framework: none
 
 # Problem
 
-> [!warning] Problem ≠ feature request
-> "We need X" is not a problem. Convert it before writing anything else. If the statement contains
-> a solution noun, rewrite it.
+## Example — out-of-pocket cost uncertainty before outpatient imaging
+
+> [!example]- Example — HDHP outpatient imaging
+> **What:** Adults on employer-sponsored HDHPs cannot estimate out-of-pocket cost before outpatient imaging.
+> **Why it matters:** 43% postpone care without an accurate estimate; 66% with debt are in collections.
+> **Evidence:** William Blair *Consumer-Centric Healthcare 2026*; Experian Health 2025.
+> **Template mapping:** Problem → Opportunity → Research → Persona
+>
+> Sourced example, not product evidence.
 
 ## Problem Statement
 
