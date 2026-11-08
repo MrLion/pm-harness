@@ -62,5 +62,3 @@ Created · Updated · Closed
 > lifted acceptance from 28% to 41%. Changes what: EXP-002 design.
 > **Got wrong:** we assumed 10-minute acceptance was a willingness signal; it was mostly a
 > notification-visibility problem.
-
-> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

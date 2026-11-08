@@ -79,5 +79,3 @@ Pending
 > knowingly gives up switching cost — clinics still keep the spreadsheet for planning.
 > **Reversibility:** high — the rota builder can follow without re-architecting.
 > **Expected:** gaps filled without a manager call 22% → 60% by 31 Mar. **Review:** 2026-03-31.
-
-> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

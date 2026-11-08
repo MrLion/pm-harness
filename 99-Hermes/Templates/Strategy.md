@@ -64,5 +64,3 @@ The four strategy elements from the Vision Board, elaborated. Per Pichler the vi
 >
 > **Not doing:** payroll, time-and-attendance, HR records. **Invalidated if** clinics say the
 > delay is staffing shortage rather than decision latency.
-
-> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

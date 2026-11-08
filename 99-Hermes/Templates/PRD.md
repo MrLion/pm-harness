@@ -88,5 +88,3 @@ heavy-weight PRD, because it answers the questions a document only describes. So
 > **Guardrail:** illegal assignments must not increase (baseline 0).
 > **Risks carried:** value (staff may ignore offers — mitigate with reminder cadence), usability
 > (accept must work one-handed — mitigate with prototype test).
-
-> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

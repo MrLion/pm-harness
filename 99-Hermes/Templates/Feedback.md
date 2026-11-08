@@ -62,5 +62,3 @@ Raw customer signal. Keep the original wording. A paraphrase is your interpretat
 > **Frequency:** 3 distinct accounts in 30 days; tickets #1842, #1901, #1977.
 > **Does not tell us:** whether better ranking would change behaviour, or whether these three clinics
 > share an unusual staffing pattern.
-
-> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

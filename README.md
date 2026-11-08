@@ -122,6 +122,5 @@ putting feedback into an iCloud-synced vault.
 ## Learn more
 
 - **[[START-HERE]]** — first guided workflow
-- **[[Live-Scenario-Examples]]** — source-backed example pack, not product evidence
 - **[[Frameworks]]** — how Pichler, SVPG, Torres, Impact Mapping, OKRs and North Star fit together
 - **[[Architecture]]** — folder mode, frontmatter, query paths, git and agent write boundaries
