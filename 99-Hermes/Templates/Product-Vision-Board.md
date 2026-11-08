@@ -24,8 +24,8 @@ Adults on employer-sponsored HDHPs choosing outpatient imaging.
 
 | # | Need | Evidence | Confidence |
 |---|---|---|---|
-| 1 | Know expected out-of-pocket cost before booking | [[99-Hermes/Templates/Research|RESEARCH-001]] | low |
-| 2 | Understand what the estimate includes and excludes | [[99-Hermes/Templates/Research|RESEARCH-001]] | low |
+| 1 | Know expected out-of-pocket cost before booking | [[PM vault/99-Hermes/Templates/Research|RESEARCH-001]] | low |
+| 2 | Understand what the estimate includes and excludes | [[PM vault/99-Hermes/Templates/Research|RESEARCH-001]] | low |
 
 ## Product
 

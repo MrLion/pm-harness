@@ -9,10 +9,10 @@ Delete the `[!example]` block before using a template for real work.
 
 | Template | Use for | Framework | Source |
 |---|---|---|---|
-| [[99-Hermes/Templates/Product-Vision-Board|Product-Vision-Board]] | `00-Product/Product.md` | Pichler | [Vision Board](https://romanpichler.com/tools/product-vision-board/) |
-| [[99-Hermes/Templates/Strategy|Strategy template]] | `00-Product/Strategy.md` | Pichler | [Strategy model](https://romanpichler.com/blog/my-product-strategy-model/) |
-| [[99-Hermes/Templates/Goals|Goals template]] | `00-Product/Goals.md` | Pichler + OKR + Impact Mapping | [Goal-setting](https://romanpichler.com/blog/leading-through-shared-goals/) · [Impact Mapping](https://www.impactmapping.org/) |
-| [[99-Hermes/Templates/Metrics|Metrics template]] | `00-Product/Metrics.md` | Pichler + North Star | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) · [North Star](https://amplitude.com/books/north-star/about-north-star-framework) |
+| [[PM vault/99-Hermes/Templates/Product-Vision-Board|Product-Vision-Board]] | `00-Product/Product.md` | Pichler | [Vision Board](https://romanpichler.com/tools/product-vision-board/) |
+| [[PM vault/99-Hermes/Templates/Strategy|Strategy template]] | `00-Product/Strategy.md` | Pichler | [Strategy model](https://romanpichler.com/blog/my-product-strategy-model/) |
+| [[PM vault/99-Hermes/Templates/Goals|Goals template]] | `00-Product/Goals.md` | Pichler + OKR + Impact Mapping | [Goal-setting](https://romanpichler.com/blog/leading-through-shared-goals/) · [Impact Mapping](https://www.impactmapping.org/) |
+| [[PM vault/99-Hermes/Templates/Metrics|Metrics template]] | `00-Product/Metrics.md` | Pichler + North Star | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) · [North Star](https://amplitude.com/books/north-star/about-north-star-framework) |
 | [[GO-Roadmap]] | `06-Roadmap/` | Pichler | [GO Product Roadmap](https://romanpichler.com/tools/the-go-product-roadmap/) |
 | [[Persona]] | `01-Users/Personas/` | Pichler | [Persona Template](https://www.romanpichler.com/the-persona-template/) |
 | [[Discovery-Map]] | `03-Opportunities/Discovery Map.md` | Torres | [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) |
@@ -50,7 +50,7 @@ queryable immediately. Copy the frontmatter verbatim; never retype it.
 | `risk_type` (primary risk) | `value` · `usability` · `feasibility` · `viability` |
 | `risk_owner` | `PM` · `Design` · `Eng` · named role |
 | `candidate_id` (prd) | stable Opportunity candidate row ID, e.g. `CAND-001`; the Discovery Map links the same row |
-| `opportunity` / `decision` (PRD) | quoted Obsidian links, e.g. `"[[99-Hermes/Templates/Opportunity|OPP-000]]"`, so traceability resolves |
+| `opportunity` / `decision` (PRD) | quoted Obsidian links, e.g. `"[[PM vault/99-Hermes/Templates/Opportunity|OPP-000]]"`, so traceability resolves |
 | `primary_metric` (prd) | gate on "no baseline, no brief" |
 
 **Templates carry their real `type`, not `type: template`.** That is deliberate: the schema stays

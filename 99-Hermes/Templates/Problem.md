@@ -21,11 +21,11 @@ Adults on employer-sponsored high-deductible health plans cannot estimate their 
 
 ## User / Segment
 
-[[99-Hermes/Templates/Persona|PERSONA-001]]
+[[PM vault/99-Hermes/Templates/Persona|PERSONA-001]]
 
 ## JTBD
 
-[[99-Hermes/Templates/JTBD|JTBD-001]]
+[[PM vault/99-Hermes/Templates/JTBD|JTBD-001]]
 
 ## Evidence
 
@@ -62,4 +62,4 @@ Evidence unavailable. Potential effects to measure: delayed bookings, call-centr
 
 ## Related Opportunities
 
-- [[99-Hermes/Templates/Opportunity|OPP-001]]
+- [[PM vault/99-Hermes/Templates/Opportunity|OPP-001]]

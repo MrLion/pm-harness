@@ -5,7 +5,7 @@ id: EXP-001
 status: planned
 risk_type: usability
 risk_owner: Design
-opportunity: "[[99-Hermes/Templates/Opportunity|OPP-001]]"
+opportunity: "[[PM vault/99-Hermes/Templates/Opportunity|OPP-001]]"
 start: 2026-11-10
 end: 2026-11-21
 cost: 5 interviews
@@ -24,7 +24,7 @@ example: true
 |---|---|
 | Risk type | usability (comprehension) |
 | Assumption | Patients can explain what an estimate includes, excludes, and how long it is valid |
-| Opportunity | [[99-Hermes/Templates/Opportunity|OPP-001]] |
+| Opportunity | [[PM vault/99-Hermes/Templates/Opportunity|OPP-001]] |
 
 ## Hypothesis
 
@@ -61,7 +61,7 @@ Pending
 
 ## Decision
 
-Pending — link the resulting [[99-Hermes/Templates/Decision|DEC-001]] or updated [[99-Hermes/Templates/Opportunity|OPP-001]].
+Pending — link the resulting [[PM vault/99-Hermes/Templates/Decision|DEC-001]] or updated [[PM vault/99-Hermes/Templates/Opportunity|OPP-001]].
 
 ## Scope note
 

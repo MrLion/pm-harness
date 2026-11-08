@@ -3,9 +3,9 @@ type: prd
 artifact: solution-brief
 id: PRD-001
 status: draft
-opportunity: "[[99-Hermes/Templates/Opportunity|OPP-001]]"
+opportunity: "[[PM vault/99-Hermes/Templates/Opportunity|OPP-001]]"
 candidate_id: CAND-003
-decision: "[[99-Hermes/Templates/Decision|DEC-001]]"
+decision: "[[PM vault/99-Hermes/Templates/Decision|DEC-001]]"
 primary_metric: coverage
 created: 2026-11-08
 updated: 2026-11-08
@@ -17,14 +17,14 @@ example: true
 
 ## Canvas
 
-| Element | Content |
-|---|---|
-| Problem | [[99-Hermes/Templates/Problem|PROB-001]] |
-| Opportunity | [[99-Hermes/Templates/Opportunity|OPP-001]] |
-| Target user | [[99-Hermes/Templates/Persona|PERSONA-001]] |
-| Outcome (one sentence) | More eligible imaging requests receive a pre-booking estimate the patient can understand. |
-| Prototype | Paper prototype of one imaging estimate with inclusions, exclusions, and validity |
-| Epics (big capabilities) | Estimate request · patient-readable explanation · reconciliation check |
+| Element                  | Content                                                                                   |               |
+| ------------------------ | ----------------------------------------------------------------------------------------- | ------------- |
+| Problem                  | [[PM vault/99-Hermes/Templates/Problem|PROB-001]]    |
+| Opportunity              | [[PM vault/99-Hermes/Templates/Opportunity|OPP-001]]     |
+| Target user              | [[PM vault/99-Hermes/Templates/Persona|PERSONA-001]] |
+| Outcome (one sentence)   | More eligible imaging requests receive a pre-booking estimate the patient can understand. |               |
+| Prototype                | Paper prototype of one imaging estimate with inclusions, exclusions, and validity         |               |
+| Epics (big capabilities) | Estimate request · patient-readable explanation · reconciliation check                    |               |
 
 ## Non-goals
 

@@ -31,8 +31,8 @@ example: true
 
 | Type | Source | Date | Count |
 |---|---|---|---|
-| secondary survey | [[99-Hermes/Templates/Research|RESEARCH-001]] | 2026-11-08 | 0 direct observations |
+| secondary survey | [[PM vault/99-Hermes/Templates/Research|RESEARCH-001]] | 2026-11-08 | 0 direct observations |
 
 ## Related
 
-- [[99-Hermes/Templates/Problem|PROB-001]]
+- [[PM vault/99-Hermes/Templates/Problem|PROB-001]]

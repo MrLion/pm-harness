@@ -72,7 +72,7 @@ Proceed to discovery, not build. Test comprehension and data access first.
 
 | Source | Date | Says what | Strength |
 |---|---|---|---|
-| [[99-Hermes/Templates/Research|RESEARCH-001]] | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would consider postponing without one | weak |
+| [[PM vault/99-Hermes/Templates/Research|RESEARCH-001]] | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would consider postponing without one | weak |
 
 ### Contradicting
 
@@ -106,4 +106,4 @@ Pending — discovery only; no build until comprehension and data access are pro
 
 ## Related
 
-- [[99-Hermes/Templates/Problem|PROB-001]] · [[99-Hermes/Templates/Decision|DEC-001]] · [[99-Hermes/Templates/Experiment|EXP-001]] · [[03-Opportunities/Discovery Map|Discovery Map]]
+- [[PM vault/99-Hermes/Templates/Problem|PROB-001]] · [[PM vault/99-Hermes/Templates/Decision|DEC-001]] · [[PM vault/99-Hermes/Templates/Experiment|EXP-001]] · [[PM vault/03-Opportunities/Discovery Map|Discovery Map]]
