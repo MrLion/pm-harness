@@ -50,7 +50,7 @@ queryable immediately. Copy the frontmatter verbatim; never retype it.
 | `risk_type` (primary risk) | `value` · `usability` · `feasibility` · `viability` |
 | `risk_owner` | `PM` · `Design` · `Eng` · named role |
 | `candidate_id` (prd) | stable Opportunity candidate row ID, e.g. `CAND-001`; the Discovery Map links the same row |
-| `opportunity` / `decision` (PRD) | quoted Obsidian links, e.g. `"[[OPP-000]]"`, so traceability resolves |
+| `opportunity` / `decision` (PRD) | quoted Obsidian links, e.g. `"[[99-Hermes/Templates/Opportunity|OPP-000]]"`, so traceability resolves |
 | `primary_metric` (prd) | gate on "no baseline, no brief" |
 
 **Templates carry their real `type`, not `type: template`.** That is deliberate: the schema stays

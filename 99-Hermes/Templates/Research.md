@@ -47,5 +47,5 @@ Desk research: William Blair *Consumer-Centric Healthcare 2026*, citing Experian
 
 ## Implications
 
-- Supports: [[PROB-001]] · [[OPP-001]]
+- Supports: [[99-Hermes/Templates/Problem|PROB-001]] · [[99-Hermes/Templates/Opportunity|OPP-001]]
 - Weakens: any claim that an estimate alone reduces postponed care.

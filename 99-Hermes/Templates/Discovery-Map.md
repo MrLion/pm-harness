@@ -12,16 +12,16 @@ example: true
 
 ## Desired outcome
 
-[[Goals]] — reduce out-of-pocket cost uncertainty before elective outpatient imaging.
+[[PM vault/00-Product/Goals|Goals]] — reduce out-of-pocket cost uncertainty before elective outpatient imaging.
 
 ## Tree
 
-- **[Problem]** [[PROB-001]]
-  - **[Opportunity assessment]** [[OPP-001]]
-    - **CAND-001** — integrate an existing payer/provider estimator · [[OPP-001#Candidate solutions|OPP-001 · CAND-001]]
-    - **CAND-002** — assisted estimate request with human review · [[OPP-001#Candidate solutions|OPP-001 · CAND-002]]
-    - **CAND-003** — narrowly scoped self-service estimate · [[OPP-001#Candidate solutions|OPP-001 · CAND-003]]
-      - **Assumption test** [[EXP-001]]
+- **[Problem]** [[99-Hermes/Templates/Problem|PROB-001]]
+  - **[Opportunity assessment]** [[99-Hermes/Templates/Opportunity|OPP-001]]
+    - **CAND-001** — integrate an existing payer/provider estimator · [[99-Hermes/Templates/Opportunity#Candidate solutions|OPP-001 · CAND-001]]
+    - **CAND-002** — assisted estimate request with human review · [[99-Hermes/Templates/Opportunity#Candidate solutions|OPP-001 · CAND-002]]
+    - **CAND-003** — narrowly scoped self-service estimate · [[99-Hermes/Templates/Opportunity#Candidate solutions|OPP-001 · CAND-003]]
+      - **Assumption test** [[99-Hermes/Templates/Experiment|EXP-001]]
 
 ## Coverage check
 

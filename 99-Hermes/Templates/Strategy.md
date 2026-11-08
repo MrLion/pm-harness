@@ -16,8 +16,8 @@ example: true
 
 | Element | Current position | Evidence | Confidence |
 |---|---|---|---|
-| Target group | Adults on employer-sponsored HDHPs choosing outpatient imaging | [[RESEARCH-001]] | low |
-| Needs | Know expected cost and understand inclusions/exclusions | [[RESEARCH-001]] | low |
+| Target group | Adults on employer-sponsored HDHPs choosing outpatient imaging | [[99-Hermes/Templates/Research|RESEARCH-001]] | low |
+| Needs | Know expected cost and understand inclusions/exclusions | [[99-Hermes/Templates/Research|RESEARCH-001]] | low |
 | Business goals | Increase estimate coverage and reconciled accuracy | unknown | low |
 | Stand-out features | Patient-readable estimate + reconciliation | hypothesis | low |
 

@@ -38,7 +38,7 @@ example: true
 
 ## Decisions still unresolved
 
-- [[DEC-001]] — build vs partner vs defer.
+- [[99-Hermes/Templates/Decision|DEC-001]] — build vs partner vs defer.
 
 ## Metric movement
 
