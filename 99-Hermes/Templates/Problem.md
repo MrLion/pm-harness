@@ -18,31 +18,6 @@ framework: none
 > "We need X" is not a problem. Convert it before writing anything else. If the statement contains
 > a solution noun, rewrite it.
 
-> [!example]- Example — US healthcare consumer (from William Blair report)
-> **Scenario:** An insured consumer with a high-deductible plan is choosing between outpatient imaging providers.
-> **Problem they hit:** They don't know the full out-of-pocket cost before booking. In the report, 70% want the
-> price before the procedure, but estimates are received by only 41% and accuracy is dropping.
-> **Fill example:**
-> - **Who:** Adults on employer-sponsored HDHP plans
-> - **What:** Can’t estimate the real out-of-pocket cost before imaging
-> - **Evidence:** William Blair *Consumer-Centric Healthcare 2026*; Experian Health 2025
-> - **Impact:** 43% postpone care without an accurate estimate; 66% of people with debt are in collections
->
-> This is **not** real product evidence; it is a sourced example to show how to fill the template.
-
-> [!todo] Ambiguous fields — how to fill
-> | Field | Meaning | If unsure |
-> |---|---|---|
-> | status | `discovery`, `validated`, or `resolved` | keep `discovery` until evidence confirms it |
-> | priority | `unprioritized / low / medium / high` | leave `unprioritized` until scoring is discussed |
-> | confidence | `none / low / medium / high` | reflect the evidence, not optimism |
-> | severity | cost in time / money / risk / abandonment | use `unknown` until measured |
-> | frequency | how often it occurs | use a range if exact number unavailable |
-> | evidence | source, date, and what it says | no source = unsupported claim |
-> | current workaround | what users do today | “nothing” is valid |
-> | business impact | what it costs the org | if unknown, say `Evidence unavailable.` |
-
-
 ## Problem Statement
 
 [FILL: Who experiences what problem, under what circumstances, and why it matters. No solution language.]

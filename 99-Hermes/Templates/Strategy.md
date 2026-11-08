@@ -18,26 +18,6 @@ The four strategy elements from the Vision Board, elaborated. Per Pichler the vi
 > If you cannot name the evidence behind a strategy element, write `Evidence unavailable.`
 > A strategy with no falsifiable claims is a slogan.
 
-# Strategy
-
-## Example — US healthcare consumer
-
-> [!example]- Example — transparent outpatient care
-> **Target group:** Adults on employer-sponsored HDHPs choosing outpatient imaging.
-> **Differentiator:** Upfront, accurate out-of-pocket cost estimate.
-> **Priority thesis:** Reduce cost shock and avoid postponed care.
-> **Falsifier:** If cost transparency does not reduce postponed care or unexpected bill rate, abandon.
->
-> Sourced example, not product evidence.
-
-> [!todo] Ambiguous fields — how to fill
-> | Field | Meaning | If unsure |
-> |---|---|---|
-> | target group | very specific segment | avoid too broad |
-> | differentiator | what competes on the same need | must be observable |
-> | priority thesis | what the organization bets on now | explain tradeoff |
-> | falsifier | what would prove it wrong | observable, not opinion |
-
 ## Strategy elements
 
 | Element | Current position | Evidence | Confidence |

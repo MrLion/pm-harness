@@ -13,39 +13,6 @@ source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-pro
 
 # Metrics — North Star + KPI Selection
 
-## Example — US healthcare consumer
-
-> [!example]- Example — transparent outpatient imaging
-> **North Star:** Patients who get an accurate pre-care cost estimate.
-> **Definition:** Number of accurate estimates delivered before care.
-> **Guardrail:** Accuracy must not decline.
-
-> [!todo] Ambiguous fields — how to fill
-> | Field | Meaning | If unsure |
-> |---|---|---|
-> | North Star Metric | one customer-value measure | avoid vanity metrics |
-> | definition | how it is computed | must be exact |
-> | inputs | drivers upstream | keep few |
-> | guardrails | what must not degrade | legal / trust / quality / cost |
-
-
-
-
-> [!example]- Example — transparent outpatient imaging
-> **North Star:** Patients who get an accurate pre-care cost estimate.
-> **Definition:** Number of accurate estimates delivered before care.
-> **Guardrail:** Accuracy must not decline.
->
-> Sourced example, not product evidence.
-
-> [!todo] Ambiguous fields — how to fill
-> | Field | Meaning | If unsure |
-> |---|---|---|
-> | North Star Metric | one customer-value measure | avoid vanity metrics |
-> | definition | how it is computed | must be exact |
-> | inputs | drivers upstream | keep few |
-> | guardrails | what must not degrade | legal / trust / quality / cost |
-
 ## North Star Metric
 
 [FILL]

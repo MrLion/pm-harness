@@ -9,47 +9,6 @@ source: https://www.producttalk.org/opportunity-solution-trees/
 
 # Discovery Map — Opportunity Solution Tree
 
-## Example — US healthcare consumer
-
-> [!example]- Example — cost transparency + provider choice
-> **Problem:** Patient on HDHP can't estimate out-of-pocket cost before outpatient imaging.
-> **Opportunity:** Transparent cost estimator + provider matching.
-> **Candidates:**
->   - **CAND-001:** cost estimator
->   - **CAND-002:** provider matching
->   - **CAND-003:** self-service scheduler
-
-> [!todo] Ambiguous fields — how to fill
-> | Field | Meaning | If unsure |
-> |---|---|---|
-> | desired outcome | what result you want | outcome, not feature |
-> | problem | linked artifact | no content duplication |
-> | opportunity | linked artifact | no solution without source |
-> | candidate ID | stable row reference | never "Solution A" |
-> | coverage check | evidence-backed link | missing = finding |
-
-
-
-
-> [!example]- Example — cost transparency + provider choice
-> **Problem:** Patient on HDHP can't estimate out-of-pocket cost before outpatient imaging.
-> **Opportunity:** Transparent cost estimator + provider matching.
-> **Candidates:**
->   - **CAND-001:** cost estimator
->   - **CAND-002:** provider matching
->   - **CAND-003:** self-service scheduler
->
-> Sourced example, not product evidence.
-
-> [!todo] Ambiguous fields — how to fill
-> | Field | Meaning | If unsure |
-> |---|---|---|
-> | desired outcome | what result you want | outcome, not feature |
-> | problem | linked artifact | no content duplication |
-> | opportunity | linked artifact | no solution without source |
-> | candidate ID | stable row reference | never "Solution A" |
-> | coverage check | evidence-backed link | missing = finding |
-
 A **view of existing artifacts**, not another source of truth. Link `GOAL`, `PROB`, `OPP`, solution
 briefs and `EXP` notes rather than copying their contents. Torres's "opportunity" maps to this
 vault's problem plus its assessment; do not create a third opportunity category.
