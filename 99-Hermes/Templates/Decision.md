@@ -56,17 +56,28 @@ The patient uncertainty is credible, but data ownership, the buyer, and estimate
 | Reversibility | medium — code and data commitments | medium — contract and integration | high — no build started |
 | Evidence confidence | low | low | high for learning; no patient outcome |
 
+> Ratings are relative judgments based on the sources in **Research basis**; they are not quantified estimates.
+
 ## Tradeoff detail
 
-- **Speed to validated learning** — Defer tests comprehension and data access within one review cycle. Build and partner delay learning until data access, terms, and reconciliation are resolved.
-- **Data-access confidence** — This is the feasibility gate: without reconciled estimate data, build and partner are not viable. Defer only tests whether access is possible.
-- **Patient impact if correct** — Build gives full control of the estimate experience; partner reuses an estimator but accepts its constraints. Defer creates no patient impact now.
-- **Build and operating cost** — Build carries engineering, integration, reconciliation, and support cost. Partner trades build cost for integration and partner management; defer is cheapest.
-- **Partner dependency** — Partner creates exposure to another company’s terms, roadmap, API, and pricing. Build and defer do not.
-- **Reversibility** — Build and partner carry sunk effort, contracts, or integration work. Defer is highly reversible because no build or contract has started.
-- **Evidence confidence** — Build and partner rest on unvalidated data-access and cost assumptions. Defer has high confidence for learning, but no patient-outcome evidence.
+- **Speed to validated learning** — A national patient-specific estimate pipe cannot be assumed: the Advanced Explanation of Benefits requirement for insured patients is not operational, and standards work is still in progress [S5]. Defer can test comprehension and data access inside one review cycle; build and partner wait on data access, terms, and reconciliation.
+- **Data-access confidence** — CMS says payer machine-readable files are large, lack context, and often contain limited or no out-of-network allowed-amount data [S1]. Hospital price-transparency files exist, but compliance and format consistency are uneven [S2][S3]. A commercial consumer-pricing API exists, but personalized estimate coverage is limited to specific plans [S4].
+- **Patient impact if correct** — The survey signal is stated intent, not observed behaviour: 43% said they would likely postpone care without an accurate estimate [S6]. Build and partner could improve the booking decision; defer creates no patient impact now.
+- **Build and operating cost** — Price-transparency tooling requires significant personnel and financial investment; machine-readable files can be too large for existing hospital websites and need frequent refresh [S2]. Build carries the highest cost; partner trades build cost for integration and partner management; defer is cheapest.
+- **Partner dependency** — A partner API can supply patient-specific pricing, but personalized estimates cover a limited set of plans, other plans are pre-benefit pricing only, and real patient data requires a signed BAA [S4]. That creates terms, coverage, and vendor dependency.
+- **Reversibility** — This is a judgment, not an external research finding: defer is highly reversible because no build or contract has started; build and partner create sunk effort, contracts, or integration work.
+- **Evidence confidence** — Build and partner rest on unvalidated data-access, coverage, and cost assumptions [S1][S4]. Defer has high confidence for learning, but no patient-outcome evidence [S6].
 
-> Reassess the weights and ratings if data access, partner terms, or behavioural evidence changes.
+## Research basis
+
+| Ref | Source | What it establishes |
+|---|---|---|
+| S1 | [CMS, Transparency in Coverage Final Rules](https://www.cms.gov/newsroom/fact-sheets/transparency-coverage-final-rules-cms-9882-f) | Payer price files are required, but CMS identifies large file size, missing context, misalignment with hospital data, and limited out-of-network allowed amounts as barriers. |
+| S2 | [AHA, Hospital Price Transparency: Current Landscape](https://www.aha.org/fact-sheets/2026-06-05-fact-sheet-hospital-price-transparency-current-landscape-and-better-path-forward) | Hospitals must publish machine-readable files and consumer tools; tooling requires significant investment, and AEOB is not yet implemented. |
+| S3 | [TechTarget, CMS price transparency challenges](https://www.techtarget.com/revcyclemanagement/feature/How-the-CMS-price-transparency-rule-challenges-hospitals) | Hospital machine-readable file posting is widespread, but compliant format adoption remains incomplete. |
+| S4 | [Turquoise Health, Consumer Pricing API](https://turquoise.health/api/docs) | A commercial API can return patient-specific estimates, but personalized coverage is limited by plan, other plans use pre-benefit pricing, and real patient data requires a BAA. |
+| S5 | [CMS, Progress Toward AEOB Rulemaking](https://www.cms.gov/files/document/progress-aeob-rulemaking-implementation.pdf) | The insured-patient AEOB requirement is not operational; data-exchange standards and rulemaking are still being developed. |
+| S6 | [William Blair, Consumer-Centric Healthcare 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing Experian Health | 41% received an estimate; 71% said it was accurate to $400; 43% said they would likely postpone without an accurate estimate — stated intent, not observed behaviour. |
 
 ## What each option gives up
 
