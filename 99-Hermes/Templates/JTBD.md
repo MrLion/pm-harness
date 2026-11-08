@@ -32,4 +32,4 @@ When I need outpatient imaging, I want to know what it will cost me before I boo
 
 ## Evidence
 
-- [[PM vault/99-Hermes/Templates/Research|RESEARCH-001]] — secondary survey evidence only.
+- [[Research|RESEARCH-001]] — secondary survey evidence only.
