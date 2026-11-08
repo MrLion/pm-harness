@@ -28,6 +28,13 @@ Delete the `[!example]` block before using a template for real work.
 | [[Review]] | `08-Reviews/` | Pichler + SVPG | goal vs outcome, risk retired vs not |
 | [[JTBD]] | `01-Users/JTBD/` | — | supporting lens for Problem and Persona |
 
+## Opportunity examples
+
+These extra example notes make the dashboard’s recommendation states visible:
+
+- [[Example-OPP-002-Defer|OPP-002 — defer]]
+- [[Example-OPP-003-No-Go|OPP-003 — no-go]]
+
 ## Frontmatter contract
 
 Every Dataview table in this vault reads **frontmatter keys**, not headings. `TABLE a, b` renders
