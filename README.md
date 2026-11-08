@@ -1,96 +1,126 @@
-# Hermes-PM
+# Hermes PM
 
-The product brain, in plain Markdown. Obsidian is the UI, Hermes is the reasoning layer,
-git is the audit trail.
+Turn customer signal and feature requests into evidence-backed problems, opportunities, decisions,
+experiments and delivery briefs. **Obsidian is the workspace; `/pm` is the reasoning layer; git is
+the audit trail.**
 
-## Structure
+The harness will not invent evidence, silently rewrite strategy, or produce a solution brief before
+validation. Empty fields and `Evidence unavailable.` are preferable to plausible fiction.
 
+## Start in five minutes
+
+1. Open the iCloud **`Documents`** vault in Obsidian. `PM vault` remains a folder inside it.
+2. Enable **Dataview** in that parent vault: Settings → Community plugins.
+3. Open **`PM vault/Dashboard.md`**. Empty tables are normal before any artifacts exist.
+4. Follow **[[START-HERE]]** for your first problem-to-experiment workflow.
+
+No paid Obsidian features or GitHub repository are required.
+
+## Choose your starting point
+
+| You have… | Start here |
+|---|---|
+| A feature idea | Convert it to a problem with `/pm discover <area>` |
+| A user complaint or support signal | Create a Feedback note, then a Problem |
+| Interview or market material | Add a Research note and link the claims it supports |
+| Several possible opportunities | `/pm analyze OPP-001` |
+| An opportunity you feel optimistic about | `/pm challenge OPP-001` |
+| A defined product with goals and metrics | Fill Product, Goals and Metrics, then `/pm status` |
+| No defined product yet | Start with research and problems; skip strategy and PRDs |
+| Existing PRDs, roadmaps or decision documents | Add them as source material, then `/pm review` |
+
+Replace `OPP-001` with the actual ID of your note.
+
+## The operating loop
+
+```text
+Problem → Evidence → Opportunity → Challenge
+                              ├── uncertain → Experiment → revise Opportunity
+                              └── sufficient evidence
+                                            ↓
+                             Decision → Solution brief → Delivery → Release → Review
 ```
-00-Product/      the current truth about the product (scaffold until filled)
-01-Users/        personas, jobs-to-be-done, raw feedback
-02-Problems/     PROB-NNN — who hurts, how often, what it costs
-03-Opportunities/ OPP-NNN + Discovery Map — assessments and the Opportunity Solution Tree
-04-Research/     market · competitors · users · data
-05-Decisions/    DEC-NNN — options, tradeoffs, outcome, review date
-06-Roadmap/      Now / Next / Later
-07-Delivery/     PRDs · Experiments · Releases
-08-Reviews/      YYYY-MM — what we said, what happened, what we learned
-99-Hermes/       Rules.md (the law) · PM.md (agent brief) · Templates/
-Dashboard.md     live cockpit (Dataview)
-```
+
+Two linked views keep the reasoning visible:
+
+- **[[Discovery Map]]** — outcome → problems → opportunities → alternative solutions → experiments
+- **[[Goals]]** — Objective and Key Results plus goal → actor → behaviour change → deliverable
 
 ## Commands
 
-| Command | Does |
-|---|---|
-| `/pm status` | health, top problems/opportunities, stale items, one recommended action |
-| `/pm discover [query]` | find problems from vault + web + GitHub, write PROB notes |
-| `/pm analyze <ID>` | evidence audit, impact, alternatives, risks, unknown, cheapest experiment |
-| `/pm challenge <ID>` | adversarial review, written into the note |
-| `/pm prd <ID>` | PRD draft — refuses if validation gate unmet |
-| `/pm decide <question>` | decision record, proposed not accepted |
-| `/pm review` | vault-wide audit: stale, orphaned, unsupported, contradictions, unrecorded outcomes |
-
-## Where this vault sits
-
-`PM vault` is a **folder inside the iCloud `Documents` Obsidian vault**, not a vault of its own.
-That matters for Dataview:
-
-- The plugin is installed and enabled in the **parent** vault (`Documents/.obsidian/plugins/dataview/`).
-- Every query therefore references the folder path: `FROM "PM vault/02-Problems"`.
-- `PM vault/.obsidian/` is inert — Obsidian ignores a nested folder's config. It stays on disk for
-  possible future standalone use but is **not tracked in git**. If you convert modes, every `FROM`
-  must lose its `PM vault/` prefix again.
-
-Trade-off accepted: one vault, one plugin install, one trust prompt — at the cost of PM notes
-sharing a graph and search index with whatever else lives in `Documents`.
-
-## Frameworks
-
-Templates are not invented. Each quotes a published method's structure and checklist, with attribution:
-
-| Layer | Methods | Role in the harness |
+| Command | Use when | Produces |
 |---|---|---|
-| **Direction and planning** | **Roman Pichler** (*Strategize*) | Product Vision Board, strategy, GO Roadmap, personas and solution canvas define what we are building and why. |
-| **Discovery and validation** | **SVPG / Marty Cagan** + **Teresa Torres** | Opportunity assessments and the four risks test whether we should build; the Opportunity Solution Tree shows how outcomes, problems, solutions and experiments connect. |
-| **Alignment and causality** | **OKRs** + **Impact Mapping** | One Objective per horizon, measurable Key Results, and an explicit goal → actor → behaviour change → deliverable chain. |
-| **Measurement and learning** | **North Star** + **Pichler KPI selection** | One customer-value North Star with inputs and guardrails, supported by a small set of precise KPIs and outcome reviews. |
+| `/pm status` | You want current health and one next action | Read-only summary |
+| `/pm discover <area>` | You need candidate problems | Research/problem notes and OST links |
+| `/pm analyze OPP-001` | You need evidence, impact, alternatives and risks | Opportunity analysis |
+| `/pm challenge OPP-001` | You want adversarial review | Objections, no-go/defer options, cheapest test |
+| `/pm prd OPP-001` | Validation has passed | Solution brief—or a refusal explaining the gate |
+| `/pm decide <question>` | A significant choice must be recorded | Proposed decision record |
+| `/pm review` | You want vault-quality findings | Stale, orphaned, unsupported and map-integrity findings |
 
-These are one operating model, not competing templates. Pichler supplies durable direction; SVPG
-supplies the evidence and risk gate; Torres makes discovery relationships visible; OKRs and Impact
-Mapping align the work; North Star measures customer value. Every template carries a collapsible
-fictional worked example ("Lantern", a clinic scheduling tool) so the shape is obvious.
+## Where does this information go?
 
-Pichler material is quoted under **CC BY-SA 4.0** — see `99-Hermes/Templates/_Templates.md`.
+| Information | Destination |
+|---|---|
+| Verbatim customer complaint | `01-Users/Feedback` |
+| Interview synthesis | `04-Research/Users` |
+| Market sizing or regulatory change | `04-Research/Market` |
+| Competitor or workaround analysis | `04-Research/Competitors` |
+| Metric, query or baseline | `04-Research/Data` |
+| Evidence-backed user pain | `02-Problems` |
+| Proposed opportunity and risk assessment | `03-Opportunities` |
+| Outcome-to-experiment relationships | `03-Opportunities/Discovery Map.md` |
+| Objective, Key Results and Impact Map | `00-Product/Goals.md` |
+| North Star, inputs and guardrails | `00-Product/Metrics.md` |
+| Feature idea without a problem | Do not file it yet; convert it first |
+| Significant choice between options | `05-Decisions` |
+| Riskiest assumption test | `07-Delivery/Experiments` |
+| Validated solution brief | `07-Delivery/PRDs` |
+| Shipped outcome | `07-Delivery/Releases` |
+| Monthly learning and mistakes | `08-Reviews` |
 
-## The loop
+Templates live in `99-Hermes/Templates/`; the index is [[_Templates]].
 
-```
-discover → problem → evidence → opportunity → challenge
-                                   ├── uncertain → experiment ──┐
-                                   └── confident → decision ───┤
-                                                               ▼
-                                       PRD → delivery → metrics → learn → review ↺
-```
-No step is skippable. `99-Hermes/Rules.md` §3 and §7 enforce it.
+## Creating notes correctly
 
-## First run
+- Copy the template's **frontmatter verbatim**, then fill the values.
+- Never change `type:`; Dataview uses it to route notes into tables.
+- Allocate the next ID from the highest existing ID in that folder.
+- Link canonical artifacts with Obsidian internal links; do not duplicate their contents.
+- Delete the collapsible fictional example before using a template for real work.
+- Leave unknowns as `unknown`; do not invent baselines, quotes, dates or market figures.
+- Update `updated:` whenever the note materially changes.
 
-1. Open the parent iCloud `Documents` vault in Obsidian — `PM vault` stays a folder inside it.
-2. Settings → Community plugins → enable **Dataview** in that parent vault.
-3. Open `PM vault/Dashboard.md` — the tables populate from frontmatter as notes land.
-4. Fill `00-Product/Product.md`. While `confidence: none`, `/pm` blocks strategic recommendations,
-   roadmap commitments, decisions and PRDs, but still permits research, discovery, opportunity
-   drafts, experiments and challenge reviews.
+## Dashboard and troubleshooting
 
-## Git
+| Symptom | Meaning | Action |
+|---|---|---|
+| Grey query blocks | Dataview is not loading | Enable it in the parent `Documents` vault |
+| Empty tables | Usually no artifacts yet | Add one correctly typed note |
+| Note missing from a table | Wrong `type`, folder or query prefix | Check frontmatter and the `PM vault/` path |
+| Blank column | Frontmatter key missing | Copy the template schema |
+| New note not immediately visible | Obsidian index lag | Wait a few seconds |
+| Stale item shown | Frontmatter `updated:` is old | Review and update the artifact |
+| Git behaves unexpectedly | `.git` is a pointer file | Do not `git init` or clone here |
 
-Every artifact is a diff. `git log -p 00-Product/` answers "what changed in my strategy, and when".
-Agent writes are reviewable, revertable, and attributable.
+## A useful operating cadence
 
-**The git directory lives outside iCloud** — at `~/Documents/pm-vault-git`. `.git` in this folder is a
-one-line pointer file. This is deliberate: iCloud syncing git internals across devices corrupts
-object databases and collides indexes. Notes sync via iCloud; history stays on the Mac, safe.
+- **As signal arrives:** capture Feedback, Research and Problems.
+- **Weekly:** `/pm status`; challenge the leading opportunity; review experiments.
+- **Before committing:** opportunity assessment, alternative solutions, evidence and decision record.
+- **After shipping:** Release note with metric movement and surprises.
+- **Monthly:** `/pm review` plus a Review note covering goals, risks and mistakes.
 
-Never `git init` here again, never move the git dir into iCloud, and never clone this vault —
-it would create a second, diverging history.
+## Permissions and privacy
+
+Research, problems, opportunities, experiments and reviews are agent-writable. PRDs and roadmap
+changes are drafts. Product strategy and accepted decisions require human approval; see [[Rules]].
+
+Customer quotes and account names can be sensitive. Remove unnecessary personal information before
+putting feedback into an iCloud-synced vault.
+
+## Learn more
+
+- **[[START-HERE]]** — first guided workflow
+- **[[Frameworks]]** — how Pichler, SVPG, Torres, Impact Mapping, OKRs and North Star fit together
+- **[[Architecture]]** — folder mode, frontmatter, query paths, git and agent write boundaries

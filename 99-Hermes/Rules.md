@@ -37,7 +37,7 @@ Decision Record. Verbal decisions do not exist.
 `Problem → Evidence → Opportunity → Challenge`. If uncertainty is high, run an
 **Experiment** and revise the Opportunity before deciding. Then:
 `Decision → PRD → Delivery → Metrics → Review`.
-Every link is a `[[wikilink]]`. An orphaned artifact is a defect to report in `/pm review`.
+Every artifact reference is an Obsidian internal link. An orphaned artifact is a defect to report in `/pm review`.
 
 ## 8. Never fabricate evidence
 If information is unavailable, write `Evidence unavailable.` Do not invent customer quotes,
