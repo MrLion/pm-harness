@@ -1,6 +1,6 @@
 # Scenario
 
-> Pre-filled examples: [[99-Hermes/Templates/Pre-filled/README|Pre-filled templates]]
+> Pre-filled templates: [[99-Hermes/Templates/_Templates|Templates]]
 
 ## Main scenario
 

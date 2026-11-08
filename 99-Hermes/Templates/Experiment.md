@@ -1,71 +1,50 @@
 ---
 type: experiment
 artifact: experiment
-id: EXP-000
+id: EXP-001
 status: planned
-risk_type: value
-risk_owner: PM
-opportunity: "[[OPP-000]]"
-start: YYYY-MM-DD
-end: YYYY-MM-DD
-cost: unknown
-created: YYYY-MM-DD
+risk_type: usability
+risk_owner: Design
+opportunity: "[[OPP-001]]"
+start: 2026-11-10
+end: 2026-11-21
+cost: 5 interviews
+created: 2026-11-08
 framework: SVPG
 source: https://www.svpg.com/four-big-risks/
-updated: YYYY-MM-DD
+updated: 2026-11-08
+example: true
 ---
 
-# Experiment
-
-## Example — cost estimate usability
-
-> [!example]- Example — HDHP outpatient imaging
-> **Risk:** usability (comprehension).
-> **Hypothesis:** Patients can correctly explain what an outpatient imaging estimate includes, excludes, and how long it is valid.
-> **Design:** 5 interviews with a paper prototype of an outpatient imaging estimate.
-> **Success:** ≥4 of 5 correctly explain all three.
-> **Failure:** ≤3 of 5 can explain them.
-> **Kill:** ≤2 of 5 can explain; the prototype is unusable.
-> **Cost:** 5 interviews.
-> **Not tested here:** reduced postponement. That is a separate behavioural pilot.
->
-> Sourced example, not product evidence.
-
-An experiment exists to retire **one primary named risk**. If you cannot name which of the four
-risks it targets (value, usability, feasibility or viability), it is not an experiment — it is a
-build. Secondary observations may be recorded, but they do not redefine the experiment.
-
-> [!quote] Why experiments before builds
-> Product discovery retires value and business risk early, while the cost of being wrong is
-> still a prototype rather than a shipped feature.
+# Experiment — can patients understand an imaging estimate?
 
 ## Risk being retired
 
 | Field | Content |
 |---|---|
-| Risk type | value / usability / feasibility / business viability |
-| Assumption | [FILL] |
-| Opportunity | [[OPP-000]] |
+| Risk type | usability (comprehension) |
+| Assumption | Patients can explain what an estimate includes, excludes, and how long it is valid |
+| Opportunity | [[OPP-001]] |
 
 ## Hypothesis
 
-> We believe **[FILL: change]** will cause **[FILL: measured effect]** for **[FILL: population]**, measured by **[FILL: metric]**.
+> We believe a patient-readable estimate with inclusions, exclusions, and validity will cause at least 4 of 5 interviewed patients to explain all three correctly, measured by a comprehension task.
 
 ## Design
 
-[FILL: Fake door / concierge / prototype test / A/B / 5 interviews. State the cheapest version that works.]
+5 moderated interviews using a paper prototype of an outpatient imaging estimate.
 
 | Field | Content |
 |---|---|
-| Population | |
-| Duration | [FILL: and why that is long enough to see signal] |
-| Cost | |
+| Population | Adults on employer-sponsored HDHPs who have recently sought outpatient imaging |
+| Duration | 45 minutes per interview |
+| Cost | 5 interviews |
 
 ## Pre-registered criteria
 
 | Success | Failure | Kill |
 |---|---|---|
-| [FILL: decide now, before data] | | |
+| ≥4 of 5 explain all three correctly | ≤3 of 5 explain all three | ≤2 of 5 explain all three; prototype unusable |
 
 ## Result
 
@@ -73,7 +52,8 @@ Pending
 
 ## Secondary observations
 
-- [FILL: observations outside the primary risk; not decision evidence unless pre-registered]
+- Record where patients look first, what they ask, and which terms confuse them.
+- Do not treat these as evidence of behavioural impact.
 
 ## What we learned
 
@@ -81,14 +61,8 @@ Pending
 
 ## Decision
 
-Pending — link the resulting [[DEC-000]] or updated [[OPP-000]].
+Pending — link the resulting [[DEC-001]] or updated [[OPP-001]].
 
----
+## Scope note
 
-> [!example]- Worked example — fictional
-> **Risk:** value — will staff accept a shift offer without being phoned?
-> **Hypothesis:** an offer sent to eligible staff will be accepted within 10 minutes in ≥50% of
-> gaps, for 2 pilot clinics over 2 weeks, measured by offer-acceptance rate.
-> **Design:** fake-door offer in the existing WhatsApp flow, one staff group, no app build.
-> **Success:** ≥50% acceptance in 10 min. **Failure:** <20%. **Kill:** <10% after week 1.
-> **Cost:** 2 days of build, no new infrastructure.
+This tests comprehension, not reduced postponement. Behavioural impact requires a separate pilot.

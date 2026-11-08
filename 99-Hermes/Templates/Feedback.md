@@ -1,74 +1,51 @@
 ---
 type: feedback
 artifact: feedback
-id: FB-000
-date: YYYY-MM-DD
-source: TBD
-sentiment: neutral
-account: TBD
-created: YYYY-MM-DD
+id: FB-001
+date: 2026-11-08
+source: illustrative paraphrase
+sentiment: negative
+account: illustrative HDHP patient
+created: 2026-11-08
 framework: none
-updated: YYYY-MM-DD
+updated: 2026-11-08
+example: true
 ---
 
-# Feedback
-
-## Example — out-of-pocket cost uncertainty
-
-> [!example]- Example — HDHP outpatient imaging
-> **Source:** Illustrative patient, employer-sponsored HDHP, after outpatient imaging.
-> **Paraphrase:** They did not know the final out-of-pocket cost until after the visit.
-> **Situation:** Choosing outpatient imaging.
-> **Frequency:** 1 illustrative account — not a recurrence count.
->
-> This is an illustrative paraphrase, not a real quote.
-
-Raw customer signal. Keep the original wording. A paraphrase is your interpretation, not evidence.
+# Feedback — out-of-pocket cost uncertainty
 
 ## Source
 
 | Field | Content |
 |---|---|
-| Channel | support / interview / review / sales / churn / community |
-| Source link or ticket | [FILL] |
-| Date received | [FILL] |
-| Account or segment | [FILL] |
-| Sentiment | positive / neutral / negative |
+| Channel | interview / illustrative |
+| Source link or ticket | none — illustrative |
+| Date received | 2026-11-08 |
+| Account or segment | HDHP adult choosing outpatient imaging |
+| Sentiment | negative |
 
-## Verbatim signal
+## Paraphrase
 
-> "[FILL — exact words]" — [FILL: who], [FILL: when]
+> "I did not know what the final out-of-pocket cost would be until after the visit."
+
+— illustrative patient, not a real quote
 
 ## Situation
 
-[FILL: What were they trying to accomplish when this came up?]
+Choosing outpatient imaging and deciding whether to book.
 
 ## Underlying problem
 
-[FILL: Convert feature requests into the problem behind them. Link [[PROB-000]] when one exists.]
+Unknown until a real interview — likely cost uncertainty plus unclear inclusions and exclusions.
 
 ## Frequency across accounts
 
 | Distinct accounts raising this | Period | Evidence |
 |---|---|---|
-| 1 | [FILL] | [FILL] |
+| 0 real accounts | — | illustrative only |
 
 ## What this does NOT tell us
 
-- [FILL]
-
-## Related
-
-- [[PROB-000]] · [[OPP-000]]
-
----
-
-> [!example]- Worked example — fictional
-> **Source:** support ticket #1842, 2026-02-11, 14-person clinic, negative sentiment.
-> **Verbatim:** "I still end up ringing the same three people because the app offers it to everyone
-> at once." — practice manager.
-> **Situation:** covering a same-day absence twenty minutes before opening.
-> **Underlying problem:** eligibility ranking is not trusted when the manager is under time pressure.
-> **Frequency:** 3 distinct accounts in 30 days; tickets #1842, #1901, #1977.
-> **Does not tell us:** whether better ranking would change behaviour, or whether these three clinics
-> share an unusual staffing pattern.
+- Whether this is common.
+- Whether an estimate would change the decision.
+- Whether the problem is price level or price uncertainty.

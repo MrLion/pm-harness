@@ -3,83 +3,58 @@ type: metrics
 artifact: metrics
 framework: "Pichler + North Star"
 status: draft
-confidence: none
-north_star: TBD
-north_star_definition: TBD
-north_star_source: TBD
-updated: YYYY-MM-DD
+confidence: low
+north_star: Share of eligible outpatient imaging requests that receive a pre-booking estimate
+north_star_definition: Eligible requests include those that do not end in a booking. Pre-booking means shown before confirmation or abandonment.
+north_star_source: request + booking system
+updated: 2026-11-08
 source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/ + https://amplitude.com/books/north-star/about-north-star-framework"
+example: true
 ---
 
-# Metrics
-
-## Example — transparent outpatient imaging
-
-> [!example]- Example — HDHP outpatient imaging
-> **North Star:** Share of eligible outpatient imaging requests that receive a pre-booking estimate.
-> **Definition:** Eligible = requests for outpatient imaging, including requests that do not end in a booking. Pre-booking = shown before confirmation or abandonment. Denominator = all eligible requests in the period. Source: request + booking system.
-> **Accuracy companion:** Among reconciled cases, share of estimates within $400 of final patient responsibility. Report separately from coverage.
-> **Guardrail:** Underestimation over $400 must not exceed 10% of reconciled estimates.
-> **Threshold status:** $400 and 10% are provisional; validate against patient expectations before launch. The $400 figure is a survey accuracy band, not a product standard.
->
-> Sourced example, not product evidence.
+# Metrics — estimate coverage and reconciliation
 
 ## North Star Metric
 
-[FILL]
+Share of eligible outpatient imaging requests that receive a pre-booking estimate.
 
 | Requirement | Answer |
 |---|---|
-| Represents value customers actually receive | [FILL] |
-| Precise definition, including exclusions and window | [FILL] |
-| Source of truth | [FILL] |
+| Represents value customers actually receive | Patients get cost information before deciding |
+| Precise definition, including exclusions and window | Eligible requests include non-bookers; excludes cancelled visits and self-pay; measured weekly |
+| Source of truth | request + booking system |
 | Current value | unknown |
-| Why it is a leading indicator of sustainable results | [FILL] |
-
-> One North Star per product. If the team can move it directly without creating customer value,
-> it is probably the wrong metric.
+| Why it is a leading indicator of sustainable results | Coverage is necessary for any patient decision effect |
 
 ## North Star inputs
 
 | Input metric | Definition | Current | Owner |
 |---|---|---|---|
-| [FILL] | [FILL] | unknown | [FILL] |
+| Eligible imaging requests | Requests for covered outpatient imaging | unknown | PM |
+| Estimate delivery rate | Share of eligible requests shown an estimate | unknown | Eng |
 
 ## Guardrails
 
 | Metric | Definition | Threshold |
 |---|---|---|
-| [FILL] | [FILL] | [FILL] |
+| Reconciled accuracy | Share of reconciled estimates within $400 of final responsibility | ≥70% (provisional) |
+| Underestimation | Share of reconciled estimates under $400 | ≤10% (provisional) |
 
 ## Supporting KPIs
 
 | Layer | Metric | Definition | Current | Source of truth | Owner |
 |---|---|---|---|---|---|
-| Lagging (outcome) | [FILL] | | unknown | | |
-| Leading (behaviour) | [FILL] | | unknown | | |
-| Health (guardrail) | [FILL] | | unknown | | |
+| Lagging (outcome) | Booking decisions after estimate | Share of patients who book, switch, or defer after seeing estimate | unknown | booking + survey | PM |
+| Leading (behaviour) | Estimate views | Share of eligible requests with an estimate opened | unknown | product analytics | Eng |
+| Health (guardrail) | Complaint rate | Surprise-bill complaints per 1,000 bookings | unknown | support | PM |
 
 ## Instrumentation gaps
 
 | Metric we need | Why we can't measure it yet | Fix |
 |---|---|---|
-| [FILL] | | |
+| Non-booker estimate coverage | Request system may not capture abandonment | Add event tracking |
+| Final patient responsibility | Needs billing reconciliation | Partner data review |
 
 ## Related
 
-- [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Strategy|Strategy]]
-
----
-
-> [!example]- Worked example — fictional
-> **North Star:** shifts successfully filled per active clinic per week.
-> **Definition:** a shift counts once when an eligible staff member accepts and the assignment is
-> not subsequently cancelled; cancelled shifts and test accounts are excluded; measured weekly.
-> **Why:** it represents the operational value clinics buy, and repeated weekly value should precede
-> retention and revenue. Source: assignment event log. Current value: unknown until instrumented.
->
-> **Inputs:** offer acceptance rate · median time-to-fill · active clinics with at least one gap.
-> **Guardrail:** illegal assignments must remain 0; cancellation rate must not exceed baseline.
->
-> **Instrumentation gap:** the metric does not exist historically. Record `unknown`; do not infer it
-> from registered clinics or total offers sent.
+- [[Goals]] · [[Strategy]]

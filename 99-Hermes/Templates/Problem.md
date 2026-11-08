@@ -1,80 +1,65 @@
 ---
 type: problem
 artifact: problem
-id: PROB-000
+id: PROB-001
 status: discovery
-priority: unprioritized
+priority: high
 confidence: low
 frequency: unknown
 severity: unknown
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
+created: 2026-11-08
+updated: 2026-11-08
 framework: none
+example: true
 ---
 
-# Problem
-
-## Example — out-of-pocket cost uncertainty before outpatient imaging
-
-> [!example]- Example — HDHP outpatient imaging
-> **What:** Adults on employer-sponsored HDHPs cannot estimate out-of-pocket cost before outpatient imaging.
-> **Why it matters:** 43% say they would likely postpone care without an accurate estimate (stated intent, not observed behavior).
-> **Evidence:** William Blair *Consumer-Centric Healthcare 2026*; Experian Health *2025 State of Patient Access*.
-> **Template mapping:** Problem → Opportunity → Research → Persona
->
-> Sourced example, not product evidence.
+# Problem — out-of-pocket cost uncertainty before outpatient imaging
 
 ## Problem Statement
 
-[FILL: Who experiences what problem, under what circumstances, and why it matters. No solution language.]
+Adults on employer-sponsored high-deductible health plans cannot estimate their out-of-pocket cost before booking outpatient imaging. They decide whether to book, where to book, and whether the expected cost is tolerable without a reliable estimate.
 
 ## User / Segment
 
-[[PERSONA-000]]
+[[PERSONA-001]]
 
 ## JTBD
 
-[[JTBD-000]]
+[[JTBD-001]]
 
 ## Evidence
 
 | Type | Source | Date | Says what | Strength |
 |---|---|---|---|---|
-| interview / metric / ticket / review / support | [[RESEARCH-000]] | | | weak |
+| survey | William Blair, citing Experian Health *2025 State of Patient Access* | Jan 2026 | 41% received an estimate; 71% said it was accurate to $400 | weak |
+| survey | Experian Health *2025 State of Patient Access* | 2025 | 43% said they would likely postpone care without an accurate estimate | weak |
+| survey | Robert Wood Johnson Foundation, reported by William Blair | Jan 2026 | Among patients carrying medical debt, 66.1% had a bill in collections | weak |
 
-> Empty evidence table → this is a hypothesis. Set `confidence: low` and say so out loud.
+> Stated intent is not observed behavior. These sources do not establish that better estimates reduce postponement.
 
 ## Frequency
 
-[FILL: How often, per user per period.]
+Unknown. The source does not report frequency for employer-sponsored HDHP members choosing imaging.
 
 ## Severity
 
-[FILL: What it costs when it happens: time, money, risk, abandonment.]
+Unknown. Not measured: delayed booking, surprise bills, switching, or abandoned care.
 
 ## Current workaround
 
-[FILL: What users do today instead. "Nothing" is a signal.]
+Patients call the provider or insurer, use a portal price tool, ask for a cash price, compare online, or delay the decision.
 
 ## Business impact
 
-[FILL: What it costs us. Evidence, not vibes.]
+Evidence unavailable. Potential effects to measure: delayed bookings, call-centre volume, surprise-bill complaints, and trust.
 
 ## Assumptions / Unknowns
 
-- 
+- The patient, not the provider or payer, is the buyer.
+- The patient can access and understand an estimate before committing.
+- Accuracy and coverage can be measured without exposing the patient to misleading prices.
+- Employer-sponsored HDHP members are not the same population as the survey sample.
 
 ## Related Opportunities
 
-- [[OPP-000]]
-
----
-
-> [!example]- Worked example — fictional
-> **Statement:** Practice managers in 5–20-staff clinics lose 3–6 hours a week phoning staff to
-> cover unexpected shift gaps, and still open short-staffed about one morning a month.
-> **Frequency:** 2–4 gaps per clinic per week. **Severity:** ~6 calls per gap, 45-min median; a
-> missed open costs half a day of appointments.
-> **Workaround:** a personal WhatsApp list of reliable staff, ordered from memory.
-> **Evidence:** 11 interviews (9 describe the phone tree), 3 weeks of support tickets.
-> Confidence: medium.
+- [[OPP-001]]

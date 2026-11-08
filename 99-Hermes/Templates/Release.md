@@ -1,67 +1,45 @@
 ---
 type: release
 artifact: release
-id: REL-000
-date: YYYY-MM-DD
-status: released
-goal: TBD
-metric_result: TBD
-roadmap: TBD
-created: YYYY-MM-DD
+id: REL-001
+date: 2027-01-15
+status: planned
+goal: Reduce out-of-pocket uncertainty before outpatient imaging
+metric_result: Pending
+roadmap: NOW
+created: 2026-11-08
 framework: Pichler
-updated: YYYY-MM-DD
+updated: 2026-11-08
+example: true
 ---
 
-# Release
-
-A delivery record tied to the GO Roadmap goal it was meant to move. Without a goal and a measured
-result, this is a deployment log rather than a learning artifact.
-
-## Example — outpatient cost estimator pilot
-
-> [!example]- Example — HDHP outpatient imaging
-> **Release:** Cost estimator MVP.
-> **Goal:** Reduce out-of-pocket uncertainty before outpatient imaging.
-> **Metric:** Share of eligible imaging requests that receive a pre-booking estimate; accuracy of reconciled estimates reported separately.
-> **Follow-up:** Add provider matching only if the estimator pilot succeeds.
->
-> Sourced example, not product evidence.
+# Release — imaging estimate pilot
 
 ## Release
 
 | Field | Content |
 |---|---|
-| Date | [FILL] |
-| Contents | [FILL] |
-| GOAL it was meant to move | [FILL] |
-| Roadmap row | [[Now]] |
-| Related opportunity / brief | [[OPP-000]] · [[PRD-000]] |
+| Date | 2027-01-15 (planned) |
+| Contents | Pre-booking estimate for one outpatient imaging type |
+| GOAL it was meant to move | Reduce out-of-pocket uncertainty before imaging |
+| Roadmap row | NOW |
+| Related opportunity / brief | [[OPP-001]] · [[PRD-001]] |
 
 ## Metric movement
 
 | Metric | Before | After | Window | Source |
 |---|---|---|---|---|
-| [FILL] | unknown | unknown | [FILL] | [FILL] |
+| Share of eligible requests with a pre-booking estimate | unknown | TBD | 30 days | request + booking system |
+| Share of reconciled estimates within $400 | unknown | TBD | 30 days | billing reconciliation |
 
 ## What surprised us
 
-- [FILL]
+- To be recorded after the pilot.
 
 ## Unexpected cost
 
-- Support load / incidents / debt / rollback: [FILL]
+- Support load, reconciliation effort, data access cost: TBD.
 
 ## Follow-up
 
-- [FILL]
-
----
-
-> [!example]- Worked example — fictional
-> **Lantern 1.4 — Instant Gap**, released 2026-03-12: gap auto-offer, rank-order eligibility,
-> two-tap mobile accept. **Goal:** fill an open shift without the manager phoning anyone.
-> **Metric:** gaps filled without a manager call moved from 22% to 47% in the 30 days after release,
-> against a 60% target. Source: event log.
-> **Surprise:** offers sent during a shift were ignored; reminders at shift start performed better.
-> **Unexpected cost:** ranking explanations generated 11 support tickets in week one.
-> **Follow-up:** EXP-002 tests notification timing before changing the ranking model.
+- Add provider matching only if the estimate pilot succeeds.

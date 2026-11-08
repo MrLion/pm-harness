@@ -3,42 +3,28 @@ type: goals
 artifact: goals
 framework: "Pichler + OKR + Impact Mapping"
 status: draft
-confidence: none
-objective: TBD
-period: TBD
-updated: YYYY-MM-DD
+confidence: low
+objective: Reduce out-of-pocket cost uncertainty before elective outpatient imaging
+period: Q1 pilot
+updated: 2026-11-08
 source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://www.impactmapping.org/"
+example: true
 ---
 
-# Goals — OKR + Impact Map
-
-## Example — cost transparency for outpatient imaging
-
-> [!example]- Example — HDHP outpatient imaging
-> **Objective:** Reduce out-of-pocket cost uncertainty before elective outpatient imaging.
-> **KR 1:** Increase pre-booking estimate coverage from unknown → at least 60% of eligible imaging requests by the end of the Q1 pilot (provisional).
-> **KR 2:** Among reconciled estimates, at least 70% within $400 of final patient responsibility by the end of the Q1 pilot (provisional).
-> **Actor:** Patient requesting outpatient imaging.
-> **Behavior change:** Use an estimate before deciding whether to book.
-> **Deliverable:** Cost estimator MVP.
->
-> Sourced example, not product evidence.
-
-> One objective per horizon. Pichler's **single goal** rule still applies to each roadmap row;
-> OKR key results measure that objective rather than creating competing objectives.
+# Goals — cost certainty before imaging
 
 ## Objective
 
-[FILL] — qualitative, outcome-oriented, and meaningful without mentioning a feature.
+Reduce out-of-pocket cost uncertainty before elective outpatient imaging.
 
 ## Key Results
 
 | KR | Metric | Baseline | Target | Deadline | Confidence |
 |---|---|---|---|---|---|
-| KR1 | [FILL] | unknown | [FILL] | [FILL] | none |
-| KR2 | [FILL] | unknown | [FILL] | [FILL] | none |
+| KR1 | Pre-booking estimate coverage | unknown | ≥60% of eligible requests | end of Q1 pilot | low |
+| KR2 | Reconciled accuracy | unknown | ≥70% within $400 | end of Q1 pilot | low |
 
-> A key result with no baseline is not yet measurable. Establish the baseline or mark the target provisional.
+> Both targets are provisional. Validate against patient expectations.
 
 ## Impact Map
 
@@ -46,39 +32,18 @@ source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://w
 
 | Who (actor) | How (required behaviour change) | What (deliverable) | Evidence the behaviour changed |
 |---|---|---|---|
-| [FILL] | [FILL] | [FILL] | [FILL] |
-
-> A deliverable belongs here only if it could plausibly produce the stated behaviour change.
-> Find the shortest path to the goal; do not implement the whole map.
+| HDHP patient | Uses an estimate before deciding whether to book | Pre-booking estimate | Coverage and booking-decision follow-up |
+| Provider staff | Explains inclusions and exclusions | Estimate explanation | Comprehension test |
 
 ## Non-goals this horizon
 
-- [FILL]
+- Provider matching
+- Appointment scheduling
+- Claims adjudication
+- Financial assistance screening
 
 ## Goal → roadmap traceability
 
 | Objective / KR | Roadmap entry | Opportunity |
 |---|---|---|
-| [FILL] | [[Now]] | [[OPP-000]] |
-
-## Related
-
-- [[PM vault/00-Product/Metrics|Metrics]] · [[PM vault/00-Product/Strategy|Strategy]] · [[Discovery Map]]
-
----
-
-> [!example]- Worked example — fictional
-> **Objective:** Make same-day gap filling routine rather than heroic.
->
-> | KR | Metric | Baseline | Target | Deadline |
-> |---|---|---|---|---|
-> | KR1 | Gaps filled without a manager call | 22% | 60% | 31 Mar |
-> | KR2 | Median time-to-fill | 45 min | 15 min | 31 Mar |
->
-> **Impact Map**
-> | Who | How | What | Evidence |
-> |---|---|---|---|
-> | Practice managers | Choose auto-offer instead of starting a phone tree | Gap auto-offer | Auto-filled share reaches 60% |
-> | Staff | Respond to an offer during a shift | Two-tap mobile accept | Median acceptance under 10 min |
->
-> The map does not imply building payroll, HR records, or a full rota builder. Those are non-goals.
+| KR1 / KR2 | [[NOW]] | [[OPP-001]] |

@@ -1,94 +1,73 @@
 ---
 type: decision
 artifact: decision
-id: DEC-000
+id: DEC-001
 status: proposed
-date: YYYY-MM-DD
-review_date: YYYY-MM-DD
-reversibility: medium
+date: 2026-11-08
+review_date: 2026-12-08
+reversibility: high
 expected_outcome: TBD
 actual_outcome: Pending
 framework: none
-updated: YYYY-MM-DD
+updated: 2026-11-08
+example: true
 ---
 
-# Decision
-
-## Example — build vs partner for cost estimator
-
-> [!example]- Example — HDHP outpatient imaging
-> **Question:** Should we build, partner, or defer on a transparent outpatient cost estimate?
-> **Context:** The patient decision friction is real, but data ownership, buyer, and estimate reconciliation are unresolved.
-> **Options:** Build · partner with an existing estimator · defer until feasibility and data access are proven
-> **Decision gate:** No build until the data owner, buyer, and achievable estimate scope are known.
-> **Why not build yet:** data access, estimate accuracy, and the buyer are unproven; a partner may get there faster.
-> **Reversibility:** high
-> **Review:** after feasibility check
->
-> Sourced example, not product evidence.
+# Decision — build, partner, or defer?
 
 ## Question
 
-[FILL: One sentence. If it contains "and", split it into two decisions.]
+Should we build, partner, or defer on a transparent outpatient cost estimate?
 
 ## Context
 
-[FILL: What is true now that forces this.]
+The patient uncertainty is credible, but data ownership, the buyer, and estimate reconciliation are unresolved. The current evidence is market-level and does not establish behavioural impact.
 
 ## Options
 
 | Option | Description | Effort | Risk |
 |---|---|---|---|
-| A — [FILL: name] | [FILL] | [FILL] | [FILL] |
-| B — [FILL: name] | [FILL] | [FILL] | [FILL] |
-| C — do nothing / defer | [FILL] | [FILL] | [FILL] |
+| A — build | Build a scoped estimator for one imaging type | high | high data and reconciliation risk |
+| B — partner | Integrate an existing payer/provider estimator | medium | dependence on partner data and terms |
+| C — defer | Run comprehension and data-access tests first | low | slow progress |
 
 ## Tradeoffs
 
 | Dimension | A | B | C |
 |---|---|---|---|
-| User impact | | | |
-| Business impact | | | |
-| Effort | | | |
-| Risk | | | |
-| Strategic fit | | | |
-| Reversibility | | | |
+| User impact | potentially high | potentially high | none yet |
+| Business impact | unknown | unknown | preserves optionality |
+| Effort | high | medium | low |
+| Risk | high | medium | low |
+| Strategic fit | unknown | unknown | learning first |
+| Reversibility | medium | medium | high |
 
 ## Decision
 
-[FILL: Chosen option.]
+Proposed: defer build until comprehension and data access are proven. Evaluate partner options in parallel.
 
 ## Rationale
 
-[FILL: Why — including what we are knowingly giving up.]
+The evidence supports the problem, not the build. We do not yet know whether a patient-readable estimate changes a decision, or whether existing estimator data can be accessed and reconciled.
 
 ## Assumptions
 
-- [FILL: If wrong, revisit.]
+- If patients cannot explain the estimate, a build is premature.
+- If an existing estimator is good enough, partnership is preferable.
+- If data access is unavailable, the idea is not feasible.
 
 ## Reversibility
 
-High / Medium / Low, and the actual cost of reversal.
+High — no build has started.
 
 ## Expected outcome
 
-[FILL: Measurable. "X moves from A to B by DATE."]
+By 2026-12-08, we know whether 4 of 5 patients can explain the estimate and whether estimate data is accessible.
 
 ## Review date
 
-YYYY-MM-DD
+2026-12-08
 
 ## Actual outcome
 
 Pending
-
----
-
-> [!example]- Worked example — fictional
-> **Question:** do we ship gap-filling first, or the full rota builder?
-> **Context:** pilots ask for gap-filling; the rota builder is 3× the build.
-> **Options:** A gap-filling only · B full rota builder · C do nothing, keep the spreadsheet.
-> **Decision:** A. **Rationale:** retires value risk for the whole thesis in 4 weeks instead of 14;
-> knowingly gives up switching cost — clinics still keep the spreadsheet for planning.
-> **Reversibility:** high — the rota builder can follow without re-architecting.
-> **Expected:** gaps filled without a manager call 22% → 60% by 31 Mar. **Review:** 2026-03-31.

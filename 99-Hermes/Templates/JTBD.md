@@ -1,48 +1,35 @@
 ---
 type: jtbd
 artifact: jtbd
-id: JTBD-000
+id: JTBD-001
 status: draft
 confidence: low
-created: YYYY-MM-DD
-framework: none
-updated: YYYY-MM-DD
+updated: 2026-11-08
+framework: "Jobs to be Done"
+example: true
 ---
 
-# JTBD
+# JTBD — choose imaging with cost clarity
 
-> When **[FILL: situation]**, I want to **[FILL: motivation]**, so I can **[FILL: expected outcome]**.
+## Job story
 
-## Functional job
+When I need outpatient imaging, I want to know what it will cost me before I book, so I can decide whether to proceed, compare providers, or delay.
 
-[FILL: The practical task.]
+## Current alternatives
 
-## Emotional job
+- Call the provider or insurer.
+- Use a portal estimate.
+- Ask for a cash price.
+- Compare online or ask friends.
 
-[FILL: How they want to feel, or avoid feeling.]
+## Desired outcomes
 
-## Social job
+| Outcome | Importance | Satisfaction today | Confidence |
+|---|---|---|---|
+| Know expected out-of-pocket cost | high | unknown | low |
+| Understand what is included and excluded | high | unknown | low |
+| Compare providers on cost | medium | unknown | low |
 
-[FILL: How they want to be seen.]
+## Evidence
 
-## Forces
-
-- **Push** (dissatisfaction with today): 
-- **Pull** (attraction of the new solution): 
-- **Anxiety** (fear about switching): 
-- **Habit** (what keeps them stuck): 
-
-> Anxiety and habit are usually why a validated opportunity still fails to land. Name them early.
-
-## Related
-
-- [[PERSONA-000]] · [[PROB-000]]
-
----
-
-> [!example]- Worked example — fictional
-> When a staff member calls in sick **two hours before opening**, I want to find someone qualified
-> and legally clear to cover, so I can open fully staffed without spending my morning on the phone.
-> **Push:** six calls, and the first two usually decline. **Pull:** one tap, ranked by reliability.
-> **Anxiety:** an automated offer might breach rest-period rules without anyone noticing.
-> **Habit:** the WhatsApp list is in her head and she trusts her own judgement about who to ask.
+- [[RESEARCH-001]] — secondary survey evidence only.

@@ -1,7 +1,7 @@
 ---
 type: opportunity
 artifact: opportunity-assessment
-id: OPP-000
+id: OPP-001
 status: discovery
 confidence: low
 impact: unknown
@@ -11,89 +11,60 @@ score: null
 recommendation: Pending
 risk_type: value
 risk_owner: PM
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
-review_after: YYYY-MM-DD
+created: 2026-11-08
+updated: 2026-11-08
+review_after: 2026-12-08
 framework: SVPG
 source: https://www.svpg.com/assessing-product-opportunities/
+example: true
 ---
 
-# Opportunity (SVPG Product Opportunity Assessment)
-
-## Example — cost transparency in outpatient imaging
-
-> [!example]- Example — HDHP outpatient imaging
-> **Problem:** Adults on employer-sponsored HDHPs cannot estimate out-of-pocket cost before outpatient imaging.
-> **Why it matters:** 43% say they would likely postpone care without an accurate estimate (stated intent, not observed behavior).
-> **Candidate solution:** Transparent outpatient cost estimator (provider matching considered later).
-> **Smallest experiment:** 5 patient interviews with a paper prototype.
->
-> Sourced example, not product evidence.
-
-Ten questions, then the four risks. **The purpose is to kill weak opportunities cheaply**, not to
-justify ones you already want to build.
-
-> [!quote] Cagan, on the hardest question
-> "Ask most product managers what problem their product is intended to solve, and you usually get
-> a rambling list of features and capabilities, rather than a crisp, clear and compelling statement
-> of exactly the problem that's solved."
+# Opportunity — reduce uncertainty before outpatient imaging
 
 ## The ten questions
 
-**1. Exactly what problem will this solve? (value proposition)**
-[FILL]
+**1. Exactly what problem will this solve?**
+Patients cannot estimate their out-of-pocket cost before booking outpatient imaging.
 
-**2. For whom do we solve that problem? (target market)**
-[FILL]
+**2. For whom do we solve that problem?**
+Adults on employer-sponsored HDHPs choosing outpatient imaging.
 
-**3. How big is the opportunity? (market size)**
-[FILL] — be conservative; not every opportunity needs to be a billion-dollar market.
+**3. How big is the opportunity?**
+Unknown. Establish eligible imaging requests and estimate coverage before sizing.
 
-**4. What alternatives are out there? (competitive landscape)**
-[FILL]
+**4. What alternatives are out there?**
+Payer estimators, provider-portal estimators, third-party price comparison, cash-price requests, and calling the provider or insurer.
 
-**5. Why are we best suited to pursue this? (our differentiator)**
-[FILL]
+**5. Why are we best suited to pursue this?**
+Unknown. The differentiator is a hypothesis: a patient-readable estimate with inclusions, exclusions, and validity explained.
 
-**6. Why now? (market window)**
-[FILL]
+**6. Why now?**
+Cost transparency is receiving regulatory and market attention; estimate receipt is rising while perceived accuracy is falling.
 
-**7. How will we get this to market? (go-to-market strategy)**
-[FILL]
+**7. How will we get this to market?**
+Unknown. Buyer and data owner are unresolved: patient, provider, or payer.
 
-**8. How will we measure success / make money? (metrics / revenue)**
-[FILL]
+**8. How will we measure success / make money?**
+Coverage: share of eligible imaging requests that receive a pre-booking estimate. Accuracy: share of reconciled estimates within $400. Business model unknown.
 
-**9. What factors are critical to success? (solution requirements)**
-[FILL]
+**9. What factors are critical to success?**
+Access to usable estimate data; reconciliation against final patient responsibility; patient comprehension; buyer willingness to pay.
 
-**10. Given the above, what's the recommendation? (go / no-go)**
-[FILL — **no-go is a valid and frequent answer**]
-
----
+**10. Given the above, what's the recommendation?**
+Proceed to discovery, not build. Test comprehension and data access first.
 
 ## The four big risks
 
-> [!quote] Cagan's four risks
-> **Value** — will customers buy it or users choose to use it?
-> **Usability** — can users figure out how to use it?
-> **Feasibility** — can our engineers build it with the time, skills and technology we have?
-> **Business viability** — does it work for go-to-market, contracts, legal, acquisition cost,
-> monetisation and brand promise?
-
 | Risk | Rating | Load-bearing assumption | How we'll test it | Owner | Status |
 |---|---|---|---|---|---|
-| Value | unknown | | | PM | untested |
-| Usability | unknown | | | Design | untested |
-| Feasibility | unknown | | | Eng | untested |
-| Business viability | unknown | | | PM | untested |
-
-> The PM owns value and viability and is accountable for the **outcome**. Design owns usability.
-> Engineering owns feasibility. A risk with no owner is a risk nobody is retiring.
+| Value | unknown | Patients will use an estimate before booking | Interviews on recent decisions; later behavioural pilot | PM | untested |
+| Usability | unknown | Patients can understand inclusions, exclusions, and validity | Paper-prototype comprehension test | Design | untested |
+| Feasibility | unknown | Estimate data is accurate and accessible | Data-owner and reconciliation review | Eng | untested |
+| Business viability | unknown | A buyer will pay for estimate coverage | Buyer and payer interviews | PM | untested |
 
 ## Hypothesis
 
-> We believe **[FILL: change]** will cause **[FILL: measurable outcome]** because **[FILL: reason/evidence]**.
+> We believe a patient-readable pre-booking estimate will cause more patients to make an informed booking decision, because cost uncertainty is currently unresolved.
 
 ## Evidence
 
@@ -101,61 +72,38 @@ justify ones you already want to build.
 
 | Source | Date | Says what | Strength |
 |---|---|---|---|
-| | | | weak |
+| [[RESEARCH-001]] | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would consider postponing without one | weak |
 
 ### Contradicting
 
-- [FILL: Empty means you have not looked.]
+- Patients may want the estimate but still choose on referral, convenience, or urgency.
+- Existing payer or provider estimators may already be good enough.
 
 ## Candidate solutions
 
 | ID | Status | Candidate | How it addresses the problem | Cheapest test | Next step |
 |---|---|---|---|---|---|
-| CAND-000 | candidate | [FILL] | [FILL] | [FILL] | keep / test / park |
-
-> Allocate `CAND-NNN` IDs from the highest existing candidate ID in the vault. Discovery-map and
-> solution-brief references use the **exact row ID**. These are **discovery artifacts**, not delivery
-> commitments. Keep alternatives visible until the evidence gate has passed; do not create a PRD for
-> an unvalidated candidate.
+| CAND-001 | candidate | Integrate an existing payer/provider estimator | Uses existing data and reconciliation | Data-access review | test |
+| CAND-002 | candidate | Assisted estimate request with human review | Handles complex cases without a full build | Concierge test | test |
+| CAND-003 | candidate | Narrow self-service estimate for one imaging type | Limits scope and data complexity | Paper prototype + comprehension test | test |
 
 ## Hermes Challenge
 
-- What if we are wrong? Name the load-bearing assumption.
-- What evidence contradicts this? If none found, say where you looked.
-- Which claims are unsupported?
-- Are we solving the right problem, or a symptom?
-- What would invalidate the opportunity outright?
-- What is the cheapest way to find out?
+- What if we are wrong? The load-bearing assumption is that patients act on cost information.
+- What evidence contradicts this? Patients may choose on referral, urgency, or convenience.
+- Which claims are unsupported? That an accurate estimate reduces postponement.
+- Are we solving the right problem, or a symptom? The problem is uncertainty, not necessarily price level.
+- What would invalidate the opportunity outright? Patients do not change any decision, or an existing estimator is sufficient.
+- What is the cheapest way to find out? Recent-decision interviews plus a comprehension prototype.
 
 ## Smallest experiment
 
-[FILL: The cheapest test that retires the highest-rated risk. If you cannot name one, this is not ready.]
+5 recent-decision interviews, then a paper-prototype comprehension test.
 
 ## Recommendation
 
-Pending
+Pending — discovery only; no build until comprehension and data access are proven.
 
 ## Related
 
-- [[PROB-000]] · [[DEC-000]] · [[EXP-000]] · [[Discovery Map]]
-
----
-
-> [!example]- Worked example — fictional
-> **1. Problem:** managers cannot fill a gap without a serial phone tree, so gaps stay open for hours.
-> **2. For whom:** practice managers, 5–20-staff outpatient clinics, 1–3 sites.
-> **3. Size:** ~18,000 such UK clinics; 41% still on spreadsheets. Conservative SAM: 7,000.
-> **4. Alternatives:** Deputy (full suite), Planday, spreadsheets, WhatsApp.
-> **5. Differentiator:** two-field setup plus an eligibility guardrail; rivals need weeks of onboarding.
-> **6. Why now:** 2024 rest-period rules turned manual assignment into an audit risk.
-> **7. GTM:** clinic-manager communities and accountant referrals; no sales team.
-> **8. Success:** median time-to-fill under 15 min; churn under 4%.
-> **9. Critical factors:** eligibility ranking must be explainable; managers must trust the guardrail.
-> **10. Recommendation:** **go**, gated on retiring value risk first.
->
-> | Risk | Rating | Assumption | Test | Owner |
-> |---|---|---|---|---|
-> | Value | high | staff accept an offer without a call | fake-door offer, 2 clinics, 2 weeks | PM |
-> | Usability | medium | two-tap accept works mid-shift | prototype with 4 staff | Design |
-> | Feasibility | low | ranking needs only existing rota data | 2-day eng spike | Eng |
-> | Viability | medium | £29/month accepted without a sales call | 8 pricing conversations | PM |
+- [[PROB-001]] · [[DEC-001]] · [[EXP-001]] · [[Discovery Map]]
