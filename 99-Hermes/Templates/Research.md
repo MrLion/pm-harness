@@ -6,32 +6,42 @@ category: market
 status: complete
 date: YYYY-MM-DD
 source: TBD
-reliability: low
-framework: none"
+reliability: weak
+framework: none
+updated: YYYY-MM-DD
 ---
 
 # Research
 
 ## Question this answers
-<What we needed to know.>
+
+[FILL: What we needed to know.]
 
 ## Method
-Interview / survey / desk research / query / teardown. N = ?
+
+Interview / survey / desk research / query / teardown. N = ?, sample source = ?, sampling method = ?
+
+> N alone does not establish representativeness. A biased 20-interview sample can be weaker than a
+> well-selected 5. Rate method quality with the evidence ladder, not by count alone.
 
 ## Findings
-- **Finding.** <Observation>
-  - Evidence: <quote, number, link>
-  - Confidence: high / medium / low
+
+- **Finding.** [FILL: Observation]
+  - Evidence: [FILL: quote, number, link]
+  - Confidence: low / medium / high
 
 ## Raw signal
-> "<verbatim quote>" — <who>, <when>
+
+> "[FILL: verbatim quote]" — [FILL: who], [FILL: when]
 
 > Verbatim only. A paraphrase is not evidence.
 
 ## What this does NOT tell us
-<Limits of method and sample. Mandatory — this section is what stops a finding becoming folklore.>
+
+[FILL: Limits of method and sample. Mandatory — this section is what stops a finding becoming folklore.]
 
 ## Implications
+
 - Supports: [[PROB-000]] · [[OPP-000]]
 - Weakens: 
 

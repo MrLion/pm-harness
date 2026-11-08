@@ -3,7 +3,7 @@ type: discovery-map
 artifact: discovery-map
 framework: Torres
 outcome: TBD
-updated: 2026-10-23
+updated: 2026-11-08
 ---
 
 # Discovery Map — Opportunity Solution Tree
@@ -12,7 +12,7 @@ Linked view of existing artifacts. Template and worked example: [[Discovery-Map]
 **Do not duplicate problem, opportunity or solution content here — link the canonical notes.**
 
 ## Desired outcome
-[[Goals]] — [FILL]
+[[PM vault/00-Product/Goals|Goals]] — [FILL]
 
 ## Tree
 - **[Problem]** [[PROB-000]]

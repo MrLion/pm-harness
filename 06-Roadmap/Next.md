@@ -3,7 +3,7 @@ type: roadmap
 horizon: next
 status: draft
 framework: Pichler (GO Product Roadmap)
-updated: 2026-10-23
+updated: 2026-11-08
 ---
 
 # Next — GO Product Roadmap
@@ -17,4 +17,4 @@ Shaped, not started. Each row needs a validated opportunity behind it.
 > Nothing belongs here on the strength of a stakeholder request alone.
 
 ## Related
-- [[Now]] · [[Later]] · [[Strategy]]
+- [[Now]] · [[Later]] · [[PM vault/00-Product/Strategy|Strategy]]

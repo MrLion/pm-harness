@@ -3,7 +3,7 @@ type: roadmap
 horizon: later
 status: draft
 framework: Pichler (GO Product Roadmap)
-updated: 2026-10-23
+updated: 2026-11-08
 ---
 
 # Later — directional, not committed

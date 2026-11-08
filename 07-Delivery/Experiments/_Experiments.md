@@ -1,13 +1,13 @@
 # Experiments
 
-`EXP-NNN` notes from [[Experiment]]. **Each experiment retires exactly one named risk** — value,
-usability, feasibility or business viability. If you cannot say which, it is a build, not an
-experiment.
+`EXP-NNN` notes from [[Experiment]]. **Each experiment names one primary risk** — value,
+usability, feasibility or business viability. Secondary observations can be recorded separately. If
+you cannot say which risk is primary, it is a build, not an experiment.
 
 ```dataview
-TABLE status, risk_type, opportunity, start, end
+TABLE status, risk_type, risk_owner, opportunity, start, end
 FROM "PM vault/07-Delivery/Experiments"
-WHERE status != "completed"
+WHERE type = "experiment" AND status != "completed"
 SORT start ASC
 ```
 

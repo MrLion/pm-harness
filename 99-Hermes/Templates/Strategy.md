@@ -6,7 +6,7 @@ confidence: none
 updated: YYYY-MM-DD
 review_cadence_days: 90
 framework: Pichler
-source: https://romanpichler.com/blog/my-product-strategy-model/"
+source: https://romanpichler.com/blog/my-product-strategy-model/
 ---
 
 # Strategy
@@ -19,6 +19,7 @@ The four strategy elements from the Vision Board, elaborated. Per Pichler the vi
 > A strategy with no falsifiable claims is a slogan.
 
 ## Strategy elements
+
 | Element | Current position | Evidence | Confidence |
 |---|---|---|---|
 | Target group | [FILL] | | low |
@@ -27,21 +28,26 @@ The four strategy elements from the Vision Board, elaborated. Per Pichler the vi
 | Stand-out features | [FILL] | | low |
 
 ## Differentiation
+
 | Alternative | What it does well | Where it fails our target group | Our answer |
 |---|---|---|---|
 | [FILL] | | | |
 
 ## Deliberately not doing
+
 - [FILL]
 
 ## Priority thesis
+
 > If we do **[change]**, then **[measurable outcome]**, because **[reason/evidence]**.
 
 ## What would invalidate this strategy
+
 - [FILL]
 
 ## Related
-- [[Product]] · [[Vision]] · [[Goals]] · [[Metrics]]
+
+- [[Product]] · [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]
 
 ---
 

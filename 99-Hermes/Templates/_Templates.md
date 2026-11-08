@@ -9,10 +9,10 @@ Delete the `[!example]` block before using a template for real work.
 
 | Template | Use for | Framework | Source |
 |---|---|---|---|
-| [[Product-Vision-Board]] | `00-Product/Product.md` | Pichler | [Vision Board](https://romanpichler.com/tools/product-vision-board/) |
-| [[Strategy]] | `00-Product/Strategy.md` | Pichler | [Strategy model](https://romanpichler.com/blog/my-product-strategy-model/) |
-| [[Goals]] | `00-Product/Goals.md` | Pichler + OKR + Impact Mapping | [Goal-setting](https://romanpichler.com/blog/leading-through-shared-goals/) · [Impact Mapping](https://www.impactmapping.org/) |
-| [[Metrics]] | `00-Product/Metrics.md` | Pichler + North Star | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) · [North Star](https://amplitude.com/books/north-star/about-north-star-framework) |
+| [[99-Hermes/Templates/Product-Vision-Board|Product-Vision-Board]] | `00-Product/Product.md` | Pichler | [Vision Board](https://romanpichler.com/tools/product-vision-board/) |
+| [[99-Hermes/Templates/Strategy|Strategy template]] | `00-Product/Strategy.md` | Pichler | [Strategy model](https://romanpichler.com/blog/my-product-strategy-model/) |
+| [[99-Hermes/Templates/Goals|Goals template]] | `00-Product/Goals.md` | Pichler + OKR + Impact Mapping | [Goal-setting](https://romanpichler.com/blog/leading-through-shared-goals/) · [Impact Mapping](https://www.impactmapping.org/) |
+| [[99-Hermes/Templates/Metrics|Metrics template]] | `00-Product/Metrics.md` | Pichler + North Star | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) · [North Star](https://amplitude.com/books/north-star/about-north-star-framework) |
 | [[GO-Roadmap]] | `06-Roadmap/` | Pichler | [GO Product Roadmap](https://romanpichler.com/tools/the-go-product-roadmap/) |
 | [[Persona]] | `01-Users/Personas/` | Pichler | [Persona Template](https://www.romanpichler.com/the-persona-template/) |
 | [[Discovery-Map]] | `03-Opportunities/Discovery Map.md` | Torres | [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) |
@@ -36,19 +36,21 @@ columns from the `a:` and `b:` keys of each note; `WHERE type = "x"` filters on 
 Which is why every template's frontmatter **is** the instance schema — a note created from it is
 queryable immediately. Copy the frontmatter verbatim; never retype it.
 
-| Key | Feeds |
+| Key | Allowed values → how it is used |
 |---|---|
-| `type` | every `WHERE type = "…"` filter — if this is wrong, the note is invisible |
-| `id` | note identity (`PROB-003`), wikilink targets |
-| `status` | most tables; drives "not closed" filters |
-| `confidence` | sorted ascending everywhere — weakest evidence surfaces first |
-| `date` / `updated` / `review_after` / `review_date` | sorting and staleness queries |
-| `category` (research) | `04-Research` per-category tables |
-| `reliability` (research) | evidence-ladder filtering |
-| `risk_type`, `risk_owner` (opportunity, experiment) | risk coverage |
-| `recommendation` (opportunity) | go / no-go / defer surfacing |
+| `type` | one artifact type per note; every `WHERE type = "…"` filter depends on it |
+| `id` | `PROB-003` style; note identity and wikilink target |
+| `status` | artifact-specific: proposed/accepted/reversed; draft/complete; planned/completed; released |
+| `confidence` | `none` → `low` → `medium` → `high`; dashboards sort by that rank, not alphabetically |
+| `date` / `updated` / `review_after` / `review_date` | date fields used for sorting and overdue reporting |
+| `category` (research) | `market` · `competitor` · `user` · `data` |
+| `reliability` (research) | `weak` → `medium` → `strong`; used by weak-evidence reporting |
+| `severity` / `priority` (problem) | `low` · `medium` · `high` and `unknown`/`unprioritized`; sorted by rank |
+| `recommendation` (opportunity) | `go` · `no-go` · `defer` · `Pending` |
+| `risk_type` (primary risk) | `value` · `usability` · `feasibility` · `viability` |
+| `risk_owner` | `PM` · `Design` · `Eng` · named role |
+| `opportunity` / `decision` (PRD) | quoted Obsidian links, e.g. `"[[OPP-000]]"`, so traceability resolves |
 | `primary_metric` (prd) | gate on "no baseline, no brief" |
-| `template: true` | **not used** — see below |
 
 **Templates carry their real `type`, not `type: template`.** That is deliberate: the schema stays
 correct when you copy the file, and these files sit in `99-Hermes/`, outside every folder-scoped
@@ -58,7 +60,7 @@ query, so they never appear in a table. Do not move a template into `02-Problems
 
 This vault is a folder inside a larger Obsidian vault, so every query names its path
 (`FROM "PM vault/05-Decisions"`). If you ever open `PM vault` as its own vault, strip the
-`PM vault/` prefix from all 27 `FROM` clauses or the tables will match nothing.
+`PM vault/` prefix from all 31 `FROM` clauses or the tables will match nothing.
 
 ## Attribution
 

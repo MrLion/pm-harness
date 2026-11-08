@@ -16,9 +16,11 @@ source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://w
 > OKR key results measure that objective rather than creating competing objectives.
 
 ## Objective
+
 [FILL] — qualitative, outcome-oriented, and meaningful without mentioning a feature.
 
 ## Key Results
+
 | KR | Metric | Baseline | Target | Deadline | Confidence |
 |---|---|---|---|---|---|
 | KR1 | [FILL] | unknown | [FILL] | [FILL] | none |
@@ -27,6 +29,7 @@ source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://w
 > A key result with no baseline is not yet measurable. Establish the baseline or mark the target provisional.
 
 ## Impact Map
+
 **Why:** the Objective above.
 
 | Who (actor) | How (required behaviour change) | What (deliverable) | Evidence the behaviour changed |
@@ -37,15 +40,18 @@ source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://w
 > Find the shortest path to the goal; do not implement the whole map.
 
 ## Non-goals this horizon
+
 - [FILL]
 
 ## Goal → roadmap traceability
+
 | Objective / KR | Roadmap entry | Opportunity |
 |---|---|---|
 | [FILL] | [[Now]] | [[OPP-000]] |
 
 ## Related
-- [[Metrics]] · [[Strategy]] · [[Discovery Map]]
+
+- [[PM vault/00-Product/Metrics|Metrics]] · [[PM vault/00-Product/Strategy|Strategy]] · [[Discovery Map]]
 
 ---
 

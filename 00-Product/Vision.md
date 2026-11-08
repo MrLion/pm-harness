@@ -4,7 +4,7 @@ artifact: vision
 framework: Pichler
 status: draft
 confidence: none
-updated: 2026-10-23
+updated: 2026-11-08
 review_cadence_days: 180
 ---
 
@@ -20,4 +20,4 @@ second version here; this note holds only the context around it.
 - [FILL]
 
 ## Related
-- [[Product]] · [[Strategy]]
+- [[Product]] · [[PM vault/00-Product/Strategy|Strategy]]

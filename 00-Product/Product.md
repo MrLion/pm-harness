@@ -4,7 +4,7 @@ status: draft
 confidence: none
 artifact: product-vision-board
 framework: Pichler
-updated: 2026-10-23
+updated: 2026-11-08
 ---
 
 # Product Vision Board
@@ -54,4 +54,4 @@ updated: 2026-10-23
 | Channels | [FILL] |
 
 ## Related
-- [[Vision]] · [[Strategy]] · [[Goals]] · [[Metrics]]
+- [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Strategy|Strategy]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]

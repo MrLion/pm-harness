@@ -14,6 +14,7 @@ source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-pro
 # Metrics — North Star + KPI Selection
 
 ## North Star Metric
+
 [FILL]
 
 | Requirement | Answer |
@@ -28,16 +29,19 @@ source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-pro
 > it is probably the wrong metric.
 
 ## North Star inputs
+
 | Input metric | Definition | Current | Owner |
 |---|---|---|---|
 | [FILL] | [FILL] | unknown | [FILL] |
 
 ## Guardrails
+
 | Metric | Definition | Threshold |
 |---|---|---|
 | [FILL] | [FILL] | [FILL] |
 
 ## Supporting KPIs
+
 | Layer | Metric | Definition | Current | Source of truth | Owner |
 |---|---|---|---|---|---|
 | Lagging (outcome) | [FILL] | | unknown | | |
@@ -45,12 +49,14 @@ source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-pro
 | Health (guardrail) | [FILL] | | unknown | | |
 
 ## Instrumentation gaps
+
 | Metric we need | Why we can't measure it yet | Fix |
 |---|---|---|
 | [FILL] | | |
 
 ## Related
-- [[Goals]] · [[Strategy]]
+
+- [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Strategy|Strategy]]
 
 ---
 

@@ -14,9 +14,11 @@ briefs and `EXP` notes rather than copying their contents. Torres's "opportunity
 vault's problem plus its assessment; do not create a third opportunity category.
 
 ## Desired outcome
-[[Goals]] — [FILL]
+
+[[PM vault/00-Product/Goals|Goals]] — [FILL]
 
 ## Tree
+
 - **[Problem]** [[PROB-000]]
   - **[Opportunity assessment]** [[OPP-000]]
     - **Solution A** — [FILL / link PRD]
@@ -25,6 +27,7 @@ vault's problem plus its assessment; do not create a third opportunity category.
     - **Solution C** — [FILL]
 
 ## Coverage check
+
 - [ ] Every branch starts from a desired outcome
 - [ ] Every opportunity links evidence-backed problems
 - [ ] More than one solution was considered where uncertainty is high

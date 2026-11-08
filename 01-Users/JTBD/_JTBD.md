@@ -7,7 +7,7 @@ SVPG artifact, but the clearest way to state what a user is actually trying to a
 TABLE status, confidence
 FROM "PM vault/01-Users/JTBD"
 WHERE type = "jtbd"
-SORT confidence ASC
+SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 
 > When writing one, the **anxiety** and **habit** forces are the ones that decide whether a

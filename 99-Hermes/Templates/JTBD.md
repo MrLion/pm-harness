@@ -5,23 +5,28 @@ id: JTBD-000
 status: draft
 confidence: low
 created: YYYY-MM-DD
-framework: none"
+framework: none
+updated: YYYY-MM-DD
 ---
 
 # JTBD
 
-> When **<situation>**, I want to **<motivation>**, so I can **<expected outcome>**.
+> When **[FILL: situation]**, I want to **[FILL: motivation]**, so I can **[FILL: expected outcome]**.
 
 ## Functional job
-<The practical task.>
+
+[FILL: The practical task.]
 
 ## Emotional job
-<How they want to feel, or avoid feeling.>
+
+[FILL: How they want to feel, or avoid feeling.]
 
 ## Social job
-<How they want to be seen.>
+
+[FILL: How they want to be seen.]
 
 ## Forces
+
 - **Push** (dissatisfaction with today): 
 - **Pull** (attraction of the new solution): 
 - **Anxiety** (fear about switching): 
@@ -30,6 +35,7 @@ framework: none"
 > Anxiety and habit are usually why a validated opportunity still fails to land. Name them early.
 
 ## Related
+
 - [[PERSONA-000]] · [[PROB-000]]
 
 ---

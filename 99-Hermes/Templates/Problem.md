@@ -9,7 +9,7 @@ frequency: unknown
 severity: unknown
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-framework: none"
+framework: none
 ---
 
 # Problem
@@ -19,15 +19,19 @@ framework: none"
 > a solution noun, rewrite it.
 
 ## Problem Statement
-<Who experiences what problem, under what circumstances, and why it matters. No solution language.>
+
+[FILL: Who experiences what problem, under what circumstances, and why it matters. No solution language.]
 
 ## User / Segment
+
 [[PERSONA-000]]
 
 ## JTBD
+
 [[JTBD-000]]
 
 ## Evidence
+
 | Type | Source | Date | Says what | Strength |
 |---|---|---|---|---|
 | interview / metric / ticket / review / support | [[RESEARCH-000]] | | | weak |
@@ -35,21 +39,27 @@ framework: none"
 > Empty evidence table → this is a hypothesis. Set `confidence: low` and say so out loud.
 
 ## Frequency
-<How often, per user per period.>
+
+[FILL: How often, per user per period.]
 
 ## Severity
-<What it costs when it happens: time, money, risk, abandonment.>
+
+[FILL: What it costs when it happens: time, money, risk, abandonment.]
 
 ## Current workaround
-<What users do today instead. "Nothing" is a signal.>
+
+[FILL: What users do today instead. "Nothing" is a signal.]
 
 ## Business impact
-<What it costs us. Evidence, not vibes.>
+
+[FILL: What it costs us. Evidence, not vibes.]
 
 ## Assumptions / Unknowns
+
 - 
 
 ## Related Opportunities
+
 - [[OPP-000]]
 
 ---

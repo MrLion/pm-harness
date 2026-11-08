@@ -9,6 +9,7 @@ metric_result: TBD
 roadmap: TBD
 created: YYYY-MM-DD
 framework: Pichler
+updated: YYYY-MM-DD
 ---
 
 # Release
@@ -17,6 +18,7 @@ A delivery record tied to the GO Roadmap goal it was meant to move. Without a go
 result, this is a deployment log rather than a learning artifact.
 
 ## Release
+
 | Field | Content |
 |---|---|
 | Date | [FILL] |
@@ -26,17 +28,21 @@ result, this is a deployment log rather than a learning artifact.
 | Related opportunity / brief | [[OPP-000]] · [[PRD-000]] |
 
 ## Metric movement
+
 | Metric | Before | After | Window | Source |
 |---|---|---|---|---|
 | [FILL] | unknown | unknown | [FILL] | [FILL] |
 
 ## What surprised us
+
 - [FILL]
 
 ## Unexpected cost
+
 - Support load / incidents / debt / rollback: [FILL]
 
 ## Follow-up
+
 - [FILL]
 
 ---

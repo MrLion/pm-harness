@@ -15,19 +15,24 @@ rather than reasoning from plausibility.
 | [[_Users]] | interviews, observation, support signal | Who hurts, how often, what do they do today? |
 | [[_Data]] | queries, metrics, instrumentation | What do the numbers actually say? |
 
-## The evidence ladder
+## Evidence ladder
 
 Confidence in a problem or opportunity can never exceed the strength of its weakest
 load-bearing evidence.
 
+`reliability` values are: `weak` · `medium` · `strong`.
+
 | Strength | Example | Can carry a roadmap? |
 |---|---|---|
-| **strong** | behavioural data at scale; 20+ interviews, consistent pattern | yes |
-| **medium** | 5–15 interviews; support-ticket volume; one customer's data | with a stated caveat |
-| **weak** | one conversation; a manager's belief about their staff; a competitor's marketing page | no |
+| **strong** | behavioural data you can reproduce; a consistent pattern across an appropriate sample | yes |
+| **medium** | a well-conducted small study; support-ticket volume; one customer's own data | with a stated caveat |
+| **weak** | one conversation; a manager's belief about their staff; an undated competitor page | no |
 
-> The trap: a manager saying "my staff would love that" is **second-hand belief** — someone's guess
-> about a third party. Mark it weak, and do not treat it as retiring value risk.
+> Counts do not establish representativeness. Method quality, sample selection, bias and the limits
+> of the source can raise or lower the rating independently of N.
+
+> The common trap: **second-hand belief.** A manager saying "my staff would love that" is someone's
+> guess about a third party. Mark it weak, and do not treat it as retiring value risk.
 
 ## Notes by category
 
@@ -43,15 +48,15 @@ SORT date DESC
 ```dataview
 TABLE category, reliability
 FROM "PM vault/04-Research"
-WHERE type = "research" AND (reliability = "low" OR reliability = null)
+WHERE type = "research" AND (reliability = "weak" OR reliability = null)
 ```
 
 ## Intake checklist for every research note
 
 - [ ] The question this note answers, stated first
-- [ ] Method and N — two interviews is not a survey
+- [ ] Method, sample and N — plus how the sample was recruited
 - [ ] Verbatim quotes, not paraphrases
-- [ ] Reliability rating from the ladder above
+- [ ] Reliability rating from the ladder above, with method quality considered
 - [ ] **What this does NOT tell us** — mandatory section
 - [ ] Links to the `PROB` / `OPP` it supports or weakens
 

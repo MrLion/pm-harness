@@ -15,7 +15,7 @@ created: YYYY-MM-DD
 updated: YYYY-MM-DD
 review_after: YYYY-MM-DD
 framework: SVPG
-source: https://www.svpg.com/assessing-product-opportunities/"
+source: https://www.svpg.com/assessing-product-opportunities/
 ---
 
 # Opportunity (SVPG Product Opportunity Assessment)
@@ -82,25 +82,50 @@ justify ones you already want to build.
 > Engineering owns feasibility. A risk with no owner is a risk nobody is retiring.
 
 ## Hypothesis
-> We believe **<change>** will cause **<measurable outcome>** because **<reason/evidence>**.
+
+> We believe **[FILL: change]** will cause **[FILL: measurable outcome]** because **[FILL: reason/evidence]**.
 
 ## Evidence
+
 ### Supporting
+
 | Source | Date | Says what | Strength |
 |---|---|---|---|
 | | | | weak |
 
 ### Contradicting
-- <Empty means you have not looked.>
+
+- [FILL: Empty means you have not looked.]
+
+## Candidate solutions
+
+| Status | Candidate | How it addresses the problem | Cheapest test | Next step |
+|---|---|---|---|---|
+| candidate | [FILL] | [FILL] | [FILL] | keep / test / park |
+
+> These are **discovery artifacts**, not delivery commitments. Keep alternatives visible until the
+> evidence gate has passed; do not create a PRD for an unvalidated candidate.
+
+## Hermes Challenge
+
+- What if we are wrong? Name the load-bearing assumption.
+- What evidence contradicts this? If none found, say where you looked.
+- Which claims are unsupported?
+- Are we solving the right problem, or a symptom?
+- What would invalidate the opportunity outright?
+- What is the cheapest way to find out?
 
 ## Smallest experiment
-<The cheapest test that retires the highest-rated risk. If you cannot name one, this is not ready.>
+
+[FILL: The cheapest test that retires the highest-rated risk. If you cannot name one, this is not ready.]
 
 ## Recommendation
+
 Pending
 
 ## Related
-- [[PROB-000]] · [[DEC-000]] · [[EXP-000]]
+
+- [[PROB-000]] · [[DEC-000]] · [[EXP-000]] · [[Discovery Map]]
 
 ---
 

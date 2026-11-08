@@ -8,7 +8,7 @@ evidence_count: 0
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 framework: Pichler
-source: https://www.romanpichler.com/the-persona-template/"
+source: https://www.romanpichler.com/the-persona-template/
 ---
 
 # Persona
@@ -18,6 +18,7 @@ source: https://www.romanpichler.com/the-persona-template/"
 > substitute for talking to real users. Never let a guess-shaped persona drive a roadmap.
 
 ## Profile
+
 | Field | Content |
 |---|---|
 | Name (representative, not a real person) | [FILL] |
@@ -28,11 +29,13 @@ source: https://www.romanpichler.com/the-persona-template/"
 | Observed behaviour (not stated behaviour) | [FILL] |
 
 ## Evidence base
+
 | Type | Source | Date | Count |
 |---|---|---|---|
 | [[RESEARCH-000]] | | | 0 |
 
 ## Related
+
 - [[PROB-000]]
 
 ---

@@ -3,7 +3,7 @@
 Feeds Cagan's Q4 (*what alternatives are out there?*) and Pichler's differentiation. The output is
 not a feature grid — it is **where each alternative fails our target group**.
 
-> Alternatives include "a spreadsheet and a WhatsApp group". Doing nothing is always a competitor.
+Alternatives include "a spreadsheet and a WhatsApp group". Doing nothing is always a competitor.
 
 ## Teardown fields
 

@@ -6,39 +6,50 @@ period: YYYY-MM
 date: YYYY-MM-DD
 status: draft
 framework: "Pichler (goal vs outcome) + SVPG (risk retired vs not)"
+updated: YYYY-MM-DD
 ---
 
 # Review — YYYY-MM
 
 ## Goals vs outcomes
-| Goal | Target | Actual | Met? |
-|---|---|---|---|
-| | | | |
 
-> A goal whose metric was never recorded counts as **not met**. Say so.
+| Goal | Target | Actual | Measurement status | Met? |
+|---|---|---|---|---|
+| | | | measured / unknown / not measured | hit / miss / unknown |
+
+> A **measured miss** is reported as a miss. **Unknown** means the value changed but the metric was
+> not defined. **Not measured** means no data captured. These are different findings; do not collapse
+> them into "not met".
 
 ## Risks retired
+
 | Risk | Was it tested? | Result | Now |
 |---|---|---|---|
 | value / usability / feasibility / viability | | | retired / still open / worsened |
 
 ## What we learned
-- **Learned.** <insight> — Evidence: · Changes what: <decision, roadmap, metric>
+
+- **Learned.** [FILL: insight] — Evidence: · Changes what: [FILL: decision, roadmap, metric]
 
 ## What we got wrong
-- <Honest list. Empty = red flag.>
+
+- [FILL: Honest list. Empty = red flag.]
 
 ## Decisions still unresolved
-- [[DEC-000]] — open since <date>
+
+- [[DEC-000]] — open since [FILL: date]
 
 ## Metric movement
+
 | Metric | Start | End | Δ | Commentary |
 |---|---|---|---|---|
 
 ## Next period
+
 1. 
 
 ## Knowledge base updates
+
 Created · Updated · Closed
 
 ---

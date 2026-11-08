@@ -44,7 +44,7 @@ Problem → Evidence → Opportunity → Challenge
 Two linked views keep the reasoning visible:
 
 - **[[Discovery Map]]** — outcome → problems → opportunities → alternative solutions → experiments
-- **[[Goals]]** — Objective and Key Results plus goal → actor → behaviour change → deliverable
+- **[[PM vault/00-Product/Goals|Goals]]** — Objective and Key Results plus goal → actor → behaviour change → deliverable
 
 ## Commands
 

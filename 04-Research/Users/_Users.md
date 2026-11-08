@@ -21,8 +21,8 @@ and where most value risk is actually retired.
   last time this happened" produces evidence.
 - **Never record a belief about a third party as fact.** "My staff would love that" is Dana's
   hypothesis about her staff — the value risk is still untested.
-- **Five interviews is not fifteen.** State N, and don't generalise past it.
-- **Write down the disconfirming interviews.** The one clinic that does it differently is often the
+- **State N, and don't generalise past it.** A larger N does not repair a biased sample.
+- **Write down the disconfirming interviews.** The clinic that does it differently is often the
   most informative note in the folder.
 
 ## Notes

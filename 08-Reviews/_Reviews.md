@@ -9,8 +9,9 @@
 ```dataview
 LIST
 FROM "PM vault/08-Reviews"
+WHERE type = "review"
 SORT file.name DESC
 ```
 
-> A goal whose metric was never recorded counts as **not met**, and a review whose "what we got
-> wrong" section is empty is a status report, not a review.
+> A **measured miss**, **unknown**, and **not measured** are distinct findings. A review whose
+> "what we got wrong" section is empty is a status report, not a review.

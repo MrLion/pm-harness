@@ -7,7 +7,7 @@ confidence: none
 north_star: TBD
 north_star_definition: TBD
 north_star_source: TBD
-updated: 2026-10-23
+updated: 2026-11-08
 ---
 
 # Metrics — North Star + KPI Selection
@@ -49,4 +49,4 @@ updated: 2026-10-23
 | [FILL] | | |
 
 ## Related
-- [[Goals]] · [[Strategy]]
+- [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Strategy|Strategy]]

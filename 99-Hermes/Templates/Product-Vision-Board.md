@@ -21,6 +21,7 @@ strategy elements and are **assumptions to be validated**, not facts to be decla
 > Inspiring · Shared · Ethical · Concise · Ambitious · Enduring (guides the next 5–10 years)
 
 ## Vision
+
 [FILL]
 
 ---
@@ -32,6 +33,7 @@ strategy elements and are **assumptions to be validated**, not facts to be decla
 > Clear · Specific (you can tell if someone is in or out) · Cohesive (similar attributes; split if not)
 
 ## Target Group
+
 [FILL]
 
 ---
@@ -88,7 +90,8 @@ strategy elements and are **assumptions to be validated**, not facts to be decla
 | Channels | [FILL] |
 
 ## Related
-- [[Strategy]] · [[Goals]] · [[Metrics]] · [[Vision]]
+
+- [[PM vault/00-Product/Strategy|Strategy]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]] · [[PM vault/00-Product/Vision|Vision]]
 
 ---
 

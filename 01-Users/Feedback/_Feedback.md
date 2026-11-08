@@ -9,6 +9,7 @@ wording, the date, and who said it.
 ```dataview
 TABLE date, source, sentiment
 FROM "PM vault/01-Users/Feedback"
+WHERE type = "feedback"
 SORT date DESC
 LIMIT 15
 ```

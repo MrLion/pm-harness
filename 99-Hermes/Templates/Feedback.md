@@ -8,6 +8,7 @@ sentiment: neutral
 account: TBD
 created: YYYY-MM-DD
 framework: none
+updated: YYYY-MM-DD
 ---
 
 # Feedback
@@ -15,6 +16,7 @@ framework: none
 Raw customer signal. Keep the original wording. A paraphrase is your interpretation, not evidence.
 
 ## Source
+
 | Field | Content |
 |---|---|
 | Channel | support / interview / review / sales / churn / community |
@@ -24,23 +26,29 @@ Raw customer signal. Keep the original wording. A paraphrase is your interpretat
 | Sentiment | positive / neutral / negative |
 
 ## Verbatim signal
-> "[FILL — exact words]" — <who>, <when>
+
+> "[FILL — exact words]" — [FILL: who], [FILL: when]
 
 ## Situation
-<What were they trying to accomplish when this came up?>
+
+[FILL: What were they trying to accomplish when this came up?]
 
 ## Underlying problem
-<Convert feature requests into the problem behind them. Link [[PROB-000]] when one exists.>
+
+[FILL: Convert feature requests into the problem behind them. Link [[PROB-000]] when one exists.]
 
 ## Frequency across accounts
+
 | Distinct accounts raising this | Period | Evidence |
 |---|---|---|
 | 1 | [FILL] | [FILL] |
 
 ## What this does NOT tell us
+
 - [FILL]
 
 ## Related
+
 - [[PROB-000]] · [[OPP-000]]
 
 ---

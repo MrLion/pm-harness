@@ -3,8 +3,8 @@ type: prd
 artifact: solution-brief
 id: PRD-000
 status: draft
-opportunity: OPP-000
-decision: DEC-000
+opportunity: "[[OPP-000]]"
+decision: "[[DEC-000]]"
 primary_metric: TBD
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -23,44 +23,56 @@ heavy-weight PRD, because it answers the questions a document only describes. So
 > An ungated brief is a draft for discussion, not a delivery document.
 
 ## Canvas
+
 | Element | Content |
 |---|---|
 | Problem | [[PROB-000]] |
 | Opportunity | [[OPP-000]] |
 | Target user | [[PERSONA-000]] |
 | Outcome (one sentence) | [FILL] |
-| Prototype | <link to prototype / Figma / clickable> |
+| Prototype | [FILL: link to prototype / Figma / clickable] |
 | Epics (big capabilities) | [FILL] |
 
 ## Non-goals
-- <Be generous here — this is what prevents scope creep.>
+
+- [FILL: Be generous here — this is what prevents scope creep.]
 
 ## User stories
-- As a **<segment>**, I want **<capability>**, so that **<outcome>**.
+
+- As a **[FILL: segment]**, I want **[FILL: capability]**, so that **[FILL: outcome]**.
 
 ## Acceptance criteria
-- [ ] <Testable statement.>
+
+- [ ] [FILL: Testable statement.]
 - [ ] 
 
 ## Metrics
-**Primary:** <one metric, baseline → target>
+
+**Primary:** [FILL: one metric, baseline → target]
 **Secondary:** 
-**Guardrails:** <what must not get worse>
+**Guardrails:** [FILL: what must not get worse]
+
+> Non-negotiable constraints are not deferred by roadmap sequencing. They are enforced from the
+> first release or the initiative is not ready.
 
 ## Risks carried forward
+
 | Risk (value/usability/feasibility/viability) | Mitigation |
 |---|---|
 | | |
 
 ## Open questions
+
 | Question | Owner | Needed by |
 |---|---|---|
 | | | |
 
 ## Launch plan
+
 - Rollout · Comms · Support readiness · Rollback
 
 ## Related
+
 - [[DEC-000]] · [[EXP-000]]
 
 ---

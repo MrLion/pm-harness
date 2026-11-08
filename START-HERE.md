@@ -98,11 +98,11 @@ the refusal is the harness working correctly.
 - [ ] Problem contains no embedded solution
 - [ ] Claims are linked to evidence or explicitly marked unknown
 - [ ] Opportunity has all four risks and a possible no-go
-- [ ] Experiment retires one named risk with pre-registered criteria
+- [ ] Experiment retires one primary named risk, with secondary observations kept separate
 - [ ] Discovery Map links canonical notes
 - [ ] Decision and solution brief wait until justified
 
 ## If you already have a defined product
 
-You do not need to manufacture a discovery exercise. Fill [[Product]], [[Goals]] and [[Metrics]]
+You do not need to manufacture a discovery exercise. Fill [[Product]], [[PM vault/00-Product/Goals|Goals]] and [[PM vault/00-Product/Metrics|Metrics]]
 with real information, then run `/pm status`. Use this guide only for the next uncertain opportunity.

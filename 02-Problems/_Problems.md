@@ -7,7 +7,7 @@ into "what problem would X solve" before anything is written.
 TABLE status, confidence, frequency, severity
 FROM "PM vault/02-Problems"
 WHERE type = "problem" AND status != "closed"
-SORT confidence ASC
+SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 
 ## Rule

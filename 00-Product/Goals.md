@@ -6,7 +6,7 @@ status: draft
 confidence: none
 objective: TBD
 period: TBD
-updated: 2026-10-23
+updated: 2026-11-08
 ---
 
 # Goals — OKR + Impact Map
@@ -44,4 +44,4 @@ updated: 2026-10-23
 | [FILL] | [[Now]] | [[OPP-000]] |
 
 ## Related
-- [[Metrics]] · [[Strategy]] · [[Discovery Map]]
+- [[PM vault/00-Product/Metrics|Metrics]] · [[PM vault/00-Product/Strategy|Strategy]] · [[Discovery Map]]

@@ -4,25 +4,29 @@ artifact: experiment
 id: EXP-000
 status: planned
 risk_type: value
-opportunity: OPP-000
+risk_owner: PM
+opportunity: "[[OPP-000]]"
 start: YYYY-MM-DD
 end: YYYY-MM-DD
 cost: unknown
 created: YYYY-MM-DD
 framework: SVPG
-source: https://www.svpg.com/four-big-risks/"
+source: https://www.svpg.com/four-big-risks/
+updated: YYYY-MM-DD
 ---
 
 # Experiment
 
-An experiment exists to retire **one named risk**. If you cannot name which of the four risks it
-targets, it is not an experiment — it is a build.
+An experiment exists to retire **one primary named risk**. If you cannot name which of the four
+risks it targets (value, usability, feasibility or viability), it is not an experiment — it is a
+build. Secondary observations may be recorded, but they do not redefine the experiment.
 
 > [!quote] Why experiments before builds
 > Product discovery retires value and business risk early, while the cost of being wrong is
 > still a prototype rather than a shipped feature.
 
 ## Risk being retired
+
 | Field | Content |
 |---|---|
 | Risk type | value / usability / feasibility / business viability |
@@ -30,29 +34,39 @@ targets, it is not an experiment — it is a build.
 | Opportunity | [[OPP-000]] |
 
 ## Hypothesis
-> We believe **<change>** will cause **<measured effect>** for **<population>**, measured by **<metric>**.
+
+> We believe **[FILL: change]** will cause **[FILL: measured effect]** for **[FILL: population]**, measured by **[FILL: metric]**.
 
 ## Design
-<Fake door / concierge / prototype test / A/B / 5 interviews. State the cheapest version that works.>
+
+[FILL: Fake door / concierge / prototype test / A/B / 5 interviews. State the cheapest version that works.]
 
 | Field | Content |
 |---|---|
 | Population | |
-| Duration | <and why that is long enough to see signal> |
+| Duration | [FILL: and why that is long enough to see signal] |
 | Cost | |
 
 ## Pre-registered criteria
+
 | Success | Failure | Kill |
 |---|---|---|
-| <decide now, before data> | | |
+| [FILL: decide now, before data] | | |
 
 ## Result
+
 Pending
 
+## Secondary observations
+
+- [FILL: observations outside the primary risk; not decision evidence unless pre-registered]
+
 ## What we learned
+
 Pending
 
 ## Decision
+
 Pending — link the resulting [[DEC-000]] or updated [[OPP-000]].
 
 ---

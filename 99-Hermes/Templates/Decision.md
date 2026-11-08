@@ -8,23 +8,30 @@ review_date: YYYY-MM-DD
 reversibility: medium
 expected_outcome: TBD
 actual_outcome: Pending
-framework: none"
+framework: none
+updated: YYYY-MM-DD
 ---
 
 # Decision
 
 ## Question
-<One sentence. If it contains "and", split it into two decisions.>
+
+[FILL: One sentence. If it contains "and", split it into two decisions.]
 
 ## Context
-<What is true now that forces this.>
+
+[FILL: What is true now that forces this.]
 
 ## Options
-### A — <name>
-### B — <name>
-### C — do nothing / defer
+
+| Option | Description | Effort | Risk |
+|---|---|---|---|
+| A — [FILL: name] | [FILL] | [FILL] | [FILL] |
+| B — [FILL: name] | [FILL] | [FILL] | [FILL] |
+| C — do nothing / defer | [FILL] | [FILL] | [FILL] |
 
 ## Tradeoffs
+
 | Dimension | A | B | C |
 |---|---|---|---|
 | User impact | | | |
@@ -35,24 +42,31 @@ framework: none"
 | Reversibility | | | |
 
 ## Decision
-<Chosen option.>
+
+[FILL: Chosen option.]
 
 ## Rationale
-<Why — including what we are knowingly giving up.>
+
+[FILL: Why — including what we are knowingly giving up.]
 
 ## Assumptions
-- <If wrong, revisit.>
+
+- [FILL: If wrong, revisit.]
 
 ## Reversibility
+
 High / Medium / Low, and the actual cost of reversal.
 
 ## Expected outcome
-<Measurable. "X moves from A to B by DATE.">
+
+[FILL: Measurable. "X moves from A to B by DATE."]
 
 ## Review date
+
 YYYY-MM-DD
 
 ## Actual outcome
+
 Pending
 
 ---

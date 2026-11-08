@@ -1,7 +1,7 @@
 # Data
 
 Queries, metric values and instrumentation. Feeds Cagan's Q8 (*how will we measure success?*) and
-gives Pichler's GO Roadmap rows their METRICS a baseline.
+gives GO Roadmap rows their metrics a baseline.
 
 ## Note fields
 

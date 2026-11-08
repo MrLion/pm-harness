@@ -3,7 +3,7 @@ type: roadmap
 horizon: now
 status: draft
 framework: Pichler (GO Product Roadmap)
-updated: 2026-10-23
+updated: 2026-11-08
 ---
 
 # Now — GO Product Roadmap
@@ -16,7 +16,7 @@ Full field definitions and checklist: `99-Hermes/Templates/GO-Roadmap.md`.
 | [FILL] | [FILL] | [FILL] | [FILL] | [FILL] |
 
 ## Sequencing rationale
-<Why this order — dependencies, cost of delay, which risk gets retired first.>
+[FILL: Why this order — dependencies, cost of delay, which risk gets retired first.]
 
 ## Related
-- [[Next]] · [[Later]] · [[Goals]]
+- [[Next]] · [[Later]] · [[PM vault/00-Product/Goals|Goals]]

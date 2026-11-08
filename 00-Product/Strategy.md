@@ -3,7 +3,7 @@ type: strategy
 status: draft
 confidence: none
 framework: Pichler
-updated: 2026-10-23
+updated: 2026-11-08
 review_cadence_days: 90
 ---
 
@@ -36,4 +36,4 @@ Template and checklist: `99-Hermes/Templates/Strategy.md`.
 - [FILL]
 
 ## Related
-- [[Product]] · [[Vision]] · [[Goals]] · [[Metrics]]
+- [[Product]] · [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]

@@ -35,10 +35,12 @@ list with dates is the thing this template exists to prevent.
 | [FILL] | [FILL] | [FILL] | [FILL] | [FILL] |
 
 ## Sequencing rationale
-<Why this order — dependencies, cost of delay, risk being retired first.>
+
+[FILL: Why this order — dependencies, cost of delay, risk being retired first.]
 
 ## Related
-- [[Goals]] · [[Now]] · [[Later]]
+
+- [[PM vault/00-Product/Goals|Goals]] · [[Now]] · [[Later]]
 
 ---
 

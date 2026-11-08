@@ -6,6 +6,7 @@ What shipped, when, and what happened afterwards. Template: [[Release]], with fr
 ```dataview
 TABLE date, goal, metric_result
 FROM "PM vault/07-Delivery/Releases"
+WHERE type = "release"
 SORT date DESC
 ```
 

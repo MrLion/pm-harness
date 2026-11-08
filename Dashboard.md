@@ -6,30 +6,34 @@ type: dashboard
 
 Start · [[START-HERE]]
 
-Product · [[Product]] [[Vision]] [[Strategy]] [[Goals]] [[Metrics]]
-Roadmap · [[Now]] [[Next]] [[Later]]
+Product · [[Product]] · [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Strategy|Strategy]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]
+Roadmap · [[Now]] · [[Next]] · [[Later]]
 Discovery · [[Discovery Map]]
-Operating · [[PM]] [[Rules]]
+Operating · [[PM]] · [[Rules]]
 
 ---
 
 ## Problems
+
 ```dataview
 TABLE status, confidence, severity, priority
 FROM "PM vault/02-Problems"
 WHERE type = "problem" AND status != "closed"
-SORT confidence ASC, severity DESC
+SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC,
+     choice(severity = "low", 0, choice(severity = "medium", 1, 2)) DESC
 ```
 
 ## Opportunities
+
 ```dataview
 TABLE status, confidence, recommendation
 FROM "PM vault/03-Opportunities"
 WHERE type = "opportunity" AND status != "closed"
-SORT confidence ASC
+SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 
 ## Opportunities with no recommendation
+
 ```dataview
 TABLE confidence, review_after
 FROM "PM vault/03-Opportunities"
@@ -37,6 +41,7 @@ WHERE type = "opportunity" AND status != "closed" AND (recommendation = null OR 
 ```
 
 ## Decisions
+
 ```dataview
 TABLE status, date, reversibility, review_date
 FROM "PM vault/05-Decisions"
@@ -46,6 +51,7 @@ LIMIT 12
 ```
 
 ## Decisions awaiting outcome
+
 ```dataview
 TABLE date, review_date, reversibility
 FROM "PM vault/05-Decisions"
@@ -54,6 +60,7 @@ SORT review_date ASC
 ```
 
 ## PRDs
+
 ```dataview
 TABLE status, opportunity, updated
 FROM "PM vault/07-Delivery/PRDs"
@@ -62,6 +69,7 @@ SORT updated DESC
 ```
 
 ## Experiments
+
 ```dataview
 TABLE status, opportunity, start, end
 FROM "PM vault/07-Delivery/Experiments"
@@ -70,6 +78,7 @@ SORT start ASC
 ```
 
 ## Research
+
 ```dataview
 TABLE category, date, reliability
 FROM "PM vault/04-Research"
@@ -78,19 +87,56 @@ SORT date DESC
 LIMIT 15
 ```
 
-## Stale (frontmatter `updated` is 30+ days old)
+## Maintenance — missing dates
+
 ```dataview
-TABLE updated, status
-FROM "PM vault/00-Product" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions"
-WHERE updated AND date(updated) < date(today) - dur(30 days)
+TABLE type, status
+FROM "PM vault/00-Product" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research"
+WHERE type != null AND !updated
+SORT file.name ASC
+```
+
+## Maintenance — not updated in 30 days
+
+```dataview
+TABLE type, updated
+FROM "PM vault/00-Product" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research"
+WHERE type != null AND date(updated) < date(today) - dur(30 days)
 SORT updated ASC
 ```
 
----
+## Maintenance — opportunity review overdue
+
+```dataview
+TABLE status, confidence, review_after
+FROM "PM vault/03-Opportunities"
+WHERE type = "opportunity" AND status != "closed" AND review_after != null AND date(review_after) <= date(today)
+SORT review_after ASC
+```
+
+## Maintenance — decision outcome review overdue
+
+```dataview
+TABLE status, review_date, reversibility
+FROM "PM vault/05-Decisions"
+WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending") AND review_date != null AND date(review_date) <= date(today)
+SORT review_date ASC
+```
+
+## Maintenance — cadence overdue
+
+```dataview
+TABLE type, updated, review_cadence_days
+FROM "PM vault/00-Product"
+WHERE review_cadence_days != null AND date(updated) < date(today) - dur(review_cadence_days + " days")
+SORT updated ASC
+```
 
 ## Reviews
+
 ```dataview
 LIST
 FROM "PM vault/08-Reviews"
+WHERE type = "review"
 SORT file.name DESC
 ```
