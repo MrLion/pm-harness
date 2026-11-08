@@ -11,10 +11,11 @@ Delete the `[!example]` block before using a template for real work.
 |---|---|---|---|
 | [[Product-Vision-Board]] | `00-Product/Product.md` | Pichler | [Vision Board](https://romanpichler.com/tools/product-vision-board/) |
 | [[Strategy]] | `00-Product/Strategy.md` | Pichler | [Strategy model](https://romanpichler.com/blog/my-product-strategy-model/) |
-| [[Goals]] | `00-Product/Goals.md` | Pichler | [Goal-setting](https://romanpichler.com/blog/leading-through-shared-goals/) |
-| [[Metrics]] | `00-Product/Metrics.md` | Pichler | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) |
+| [[Goals]] | `00-Product/Goals.md` | Pichler + OKR + Impact Mapping | [Goal-setting](https://romanpichler.com/blog/leading-through-shared-goals/) · [Impact Mapping](https://www.impactmapping.org/) |
+| [[Metrics]] | `00-Product/Metrics.md` | Pichler + North Star | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) · [North Star](https://amplitude.com/books/north-star/about-north-star-framework) |
 | [[GO-Roadmap]] | `06-Roadmap/` | Pichler | [GO Product Roadmap](https://romanpichler.com/tools/the-go-product-roadmap/) |
 | [[Persona]] | `01-Users/Personas/` | Pichler | [Persona Template](https://www.romanpichler.com/the-persona-template/) |
+| [[Discovery-Map]] | `03-Opportunities/Discovery Map.md` | Torres | [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) |
 | [[Opportunity]] | `03-Opportunities/` | SVPG | [Opportunity assessment](https://www.svpg.com/assessing-product-opportunities/) |
 | [[Experiment]] | `07-Delivery/Experiments/` | SVPG | [Four big risks](https://www.svpg.com/four-big-risks/) |
 | [[PRD]] | `07-Delivery/PRDs/` | Pichler canvas + SVPG | [Product Canvas](https://www.romanpichler.com/tools/the-product-canvas/) |
@@ -65,6 +66,16 @@ Pichler field definitions and checklists are quoted from the official tools, **C
 (© Roman Pichler / Pichler Consulting Limited). The Pichler sections of every template that quotes
 them are therefore share-alike. SVPG material is quoted from Marty Cagan's published articles
 (© Silicon Valley Product Group), quoted for reference rather than reproduced in bulk.
+
+## Added discovery and measurement layers
+
+- **Torres / Opportunity Solution Trees** provide a linked view from desired outcomes through
+  problems and opportunities to alternative solutions and assumption tests. The map never replaces
+  the canonical notes it links.
+- **Impact Mapping** (Gojko Adzic, CC BY 4.0 materials) connects Why → Who → How → What inside Goals.
+- **North Star Framework** (Amplitude) adds one customer-value metric, its inputs and guardrails.
+- **OKRs** give each horizon one qualitative Objective with measurable Key Results; they do not
+  weaken Pichler's single-goal roadmap rule.
 
 ## Why both frameworks
 

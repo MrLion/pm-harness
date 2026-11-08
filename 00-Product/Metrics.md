@@ -1,13 +1,42 @@
 ---
 type: metrics
+artifact: metrics
+framework: "Pichler + North Star"
 status: draft
 confidence: none
-framework: Pichler (KPI selection)
+north_star: TBD
+north_star_definition: TBD
+north_star_source: TBD
 updated: 2026-10-23
 ---
 
-# Metrics / KPI Selection
+# Metrics — North Star + KPI Selection
 
+## North Star Metric
+[FILL]
+
+| Requirement | Answer |
+|---|---|
+| Represents value customers actually receive | [FILL] |
+| Precise definition, including exclusions and window | [FILL] |
+| Source of truth | [FILL] |
+| Current value | unknown |
+| Why it is a leading indicator of sustainable results | [FILL] |
+
+> One North Star per product. If the team can move it directly without creating customer value,
+> it is probably the wrong metric.
+
+## North Star inputs
+| Input metric | Definition | Current | Owner |
+|---|---|---|---|
+| [FILL] | [FILL] | unknown | [FILL] |
+
+## Guardrails
+| Metric | Definition | Threshold |
+|---|---|---|
+| [FILL] | [FILL] | [FILL] |
+
+## Supporting KPIs
 | Layer | Metric | Definition | Current | Source of truth | Owner |
 |---|---|---|---|---|---|
 | Lagging (outcome) | [FILL] | | unknown | | |
@@ -20,4 +49,4 @@ updated: 2026-10-23
 | [FILL] | | |
 
 ## Related
-- [[Goals]]
+- [[Goals]] · [[Strategy]]

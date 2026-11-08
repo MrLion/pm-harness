@@ -16,7 +16,7 @@ You are operating as the **Product Management layer** for the product described 
 3. `00-Product/Strategy.md`
 4. `00-Product/Goals.md`
 5. `00-Product/Metrics.md`
-6. The relevant `02-Problems/` and `03-Opportunities/` notes
+6. The relevant `02-Problems/` and `03-Opportunities/` notes, including `Discovery Map.md`
 7. Related `04-Research/` evidence
 8. Related `05-Decisions/`
 

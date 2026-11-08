@@ -1,29 +1,47 @@
 ---
 type: goals
+artifact: goals
+framework: "Pichler + OKR + Impact Mapping"
 status: draft
 confidence: none
-framework: Pichler
+objective: TBD
+period: TBD
 updated: 2026-10-23
 ---
 
-# Goals
+# Goals — OKR + Impact Map
 
-> Pichler's goal qualities: outcome-based · specific · measurable · prioritised · **single** —
-> one goal at a time, not several concurrently.
+> One objective per horizon. Pichler's **single goal** rule still applies to each roadmap row;
+> OKR key results measure that objective rather than creating competing objectives.
 
-| Horizon | Goal (outcome) | Metric | Baseline | Target | Deadline | Confidence |
-|---|---|---|---|---|---|---|
-| This quarter | [FILL] | [FILL] | unknown | [FILL] | [FILL] | none |
+## Objective
+[FILL] — qualitative, outcome-oriented, and meaningful without mentioning a feature.
+
+## Key Results
+| KR | Metric | Baseline | Target | Deadline | Confidence |
+|---|---|---|---|---|---|
+| KR1 | [FILL] | unknown | [FILL] | [FILL] | none |
+| KR2 | [FILL] | unknown | [FILL] | [FILL] | none |
+
+> A key result with no baseline is not yet measurable. Establish the baseline or mark the target provisional.
+
+## Impact Map
+**Why:** the Objective above.
+
+| Who (actor) | How (required behaviour change) | What (deliverable) | Evidence the behaviour changed |
+|---|---|---|---|
+| [FILL] | [FILL] | [FILL] | [FILL] |
+
+> A deliverable belongs here only if it could plausibly produce the stated behaviour change.
+> Find the shortest path to the goal; do not implement the whole map.
 
 ## Non-goals this horizon
 - [FILL]
 
-> A goal with no baseline is a wish, not a goal. Fill `Baseline` or state how you'll establish it.
-
 ## Goal → roadmap traceability
-| Goal | Roadmap entry | Opportunity |
+| Objective / KR | Roadmap entry | Opportunity |
 |---|---|---|
 | [FILL] | [[Now]] | [[OPP-000]] |
 
 ## Related
-- [[Metrics]] · [[Strategy]]
+- [[Metrics]] · [[Strategy]] · [[Discovery Map]]

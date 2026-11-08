@@ -1,7 +1,7 @@
 ---
 type: rules
 status: active
-version: 2
+version: 3
 ---
 
 # Hermes PM Rules
@@ -56,8 +56,9 @@ Flag artifacts past `review_after` / `review_cadence_days`, decisions whose expe
 was never recorded, and metrics with no baseline. Silence about staleness is a failure.
 
 ## 12. Declare the framework
-Every artifact's frontmatter names its framework (`framework: Pichler` / `framework: SVPG` / `none`).
-Do not invent a hybrid structure silently — if a note departs from its template, say which and why.
+Every artifact's frontmatter names its framework (`Pichler`, `SVPG`, `Torres`, `North Star`,
+`Impact Mapping`, `OKR`, `none`, or a declared combination). Do not invent a hybrid structure
+silently — if a note departs from its template, say which and why.
 
 ## 13. No-go is an answer
 A Product Opportunity Assessment may recommend **no-go**, and that is a successful outcome — it
@@ -72,7 +73,17 @@ load-bearing. A risk with no owner and no test is not risk management, it is dec
 Per Pichler: a roadmap row carries a single goal. Two concurrent goals in one row means the row is
 really two rows, or the goal is not yet understood.
 
-## 16. Respect the write boundary
+## 16. Maps are views, not duplicate knowledge
+The Opportunity Solution Tree links canonical Goals, Problems, Opportunities, solution briefs and
+Experiments. Never create a solution or opportunity that exists only in the map. Use the map to
+expose alternative solutions, missing evidence and orphaned branches.
+
+## 17. Goals and metrics remain falsifiable
+An OKR has one Objective per horizon and measurable Key Results. A North Star Metric represents
+customer value, has a precise definition and source, and is supported by inputs and guardrails.
+Unknown baselines stay `unknown`; never invent them.
+
+## 18. Respect the write boundary
 Free to write: `04-Research`, `02-Problems`, `03-Opportunities`, `07-Delivery/Experiments`,
 `08-Reviews`, `99-Hermes`.
 Draft only (propose, do not overwrite): `07-Delivery/PRDs`, `06-Roadmap`.

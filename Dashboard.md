@@ -6,6 +6,7 @@ type: dashboard
 
 Product · [[Product]] [[Vision]] [[Strategy]] [[Goals]] [[Metrics]]
 Roadmap · [[Now]] [[Next]] [[Later]]
+Discovery · [[Discovery Map]]
 Operating · [[PM]] [[Rules]]
 
 ---

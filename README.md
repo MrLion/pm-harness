@@ -9,7 +9,7 @@ git is the audit trail.
 00-Product/      the current truth about the product (scaffold until filled)
 01-Users/        personas, jobs-to-be-done, raw feedback
 02-Problems/     PROB-NNN — who hurts, how often, what it costs
-03-Opportunities/ OPP-NNN — what would improve, hypothesis, evidence, options
+03-Opportunities/ OPP-NNN + Discovery Map — assessments and the Opportunity Solution Tree
 04-Research/     market · competitors · users · data
 05-Decisions/    DEC-NNN — options, tradeoffs, outcome, review date
 06-Roadmap/      Now / Next / Later
@@ -58,6 +58,11 @@ Pichler alone assumes the opportunity is sound. Cagan alone refuses to plan. The
 Pichler for artifacts that survive quarters, SVPG for the gate that stops you building the wrong
 thing. Every template carries a collapsible fictional worked example ("Lantern", a clinic
 scheduling tool) so the shape is obvious.
+
+Additional layers: **Opportunity Solution Trees** link goals → problems → opportunities →
+solutions → experiments; **Impact Mapping** makes goal → actor → behaviour change → deliverable
+explicit; **OKRs** give each horizon one Objective with measurable Key Results; **North Star**
+adds one customer-value metric with inputs and guardrails.
 
 Pichler material is quoted under **CC BY-SA 4.0** — see `99-Hermes/Templates/_Templates.md`.
 

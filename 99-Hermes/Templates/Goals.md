@@ -1,45 +1,66 @@
 ---
 type: goals
 artifact: goals
+framework: "Pichler + OKR + Impact Mapping"
 status: draft
 confidence: none
+objective: TBD
+period: TBD
 updated: YYYY-MM-DD
-framework: Pichler
-source: https://romanpichler.com/blog/leading-through-shared-goals/"
+source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://www.impactmapping.org/"
 ---
 
-# Goals
+# Goals — OKR + Impact Map
 
-> [!quote] Pichler's goal qualities
-> Outcome-based · Specific · Measurable · Prioritised · **Single** — one goal at a time, not
-> several worked concurrently.
+> One objective per horizon. Pichler's **single goal** rule still applies to each roadmap row;
+> OKR key results measure that objective rather than creating competing objectives.
 
-| Horizon | Goal (outcome) | Metric | Baseline | Target | Deadline | Confidence |
-|---|---|---|---|---|---|---|
-| This quarter | [FILL] | [FILL] | unknown | [FILL] | [FILL] | low |
+## Objective
+[FILL] — qualitative, outcome-oriented, and meaningful without mentioning a feature.
+
+## Key Results
+| KR | Metric | Baseline | Target | Deadline | Confidence |
+|---|---|---|---|---|---|
+| KR1 | [FILL] | unknown | [FILL] | [FILL] | none |
+| KR2 | [FILL] | unknown | [FILL] | [FILL] | none |
+
+> A key result with no baseline is not yet measurable. Establish the baseline or mark the target provisional.
+
+## Impact Map
+**Why:** the Objective above.
+
+| Who (actor) | How (required behaviour change) | What (deliverable) | Evidence the behaviour changed |
+|---|---|---|---|
+| [FILL] | [FILL] | [FILL] | [FILL] |
+
+> A deliverable belongs here only if it could plausibly produce the stated behaviour change.
+> Find the shortest path to the goal; do not implement the whole map.
 
 ## Non-goals this horizon
 - [FILL]
 
-> [!warning] Gate
-> A goal with no baseline is not a goal, it is a wish. Fill `Baseline` or state how you will
-> establish it before the goal starts.
-
 ## Goal → roadmap traceability
-| Goal | Roadmap entry | Opportunity |
+| Objective / KR | Roadmap entry | Opportunity |
 |---|---|---|
 | [FILL] | [[Now]] | [[OPP-000]] |
 
 ## Related
-- [[Metrics]] · [[Strategy]] · [[Now]]
+- [[Metrics]] · [[Strategy]] · [[Discovery Map]]
 
 ---
 
 > [!example]- Worked example — fictional
-> | Horizon | Goal | Metric | Baseline | Target | Deadline |
-> |---|---|---|---|---|---|
-> | Q1 | Managers stop phoning to fill gaps | Gaps filled without a manager call | 22% | 60% | 31 Mar |
-> | Q2 | Clinics keep using it after month two | 60-day retention | unknown — instrumented 12 Jan | 85% | 30 Jun |
+> **Objective:** Make same-day gap filling routine rather than heroic.
 >
-> **Non-goal:** multi-location rostering. **Gate note:** retention baseline did not exist at Q1
-> start, so Q2's target is provisional until the first cohort completes 60 days.
+> | KR | Metric | Baseline | Target | Deadline |
+> |---|---|---|---|---|
+> | KR1 | Gaps filled without a manager call | 22% | 60% | 31 Mar |
+> | KR2 | Median time-to-fill | 45 min | 15 min | 31 Mar |
+>
+> **Impact Map**
+> | Who | How | What | Evidence |
+> |---|---|---|---|
+> | Practice managers | Choose auto-offer instead of starting a phone tree | Gap auto-offer | Auto-filled share reaches 60% |
+> | Staff | Respond to an offer during a shift | Two-tap mobile accept | Median acceptance under 10 min |
+>
+> The map does not imply building payroll, HR records, or a full rota builder. Those are non-goals.

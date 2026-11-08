@@ -1,23 +1,48 @@
 ---
 type: metrics
 artifact: metrics
+framework: "Pichler + North Star"
 status: draft
 confidence: none
+north_star: TBD
+north_star_definition: TBD
+north_star_source: TBD
 updated: YYYY-MM-DD
-framework: Pichler
-source: https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/"
+source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/ + https://amplitude.com/books/north-star/about-north-star-framework"
 ---
 
-# Metrics / KPI Selection
+# Metrics — North Star + KPI Selection
 
+## North Star Metric
+[FILL]
+
+| Requirement | Answer |
+|---|---|
+| Represents value customers actually receive | [FILL] |
+| Precise definition, including exclusions and window | [FILL] |
+| Source of truth | [FILL] |
+| Current value | unknown |
+| Why it is a leading indicator of sustainable results | [FILL] |
+
+> One North Star per product. If the team can move it directly without creating customer value,
+> it is probably the wrong metric.
+
+## North Star inputs
+| Input metric | Definition | Current | Owner |
+|---|---|---|---|
+| [FILL] | [FILL] | unknown | [FILL] |
+
+## Guardrails
+| Metric | Definition | Threshold |
+|---|---|---|
+| [FILL] | [FILL] | [FILL] |
+
+## Supporting KPIs
 | Layer | Metric | Definition | Current | Source of truth | Owner |
 |---|---|---|---|---|---|
 | Lagging (outcome) | [FILL] | | unknown | | |
 | Leading (behaviour) | [FILL] | | unknown | | |
 | Health (guardrail) | [FILL] | | unknown | | |
-
-> [!quote] KPI selection principle
-> Few, not many. Each KPI needs a precise definition, a data source, and a decision it informs.
 
 ## Instrumentation gaps
 | Metric we need | Why we can't measure it yet | Fix |
@@ -25,16 +50,19 @@ source: https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-prod
 | [FILL] | | |
 
 ## Related
-- [[Goals]]
+- [[Goals]] · [[Strategy]]
 
 ---
 
 > [!example]- Worked example — fictional
-> | Layer | Metric | Definition | Current | Source |
-> |---|---|---|---|---|
-> | Lagging | Clinics retained at 6 months | Active = ≥1 shift filled that month | unknown | billing + event log |
-> | Leading | Gaps filled without manager call | (gaps auto-filled) / (all gaps) | 22% | event log |
-> | Health | Illegal-assignment attempts blocked | Count per 100 assignments | 0 | guardrail log |
+> **North Star:** shifts successfully filled per active clinic per week.
+> **Definition:** a shift counts once when an eligible staff member accepts and the assignment is
+> not subsequently cancelled; cancelled shifts and test accounts are excluded; measured weekly.
+> **Why:** it represents the operational value clinics buy, and repeated weekly value should precede
+> retention and revenue. Source: assignment event log. Current value: unknown until instrumented.
 >
-> **Gap:** retention has no historical baseline — product launched 6 weeks ago. Fix: wait for the
-> first cohort rather than invent a number.
+> **Inputs:** offer acceptance rate · median time-to-fill · active clinics with at least one gap.
+> **Guardrail:** illegal assignments must remain 0; cancellation rate must not exceed baseline.
+>
+> **Instrumentation gap:** the metric does not exist historically. Record `unknown`; do not infer it
+> from registered clinics or total offers sent.
