@@ -11,6 +11,43 @@ license: "CC BY-SA 4.0 — Roman Pichler, Product Vision Board v01/2023"
 
 # Product Vision Board
 
+## Example — US healthcare consumer
+
+> [!example]- Example — transparent outpatient care
+> **Vision:** Consumers choose care before care chooses them.
+> **Target group:** Adults on employer-sponsored HDHPs.
+> **Needs:** Accurate out-of-pocket estimate before care.
+> **Product:** Transparent cost estimator + provider matching.
+> **Business goals:** Reduced postponed care; higher patient trust.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | vision | what the product should become | one sentence, not a feature list |
+> | target group | specific segment | avoid “everyone” |
+> | needs | the job-to-be-done | no solution words |
+> | stand-out feature | differentiating feature | tie to need |
+> | business goal | commercial outcome | measureable |
+
+
+
+
+> [!example]- Example — transparent outpatient imaging
+> **Vision:** Consumers choose care before care chooses them.
+> **Target group:** Adults on employer-sponsored HDHPs.
+> **Needs:** Accurate out-of-pocket estimate before care.
+> **Product:** Transparent cost estimator + provider matching.
+> **Business goals:** Reduced postponed care; higher patient trust.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | vision | what the product should become | one sentence, not a feature list |
+> | target group | specific segment | avoid “everyone” |
+> | needs | the job-to-be-done | no solution words |
+> | stand-out feature | differentiating feature | tie to need |
+> | business goal | commercial outcome | measureable |
+
 Replaces `00-Product/Product.md`. Five sections. The vision is enduring; the four below it are
 strategy elements and are **assumptions to be validated**, not facts to be declared.
 

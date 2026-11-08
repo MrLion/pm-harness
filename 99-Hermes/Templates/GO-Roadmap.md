@@ -11,6 +11,25 @@ license: "CC BY-SA 4.0 — Roman Pichler, GO Product Roadmap v01/2023"
 
 # GO Product Roadmap
 
+## Example — US healthcare consumer
+
+> [!example]- Example — outpatient cost estimator pilot
+> **NAME:** “Transparent Imaging” — outpatient cost estimator MVP
+> **GOAL:** Reduce postponed care from unknown out-of-pocket cost.
+> **METRICS:** Accurate pre-care cost estimates delivered.
+> **DATE:** Q1 pilot in 2 outpatient clinics.
+> **FEATURES:** cost estimate · provider match · appointment scheduler.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | NAME | milestone name | communicate essence |
+> | GOAL | outcome to achieve | one goal per row |
+> | METRICS | measurable test of success | must be precise |
+> | DATE | target timeframe | use quarter or month |
+> | FEATURES | max 5 capabilities | coarse, not granular |
+
+
 Replaces `06-Roadmap/Now.md`, `Next.md`, `Later.md`. Rows are **goals**, not features. A feature
 list with dates is the thing this template exists to prevent.
 

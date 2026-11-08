@@ -20,6 +20,47 @@ source: https://www.svpg.com/assessing-product-opportunities/
 
 # Opportunity (SVPG Product Opportunity Assessment)
 
+## Example — US healthcare consumer
+
+> [!example]- Example — transparent outpatient cost estimate
+> **Problem:** A consumer under an HDHP chooses outpatient imaging without knowing full cost.
+> **Why it matters:** Only 41% receive an estimate, and 43% postpone care absent one.
+> **Candidate solution:** cost estimator + provider matching.
+> **Smallest experiment:** 5 patient interviews.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | risk_type | the primary risk being retired | value / usability / feasibility / viability |
+> | risk_owner | who owns the test | PM if value or viability |
+> | confidence | how likely the opportunity is real | follow evidence strength |
+> | impact | expected effect if solved | measurable, not aspirational |
+> | effort | implementation effort | T-shirt size only |
+> | recommendation | go / no-go / defer | `Pending` is valid |
+> | score | ranking score | leave `null` until evidence exists |
+
+
+
+
+> [!example]- Example — transparent outpatient cost estimate
+> **Problem:** A consumer under an HDHP chooses an outpatient imaging provider without knowing the full cost.
+> **Why it matters:** Only 41% receives an estimate, and its accuracy is falling; 43% postpone care absent an estimate.
+> **Candidate solution:** cost estimator + provider matching
+> **Smallest experiment:** 5 patient interviews
+>
+> This is a **sourced example**, not real product evidence.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | risk_type | value / usability / feasibility / viability | pick the one risk being retired |
+> | risk_owner | PM / Design / Eng | PM if value or viability |
+> | confidence | `low / medium / high` | follow evidence strength |
+> | impact | customer / business / strategic effect | use `unknown` until measured |
+> | effort | implementation effort | T-shirt size only |
+> | recommendation | go / no-go / defer | `Pending` is valid |
+> | score | ranking score | leave `null` until evidence exists |
+
 Ten questions, then the four risks. **The purpose is to kill weak opportunities cheaply**, not to
 justify ones you already want to build.
 

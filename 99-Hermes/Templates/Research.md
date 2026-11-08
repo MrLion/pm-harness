@@ -11,7 +11,41 @@ framework: none
 updated: YYYY-MM-DD
 ---
 
+
 # Research
+
+## Example — US healthcare consumer
+
+> [!example]- Example — consumer cost transparency data
+> **Source:** William Blair *Consumer-Centric Healthcare 2026*
+> **Data:** 41% receive estimates; 43% postpone care without estimate.
+> **Use case:** Validate whether the opportunity is real and material.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | source | origin of data | date mandatory |
+> | method | how evidence was obtained | avoid unsupported claims |
+> | findings | what the source tells you | one finding per row |
+> | raw signal | original quote / number / link | use only if it exists |
+
+
+
+
+> [!example]- Example — consumer cost transparency data
+> **Source:** William Blair *Consumer-Centric Healthcare 2026*
+> **Data:** 41% get estimates; 43% postpone care without estimate.
+> **Use case:** Validate whether the opportunity is real and material.
+>
+> Sourced example, not product evidence.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | source | origin of data | date mandatory |
+> | method | how evidence was obtained | avoid unsupported claims |
+> | findings | what the source tells you | one finding per row |
+> | raw signal | original quote / number / link | use only if it exists |
 
 ## Question this answers
 

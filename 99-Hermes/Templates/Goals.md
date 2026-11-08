@@ -10,7 +10,46 @@ updated: YYYY-MM-DD
 source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://www.impactmapping.org/"
 ---
 
-# Goals — OKR + Impact Map
+# Goals
+
+## Example — US healthcare consumer
+
+> [!example]- Example — reduce cost shock before care
+> **Objective:** Reduce out-of-pocket cost uncertainty for elective outpatient care.
+> **KR 1:** Increase accurate pre-care estimates from unknown to at least 1 per patient before visit.
+> **Actor:** Patient selecting outpatient imaging.
+> **Behavior change:** Consult accurate cost estimate before booking.
+> **Deliverable:** Cost estimator MVP.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | Objective | one goal per horizon | keep single |
+> | KR | measurable and time-bound | baseline unknown is valid |
+> | actor | who must change behavior | one actor per row |
+> | behavior | what they should do differently | observable |
+> | deliverable | what enables it | tie to a feature/capability |
+> | non-goals | what is out of scope | prevents creep |
+
+
+
+
+> [!example]- Example — reduce cost shock before care
+> **Objective:** Reduce out-of-pocket cost uncertainty for elective outpatient care.
+> **KR 1:** Increase accurate pre-care estimates from unknown to at least 1 per patient before visit.
+> **Actor:** Patient selecting outpatient imaging.
+> **Behavior change:** Consult accurate cost estimate before booking.
+> **Deliverable:** Cost estimator MVP.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | Objective | one goal per horizon | keep single |
+> | KR | measurable and time-bound | baseline unknown is valid |
+> | actor | who must change behavior | one actor per row |
+> | behavior | what they should do differently | observable |
+> | deliverable | what enables it | tie to a feature/capability |
+> | non-goals | what is out of scope | prevents creep | — OKR + Impact Map
 
 > One objective per horizon. Pichler's **single goal** rule still applies to each roadmap row;
 > OKR key results measure that objective rather than creating competing objectives.

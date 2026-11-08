@@ -13,6 +13,39 @@ updated: YYYY-MM-DD
 
 # Feedback
 
+## Example — US healthcare consumer
+
+> [!example]- Example — patient says post-care bills are opaque
+> **Source:** Patient on HDHP after outpatient imaging.
+> **Verbatim:** They didn’t know the final out-of-pocket bill until after the visit.
+> **Situation:** Choosing outpatient imaging.
+> **Frequency:** Recurring complaint across accounts.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | verbatim signal | exact words | use only if you have them |
+> | source | who said it | date + channel |
+> | situation | what they were doing | context required |
+> | frequency | how many accounts raised it | counts matter more than sentiment |
+
+
+
+
+> [!example]- Example — patient says post-care bills are opaque
+> **Source:** Patient on HDHP after outpatient imaging.
+> **Verbatim:** They didn’t know the final out-of-pocket bill until after the visit.
+> **Situation:** Choosing outpatient imaging.
+> **Frequency:** Recurring complaint across accounts.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | verbatim signal | exact words | use only if you have them |
+> | source | who said it | date + channel |
+> | situation | what they were doing | context required |
+> | frequency | how many accounts raised it | counts matter more than sentiment |
+
 Raw customer signal. Keep the original wording. A paraphrase is your interpretation, not evidence.
 
 ## Source

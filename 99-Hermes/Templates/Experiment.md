@@ -17,6 +17,47 @@ updated: YYYY-MM-DD
 
 # Experiment
 
+## Example — US healthcare consumer
+
+> [!example]- Example — test cost-estimate clarity
+> **Risk:** usability.
+> **Hypothesis:** Chat-based cost estimation reduces prep friction.
+> **Design:** 5 interviews with HDHP members choosing imaging.
+> **Success:** ≥3 can explain the estimate after interview.
+> **Failure:** <2 can retain the estimate.
+> **Cost:** 5 interviews, one clinic.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | primary risk | one uncertainty being tested | value / usability / feasibility / viability |
+> | opportunity | must exist before building | no orphan experiments |
+> | hypothesis | expected measurable effect | avoid vague wording |
+> | design | cheapest test | not elaborate builds |
+> | pre-registered criteria | success / failure / kill | define before data |
+
+
+
+
+> [!example]- Example — test the value of accurate cost estimates
+> **Risk:** usability
+> **Hypothesis:** A chat-based cost-estimation prompt will reduce patient-preparation friction.
+> **Design:** 5 patient interviews with HDHP members choosing imaging.
+> **Success:** ≥3 patients can explain the estimate after the interview.
+> **Failure:** <2 patients can retain the estimate.
+> **Cost:** 5 interviews across one clinic.
+>
+> This is a **sourced example**, not real product evidence.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | primary risk | the one uncertainty being tested | value / usability / feasibility / viability |
+> | opportunity | linked opportunity artifact | must exist before building |
+> | hypothesis | expected effect | use specific, measurable wording |
+> | design | cheapest test | avoid elaborate builds early |
+> | pre-registered criteria | success / failure / kill before data | define before running |
+
 An experiment exists to retire **one primary named risk**. If you cannot name which of the four
 risks it targets (value, usability, feasibility or viability), it is not an experiment — it is a
 build. Secondary observations may be recorded, but they do not redefine the experiment.

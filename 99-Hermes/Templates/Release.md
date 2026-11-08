@@ -17,6 +17,24 @@ updated: YYYY-MM-DD
 A delivery record tied to the GO Roadmap goal it was meant to move. Without a goal and a measured
 result, this is a deployment log rather than a learning artifact.
 
+## Example — US healthcare consumer
+
+> [!example]- Example — outpatient cost estimator pilot
+> **Release:** Cost estimator MVP.
+> **Goal:** Reduce postponed care due to unknown out-of-pocket cost.
+> **Metric before/after:** Baseline unknown.
+> **Follow-up:** Add provider matching if pilot succeeds.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | date | real release date | no fictional dates |
+> | contents | what shipped | concise |
+> | goal | outcome it should move | link artifact |
+> | metric movement | measured learning | not an estimate |
+> | surprises | what actually surprised us | can be negative |
+> | unexpected cost | support/ops burden | not just dollars |
+
 ## Release
 
 | Field | Content |

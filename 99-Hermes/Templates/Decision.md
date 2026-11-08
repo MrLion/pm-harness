@@ -14,6 +14,25 @@ updated: YYYY-MM-DD
 
 # Decision
 
+## Example — US healthcare consumer
+
+> [!example]- Example — decide whether to build cost estimator MVP
+> **Question:** Build an outpatient cost estimator before broader patient-portal work?
+> **Context:** 43% postpone care without an accurate estimate.
+> **Options:** Build · partner · defer
+> **Chosen:** Build a minimum reliable estimate MVP
+> **Reversibility:** medium
+> **Review:** after two pilot cycles
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | status | proposed / accepted / reversed | never mark accepted without human |
+> | reversibility | cost to undo | low / medium / high |
+> | review_date | when to revisit outcome | not project deadline |
+> | expected_outcome | measurable prediction | date + metric |
+> | actual_outcome | what actually happened | `Pending` until verified |
+
 ## Question
 
 [FILL: One sentence. If it contains "and", split it into two decisions.]

@@ -9,7 +9,42 @@ framework: "Pichler (goal vs outcome) + SVPG (risk retired vs not)"
 updated: YYYY-MM-DD
 ---
 
-# Review — YYYY-MM
+# Review
+
+## Example — US healthcare consumer
+
+> [!example]- Example — post-pilot cost transparency review
+> **Goals vs outcomes:** Did accurate pre-care estimates reduce postponed care or unexpected bills?
+> **Risks retired:** Value risk tested; usability risk not yet.
+> **Met?** `unknown / not measured / measured hit/miss`
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | goals vs outcomes | compare target to actual | never call unknown a miss |
+> | risks retired | which uncertainty was resolved | must be explicit |
+> | what learned | new knowledge from evidence | not generic restatement |
+> | what got wrong | honest mistakes | empty is red flag |
+> | metric movement | measurable change | not opinion |
+
+
+
+
+> [!example]- Example — post-pilot cost transparency review
+> **Goals vs outcomes:** Did accurate pre-care estimates reduce postponed care or unexpected bills?
+> **Risks retired:** Value risk tested; usability risk not yet.
+> **Met?** `unknown / not measured / measured hit/miss`
+>
+> Sourced example, not product evidence.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | goals vs outcomes | compare target to actual | never call unknown a miss |
+> | risks retired | which uncertainty was resolved | must be explicit |
+> | what learned | new knowledge from evidence | not generic restatement |
+> | what got wrong | honest mistakes | empty is red flag |
+> | metric movement | measurable change | not opinion | — YYYY-MM
 
 ## Goals vs outcomes
 

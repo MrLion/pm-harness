@@ -46,3 +46,21 @@ updated: YYYY-MM-DD
 > **Push:** six calls, and the first two usually decline. **Pull:** one tap, ranked by reliability.
 > **Anxiety:** an automated offer might breach rest-period rules without anyone noticing.
 > **Habit:** the WhatsApp list is in her head and she trusts her own judgement about who to ask.
+
+## Example — US healthcare consumer
+
+> [!example]- Example — high-deductible patient choosing outpatient imaging
+> **Problem:** The consumer cannot estimate the true out-of-pocket cost before booking.
+> **Why it matters:** Poor cost transparency leads to postponed care and surprise bills.
+> **Candidate solution:** transparent cost estimator + provider matching.
+> **Smallest experiment:** 5 patient interviews.
+>
+> Sourced example, not product evidence.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | status | lifecycle state | discovery until validated |
+> | confidence | how likely the claim is true | reflect evidence strength |
+> | evidence | source + date | no source = unsupported claim |
+> | severity / priority | cost and urgency | unknown until measured |

@@ -11,7 +11,41 @@ framework: Pichler
 source: https://www.romanpichler.com/the-persona-template/
 ---
 
+
 # Persona
+
+## Example — US healthcare consumer
+
+> [!example]- Example — cost-conscious HDHP adult
+> **Persona:** Patient on employer-sponsored HDHP choosing outpatient imaging.
+> **Observed behavior:** They look for provider availability, review scores, and out-of-pocket cost.
+> **Why:** They avoid surprise bills and postponed care.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | evidence_count | number of real sources | 0 = guess, not persona |
+> | role | who they are | keep narrow |
+> | context | org size / tools / constraints | make actionable |
+> | pains | friction source | avoid generic language |
+
+
+
+
+> [!example]- Example — cost-conscious HDHP adult
+> **Persona:** Patient on employer-sponsored HDHP choosing outpatient imaging.
+> **Observed behavior:** They look for provider availability, review scores, and out-of-pocket cost.
+> **Why:** They avoid surprise bills and postponed care.
+>
+> Sourced example, not product evidence.
+
+> [!todo] Ambiguous fields — how to fill
+> | Field | Meaning | If unsure |
+> |---|---|---|
+> | evidence_count | number of real sources | 0 = guess, not persona |
+> | role | who they are | keep narrow |
+> | context | org size / tools / constraints | make actionable |
+> | pains | friction source | avoid generic language |
 
 > [!warning] Evidence rule
 > `evidence_count: 0` means this persona is a guess. A persona is a modelling technique, not a
