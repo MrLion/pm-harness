@@ -23,7 +23,7 @@ example: true
 | Contents | Pre-booking estimate for one outpatient imaging type |
 | GOAL it was meant to move | Reduce out-of-pocket uncertainty before imaging |
 | Roadmap row | NOW |
-| Related opportunity / brief | [[Opportunity\|OPP-001]] · [[PRD\|PRD-001]] |
+| Related opportunity / brief | [[OPP-001-Outpatient-Imaging-Cost\|OPP-001]] · [[PRD\|PRD-001]] |
 
 ## Metric movement
 

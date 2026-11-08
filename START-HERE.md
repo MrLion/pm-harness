@@ -37,7 +37,7 @@ set `confidence: low`, and write `Evidence unavailable.` Do not make the note lo
 
 ## 3. Assess the opportunity — 7 minutes
 
-Copy [[Opportunity]] into `03-Opportunities/` with the next `OPP-NNN` ID.
+Copy [[OPP-001-Outpatient-Imaging-Cost]] into `03-Opportunities/` with the next `OPP-NNN` ID.
 
 Answer the ten questions conservatively, then name the four risks: **value, usability, feasibility,
 business viability**. Each material risk needs an owner and a test. `unknown` is a valid rating;

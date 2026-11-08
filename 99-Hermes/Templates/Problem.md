@@ -62,4 +62,4 @@ Evidence unavailable. Potential effects to measure: delayed bookings, call-centr
 
 ## Related Opportunities
 
-- [[Opportunity|OPP-001]]
+- [[OPP-001-Outpatient-Imaging-Cost|OPP-001]]

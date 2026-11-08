@@ -16,10 +16,10 @@ Linked view of existing artifacts. Template and worked example: [[Discovery-Map]
 
 ## Tree
 - **[Problem]** [[PM vault/99-Hermes/Templates/Problem|PROB-000]]
-  - **[Opportunity assessment]** [[PM vault/99-Hermes/Templates/Opportunity|OPP-000]]
-    - **CAND-000** — [FILL] · [[PM vault/99-Hermes/Templates/Opportunity#Candidate solutions|OPP-000 · CAND-000]]
+  - **[Opportunity assessment]** [[PM vault/99-Hermes/Templates/OPP-001-Outpatient-Imaging-Cost|OPP-001]]
+    - **CAND-000** — [FILL] · [[PM vault/99-Hermes/Templates/OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-000 · CAND-000]]
       - **Assumption test** [[PM vault/99-Hermes/Templates/Experiment|EXP-000]]
-    - **CAND-001** — [FILL] · [[PM vault/99-Hermes/Templates/Opportunity#Candidate solutions|OPP-000 · CAND-001]]
+    - **CAND-001** — [FILL] · [[PM vault/99-Hermes/Templates/OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-000 · CAND-001]]
 
 ## Coverage check
 - [ ] Every branch starts from a desired outcome

@@ -17,7 +17,7 @@ Delete the `[!example]` block before using a template for real work.
 | [[Dashboard-Example\|Dashboard-Example]] | `Dashboard.md` | Dataview | working dashboard over the pre-filled templates |
 | [[Persona]] | `01-Users/Personas/` | Pichler | [Persona Template](https://www.romanpichler.com/the-persona-template/) |
 | [[Discovery-Map]] | `03-Opportunities/Discovery Map.md` | Torres | [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) |
-| [[Opportunity]] | `03-Opportunities/` | SVPG | [Opportunity assessment](https://www.svpg.com/assessing-product-opportunities/) |
+| [[OPP-001-Outpatient-Imaging-Cost]] | `03-Opportunities/` | SVPG | [Opportunity assessment](https://www.svpg.com/assessing-product-opportunities/) |
 | [[Experiment]] | `07-Delivery/Experiments/` | SVPG | [Four big risks](https://www.svpg.com/four-big-risks/) |
 | [[PRD]] | `07-Delivery/PRDs/` | Pichler canvas + SVPG | [Product Canvas](https://www.romanpichler.com/tools/the-product-canvas/) |
 | [[Problem]] | `02-Problems/` | — | shared evidence-backed problem layer |
@@ -32,8 +32,8 @@ Delete the `[!example]` block before using a template for real work.
 
 These extra example notes make the dashboard’s recommendation states visible:
 
-- [[Example-OPP-002-Defer|OPP-002 — defer]]
-- [[Example-OPP-003-No-Go|OPP-003 — no-go]]
+- [[OPP-002-Provider-Comparison|OPP-002 — defer]]
+- [[OPP-003-Prior-Authorization|OPP-003 — no-go]]
 
 ## Frontmatter contract
 
@@ -58,7 +58,7 @@ queryable immediately. Copy the frontmatter verbatim; never retype it.
 | `risk_type` (primary risk) | `value` · `usability` · `feasibility` · `viability` |
 | `risk_owner` | `PM` · `Design` · `Eng` · named role |
 | `candidate_id` (prd) | stable Opportunity candidate row ID, e.g. `CAND-001`; the Discovery Map links the same row |
-| `opportunity` / `decision` (PRD) | quoted Obsidian links, e.g. `"[[Opportunity\|OPP-000]]"`, so traceability resolves |
+| `opportunity` / `decision` (PRD) | quoted Obsidian links, e.g. `"[[OPP-001-Outpatient-Imaging-Cost\|OPP-001]]"`, so traceability resolves |
 | `primary_metric` (prd) | gate on "no baseline, no brief" |
 
 **Templates carry their real `type`, not `type: template`.** That is deliberate: the schema stays

@@ -3,7 +3,7 @@
 See [[Discovery Map]] for the Opportunity Solution Tree linking goals, problems, opportunities,
 alternative solutions and experiments.
 
-`OPP-NNN` notes from [[Opportunity]] — SVPG Product Opportunity Assessment (ten questions) plus
+`OPP-NNN` notes from [[OPP-001-Outpatient-Imaging-Cost]] — SVPG Product Opportunity Assessment (ten questions) plus
 the four big risks. **Purpose: kill weak opportunities cheaply**, not justify ones you like.
 
 ```dataview

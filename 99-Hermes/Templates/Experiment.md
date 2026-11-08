@@ -5,7 +5,7 @@ id: EXP-001
 status: planned
 risk_type: usability
 risk_owner: Design
-opportunity: "[[Opportunity|OPP-001]]"
+opportunity: "[[OPP-001-Outpatient-Imaging-Cost|OPP-001]]"
 start: 2026-11-10
 end: 2026-11-21
 cost: 5 interviews
@@ -24,7 +24,7 @@ example: true
 |---|---|
 | Risk type | usability (comprehension) |
 | Assumption | Patients can explain what an estimate includes, excludes, and how long it is valid |
-| Opportunity | [[Opportunity\|OPP-001]] |
+| Opportunity | [[OPP-001-Outpatient-Imaging-Cost\|OPP-001]] |
 
 ## Hypothesis
 
@@ -61,7 +61,7 @@ Pending
 
 ## Decision
 
-Pending — link the resulting [[Decision|DEC-001]] or updated [[Opportunity|OPP-001]].
+Pending — link the resulting [[Decision|DEC-001]] or updated [[OPP-001-Outpatient-Imaging-Cost|OPP-001]].
 
 ## Scope note
 

@@ -47,5 +47,5 @@ Desk research: William Blair *Consumer-Centric Healthcare 2026*, citing Experian
 
 ## Implications
 
-- Supports: [[Problem|PROB-001]] · [[Opportunity|OPP-001]]
+- Supports: [[Problem|PROB-001]] · [[OPP-001-Outpatient-Imaging-Cost|OPP-001]]
 - Weakens: any claim that an estimate alone reduces postponed care.

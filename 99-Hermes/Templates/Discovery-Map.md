@@ -17,10 +17,10 @@ example: true
 ## Tree
 
 - **[Problem]** [[Problem|PROB-001]]
-  - **[Opportunity assessment]** [[Opportunity|OPP-001]]
-    - **CAND-001** — integrate an existing payer/provider estimator · [[Opportunity#Candidate solutions|OPP-001 · CAND-001]]
-    - **CAND-002** — assisted estimate request with human review · [[Opportunity#Candidate solutions|OPP-001 · CAND-002]]
-    - **CAND-003** — narrowly scoped self-service estimate · [[Opportunity#Candidate solutions|OPP-001 · CAND-003]]
+  - **[Opportunity assessment]** [[OPP-001-Outpatient-Imaging-Cost|OPP-001]]
+    - **CAND-001** — integrate an existing payer/provider estimator · [[OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-001 · CAND-001]]
+    - **CAND-002** — assisted estimate request with human review · [[OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-001 · CAND-002]]
+    - **CAND-003** — narrowly scoped self-service estimate · [[OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-001 · CAND-003]]
       - **Assumption test** [[Experiment|EXP-001]]
 
 ## Coverage check

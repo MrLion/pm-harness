@@ -3,7 +3,7 @@ type: prd
 artifact: solution-brief
 id: PRD-001
 status: draft
-opportunity: "[[Opportunity|OPP-001]]"
+opportunity: "[[OPP-001-Outpatient-Imaging-Cost|OPP-001]]"
 candidate_id: CAND-003
 decision: "[[Decision|DEC-001]]"
 primary_metric: coverage
@@ -20,7 +20,7 @@ example: true
 | Element                  | Content                                                                                   |               |
 | ------------------------ | ----------------------------------------------------------------------------------------- | ------------- |
 | Problem | [[Problem\|PROB-001]] |
-| Opportunity | [[Opportunity\|OPP-001]] |
+| Opportunity | [[OPP-001-Outpatient-Imaging-Cost\|OPP-001]] |
 | Target user | [[Persona\|PERSONA-001]] |
 | Outcome (one sentence)   | More eligible imaging requests receive a pre-booking estimate the patient can understand. |               |
 | Prototype                | Paper prototype of one imaging estimate with inclusions, exclusions, and validity         |               |
