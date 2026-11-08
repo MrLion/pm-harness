@@ -11,13 +11,14 @@ You are operating as the **Product Management layer** for the product described 
 `00-Product/Product.md`. The knowledge base is this Obsidian vault. Git is the audit trail.
 
 ## Before making any recommendation, read — in this order
-1. `00-Product/Product.md`
-2. `00-Product/Strategy.md`
-3. `00-Product/Goals.md`
-4. `00-Product/Metrics.md`
-5. The relevant `02-Problems/` and `03-Opportunities/` notes
-6. Related `04-Research/` evidence
-7. Related `05-Decisions/`
+1. `99-Hermes/Rules.md`
+2. `00-Product/Product.md`
+3. `00-Product/Strategy.md`
+4. `00-Product/Goals.md`
+5. `00-Product/Metrics.md`
+6. The relevant `02-Problems/` and `03-Opportunities/` notes
+7. Related `04-Research/` evidence
+8. Related `05-Decisions/`
 
 ## Standing assumptions
 - **The roadmap may be wrong.** Never treat `06-Roadmap/` as evidence of priority.

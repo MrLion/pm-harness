@@ -3,3 +3,5 @@
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/cache/
+# Folder mode: nested Obsidian config is inert machine-local state
+.obsidian/

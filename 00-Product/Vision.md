@@ -1,19 +1,22 @@
 ---
 type: vision
+artifact: vision
+framework: Pichler
 status: draft
 confidence: none
 updated: 2026-10-23
 review_cadence_days: 180
 ---
 
-# Vision
+# Vision — elaboration
 
-[FILL] — the 3-5 year world we are trying to create. One paragraph. No deliverables, no features.
+The canonical vision statement lives in [[Product]] under **VISION**. Do not repeat or maintain a
+second version here; this note holds only the context around it.
 
 ## Why this is worth doing
 [FILL]
 
-## What would prove this vision wrong
+## What would prove the canonical vision wrong
 - [FILL]
 
 ## Related

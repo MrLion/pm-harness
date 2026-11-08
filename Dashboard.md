@@ -54,6 +54,7 @@ SORT review_date ASC
 ```dataview
 TABLE status, opportunity, updated
 FROM "PM vault/07-Delivery/PRDs"
+WHERE type = "prd"
 SORT updated DESC
 ```
 
@@ -61,7 +62,7 @@ SORT updated DESC
 ```dataview
 TABLE status, opportunity, start, end
 FROM "PM vault/07-Delivery/Experiments"
-WHERE status != "completed"
+WHERE type = "experiment" AND status != "completed"
 SORT start ASC
 ```
 
@@ -74,7 +75,7 @@ SORT date DESC
 LIMIT 15
 ```
 
-## Stale (not touched in 30+ days)
+## Stale (frontmatter `updated` is 30+ days old)
 ```dataview
 TABLE updated, status
 FROM "PM vault/00-Product" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions"

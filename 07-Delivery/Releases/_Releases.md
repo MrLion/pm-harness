@@ -1,6 +1,7 @@
 # Releases
 
-What shipped, when, and what happened afterwards.
+What shipped, when, and what happened afterwards. Template: [[Release]], with frontmatter
+`date`, `goal` and `metric_result` feeding the table below.
 
 ```dataview
 TABLE date, goal, metric_result

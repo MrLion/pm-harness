@@ -20,6 +20,8 @@ Delete the `[!example]` block before using a template for real work.
 | [[PRD]] | `07-Delivery/PRDs/` | Pichler canvas + SVPG | [Product Canvas](https://www.romanpichler.com/tools/the-product-canvas/) |
 | [[Problem]] | `02-Problems/` | — | supported by both, formalised by neither |
 | [[Research]] | `04-Research/` | — | evidence layer for both |
+| [[Feedback]] | `01-Users/Feedback/` | — | raw signal, verbatim quotes and account frequency |
+| [[Release]] | `07-Delivery/Releases/` | Pichler | GO goal and measured result after delivery |
 | [[Decision]] | `05-Decisions/` | — | decision records are outside both frameworks |
 | [[Review]] | `08-Reviews/` | Pichler + SVPG | goal vs outcome, risk retired vs not |
 | [[JTBD]] | `01-Users/JTBD/` | — | supporting lens for Problem and Persona |

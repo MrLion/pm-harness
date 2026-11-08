@@ -1,7 +1,7 @@
 ---
 type: rules
 status: active
-version: 1
+version: 2
 ---
 
 # Hermes PM Rules
@@ -34,7 +34,9 @@ Any decision that costs more than a week of work, or is hard to reverse, produce
 Decision Record. Verbal decisions do not exist.
 
 ## 7. Traceability is mandatory
-`Problem → Evidence → Opportunity → Challenge → Decision → PRD → Experiment → Result`.
+`Problem → Evidence → Opportunity → Challenge`. If uncertainty is high, run an
+**Experiment** and revise the Opportunity before deciding. Then:
+`Decision → PRD → Delivery → Metrics → Review`.
 Every link is a `[[wikilink]]`. An orphaned artifact is a defect to report in `/pm review`.
 
 ## 8. Never fabricate evidence

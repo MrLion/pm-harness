@@ -1,6 +1,7 @@
 # Feedback
 
 Raw customer signal: support tickets, calls, reviews, churn reasons, feature requests.
+Template: [[Feedback]]. Copy its frontmatter so `date`, `source` and `sentiment` populate below.
 
 **Verbatim quotes only.** A paraphrase is your interpretation, not evidence. Keep the original
 wording, the date, and who said it.

@@ -38,9 +38,9 @@ That matters for Dataview:
 
 - The plugin is installed and enabled in the **parent** vault (`Documents/.obsidian/plugins/dataview/`).
 - Every query therefore references the folder path: `FROM "PM vault/02-Problems"`.
-- `PM vault/.obsidian/` is inert — Obsidian ignores a nested folder's config. It is kept only so the
-  folder can be opened standalone later, if that ever becomes preferable. If you do that, every
-  `FROM` must lose its `PM vault/` prefix again.
+- `PM vault/.obsidian/` is inert — Obsidian ignores a nested folder's config. It stays on disk for
+  possible future standalone use but is **not tracked in git**. If you convert modes, every `FROM`
+  must lose its `PM vault/` prefix again.
 
 Trade-off accepted: one vault, one plugin install, one trust prompt — at the cost of PM notes
 sharing a graph and search index with whatever else lives in `Documents`.
@@ -74,10 +74,12 @@ No step is skippable. `99-Hermes/Rules.md` §3 and §7 enforce it.
 
 ## First run
 
-1. Open this folder as a vault in Obsidian.
-2. Settings → Community plugins → enable **Dataview** (installed, needs approval).
-3. Open `Dashboard.md` — the tables populate from frontmatter as notes land.
-4. Fill `00-Product/Product.md`. Until it is filled, `/pm` will refuse to make strategic calls.
+1. Open the parent iCloud `Documents` vault in Obsidian — `PM vault` stays a folder inside it.
+2. Settings → Community plugins → enable **Dataview** in that parent vault.
+3. Open `PM vault/Dashboard.md` — the tables populate from frontmatter as notes land.
+4. Fill `00-Product/Product.md`. While `confidence: none`, `/pm` blocks strategic recommendations,
+   roadmap commitments, decisions and PRDs, but still permits research, discovery, opportunity
+   drafts, experiments and challenge reviews.
 
 ## Git
 
