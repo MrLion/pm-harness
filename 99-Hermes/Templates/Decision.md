@@ -17,12 +17,13 @@ updated: YYYY-MM-DD
 ## Example — build vs partner for cost estimator
 
 > [!example]- Example — HDHP outpatient imaging
-> **Question:** Build a minimum viable outpatient cost estimator before broader patient-portal work?
-> **Context:** 43% postpone care without accurate estimate.
-> **Options:** Build · partner · defer
-> **Chosen:** Build a minimum reliable estimate MVP
-> **Reversibility:** medium
-> **Review:** after two pilot cycles
+> **Question:** Should we build, partner, or defer on a transparent outpatient cost estimate?
+> **Context:** The patient decision friction is real, but data ownership, buyer, and estimate reconciliation are unresolved.
+> **Options:** Build · partner with an existing estimator · defer until feasibility and data access are proven
+> **Decision gate:** No build until the data owner, buyer, and achievable estimate scope are known.
+> **Why not build yet:** data access, estimate accuracy, and the buyer are unproven; a partner may get there faster.
+> **Reversibility:** high
+> **Review:** after feasibility check
 >
 > Sourced example, not product evidence.
 

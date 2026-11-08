@@ -24,9 +24,9 @@ source: https://www.svpg.com/assessing-product-opportunities/
 
 > [!example]- Example — HDHP outpatient imaging
 > **Problem:** Adults on employer-sponsored HDHPs cannot estimate out-of-pocket cost before outpatient imaging.
-> **Why it matters:** 43% postpone care without an accurate estimate, 66% with debt are in collections.
-> **Candidate solution:** Transparent outpatient cost estimator + provider matching.
-> **Smallest experiment:** 5 patient interviews.
+> **Why it matters:** 43% say they would likely postpone care without an accurate estimate (stated intent, not observed behavior).
+> **Candidate solution:** Transparent outpatient cost estimator (provider matching considered later).
+> **Smallest experiment:** 5 patient interviews with a paper prototype.
 >
 > Sourced example, not product evidence.
 

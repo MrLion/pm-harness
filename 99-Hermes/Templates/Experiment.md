@@ -20,12 +20,14 @@ updated: YYYY-MM-DD
 ## Example — cost estimate usability
 
 > [!example]- Example — HDHP outpatient imaging
-> **Risk:** usability.
-> **Hypothesis:** A chat-based cost estimate reduces prep friction and postponement.
-> **Design:** 5 patient interviews with HDHP members choosing outpatient imaging.
-> **Success:** ≥3 patients can explain the estimate after interview.
-> **Failure:** <2 can retain the estimate.
+> **Risk:** usability (comprehension).
+> **Hypothesis:** Patients can correctly explain what an outpatient imaging estimate includes, excludes, and how long it is valid.
+> **Design:** 5 interviews with a paper prototype of an outpatient imaging estimate.
+> **Success:** ≥4 of 5 correctly explain all three.
+> **Failure:** ≤3 of 5 can explain them.
+> **Kill:** ≤2 of 5 can explain; the prototype is unusable.
 > **Cost:** 5 interviews.
+> **Not tested here:** reduced postponement. That is a separate behavioural pilot.
 >
 > Sourced example, not product evidence.
 

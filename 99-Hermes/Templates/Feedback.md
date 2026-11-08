@@ -16,12 +16,12 @@ updated: YYYY-MM-DD
 ## Example — out-of-pocket cost uncertainty
 
 > [!example]- Example — HDHP outpatient imaging
-> **Source:** Patient on employer-sponsored HDHP after outpatient imaging.
-> **Verbatim:** They didn’t know final out-of-pocket cost until after visit.
+> **Source:** Illustrative patient, employer-sponsored HDHP, after outpatient imaging.
+> **Paraphrase:** They did not know the final out-of-pocket cost until after the visit.
 > **Situation:** Choosing outpatient imaging.
-> **Frequency:** Recurring complaint across accounts.
+> **Frequency:** 1 illustrative account — not a recurrence count.
 >
-> Sourced example, not product evidence.
+> This is an illustrative paraphrase, not a real quote.
 
 Raw customer signal. Keep the original wording. A paraphrase is your interpretation, not evidence.
 

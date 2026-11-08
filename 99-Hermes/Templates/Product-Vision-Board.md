@@ -17,12 +17,10 @@ license: "CC BY-SA 4.0 — Roman Pichler, Product Vision Board v01/2023"
 > **Vision:** Adults on employer-sponsored HDHPs can choose care before care chooses them.
 > **Target group:** Adults choosing outpatient imaging.
 > **Needs:** Accurate out-of-pocket estimate before booking.
-> **Product:** Transparent cost estimator + provider matching.
+> **Product:** Cost estimator first; provider matching and scheduling considered later.
 > **Business goals:** Reduce postponed care and unexpected-bill volume.
 >
 > Sourced example, not product evidence.
-
-# Product Vision Board
 
 Replaces `00-Product/Product.md`. Five sections. The vision is enduring; the four below it are
 strategy elements and are **assumptions to be validated**, not facts to be declared.

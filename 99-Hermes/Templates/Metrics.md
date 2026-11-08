@@ -16,9 +16,9 @@ source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-pro
 ## Example — transparent outpatient imaging
 
 > [!example]- Example — HDHP outpatient imaging
-> **North Star:** Patients who get an accurate pre-care cost estimate.
-> **Definition:** Number of accurate estimates delivered before care.
-> **Guardrail:** Accuracy must not decline.
+> **North Star:** Share of eligible outpatient imaging bookings with a pre-booking estimate that reconciles within $400 of final patient responsibility.
+> **Definition:** Eligible = scheduled imaging service; excludes cancelled visits and self-pay. Pre-booking = shown before confirmation. Reconciliation = final responsibility within 30 days. Source: booking + billing system.
+> **Guardrail:** Underestimation over $400 must not exceed 10% of reconciled estimates. Baseline unknown until measured.
 >
 > Sourced example, not product evidence.
 

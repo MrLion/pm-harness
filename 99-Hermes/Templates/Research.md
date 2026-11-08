@@ -16,8 +16,8 @@ updated: YYYY-MM-DD
 ## Example — cost transparency data
 
 > [!example]- Example — HDHP outpatient imaging
-> **Source:** William Blair *Consumer-Centric Healthcare 2026*, Experian Health 2025.
-> **Data:** 41% receive estimates; 43% postpone care without estimate.
+> **Source:** William Blair *Consumer-Centric Healthcare 2026*, citing Experian Health *2025 State of Patient Access*.
+> **Data:** 41% received an estimate; 71% said the estimate was accurate to $400; 43% said they would likely postpone care without an accurate estimate.
 > **Use case:** Understand whether outpatient cost transparency is truly unmet.
 >
 > Sourced example, not product evidence.

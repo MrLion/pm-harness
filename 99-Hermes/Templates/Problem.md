@@ -18,8 +18,8 @@ framework: none
 
 > [!example]- Example — HDHP outpatient imaging
 > **What:** Adults on employer-sponsored HDHPs cannot estimate out-of-pocket cost before outpatient imaging.
-> **Why it matters:** 43% postpone care without an accurate estimate; 66% with debt are in collections.
-> **Evidence:** William Blair *Consumer-Centric Healthcare 2026*; Experian Health 2025.
+> **Why it matters:** 43% say they would likely postpone care without an accurate estimate (stated intent, not observed behavior).
+> **Evidence:** William Blair *Consumer-Centric Healthcare 2026*; Experian Health *2025 State of Patient Access*.
 > **Template mapping:** Problem → Opportunity → Research → Persona
 >
 > Sourced example, not product evidence.

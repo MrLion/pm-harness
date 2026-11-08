@@ -17,10 +17,10 @@ framework: "Pichler (Product Canvas) + SVPG (prototype-as-spec)"
 ## Example — transparent outpatient imaging
 
 > [!example]- Example — HDHP outpatient imaging
-> **Problem:** Patient on HDHP can’t estimate out-of-pocket cost before colonoscopy.
-> **Solution:** Cost estimator + provider matching.
-> **Primary metric:** Number of accurate pre-care estimates delivered.
-> **Guardrail:** Accuracy must not decline.
+> **Problem:** Patient on an HDHP cannot estimate out-of-pocket cost before outpatient imaging.
+> **Solution:** Cost estimator (provider matching considered after the estimator pilot).
+> **Primary metric:** Share of eligible bookings with a pre-booking estimate that reconciles within $400.
+> **Guardrail:** Underestimation over $400 must not exceed 10% of reconciled estimates.
 >
 > Sourced example, not product evidence.
 
