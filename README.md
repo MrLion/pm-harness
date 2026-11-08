@@ -49,20 +49,17 @@ sharing a graph and search index with whatever else lives in `Documents`.
 
 Templates are not invented. Each quotes a published method's structure and checklist, with attribution:
 
-| Layer | Method | Artifacts |
+| Layer | Methods | Role in the harness |
 |---|---|---|
-| What we're building, and how we plan it | **Roman Pichler** (*Strategize*) | Product Vision Board · strategy elements · goal-setting · KPI selection · **GO Product Roadmap** · persona · Product Canvas |
-| Should we build it, and what will kill it | **SVPG / Marty Cagan** (*Inspired*) | **Product Opportunity Assessment** (ten questions) · **four big risks** (value, usability, feasibility, business viability) · prototype over PRD |
+| **Direction and planning** | **Roman Pichler** (*Strategize*) | Product Vision Board, strategy, GO Roadmap, personas and solution canvas define what we are building and why. |
+| **Discovery and validation** | **SVPG / Marty Cagan** + **Teresa Torres** | Opportunity assessments and the four risks test whether we should build; the Opportunity Solution Tree shows how outcomes, problems, solutions and experiments connect. |
+| **Alignment and causality** | **OKRs** + **Impact Mapping** | One Objective per horizon, measurable Key Results, and an explicit goal → actor → behaviour change → deliverable chain. |
+| **Measurement and learning** | **North Star** + **Pichler KPI selection** | One customer-value North Star with inputs and guardrails, supported by a small set of precise KPIs and outcome reviews. |
 
-Pichler alone assumes the opportunity is sound. Cagan alone refuses to plan. The vault uses
-Pichler for artifacts that survive quarters, SVPG for the gate that stops you building the wrong
-thing. Every template carries a collapsible fictional worked example ("Lantern", a clinic
-scheduling tool) so the shape is obvious.
-
-Additional layers: **Opportunity Solution Trees** link goals → problems → opportunities →
-solutions → experiments; **Impact Mapping** makes goal → actor → behaviour change → deliverable
-explicit; **OKRs** give each horizon one Objective with measurable Key Results; **North Star**
-adds one customer-value metric with inputs and guardrails.
+These are one operating model, not competing templates. Pichler supplies durable direction; SVPG
+supplies the evidence and risk gate; Torres makes discovery relationships visible; OKRs and Impact
+Mapping align the work; North Star measures customer value. Every template carries a collapsible
+fictional worked example ("Lantern", a clinic scheduling tool) so the shape is obvious.
 
 Pichler material is quoted under **CC BY-SA 4.0** — see `99-Hermes/Templates/_Templates.md`.
 

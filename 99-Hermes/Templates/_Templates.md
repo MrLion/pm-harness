@@ -19,11 +19,11 @@ Delete the `[!example]` block before using a template for real work.
 | [[Opportunity]] | `03-Opportunities/` | SVPG | [Opportunity assessment](https://www.svpg.com/assessing-product-opportunities/) |
 | [[Experiment]] | `07-Delivery/Experiments/` | SVPG | [Four big risks](https://www.svpg.com/four-big-risks/) |
 | [[PRD]] | `07-Delivery/PRDs/` | Pichler canvas + SVPG | [Product Canvas](https://www.romanpichler.com/tools/the-product-canvas/) |
-| [[Problem]] | `02-Problems/` | — | supported by both, formalised by neither |
-| [[Research]] | `04-Research/` | — | evidence layer for both |
+| [[Problem]] | `02-Problems/` | — | shared evidence-backed problem layer |
+| [[Research]] | `04-Research/` | — | evidence layer for the whole model |
 | [[Feedback]] | `01-Users/Feedback/` | — | raw signal, verbatim quotes and account frequency |
 | [[Release]] | `07-Delivery/Releases/` | Pichler | GO goal and measured result after delivery |
-| [[Decision]] | `05-Decisions/` | — | decision records are outside both frameworks |
+| [[Decision]] | `05-Decisions/` | — | framework-neutral decision record |
 | [[Review]] | `08-Reviews/` | Pichler + SVPG | goal vs outcome, risk retired vs not |
 | [[JTBD]] | `01-Users/JTBD/` | — | supporting lens for Problem and Persona |
 
@@ -67,22 +67,24 @@ Pichler field definitions and checklists are quoted from the official tools, **C
 them are therefore share-alike. SVPG material is quoted from Marty Cagan's published articles
 (© Silicon Valley Product Group), quoted for reference rather than reproduced in bulk.
 
-## Added discovery and measurement layers
+## How the frameworks fit together
 
-- **Torres / Opportunity Solution Trees** provide a linked view from desired outcomes through
-  problems and opportunities to alternative solutions and assumption tests. The map never replaces
-  the canonical notes it links.
-- **Impact Mapping** (Gojko Adzic, CC BY 4.0 materials) connects Why → Who → How → What inside Goals.
-- **North Star Framework** (Amplitude) adds one customer-value metric, its inputs and guardrails.
-- **OKRs** give each horizon one qualitative Objective with measurable Key Results; they do not
-  weaken Pichler's single-goal roadmap rule.
+| Layer | Methods | Canonical artifacts |
+|---|---|---|
+| **Direction and planning** | Pichler | Product Vision Board, Strategy, GO Roadmap, Persona, solution canvas |
+| **Discovery and validation** | SVPG + Torres | Problem, Opportunity assessment, Discovery Map, Experiment |
+| **Alignment and causality** | OKRs + Impact Mapping | Goals: one Objective, measurable KRs, Why → Who → How → What |
+| **Measurement and learning** | North Star + Pichler KPI selection | Metrics, Release, Review |
 
-## Why both frameworks
+Pichler supplies durable direction. SVPG supplies the evidence and risk gate. Torres's Opportunity
+Solution Tree links desired outcomes to problems, alternative solutions and assumption tests without
+duplicating their canonical notes. OKRs and Impact Mapping align each horizon around one Objective
+and explicit behaviour change. North Star adds one customer-value metric with inputs and guardrails.
 
-Pichler answers *what are we building, and how do we plan and communicate it?* — durable strategy,
-outcome-based roadmap, personas, canvas. Cagan answers *should we build it at all, and what will
-kill it?* — ten-question opportunity assessment, four big risks, prototype over PRD.
+The operating chain is therefore:
 
-Used alone, each leaves a hole the other fills: Pichler assumes the opportunity is sound, Cagan
-refuses to plan. The vault uses Pichler for artifacts that survive quarters and SVPG for the gate
-that stops you building the wrong thing.
+`Vision → Objective / North Star → Impact Map → Discovery Map → Evidence and risk gate →
+Decision → Solution brief → Release → Review`.
+
+Impact Mapping reference materials are CC BY 4.0 (Gojko Adzic). Torres and Amplitude material is
+linked and summarized rather than reproduced in bulk.

@@ -2,7 +2,7 @@
 type: dashboard
 ---
 
-# Hermes PM Dashboard
+# PM Dashboard
 
 Product · [[Product]] [[Vision]] [[Strategy]] [[Goals]] [[Metrics]]
 Roadmap · [[Now]] [[Next]] [[Later]]
