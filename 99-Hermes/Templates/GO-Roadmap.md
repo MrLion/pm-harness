@@ -16,7 +16,7 @@ license: "CC BY-SA 4.0 — Roman Pichler, GO Product Roadmap v01/2023"
 > [!example]- Example — HDHP outpatient imaging
 > **NAME:** Transparent Imaging MVP
 > **GOAL:** Reduce postponed care from unknown out-of-pocket cost.
-> **METRICS:** Share of eligible bookings with a pre-booking estimate reconciled within $400.
+> **METRICS:** Share of eligible imaging requests that receive a pre-booking estimate.
 > **DATE:** Q1 pilot in 2 outpatient clinics.
 > **FEATURES:** cost estimate (provider matching and scheduling deferred).
 >

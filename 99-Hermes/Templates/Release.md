@@ -22,7 +22,7 @@ result, this is a deployment log rather than a learning artifact.
 > [!example]- Example — HDHP outpatient imaging
 > **Release:** Cost estimator MVP.
 > **Goal:** Reduce out-of-pocket uncertainty before outpatient imaging.
-> **Metric:** Share of eligible bookings with a pre-booking estimate that reconciles within $400.
+> **Metric:** Share of eligible imaging requests that receive a pre-booking estimate; accuracy of reconciled estimates reported separately.
 > **Follow-up:** Add provider matching only if the estimator pilot succeeds.
 >
 > Sourced example, not product evidence.

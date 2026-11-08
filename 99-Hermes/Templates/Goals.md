@@ -16,9 +16,10 @@ source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://w
 
 > [!example]- Example — HDHP outpatient imaging
 > **Objective:** Reduce out-of-pocket cost uncertainty before elective outpatient imaging.
-> **KR 1:** Increase accurate pre-care cost estimates from unknown → at least 1 per patient before visit.
-> **Actor:** Patient selecting outpatient imaging.
-> **Behavior change:** Use accurate cost estimate before booking.
+> **KR 1:** Increase pre-booking estimate coverage from unknown → at least 60% of eligible imaging requests by the end of the Q1 pilot (provisional).
+> **KR 2:** Among reconciled estimates, at least 70% within $400 of final patient responsibility by the end of the Q1 pilot (provisional).
+> **Actor:** Patient requesting outpatient imaging.
+> **Behavior change:** Use an estimate before deciding whether to book.
 > **Deliverable:** Cost estimator MVP.
 >
 > Sourced example, not product evidence.

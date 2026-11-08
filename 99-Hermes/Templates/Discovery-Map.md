@@ -13,11 +13,11 @@ source: https://www.producttalk.org/opportunity-solution-trees/
 
 > [!example]- Example — HDHP outpatient imaging
 > **Problem:** Adults on employer-sponsored HDHPs cannot estimate out-of-pocket cost before outpatient imaging.
-> **Opportunity:** Transparent outpatient cost estimator; provider matching as a later candidate.
+> **Opportunity:** Reduce uncertainty before the patient decides whether and where to book.
 > **Candidates:**
->   - **CAND-001:** cost estimator
->   - **CAND-002:** provider matching
->   - **CAND-003:** self-service scheduler
+>   - **CAND-001:** integrate an existing payer/provider estimator
+>   - **CAND-002:** assisted estimate request with human review
+>   - **CAND-003:** narrowly scoped self-service estimate for one imaging type
 >
 > Sourced example, not product evidence.
 

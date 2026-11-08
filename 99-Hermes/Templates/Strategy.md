@@ -15,9 +15,10 @@ source: https://romanpichler.com/blog/my-product-strategy-model/
 
 > [!example]- Example — HDHP outpatient imaging
 > **Target group:** Adults on employer-sponsored HDHPs choosing outpatient imaging.
-> **Differentiator:** Accurate upfront out-of-pocket cost estimate.
-> **Priority thesis:** Reduce postponed care and unexpected-bill volume through transparency.
-> **Falsifier:** If cost transparency does not reduce postponed care or unexpected bills, abandon it.
+> **Differentiator hypothesis:** A patient-readable estimate that explains inclusions, exclusions, and validity. This is unproven, not a demonstrated differentiator.
+> **Priority thesis:** Reduce cost uncertainty, and test whether that changes booking behaviour.
+> **Falsifier:** If patients still book the same way, or an existing estimator is good enough, abandon it.
+> **Alternatives:** payer estimator · provider-portal estimator · third-party price comparison · human-assisted estimate.
 >
 > Sourced example, not product evidence.
 
