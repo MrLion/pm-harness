@@ -58,61 +58,15 @@ The patient uncertainty is credible, but data ownership, the buyer, and estimate
 
 ## Tradeoff detail
 
-### Speed to validated learning
+- **Speed to validated learning** — Defer tests comprehension and data access within one review cycle. Build and partner delay learning until data access, terms, and reconciliation are resolved.
+- **Data-access confidence** — This is the feasibility gate: without reconciled estimate data, build and partner are not viable. Defer only tests whether access is possible.
+- **Patient impact if correct** — Build gives full control of the estimate experience; partner reuses an estimator but accepts its constraints. Defer creates no patient impact now.
+- **Build and operating cost** — Build carries engineering, integration, reconciliation, and support cost. Partner trades build cost for integration and partner management; defer is cheapest.
+- **Partner dependency** — Partner creates exposure to another company’s terms, roadmap, API, and pricing. Build and defer do not.
+- **Reversibility** — Build and partner carry sunk effort, contracts, or integration work. Defer is highly reversible because no build or contract has started.
+- **Evidence confidence** — Build and partner rest on unvalidated data-access and cost assumptions. Defer has high confidence for learning, but no patient-outcome evidence.
 
-Defer is the fastest path to learning: five comprehension interviews plus a data-access review can run inside one review cycle. Partner is slower because integration, terms, and data validation have to be resolved before the first patient sees an estimate. Build is slowest because it requires data access, estimate logic, reconciliation, interface work, and support before the team can test whether the estimate changes a decision.
-
-This criterion carries the most weight because the central uncertainty is behavioural. We do not need a finished product to learn whether patients understand an estimate; we need the cheapest test that can falsify the assumption.
-
-What would change this: a signed data-access agreement or an existing partner integration that already produces reconciled estimates. That would shorten the learning loop for build or partner and reduce the advantage of defer.
-
-### Data-access confidence
-
-Build has the lowest confidence: it assumes a data owner will provide usable estimate inputs and that the final patient responsibility can be reconciled. Partner has medium confidence because the partner may already hold the data, but API access, terms, and reconciliation quality are unproven. Defer does not solve data access; it is designed to establish whether access is possible before either build or partner is funded.
-
-This is a hard feasibility gate. If estimate data cannot be accessed and reconciled, the other criteria are irrelevant.
-
-What would change this: a signed data-access agreement, a validated partner API, or a sample reconciliation showing estimates within the agreed tolerance.
-
-### Patient impact if correct
-
-Build gives the most control over the patient experience: the team can decide what the estimate shows, how inclusions and exclusions are explained, and how the patient moves from estimate to booking. Partner can reuse an existing estimator, but the patient experience is constrained by the partner’s data and interface. Defer creates no patient impact now; it only buys learning.
-
-The upside is real but unproven. The evidence supports the problem, not the claim that an estimate changes a booking decision.
-
-What would change this: evidence that patients act differently after seeing an estimate — not just that they understand it.
-
-### Build and operating cost
-
-Build is the most expensive option: engineering, data integration, reconciliation, support, and ongoing maintenance. Partner is cheaper to build but carries integration work, contract management, partner management, and possibly revenue share. Defer is the cheapest because it uses interviews and data review rather than production software.
-
-Cost matters because the team should not fund a full build before feasibility is proven. It does not outweigh learning speed, but it reinforces the case for a staged commitment.
-
-What would change this: a reusable internal estimate service or an existing data pipeline that lowers the build cost enough to justify earlier investment.
-
-### Partner dependency
-
-Build has no partner dependency, though it still depends on data access. Partner creates dependency on the partner’s terms, roadmap, API stability, pricing, and willingness to support a patient-readable estimate. Defer creates no partner dependency.
-
-This is the main strategic downside of option B. A partner can accelerate access, but it can also constrain the product and make the estimate experience someone else’s decision.
-
-What would change this: partner terms with clear data rights, service levels, exit clauses, and control over the patient-facing explanation.
-
-### Reversibility
-
-Build is medium-reversible: code and data commitments can be stopped, but sunk effort and integration work are lost. Partner is medium-reversible: contracts and integrations create exit costs. Defer is highly reversible because no build or contract has started.
-
-Reversibility receives a lower weight because all three options are still reversible at this stage. It becomes more important if a long-term contract, data migration, or public commitment is added.
-
-What would change this: a multi-year partner contract or a build that creates switching costs for patients or providers.
-
-### Evidence confidence
-
-Build and partner both have low evidence confidence: the data-access, cost, and dependency assumptions are not validated. Defer has high confidence for learning because the proposed tests are cheap and executable, but it has no evidence of patient outcome.
-
-This criterion keeps the table honest. A high-impact option with low evidence confidence should not outrank a cheap learning step just because its upside sounds larger.
-
-What would change this: completed interviews, a data-access review, or a partner term sheet that converts an assumption into evidence.
+> Reassess the weights and ratings if data access, partner terms, or behavioural evidence changes.
 
 ## What each option gives up
 
