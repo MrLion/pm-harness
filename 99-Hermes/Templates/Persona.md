@@ -46,3 +46,5 @@ source: https://www.romanpichler.com/the-persona-template/
 > **Pains:** covering a sick call takes six calls; no visibility of who is already near 48 hours.
 > **Observed:** builds the rota Sunday evening at home, keeps a personal WhatsApp list of people who
 > say yes. **Evidence:** 11 interviews — 9 describe the same phone-tree behaviour.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

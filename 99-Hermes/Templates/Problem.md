@@ -72,3 +72,5 @@ framework: none
 > **Workaround:** a personal WhatsApp list of reliable staff, ordered from memory.
 > **Evidence:** 11 interviews (9 describe the phone tree), 3 weeks of support tickets.
 > Confidence: medium.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

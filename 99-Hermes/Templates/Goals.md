@@ -70,3 +70,5 @@ source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://w
 > | Staff | Respond to an offer during a shift | Two-tap mobile accept | Median acceptance under 10 min |
 >
 > The map does not imply building payroll, HR records, or a full rota builder. Those are non-goals.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

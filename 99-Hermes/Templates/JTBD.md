@@ -46,3 +46,5 @@ updated: YYYY-MM-DD
 > **Push:** six calls, and the first two usually decline. **Pull:** one tap, ranked by reliability.
 > **Anxiety:** an automated offer might breach rest-period rules without anyone noticing.
 > **Habit:** the WhatsApp list is in her head and she trusts her own judgement about who to ask.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

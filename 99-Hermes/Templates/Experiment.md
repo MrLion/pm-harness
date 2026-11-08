@@ -78,3 +78,5 @@ Pending — link the resulting [[DEC-000]] or updated [[OPP-000]].
 > **Design:** fake-door offer in the existing WhatsApp flow, one staff group, no app build.
 > **Success:** ≥50% acceptance in 10 min. **Failure:** <20%. **Kill:** <10% after week 1.
 > **Cost:** 2 days of build, no new infrastructure.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

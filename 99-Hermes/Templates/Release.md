@@ -55,3 +55,5 @@ result, this is a deployment log rather than a learning artifact.
 > **Surprise:** offers sent during a shift were ignored; reminders at shift start performed better.
 > **Unexpected cost:** ranking explanations generated 11 support tickets in week one.
 > **Follow-up:** EXP-002 tests notification timing before changing the ranking model.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

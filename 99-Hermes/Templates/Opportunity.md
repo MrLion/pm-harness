@@ -149,3 +149,5 @@ Pending
 > | Usability | medium | two-tap accept works mid-shift | prototype with 4 staff | Design |
 > | Feasibility | low | ranking needs only existing rota data | 2-day eng spike | Eng |
 > | Viability | medium | £29/month accepted without a sales call | 8 pricing conversations | PM |
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

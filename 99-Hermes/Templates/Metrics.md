@@ -72,3 +72,5 @@ source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-pro
 >
 > **Instrumentation gap:** the metric does not exist historically. Record `unknown`; do not infer it
 > from registered clinics or total offers sent.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

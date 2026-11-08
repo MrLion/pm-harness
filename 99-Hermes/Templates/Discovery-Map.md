@@ -50,3 +50,5 @@ vault's problem plus its assessment; do not create a third opportunity category.
 >     - **CAND-004:** one-line eligibility explanation → EXP-004 prototype comprehension test
 >
 > The tree shows alternatives before commitment. It does not authorize any solution by itself.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

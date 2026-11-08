@@ -55,3 +55,5 @@ Interview / survey / desk research / query / teardown. N = ?, sample source = ?,
 > **Quote:** "I know exactly who'll say yes, it's just that I have to ring all of them in order."
 > **Does not tell us:** whether staff would accept an automated offer — managers' beliefs about
 > their staff are second-hand. That is the value risk, not an interview question.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

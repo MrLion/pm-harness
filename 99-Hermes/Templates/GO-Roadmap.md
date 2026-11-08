@@ -54,3 +54,5 @@ list with dates is the thing this template exists to prevent.
 > rather than waiting for value discovery. 1.5 then reduces the operating cost of compliance with
 > audit logging and reporting. Value discovery still gates the richer offering features; it does not
 > gate a legal constraint.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.

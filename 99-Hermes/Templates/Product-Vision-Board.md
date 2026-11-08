@@ -122,3 +122,5 @@ strategy elements and are **assumptions to be validated**, not facts to be decla
 >
 > **Extended board:** Competitors — Deputy, Planday, spreadsheets. Revenue — £29/clinic/month.
 > Costs — support-heavy onboarding. Channels — clinic-manager communities, accountant referrals.
+
+> **Live scenario:** see [[Live-Scenario-Examples]] — a source-backed example pack, not product evidence.
