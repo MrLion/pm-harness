@@ -24,21 +24,25 @@ WHERE type = "problem"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 
-## Opportunities
+## Opportunities — all
+
+> This table shows every opportunity, including `go`, `defer`, `no-go`, and `Pending`.
 
 ```dataview
-TABLE status, confidence, recommendation
+TABLE id, status, confidence, recommendation
 FROM "PM vault/99-Hermes/Templates"
 WHERE type = "opportunity"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 
-## Opportunities with no recommendation
+## Opportunities — pending recommendation
+
+> This table is a subset of the first: only opportunities whose recommendation is `Pending`. `defer` and `no-go` are recommendation values, so they do not appear here.
 
 ```dataview
-TABLE confidence, review_after
+TABLE id, status, confidence, recommendation, review_after
 FROM "PM vault/99-Hermes/Templates"
-WHERE type = "opportunity" AND (recommendation = null OR recommendation = "Pending")
+WHERE type = "opportunity" AND recommendation = "Pending"
 ```
 
 ## Decisions
