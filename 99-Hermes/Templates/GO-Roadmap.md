@@ -47,8 +47,10 @@ list with dates is the thing this template exists to prevent.
 > [!example]- Worked example — fictional
 > | NAME | GOAL | METRICS | DATE | FEATURES |
 > |---|---|---|---|---|
-> | Lantern 1.4 — Instant Gap | Fill an open shift without the manager phoning anyone | Gaps filled without a manager call: 22% → 60%; median time-to-fill under 15 min | Q1 | Gap auto-offer · Rank-order eligibility · Two-tap mobile accept |
-> | Lantern 1.5 — Compliance | Make an illegal assignment impossible, not just flagged | Illegal assignments: 0; support tickets about rest periods: −50% | Q2 | Rest-period guardrail · Assignment audit log |
+> | Lantern 1.4 — Safe Instant Gap | Fill an open shift without the manager phoning anyone, without breaching rest rules | Gaps filled without a manager call: 22% → 60%; median time-to-fill under 15 min; illegal assignments: 0 | Q1 | Rest-period guardrail · Gap auto-offer · Rank-order eligibility · Two-tap mobile accept |
+> | Lantern 1.5 — Compliance Operations | Reduce manual compliance effort while keeping the first-release guardrail | Support tickets about rest periods: −50%; audit-report preparation time: −30% | Q2 | Assignment audit log · Compliance report |
 >
-> **Sequencing:** compliance after instant-gap because the guardrail needs real assignment data to
-> validate against, and the value risk (will staff accept offers?) must be retired first.
+> **Sequencing:** the rest-period guardrail is a **non-negotiable constraint**, so it ships in 1.4
+> rather than waiting for value discovery. 1.5 then reduces the operating cost of compliance with
+> audit logging and reporting. Value discovery still gates the richer offering features; it does not
+> gate a legal constraint.

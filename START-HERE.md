@@ -78,8 +78,8 @@ Open [[Discovery Map]] and link the existing notes:
 Desired outcome
 └── PROB-001
     └── OPP-001
-        ├── Solution A → EXP-001
-        └── Solution B
+        ├── CAND-001 → EXP-001
+        └── CAND-002
 ```
 
 The map is a view, not another source of truth. If a solution exists only in the map, create its

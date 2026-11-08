@@ -49,6 +49,7 @@ queryable immediately. Copy the frontmatter verbatim; never retype it.
 | `recommendation` (opportunity) | `go` · `no-go` · `defer` · `Pending` |
 | `risk_type` (primary risk) | `value` · `usability` · `feasibility` · `viability` |
 | `risk_owner` | `PM` · `Design` · `Eng` · named role |
+| `candidate_id` (prd) | stable Opportunity candidate row ID, e.g. `CAND-001`; the Discovery Map links the same row |
 | `opportunity` / `decision` (PRD) | quoted Obsidian links, e.g. `"[[OPP-000]]"`, so traceability resolves |
 | `primary_metric` (prd) | gate on "no baseline, no brief" |
 
@@ -60,7 +61,7 @@ query, so they never appear in a table. Do not move a template into `02-Problems
 
 This vault is a folder inside a larger Obsidian vault, so every query names its path
 (`FROM "PM vault/05-Decisions"`). If you ever open `PM vault` as its own vault, strip the
-`PM vault/` prefix from all 31 `FROM` clauses or the tables will match nothing.
+`PM vault/` prefix from all 33 `FROM` clauses or the tables will match nothing.
 
 ## Attribution
 

@@ -52,8 +52,10 @@ When new information materially changes understanding, update the artifact — f
 `updated:` date included — rather than leaving the stale claim in place.
 
 ## 11. Staleness is a finding
-Flag artifacts past `review_after` / `review_cadence_days`, decisions whose expected outcome
-was never recorded, and metrics with no baseline. Silence about staleness is a failure.
+Flag artifacts past `review_after` / `review_cadence_days`, artifacts whose `updated:` date is
+missing, opportunities with no `review_after`, accepted decisions with no `review_date`, decisions
+whose expected outcome was never recorded, and metrics with no baseline. Silence about staleness is
+a failure.
 
 ## 12. Declare the framework
 Every artifact's frontmatter names its framework (`Pichler`, `SVPG`, `Torres`, `North Star`,
@@ -75,8 +77,11 @@ really two rows, or the goal is not yet understood.
 
 ## 16. Maps are views, not duplicate knowledge
 The Opportunity Solution Tree links canonical Goals, Problems, Opportunities, solution briefs and
-Experiments. Never create a solution or opportunity that exists only in the map. Use the map to
-expose alternative solutions, missing evidence and orphaned branches.
+Experiments. Pre-validation solution candidates live as `CAND-NNN` rows in the Opportunity's
+`Candidate solutions` section; every map branch names that exact ID and links its parent
+Opportunity section. A validated `CAND-` row links the PRD created from it via `candidate_id:`.
+Never create a candidate, solution or opportunity that exists only in the map. Use the map to expose
+alternatives, missing evidence and orphaned branches.
 
 ## 17. Goals and metrics remain falsifiable
 An OKR has one Objective per horizon and measurable Key Results. A North Star Metric represents

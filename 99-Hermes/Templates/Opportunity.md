@@ -99,12 +99,14 @@ justify ones you already want to build.
 
 ## Candidate solutions
 
-| Status | Candidate | How it addresses the problem | Cheapest test | Next step |
-|---|---|---|---|---|
-| candidate | [FILL] | [FILL] | [FILL] | keep / test / park |
+| ID | Status | Candidate | How it addresses the problem | Cheapest test | Next step |
+|---|---|---|---|---|---|
+| CAND-000 | candidate | [FILL] | [FILL] | [FILL] | keep / test / park |
 
-> These are **discovery artifacts**, not delivery commitments. Keep alternatives visible until the
-> evidence gate has passed; do not create a PRD for an unvalidated candidate.
+> Allocate `CAND-NNN` IDs from the highest existing candidate ID in the vault. Discovery-map and
+> solution-brief references use the **exact row ID**. These are **discovery artifacts**, not delivery
+> commitments. Keep alternatives visible until the evidence gate has passed; do not create a PRD for
+> an unvalidated candidate.
 
 ## Hermes Challenge
 

@@ -91,8 +91,8 @@ LIMIT 15
 
 ```dataview
 TABLE type, status
-FROM "PM vault/00-Product" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research"
-WHERE type != null AND !updated
+FROM "PM vault/00-Product" OR "PM vault/01-Users" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research" OR "PM vault/06-Roadmap" OR "PM vault/08-Reviews"
+WHERE type != null AND (updated = null OR updated = "" OR updated = "YYYY-MM-DD")
 SORT file.name ASC
 ```
 
@@ -100,8 +100,8 @@ SORT file.name ASC
 
 ```dataview
 TABLE type, updated
-FROM "PM vault/00-Product" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research"
-WHERE type != null AND date(updated) < date(today) - dur(30 days)
+FROM "PM vault/00-Product" OR "PM vault/01-Users" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research" OR "PM vault/06-Roadmap" OR "PM vault/08-Reviews"
+WHERE type != null AND (updated != null AND updated != "") AND date(updated) < date(today) - dur(30 days)
 SORT updated ASC
 ```
 
@@ -123,12 +123,35 @@ WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR ac
 SORT review_date ASC
 ```
 
+## Maintenance — review deadlines missing
+
+### Open opportunities
+
+```dataview
+TABLE status, confidence, updated
+FROM "PM vault/03-Opportunities"
+WHERE type = "opportunity" AND status != "closed"
+      AND (review_after = null OR review_after = "" OR review_after = "YYYY-MM-DD")
+SORT file.name ASC
+```
+
+### Accepted decisions awaiting outcome
+
+```dataview
+TABLE status, actual_outcome, updated
+FROM "PM vault/05-Decisions"
+WHERE type = "decision" AND status = "accepted"
+      AND (actual_outcome = null OR actual_outcome = "Pending")
+      AND (review_date = null OR review_date = "" OR review_date = "YYYY-MM-DD")
+SORT file.name ASC
+```
+
 ## Maintenance — cadence overdue
 
 ```dataview
 TABLE type, updated, review_cadence_days
-FROM "PM vault/00-Product"
-WHERE review_cadence_days != null AND date(updated) < date(today) - dur(review_cadence_days + " days")
+FROM "PM vault/00-Product" OR "PM vault/01-Users" OR "PM vault/06-Roadmap" OR "PM vault/08-Reviews"
+WHERE review_cadence_days != null AND (updated != null AND updated != "" AND updated != "YYYY-MM-DD") AND date(updated) < date(today) - dur(review_cadence_days + " days")
 SORT updated ASC
 ```
 

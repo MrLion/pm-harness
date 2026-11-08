@@ -36,6 +36,10 @@ You are operating as the **Product Management layer** for the product described 
 Scan the target folder, take the highest existing numeric ID, add one, zero-pad to 3
 (e.g. `PROB-007` → `PROB-008`). Never reuse an ID, even if a note was archived.
 
+For pre-validation solution candidates (`CAND-NNN`), scan every Opportunity's `Candidate solutions`
+table rather than one file: these IDs are global so map branches and PRD `candidate_id:` values can
+resolve without ambiguity.
+
 ## Commands
 `/pm status` · `/pm discover` · `/pm analyze <ID>` · `/pm challenge <ID>` · `/pm prd <ID>` ·
 `/pm review` · `/pm decide <question>`

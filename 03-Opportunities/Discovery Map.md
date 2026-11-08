@@ -17,12 +17,13 @@ Linked view of existing artifacts. Template and worked example: [[Discovery-Map]
 ## Tree
 - **[Problem]** [[PROB-000]]
   - **[Opportunity assessment]** [[OPP-000]]
-    - **Solution A** — [FILL]
+    - **CAND-000** — [FILL] · [[OPP-000#Candidate solutions|OPP-000 · CAND-000]]
       - **Assumption test** [[EXP-000]]
-    - **Solution B** — [FILL]
+    - **CAND-001** — [FILL] · [[OPP-000#Candidate solutions|OPP-000 · CAND-001]]
 
 ## Coverage check
 - [ ] Every branch starts from a desired outcome
 - [ ] Every opportunity links evidence-backed problems
-- [ ] Alternative solutions and their assumption tests are visible
-- [ ] No solution exists only in this map
+- [ ] Alternative solutions use stable `CAND-` row IDs
+- [ ] Each candidate branch links the matching Opportunity candidate row
+- [ ] No candidate exists only in this map

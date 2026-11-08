@@ -4,6 +4,7 @@ artifact: solution-brief
 id: PRD-000
 status: draft
 opportunity: "[[OPP-000]]"
+candidate_id: CAND-000
 decision: "[[DEC-000]]"
 primary_metric: TBD
 created: YYYY-MM-DD
@@ -73,6 +74,7 @@ heavy-weight PRD, because it answers the questions a document only describes. So
 
 ## Related
 
+- Candidate source: `CAND-000` in [[OPP-000#Candidate solutions]]
 - [[DEC-000]] · [[EXP-000]]
 
 ---
