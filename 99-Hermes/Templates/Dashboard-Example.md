@@ -29,7 +29,7 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 > This table shows every opportunity, including `go`, `defer`, `no-go`, and `Pending`.
 
 ```dataview
-TABLE id, status, confidence, recommendation
+TABLE status, confidence, recommendation
 FROM "PM vault/99-Hermes/Templates"
 WHERE type = "opportunity"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
@@ -40,7 +40,7 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 > This table is a subset of the first: only opportunities whose recommendation is `Pending`. `defer` and `no-go` are recommendation values, so they do not appear here.
 
 ```dataview
-TABLE id, status, confidence, recommendation, review_after
+TABLE status, confidence, recommendation, review_after
 FROM "PM vault/99-Hermes/Templates"
 WHERE type = "opportunity" AND recommendation = "Pending"
 ```
