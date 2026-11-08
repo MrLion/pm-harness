@@ -1,5 +1,7 @@
 # Scenario
 
+> Pre-filled examples: [[99-Hermes/Templates/Pre-filled/README|Pre-filled templates]]
+
 ## Main scenario
 
 **Who:** Adults on employer-sponsored high-deductible health plans.
