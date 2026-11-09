@@ -46,11 +46,17 @@ funding or team structure blocks durable product work.
 Use when the product or market does not exist yet, or when the team is entering a new segment with a
 new value proposition.
 
-```text
-Vision → Target group & need → Why now / why us → Strategy
-      → Goals & North Star → Opportunity map → What would have to be true
-      → Concept tests → MVP → Launch → Review
-```
+| Stage | Question | Artifact |
+|---|---|---|
+| Vision | What future are we trying to create? | [[PM vault/99-Playbook/Templates/Product-Vision-Board\|Product Vision Board]] |
+| Target group and need | Who is it for, and what job are they trying to do? | [[PM vault/99-Playbook/Templates/PERSONA-001-HDHP-Imaging-Patient\|Persona]] · [[PM vault/99-Playbook/Templates/JTBD-001-Know-Cost-Before-Booking\|JTBD]] |
+| Why now / why us | What changed, and why are we the ones to win? | [[PM vault/99-Playbook/Templates/Strategy\|Strategy]] |
+| Goals and North Star | What outcome proves the thesis? | [[PM vault/99-Playbook/Templates/Goals\|Goals]] · [[PM vault/99-Playbook/Templates/Metrics\|Metrics]] |
+| Opportunity map | Which customer problems matter most? | [[PM vault/99-Playbook/Templates/PROB-001-Imaging-Cost-Problem\|Problem]] · [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost\|Opportunity]] · [[PM vault/99-Playbook/Templates/Discovery-Map\|Discovery Map]] |
+| What would have to be true | Which assumptions carry the thesis? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost#The four big risks\|Opportunity four risks]] · [[PM vault/99-Playbook/Templates/DEC-001-Build-Partner-Defer\|Decision]] |
+| Concept tests | What is the cheapest evidence that changes the bet? | [[PM vault/99-Playbook/Templates/EXP-001-Comprehension-Test\|Experiment]] |
+| MVP | What is the smallest coherent product that tests the thesis? | [[PM vault/99-Playbook/Templates/PRD-001-Imaging-Estimate\|PRD]] |
+| Launch and review | Did the world change, and what did we learn? | [[PM vault/99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot\|Release]] · [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] |
 
 **Entry artifact:** [[PM vault/99-Playbook/Templates/Product-Vision-Board|Product Vision Board]]
 
@@ -63,13 +69,18 @@ Vision → Target group & need → Why now / why us → Strategy
 Use when the product already exists and the work is to improve an outcome, respond to customer
 signal, or decide what to build next.
 
-```text
-Signal → Problem → Evidence → Opportunity → Challenge
-                              ├── uncertain → Experiment → revise Opportunity
-                              └── sufficient evidence
-                                            ↓
-                             Decision → Solution brief → Delivery → Release → Review
-```
+| Stage | Question | Artifact / next step |
+|---|---|---|
+| Signal | What did we observe, and from whom? | [[PM vault/99-Playbook/Templates/FB-001-Imaging-Cost-Feedback\|Feedback]] · [[PM vault/99-Playbook/Templates/RESEARCH-001-Imaging-Cost-Transparency\|Research]] |
+| Problem | Who experiences what problem, when, and at what cost? | [[PM vault/99-Playbook/Templates/PROB-001-Imaging-Cost-Problem\|Problem]] |
+| Evidence | What supports or contradicts the problem? | Research, data, or `Evidence unavailable.` |
+| Opportunity | Is this worth pursuing, and what are the four risks? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost\|Opportunity]] |
+| Challenge | What would make this a no-go or defer? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost#Hermes Challenge\|Opportunity challenge]] |
+| Uncertain | What is the cheapest test that retires the primary risk? | [[PM vault/99-Playbook/Templates/EXP-001-Comprehension-Test\|Experiment]] → revise Opportunity |
+| Sufficient evidence | What are we choosing, and why? | [[PM vault/99-Playbook/Templates/DEC-001-Build-Partner-Defer\|Decision]] |
+| Solution brief | What is the smallest coherent solution? | [[PM vault/99-Playbook/Templates/PRD-001-Imaging-Estimate\|PRD]] |
+| Delivery | What shipped, and what moved? | [[PM vault/99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot\|Release]] |
+| Review | What did we learn, and what risk remains? | [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] |
 
 **Entry artifact:** [[PM vault/99-Playbook/Templates/FB-001-Imaging-Cost-Feedback|Feedback]] or a
 Problem note.
