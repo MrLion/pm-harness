@@ -33,8 +33,9 @@ Do not read every branch. Read the branch that matches the request.
 1. [[Rules]] — operating constraints.
 2. [[_Playbooks]] — choose the mode. If choosing a new problem space, read
    [[Future-Problem-Statements]].
-3. If health data or vendors are involved: [[_Compliance]] and
-   [[COMP-001-Compliance-Scope|COMP-001]].
+3. If health data or vendors are involved: [[_Compliance]] and the live
+   [[COMP-003-Compliance-Scope|COMP-003]]. If `status: draft` or `owner: Unassigned`, stop and
+   complete the scope before recommending data handling.
 4. For product work: [[PM vault/00-Product/Product|Product]] → Strategy → Goals → Metrics.
 5. For transformation: [[_Transformation]] → thesis → capability map → value stream → taxonomy →
    funding → portfolio roadmap → adoption.

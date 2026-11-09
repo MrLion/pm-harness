@@ -1,15 +1,19 @@
 ---
 type: compliance-index
 status: active
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 # Compliance
 
 Tier 1 health-data compliance. Template index: [[_Compliance-Templates]].
 
-## Artifacts
+## Live artifacts
 
-- Compliance scope — [[COMP-001-Compliance-Scope|COMP-001]]
+- Compliance scope — [[COMP-003-Compliance-Scope|COMP-003]] — draft; gate open
+
+## Templates
+
+- [[COMP-001-Compliance-Scope|COMP-001]] Compliance scope
 - Data inventory — [[DATA-001-Data-Inventory|DATA-001]]
 - Privacy/security risk — [[RISK-001-Privacy-Security-Risk|RISK-001]]
 - Control matrix — [[CTRL-001-Control-Matrix|CTRL-001]]

@@ -13,7 +13,7 @@ problem-to-experiment chain**, not a complete vault.
 Open the parent iCloud `Documents` vault and ensure Dataview is enabled. Open
 [[Dashboard]] (`PM vault/Dashboard.md`); empty tables are expected. The technical setup is in [[Architecture]].
 
-> If the problem involves PII, PHI, ePHI, or vendor data, complete [[COMP-001-Compliance-Scope|Compliance Scope]] before step 1.
+> If the problem involves PII, PHI, ePHI, or vendor data, complete the live [[COMP-003-Compliance-Scope|Compliance Scope]] before step 1. A draft scope or `Unassigned` owner is a stop condition.
 
 ## 1. Capture a problem — 5 minutes
 

@@ -22,6 +22,18 @@ validation. Empty fields and `Evidence unavailable.` are preferable to plausible
 
 No paid Obsidian features or GitHub repository are required.
 
+## Agent layer
+
+The `/pm` commands are a separate agent layer, not part of the vault. The vault renders without
+them; the commands require the `product-management` skill and the `pm` bundle.
+
+- Skill: `~/.hermes/profiles/pdm/skills/productivity/product-management/`
+- Bundle: `~/.hermes/profiles/pdm/skill-bundles/pm.yaml`
+- Smoke test: `/pm status`
+- Expected result: product health, the top problems and opportunities, and one recommended next action
+
+If the skill or bundle is missing, the vault still works; only `/pm` commands are unavailable.
+
 ## Choose your playbook
 
 Ask two questions:
@@ -45,8 +57,8 @@ funding or team structure blocks durable product work.
 ## Compliance rail
 
 Every playbook runs with a Tier 1 health-data compliance rail. Before handling PII, PHI, ePHI, or
-vendor data, start with [[COMP-001-Compliance-Scope|Compliance Scope]] and then complete the data
-inventory, risk assessment, control matrix, vendor/BAA register, and incident plan.
+vendor data, start with the live [[COMP-003-Compliance-Scope|Compliance Scope]]. If its status is
+`draft` or its owner is `Unassigned`, stop and complete it before handling data.
 
 Compliance is not a fifth loop. It is a constraint that can stop or reshape any stage. Tier 2 —
 ISO 13485, ISO 14971, IEC 62304, and device QMS — applies only when the product is a medical device

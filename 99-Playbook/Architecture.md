@@ -117,6 +117,7 @@ Check programmatically and in Obsidian; visible files alone are not proof.
 5. Open and visually verify the rendered dashboard in Obsidian.
 6. Prefilled product templates contain zero `[FILL]`; operating-model and compliance templates may
    contain `[FILL]` by design.
-7. If PII, PHI, ePHI, vendors, or health data are involved, confirm `COMP-001` exists before
-   recommending data handling.
+7. If PII, PHI, ePHI, vendors, or health data are involved, require a live `compliance-scope` note
+   in `11-Compliance` with status `approved` or `active`, data classification, jurisdiction, and a
+   named owner. A template in `99-Playbook/Templates` does not satisfy this.
 8. `git status` is clean after an intentional commit.

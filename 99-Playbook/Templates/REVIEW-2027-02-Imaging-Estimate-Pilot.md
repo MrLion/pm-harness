@@ -51,11 +51,11 @@ example: true
 
 | Check | Result |
 |---|---|
-| Incidents | None in example |
-| Audit findings | None |
-| Access review | Reviewed |
-| Vendor / BAA | No vendor in example |
-| Corrective actions | None |
+| Incidents | Pending — pilot not run |
+| Audit findings | Pending — pilot not run |
+| Access review | Pending — pilot not run |
+| Vendor / BAA | Pending — pilot not run |
+| Corrective actions | Pending — pilot not run |
 
 ## Next period
 
