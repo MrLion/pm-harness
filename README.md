@@ -49,6 +49,7 @@ No paid Obsidian features or GitHub account are required.
 The `/pm` commands are a separate agent layer, not part of the vault. The vault renders without
 them; the commands require the `product-management` skill and the `pm` bundle.
 
+- Source: [`agent/`](agent/README.md)
 - Skill: `$HERMES_HOME/skills/productivity/product-management/`
 - Bundle: `$HERMES_HOME/skill-bundles/pm.yaml`
 - Smoke test: `/pm status`

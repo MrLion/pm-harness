@@ -7,6 +7,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+### Added
+
+- Repository copy of the agent layer under `agent/`: the `product-management` skill, its references
+  and checker, and the `pm` bundle template.
+
 ### Changed
 
 - Made the README, Agent Manual, and Architecture platform-neutral: documented nested, root, and

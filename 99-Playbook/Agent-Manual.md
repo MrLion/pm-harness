@@ -46,21 +46,20 @@ The skill and bundle are profile-local. They are not part of the vault repo.
 
 ### 3.1 Install the skill
 
-Place the `product-management` skill folder here:
+Copy the skill folder from this repository:
 
-`$HERMES_HOME/skills/productivity/product-management/`
+`agent/skills/productivity/product-management/` → `$HERMES_HOME/skills/productivity/product-management/`
 
 It must contain `SKILL.md` and its `references/` and `scripts/` folders.
 
 ### 3.2 Install the bundle
 
-Place `pm.yaml` here:
+Copy `agent/skill-bundles/pm.yaml` to:
 
 `$HERMES_HOME/skill-bundles/pm.yaml`
 
-The bundle must point at the skill and at:
-
-`99-Playbook/Rules.md`
+Edit its `Vault root:` line to the absolute path of your vault. The bundle must point at the skill
+and at `99-Playbook/Rules.md`.
 
 ### 3.3 Reload and verify
 
