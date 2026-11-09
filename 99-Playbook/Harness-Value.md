@@ -29,25 +29,10 @@ These estimates assume:
 
 They do not assume the harness replaces interviews, stakeholder alignment, legal review, or engineering delivery.
 
-## Estimated time reduction by activity
-
-| Activity | Without harness | With harness | Reduction | Confidence |
-|---|---|---|---|---|
-| Context reload / “what is going on?” | 30–60 min | 2–5 min | 85–90% | High |
-| Weekly status and stakeholder update | 60–90 min | 15–25 min | 65–75% | High |
-| Discovery synthesis into problems and opportunities | 2–4 hrs | 1–2 hrs | 40–55% | Medium |
-| Opportunity assessment and challenge | 3–5 hrs | 1.5–2.5 hrs | 40–50% | Medium |
-| Decision memo | 2–4 hrs | 1–1.5 hrs | 50–65% | Medium |
-| PRD first draft | 1–2 days | 3–5 hrs | 50–65% | Medium |
-| Release and review records | 2–3 hrs | 45–75 min | 40–60% | Medium |
-| Compliance scope drafting | 1–2 days | 4–6 hrs | 30–45% | Low — approval time unchanged |
-| Stakeholder alignment and meetings | 3–6 hrs/week | 3–5 hrs/week | 0–15% | Low |
-| Build and launch | unchanged | unchanged | ~0% | High |
-
 ## 40-hour roll-up
 
-The task table is not summed directly. This roll-up applies each reduction to its share of a 40-hour
-week.
+This roll-up applies each reduction to its share of a 40-hour week. The per-task numbers are not
+summed directly; they are weighted by time share.
 
 | Activity | Share | Time | Reduction used | Saved |
 |---|---:|---:|---:|---:|
