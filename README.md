@@ -39,6 +39,16 @@ change funding, team topology, governance, and metrics before product discovery 
 If you are unsure, start with the product-lifecycle question. Use project-to-product only when
 funding or team structure blocks durable product work.
 
+## Compliance rail
+
+Every playbook runs with a Tier 1 health-data compliance rail. Before handling PII, PHI, ePHI, or
+vendor data, start with [[COMP-001-Compliance-Scope|Compliance Scope]] and then complete the data
+inventory, risk assessment, control matrix, vendor/BAA register, and incident plan.
+
+Compliance is not a fifth loop. It is a constraint that can stop or reshape any stage. Tier 2 —
+ISO 13485, ISO 14971, IEC 62304, and device QMS — applies only when the product is a medical device
+or SaMD.
+
 ## The two product loops
 
 ### Vision-led 0→1
@@ -132,6 +142,7 @@ Replace `OPP-001` with the actual ID of your note.
 | North Star, inputs and guardrails | `00-Product/Metrics.md` |
 | Transformation thesis, capability map, value stream, adoption scorecard, portfolio roadmap | `09-Transformation` |
 | Product taxonomy, funding model, team topology, flow baseline, dependency map, transition roadmap | `10-Operating-Model` |
+| Compliance scope, data inventory, risk assessment, control matrix, vendor/BAA register, incident response, compliance review | `11-Compliance` |
 | Verbatim customer complaint | `01-Users/Feedback` |
 | Interview synthesis | `04-Research/Users` |
 | Market sizing or regulatory change | `04-Research/Market` |
@@ -200,6 +211,8 @@ putting feedback into an iCloud-synced vault.
 - **[[_Playbooks]]** — the four playbooks and when to use each
 - **[[Visual-Standards]]** — approved canonical visual language
 - **[[_Operating-Models]]** — the operating-model template set
+- **[[_Compliance]]** — Tier 1 compliance rail
+- **[[_Compliance-Templates]]** — compliance template set
 - **[[Vision-Led-0-to-1]]** — new product or new market
 - **[[Outcome-Led-1-to-N]]** — existing product
 - **[[Digital-Transformation]]** — portfolio or enterprise capability change

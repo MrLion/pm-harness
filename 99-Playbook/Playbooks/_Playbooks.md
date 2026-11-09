@@ -4,6 +4,8 @@ Choose by **what you are changing** and **how work is governed**.
 
 Visual language: [[Visual-Standards]].
 
+Compliance rail: [[_Compliance]] — complete the Tier 1 scope before handling PII, PHI, or ePHI.
+
 | Playbook | Use when |
 |---|---|
 | [[Vision-Led-0-to-1]] | New product, new market, or a new value proposition |

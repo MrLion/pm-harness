@@ -32,6 +32,16 @@ example: true
 | Share of eligible requests with a pre-booking estimate | unknown | TBD | 30 days | request + booking system |
 | Share of reconciled estimates within $400 | unknown | TBD | 30 days | billing reconciliation |
 
+## Compliance sign-off
+
+| Check | Evidence |
+|---|---|
+| Vendor / BAA | [FILL] |
+| Privacy-security risk | [[RISK-001-Privacy-Security-Risk\|RISK-001]] |
+| Controls | [[CTRL-001-Control-Matrix\|CTRL-001]] |
+| Incident plan | [[INC-001-Incident-Breach-Response\|INC-001]] |
+| Approval | [FILL] |
+
 ## What surprised us
 
 - To be recorded after the pilot.

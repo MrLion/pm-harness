@@ -62,6 +62,16 @@ Proceed to discovery, not build. Test comprehension and data access first.
 | Feasibility | unknown | Estimate data is accurate and accessible | Data-owner and reconciliation review | Eng | untested |
 | Business viability | unknown | A buyer will pay for estimate coverage | Buyer and payer interviews | PM | untested |
 
+## Compliance feasibility
+
+| Question | Answer |
+|---|---|
+| Data classification | [[COMP-001-Compliance-Scope\|COMP-001]] |
+| PHI / ePHI | [FILL] |
+| Vendor / BAA | [[VEND-001-Vendor-BAA-Register\|VEND-001]] |
+| Risk and controls | [[RISK-001-Privacy-Security-Risk\|RISK-001]] · [[CTRL-001-Control-Matrix\|CTRL-001]] |
+| Approval needed | [FILL] |
+
 ## Hypothesis
 
 > We believe a patient-readable pre-booking estimate will cause more patients to make an informed booking decision, because cost uncertainty is currently unresolved.

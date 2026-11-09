@@ -9,7 +9,7 @@ Start · [[START-HERE]]
 Product · [[Product]] · [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Strategy|Strategy]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]
 Roadmap · [[Now]] · [[Next]] · [[Later]]
 Discovery · [[Discovery Map]]
-Transformation · [[_Transformation]] · Operating model · [[_Operating-Model]]
+Transformation · [[_Transformation]] · Operating model · [[_Operating-Model]] · Compliance · [[_Compliance]]
 Operating · [[PM]] · [[Rules]]
 
 ---
@@ -106,11 +106,20 @@ WHERE type != null AND type != "operating-model-index"
 SORT updated DESC
 ```
 
+## Compliance
+
+```dataview
+TABLE status, confidence, owner, updated
+FROM "PM vault/11-Compliance"
+WHERE type != null AND type != "compliance-index"
+SORT updated DESC
+```
+
 ## Maintenance — missing dates
 
 ```dataview
 TABLE type, status
-FROM "PM vault/00-Product" OR "PM vault/01-Users" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research" OR "PM vault/06-Roadmap" OR "PM vault/08-Reviews" OR "PM vault/09-Transformation" OR "PM vault/10-Operating-Model"
+FROM "PM vault/00-Product" OR "PM vault/01-Users" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research" OR "PM vault/06-Roadmap" OR "PM vault/08-Reviews" OR "PM vault/09-Transformation" OR "PM vault/10-Operating-Model" OR "PM vault/11-Compliance"
 WHERE type != null AND (updated = null OR updated = "" OR updated = "YYYY-MM-DD")
 SORT file.name ASC
 ```
@@ -119,7 +128,7 @@ SORT file.name ASC
 
 ```dataview
 TABLE type, updated
-FROM "PM vault/00-Product" OR "PM vault/01-Users" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research" OR "PM vault/06-Roadmap" OR "PM vault/08-Reviews" OR "PM vault/09-Transformation" OR "PM vault/10-Operating-Model"
+FROM "PM vault/00-Product" OR "PM vault/01-Users" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research" OR "PM vault/06-Roadmap" OR "PM vault/08-Reviews" OR "PM vault/09-Transformation" OR "PM vault/10-Operating-Model" OR "PM vault/11-Compliance"
 WHERE type != null AND (updated != null AND updated != "") AND date(updated) < date(today) - dur(30 days)
 SORT updated ASC
 ```

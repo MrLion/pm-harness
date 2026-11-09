@@ -46,6 +46,14 @@ set: [[_Operating-Models]].
 It covers product taxonomy, funding, transformation thesis, capability maps, value streams,
 adoption, portfolio roadmap, team topology, flow metrics, dependencies, and transition roadmap.
 
+## Compliance templates
+
+Tier 1 health-data compliance uses a separate structure-only template set:
+[[_Compliance-Templates]].
+
+It covers compliance scope, data inventory, privacy/security risk, controls, vendor BAAs, incident
+response, and compliance review. Tier 2 medical-device QMS is not included.
+
 ## Frontmatter contract
 
 Every Dataview table in this vault reads **frontmatter keys**, not headings. `TABLE a, b` renders

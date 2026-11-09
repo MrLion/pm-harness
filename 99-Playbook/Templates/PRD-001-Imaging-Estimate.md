@@ -53,6 +53,17 @@ example: true
 
 **Threshold note:** $400 and 10% are provisional; validate against patient expectations.
 
+## Compliance impact
+
+| Question | Answer |
+|---|---|
+| Data used | [FILL] |
+| PII / PHI / ePHI | [FILL] |
+| BAA required | [FILL] |
+| Risk assessment | [[RISK-001-Privacy-Security-Risk\|RISK-001]] |
+| Controls | [[CTRL-001-Control-Matrix\|CTRL-001]] |
+| Compliance approval | [FILL] |
+
 ## Risks
 
 | Risk | Mitigation |

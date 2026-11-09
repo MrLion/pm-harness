@@ -30,6 +30,17 @@ example: true
 
 > We believe a patient-readable estimate with inclusions, exclusions, and validity will cause at least 4 of 5 interviewed patients to explain all three correctly, measured by a comprehension task.
 
+## Data handling
+
+| Field | Answer |
+|---|---|
+| Real PHI used? | [FILL: yes/no] |
+| De-identified or synthetic data? | [FILL] |
+| BAA in place? | [FILL] |
+| Where data is stored | [FILL] |
+| Retention and destruction | [FILL] |
+| Compliance scope | [[COMP-001-Compliance-Scope\|COMP-001]] |
+
 ## Design
 
 5 moderated interviews using a paper prototype of an outpatient imaging estimate.

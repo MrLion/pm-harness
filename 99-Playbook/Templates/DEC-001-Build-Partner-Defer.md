@@ -95,6 +95,15 @@ Proposed: defer build until comprehension and data access are proven. Evaluate p
 
 Against the criteria, defer scores best on speed to validated learning, reversibility, and cost. It scores lowest on immediate patient impact. That is the tradeoff being accepted: we give up near-term patient impact to avoid committing build effort before comprehension and data access are proven.
 
+## Regulatory and compliance risk
+
+| Risk | Applies? | Evidence | Owner |
+|---|---|---|---|
+| HIPAA covered entity / business associate | [FILL] | [[COMP-001-Compliance-Scope\|COMP-001]] | [FILL] |
+| PHI / ePHI handling | [FILL] | [[DATA-001-Data-Inventory\|DATA-001]] | [FILL] |
+| Vendor BAA | [FILL] | [[VEND-001-Vendor-BAA-Register\|VEND-001]] | [FILL] |
+| Medical-device QMS | [FILL] | [FILL] | [FILL] |
+
 ## Residual risk and dissent
 
 - **Residual risk:** deferring may let a competitor establish the estimate first.

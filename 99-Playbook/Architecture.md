@@ -48,7 +48,7 @@ Notes sync through iCloud; git history remains on the Mac.
 [[Rules]] §18 is authoritative:
 
 - Free to write: Research, Problems, Opportunities, Experiments, Reviews, `99-Playbook/`.
-- Draft only: solution briefs, Roadmap, `09-Transformation/`, `10-Operating-Model/`.
+- Draft only: solution briefs, Roadmap, `09-Transformation/`, `10-Operating-Model/`, `11-Compliance/`.
 - Propose for human approval: Product strategy and Decisions.
 
 Every material write updates `updated:` and leaves a reviewable git diff.

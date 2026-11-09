@@ -47,6 +47,16 @@ example: true
 | Estimate coverage | unknown | Pending | — | report after pilot |
 | Reconciled accuracy | unknown | Pending | — | report after pilot |
 
+## Compliance review
+
+| Check | Result |
+|---|---|
+| Incidents | [FILL] |
+| Audit findings | [FILL] |
+| Access review | [FILL] |
+| Vendor / BAA | [FILL] |
+| Corrective actions | [FILL] |
+
 ## Next period
 
 1. Run the behavioural pilot if comprehension and data access pass.
