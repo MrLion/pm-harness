@@ -44,14 +44,14 @@ Use the four together. A single velocity number hides the system constraint.
 - [[PM vault/99-Playbook/Templates/GO-Roadmap\|GO Roadmap]] for outcome-based sequencing
 - [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] for transition learning
 
-## Templates this playbook still needs
+## Templates
 
-- Product taxonomy
-- Team topology
-- Product funding model
-- Flow metrics baseline
-- Dependency map
-- Transition roadmap
+- [[TAX-001-Product-Taxonomy|TAX-001]] — durable products, platforms, and services
+- [[TEAM-001-Team-Topology|TEAM-001]] — durable teams and ownership
+- [[FUND-001-Funding-Model|FUND-001]] — product funding and decision rights
+- [[FLOW-001-Flow-Metrics-Baseline|FLOW-001]] — flow time, load, efficiency, distribution
+- [[DEP-001-Dependency-Map|DEP-001]] — cross-team and cross-product dependencies
+- [[TRANS-002-Transition-Roadmap|TRANS-002]] — sequenced operating-model change
 
 ## What good looks like
 

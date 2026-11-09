@@ -36,15 +36,15 @@ call it transformation.
 - [[PM vault/99-Playbook/Templates/GO-Roadmap\|GO Roadmap]] for product-level sequencing
 - [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] for the learning loop
 
-## Templates this playbook still needs
+## Templates
 
-- Transformation thesis
-- Capability map
-- Value-stream map
-- Product taxonomy
-- Funding and governance model
-- Adoption scorecard
-- Portfolio roadmap
+- [[TRANS-001-Transformation-Thesis|TRANS-001]] — transformation thesis and why now
+- [[CAP-001-Capability-Map|CAP-001]] — capability gaps and maturity
+- [[VS-001-Value-Stream-Map|VS-001]] — current value-stream flow and delays
+- [[TAX-001-Product-Taxonomy|TAX-001]] — durable products, platforms, and services
+- [[FUND-001-Funding-Model|FUND-001]] — portfolio funding and decision rights
+- [[ADOPT-001-Adoption-Scorecard|ADOPT-001]] — adoption and changed work
+- [[PORT-001-Portfolio-Roadmap|PORT-001]] — sequenced portfolio bets
 
 ## What good looks like
 

@@ -119,6 +119,8 @@ Replace `OPP-001` with the actual ID of your note.
 | Strategy, differentiation and why now / why us | `00-Product/Strategy.md` |
 | Objective, Key Results and Impact Map | `00-Product/Goals.md` |
 | North Star, inputs and guardrails | `00-Product/Metrics.md` |
+| Transformation thesis, capability map, value stream, adoption scorecard, portfolio roadmap | `09-Transformation` |
+| Product taxonomy, funding model, team topology, flow baseline, dependency map, transition roadmap | `10-Operating-Model` |
 | Verbatim customer complaint | `01-Users/Feedback` |
 | Interview synthesis | `04-Research/Users` |
 | Market sizing or regulatory change | `04-Research/Market` |
@@ -185,6 +187,7 @@ putting feedback into an iCloud-synced vault.
 ## Learn more
 
 - **[[_Playbooks]]** — the four playbooks and when to use each
+- **[[_Operating-Models]]** — the operating-model template set
 - **[[Vision-Led-0-to-1]]** — new product or new market
 - **[[Outcome-Led-1-to-N]]** — existing product
 - **[[Digital-Transformation]]** — portfolio or enterprise capability change

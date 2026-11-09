@@ -1,11 +1,14 @@
 # Templates
 
-Every template has four layers: **the artifact structure** → **the source's field definition**
-(quoted, with attribution) → **the checklist criteria** used to judge a filled note → **a
-collapsible worked example**. The example is a fictional product ("Lantern", a clinic shift
+Product-lifecycle templates have four layers: **the artifact structure** → **the source's field
+definition** (quoted, with attribution) → **the checklist criteria** used to judge a filled note →
+**a collapsible worked example**. The example is a fictional product ("Lantern", a clinic shift
 scheduling tool) used consistently across all templates so the traceability chain is visible.
 
-Delete the `[!example]` block before using a template for real work.
+Operating-model templates are structure-only: they use `[FILL]` prompts because portfolio,
+capability, funding, and team facts must come from real evidence.
+
+Delete the `[!example]` block before using a product template for real work.
 
 | Template | Use for | Framework | Source |
 |---|---|---|---|
@@ -35,6 +38,14 @@ These extra example notes make the dashboard’s recommendation states visible:
 - [[OPP-002-Provider-Comparison|OPP-002 — defer]]
 - [[OPP-003-Prior-Authorization|OPP-003 — no-go]]
 
+## Operating-model templates
+
+The digital-transformation and project-to-product playbooks use a separate structure-only template
+set: [[_Operating-Models]].
+
+It covers product taxonomy, funding, transformation thesis, capability maps, value streams,
+adoption, portfolio roadmap, team topology, flow metrics, dependencies, and transition roadmap.
+
 ## Frontmatter contract
 
 Every Dataview table in this vault reads **frontmatter keys**, not headings. `TABLE a, b` renders
@@ -48,6 +59,8 @@ queryable immediately. Copy the frontmatter verbatim; never retype it.
 |---|---|
 | `type` | one artifact type per note; every `WHERE type = "…"` filter depends on it |
 | `id` | `PROB-003` style; note identity and wikilink target |
+| `scope` (operating model) | `portfolio` · `product` · `value-stream` · `team` |
+| `owner` / `sponsor` | accountable role; never a private individual's personal data |
 | `status` | artifact-specific: proposed/accepted/reversed; draft/complete; planned/completed; released |
 | `confidence` | `none` → `low` → `medium` → `high`; dashboards sort by that rank, not alphabetically |
 | `date` / `updated` / `review_after` / `review_date` | date fields used for sorting and overdue reporting |

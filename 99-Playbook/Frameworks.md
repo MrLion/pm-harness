@@ -9,6 +9,7 @@ distinct question; they are not competing document formats.
 | Discovery and validation | SVPG + Torres | Should we build it, and what could kill it? | Problem, Opportunity, Discovery Map, Experiment |
 | Alignment and causality | OKRs + Impact Mapping | What outcome aligns the work, and whose behaviour must change? | Goals |
 | Measurement and learning | North Star + Pichler KPI selection | What customer value and outcomes resulted? | Metrics, Release, Review |
+| Operating model | Transformation thesis + Team Topologies + Flow Framework | How should product work be funded, staffed, and governed? | Transformation Thesis, Product Taxonomy, Funding Model, Team Topology, Flow Metrics, Transition Roadmap |
 
 ## Operating chain
 
@@ -53,6 +54,14 @@ One metric represents the value customers receive, with a precise definition, so
 guardrails. Supporting KPIs remain few and decision-relevant. A North Star is not a roadmap,
 prioritization score, or substitute for instrumentation.
 
+## Operating-model chain
+
+```text
+Transformation Thesis → Capability Map → Value-Stream Map → Product Taxonomy
+→ Funding Model → Team Topology → Flow Metrics Baseline → Dependency Map
+→ Transition Roadmap → Adoption Scorecard → Portfolio Roadmap → Review
+```
+
 ## Sources
 
 - [Roman Pichler's tools](https://www.romanpichler.com/tools)
@@ -61,6 +70,9 @@ prioritization score, or substitute for instrumentation.
 - [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)
 - [Impact Mapping](https://www.impactmapping.org/)
 - [North Star Playbook](https://amplitude.com/books/north-star/about-north-star-framework)
+- [Team Topologies](https://teamtopologies.com/)
+- [Flow Framework](https://flowframework.org/)
+- [Project to Product](https://projecttoproduct.org/)
 
 Pichler material quoted in templates is CC BY-SA 4.0. Impact Mapping reference materials are CC BY
 4.0. Other frameworks are linked and summarized rather than reproduced in bulk.
