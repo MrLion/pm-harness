@@ -10,6 +10,7 @@ created: 2026-11-08
 framework: none
 updated: 2026-11-08
 example: true
+case_id: CASE-001
 ---
 
 # Feedback — out-of-pocket cost uncertainty

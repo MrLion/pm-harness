@@ -8,15 +8,22 @@ risk_owner: Design
 opportunity: "[OPP-001](OPP-001-Outpatient-Imaging-Cost.md)"
 start: 2026-11-10
 end: 2026-11-21
-cost: 5 interviews
+sample_size: 5 interviews
+budget: unknown
+effort: 5 interviews + analysis
 created: 2026-11-08
 framework: SVPG
 source: https://www.svpg.com/four-big-risks/
 updated: 2026-11-09
 example: true
+case_id: CASE-001
 ---
 
 # Experiment — can patients understand an imaging estimate?
+
+## Journey
+
+[JOURNEY-001](JOURNEY-001-Imaging-Path.md) — the stage where the comprehension test applies.
 
 ## Risk being retired
 
@@ -39,7 +46,7 @@ example: true
 | BAA in place? | Not applicable |
 | Where data is stored | Local design file; no patient data |
 | Retention and destruction | Delete after study |
-| Compliance scope | [COMP-001](Compliance/COMP-001-Compliance-Scope.md) |
+| Compliance scope | Synthetic prototype: [COMP-001](Compliance/COMP-001-Compliance-Scope.md) is the structure template. Any pilot with real patient data uses the live [COMP-003](../../11-Compliance/COMP-003-Compliance-Scope.md). |
 
 ## Design
 
@@ -49,7 +56,8 @@ example: true
 |---|---|
 | Population | Adults on employer-sponsored HDHPs who have recently sought outpatient imaging |
 | Duration | 45 minutes per interview |
-| Cost | 5 interviews |
+| Cost | Budget unknown; effort is 5 interviews plus analysis |
+| Accessibility | Plain language, large-print option, screen-reader-compatible prototype |
 
 ## Pre-registered criteria
 

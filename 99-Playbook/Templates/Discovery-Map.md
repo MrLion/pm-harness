@@ -6,9 +6,14 @@ outcome: Reduce out-of-pocket cost uncertainty before outpatient imaging
 updated: 2026-11-08
 source: https://www.producttalk.org/opportunity-solution-trees/
 example: true
+case_id: CASE-001
 ---
 
 # Discovery Map — imaging cost uncertainty
+
+## Journey
+
+[JOURNEY-001](JOURNEY-001-Imaging-Path.md) — the experience behind the tree.
 
 ## Desired outcome
 

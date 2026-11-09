@@ -11,6 +11,9 @@ actual_outcome: Pending
 framework: none
 updated: 2026-11-09
 example: true
+case_id: CASE-001
+decision_owner: Unassigned
+accountable_owner: Unassigned
 ---
 
 # Decision — build, partner, or defer?
@@ -33,6 +36,7 @@ The patient uncertainty is credible, but data ownership, the buyer, and estimate
 | Build and operating cost | The team should not fund a full build before feasibility is proven. | 10% | Rough order only |
 | Partner dependency | A partner may accelerate data access but creates terms and roadmap dependency. | 10% | Not assessed |
 | Reversibility | A reversible option can be corrected cheaply if the evidence changes. | 5% | Known qualitatively |
+| Buyer and channel | A build or partnership cannot be funded until the buyer is named. | constraint | Unresolved |
 
 > Weights are provisional. Do not convert them into a numerical score until the evidence behind each criterion is rated.
 
@@ -43,18 +47,19 @@ The patient uncertainty is credible, but data ownership, the buyer, and estimate
 | A — build | Build a scoped estimator for one imaging type | Estimate data can be accessed and reconciled |
 | B — partner | Integrate an existing payer/provider estimator | Partner terms permit a patient-readable estimate |
 | C — defer | Run comprehension and data-access tests first | The tests can produce a decision within one review cycle |
+| D — status quo | Keep the current payer, provider, and human-assisted paths | The current experience is acceptable and no funding is released |
 
 ## Tradeoffs
 
-| Criterion | A — Build | B — Partner | C — Defer |
-|---|---|---|---|
-| Speed to validated learning | slow — builds before behavioural proof | medium — integration still needs validation | fast — tests comprehension and data access first |
-| Data-access confidence | low — must secure data and reconciliation | medium — depends on partner terms | unknown — designed to find out |
-| Patient impact if correct | high — full control of the estimate experience | high — can reuse an existing estimator | none yet — learning only |
-| Build and operating cost | high — new build and reconciliation | medium — integration and partner management | low — interviews and data review |
-| Partner dependency | none | high — terms, roadmap, and data access | none |
-| Reversibility | medium — code and data commitments | medium — contract and integration | high — no build started |
-| Evidence confidence | low | low | high for learning; no patient outcome |
+| Criterion | A — Build | B — Partner | C — Defer | D — Status quo |
+|---|---|---|---|---|
+| Speed to validated learning | slow — builds before behavioural proof | medium — integration still needs validation | fast — tests comprehension and data access first | none — no new learning |
+| Data-access confidence | low — must secure data and reconciliation | medium — depends on partner terms | unknown — designed to find out | unchanged — existing gaps remain |
+| Patient impact if correct | high — full control of the estimate experience | high — can reuse an existing estimator | none yet — learning only | none beyond current tools |
+| Build and operating cost | high — new build and reconciliation | medium — integration and partner management | low — interviews and data review | low, but complaints and calls continue |
+| Partner dependency | none | high — terms, roadmap, and data access | none | existing vendor dependencies remain |
+| Reversibility | medium — code and data commitments | medium — contract and integration | high — no build started | high — no change |
+| Evidence confidence | low | low | high for learning; no patient outcome | high for status quo, low for improvement |
 
 > Ratings are relative judgments based on the sources in **Research basis**; they are not quantified estimates.
 
@@ -67,6 +72,7 @@ The patient uncertainty is credible, but data ownership, the buyer, and estimate
 - **Partner dependency** — A partner API can supply patient-specific pricing, but personalized estimates cover a limited set of plans, other plans are pre-benefit pricing only, and real patient data requires a signed BAA [S4]. That creates terms, coverage, and vendor dependency.
 - **Reversibility** — This is a judgment, not an external research finding: defer is highly reversible because no build or contract has started; build and partner create sunk effort, contracts, or integration work.
 - **Evidence confidence** — Build and partner rest on unvalidated data-access, coverage, and cost assumptions [S1][S4]. Defer has high confidence for learning, but no patient-outcome evidence [S6].
+- **Status quo** — It preserves today's cost surprise and call load; it is the baseline the other options must beat, not a neutral choice.
 
 ## Research basis
 
@@ -86,6 +92,7 @@ The patient uncertainty is credible, but data ownership, the buyer, and estimate
 | A — build | Control over the estimate experience | Speed to learning, cost, and reversibility | Fewer than 4 of 5 patients understand the estimate, or data access fails |
 | B — partner | Faster access to existing estimate data | Control, independence, and freedom from partner terms | Partner cannot reconcile estimates or terms block a patient-readable estimate |
 | C — defer | Learning first, low cost, high reversibility | Immediate patient impact | Comprehension passes and data access is proven |
+| D — status quo | No new spend or delivery risk | The current cost surprise and call load continue | A buyer commits, or the current path becomes unacceptable |
 
 ## Decision
 
@@ -99,10 +106,14 @@ Against the criteria, defer scores best on speed to validated learning, reversib
 
 | Risk | Applies? | Evidence | Owner |
 |---|---|---|---|
-| HIPAA covered entity / business associate | Not assessed in example | [COMP-001](Compliance/COMP-001-Compliance-Scope.md) | Compliance owner |
-| PHI / ePHI handling | None in example | [DATA-001](Compliance/DATA-001-Data-Inventory.md) | Compliance owner |
-| Vendor BAA | Not applicable — no vendor selected | [VEND-001](Compliance/VEND-001-Vendor-BAA-Register.md) | Compliance owner |
+| HIPAA covered entity / business associate | Synthetic prototype only — no PHI; reassess before pilot | [COMP-003](../../11-Compliance/COMP-003-Compliance-Scope.md) | Compliance owner |
+| PHI / ePHI handling | None in the synthetic prototype; pilot requires live scope approval | [DATA-001](Compliance/DATA-001-Data-Inventory.md) | Compliance owner |
+| Vendor BAA | Not applicable until a vendor is selected | [VEND-001](Compliance/VEND-001-Vendor-BAA-Register.md) | Compliance owner |
 | Medical-device QMS | Not applicable — not a device or SaMD | Not a device or SaMD | Compliance owner |
+
+## Buyer gate
+
+No option can proceed to build or partner until the buyer is named and the channel is chosen. See [PERSONA-002](PERSONA-002-Buyer-Payer.md).
 
 ## Residual risk and dissent
 

@@ -7,26 +7,38 @@ confidence: low
 north_star: Share of eligible outpatient imaging requests that receive a pre-booking estimate
 north_star_definition: Eligible requests are all outpatient imaging requests captured at intake, including those that later end without a booking or are cancelled. Eligibility is fixed at intake; cancellations are reported separately. Pre-booking means shown before confirmation or abandonment.
 north_star_source: request + booking system
+outcome_metric: Share of patients who can predict final responsibility within $400 before booking
+outcome_source: comprehension study + billing reconciliation
 updated: 2026-11-09
+case_id: CASE-001
 source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/ + https://amplitude.com/books/north-star/about-north-star-framework"
 example: true
 ---
 
 # Metrics — estimate coverage and reconciliation
 
-## North Star Metric
+## Primary coverage metric
 
 Share of eligible outpatient imaging requests that receive a pre-booking estimate.
 
 | Requirement | Answer |
 |---|---|
-| Represents value customers actually receive | Patients get cost information before deciding |
+| Represents value customers actually receive | No — coverage is a leading indicator; the outcome is prediction accuracy |
 | Precise definition, including exclusions and window | Eligible requests are fixed at intake, including non-bookers and later cancellations; self-pay excluded; measured weekly. Cancellations are reported separately. |
 | Source of truth | request + booking system |
 | Current value | unknown |
 | Why it is a leading indicator of sustainable results | Coverage is necessary for any patient decision effect |
 
-## North Star inputs
+## Outcome metric
+
+| Field | Answer |
+|---|---|
+| Metric | Share of patients who can predict final responsibility within $400 before booking |
+| Source of truth | Comprehension study plus billing reconciliation |
+| Current value | unknown |
+| Why it matters | Coverage can rise while patients remain unable to predict what they will owe |
+
+## Coverage inputs
 
 | Input metric | Definition | Current | Owner |
 |---|---|---|---|
@@ -61,3 +73,4 @@ Share of eligible outpatient imaging requests that receive a pre-booking estimat
 ## Related
 
 - [Goals](Goals.md) · [Strategy](Strategy.md)
+- [JOURNEY-001](JOURNEY-001-Imaging-Path.md) — where coverage and prediction diverge

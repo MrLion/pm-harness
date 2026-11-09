@@ -17,6 +17,7 @@ review_after: 2026-12-08
 framework: SVPG
 source: https://www.svpg.com/assessing-product-opportunities/
 example: true
+case_id: CASE-001
 ---
 
 # Opportunity — reduce uncertainty before outpatient imaging
@@ -24,10 +25,10 @@ example: true
 ## The ten questions
 
 **1. Exactly what problem will this solve?**
-Patients cannot estimate their out-of-pocket cost before booking outpatient imaging.
+Patients cannot reliably predict their final patient responsibility before booking outpatient imaging.
 
 **2. For whom do we solve that problem?**
-Adults on employer-sponsored HDHPs choosing outpatient imaging.
+Adults on employer-sponsored HDHPs choosing outpatient imaging. Buyer unresolved; see [PERSONA-002](PERSONA-002-Buyer-Payer.md).
 
 **3. How big is the opportunity?**
 Unknown. Establish eligible imaging requests and estimate coverage before sizing.
@@ -66,11 +67,15 @@ Proceed to discovery, not build. Test comprehension and data access first.
 
 | Question | Answer |
 |---|---|
-| Data classification | [COMP-001](Compliance/COMP-001-Compliance-Scope.md) |
-| PHI / ePHI | None in discovery — no clinical data collected in this example |
-| Vendor / BAA | [VEND-001](Compliance/VEND-001-Vendor-BAA-Register.md) |
+| Data classification | Synthetic prototype — no PHI. A pilot uses the live [COMP-003](../../11-Compliance/COMP-003-Compliance-Scope.md); [COMP-001](Compliance/COMP-001-Compliance-Scope.md) is the structure template. |
+| PHI / ePHI | None in the synthetic prototype; reassess before any pilot with real patient data |
+| Vendor / BAA | Not applicable until a vendor is selected; then [VEND-001](Compliance/VEND-001-Vendor-BAA-Register.md) |
 | Risk and controls | [RISK-001](Compliance/RISK-001-Privacy-Security-Risk.md) · [CTRL-001](Compliance/CTRL-001-Control-Matrix.md) |
-| Approval needed | Compliance owner sign-off before pilot |
+| Approval needed | Live compliance scope approved and a named owner before pilot |
+
+## Journey
+
+[JOURNEY-001](JOURNEY-001-Imaging-Path.md) — the booking-to-payment path this opportunity changes.
 
 ## Hypothesis
 

@@ -28,7 +28,7 @@ deployment. A portable install may open the repository as the vault root.
 | Folder | Unit of analysis | Purpose |
 |---|---|---|
 | `00-Product` | Product | Vision, strategy, goals, metrics, scenario |
-| `01-Users` | Customer | Personas, JTBD, feedback |
+| `01-Users` | Customer | Personas, JTBD, journey maps, feedback |
 | `02-Problems` | Problem | Evidence-backed problems |
 | `03-Opportunities` | Opportunity | Opportunity assessments and Discovery Map |
 | `04-Research` | Evidence | Market, user, competitor, and data research |

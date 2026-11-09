@@ -8,13 +8,14 @@ framework: Pichler
 source: https://romanpichler.com/tools/product-vision-board/
 license: "CC BY-SA 4.0 — Roman Pichler, Product Vision Board v01/2023"
 example: true
+case_id: CASE-001
 ---
 
 # Product Vision Board — transparent outpatient imaging
 
 ## Vision
 
-Adults on employer-sponsored HDHPs can choose care before care chooses them.
+Adults on employer-sponsored HDHPs can predict what care will cost before they commit.
 
 ## Target Group
 
@@ -46,6 +47,11 @@ Adults on employer-sponsored HDHPs choosing outpatient imaging.
 | Field | Content |
 |---|---|
 | Competitors | Payer estimators, provider-portal estimators, third-party price comparison, human-assisted estimates |
-| Revenue sources | Unknown — buyer unresolved |
+| Revenue sources | Unknown — buyer unresolved; see [PERSONA-002](PERSONA-002-Buyer-Payer.md) |
 | Cost factors | Data access, reconciliation, support |
 | Channels | Provider, payer, employer, direct patient |
+
+## Related
+
+- [JOURNEY-001](JOURNEY-001-Imaging-Path.md) — the cost journey this board describes
+- [PERSONA-001](PERSONA-001-HDHP-Imaging-Patient.md) · [PERSONA-002](PERSONA-002-Buyer-Payer.md)

@@ -7,12 +7,12 @@ confidence: none
 north_star: TBD
 north_star_definition: TBD
 north_star_source: TBD
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
-# Metrics — North Star + KPI Selection
+# Metrics — Coverage + Outcome
 
-## North Star Metric
+## Primary coverage metric
 [FILL]
 
 | Requirement | Answer |
@@ -23,10 +23,15 @@ updated: 2026-11-08
 | Current value | unknown |
 | Why it is a leading indicator of sustainable results | [FILL] |
 
-> One North Star per product. If the team can move it directly without creating customer value,
-> it is probably the wrong metric.
+> Coverage is the leading metric. If it can move without improving a patient decision, add the
+> outcome metric below.
 
-## North Star inputs
+## Outcome metric
+| Metric | Definition | Source | Current |
+|---|---|---|---|
+| [FILL] | Patient outcome the product is trying to change | [FILL] | unknown |
+
+## Coverage inputs
 | Input metric | Definition | Current | Owner |
 |---|---|---|---|
 | [FILL] | [FILL] | unknown | [FILL] |

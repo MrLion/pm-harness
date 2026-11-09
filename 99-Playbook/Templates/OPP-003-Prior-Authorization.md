@@ -17,6 +17,7 @@ review_after: null
 framework: SVPG
 source: https://www.svpg.com/assessing-product-opportunities/
 example: true
+case_id: CASE-001
 ---
 
 # Opportunity — resolve prior-authorization friction

@@ -10,6 +10,7 @@ reliability: weak
 framework: none
 updated: 2026-11-08
 example: true
+case_id: CASE-001
 ---
 
 # Research — consumer cost transparency in U.S. healthcare

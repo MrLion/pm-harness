@@ -9,6 +9,11 @@ Operating-model templates are structure-only: they use `[FILL]` prompts because 
 capability, funding, and team facts must come from real evidence.
 
 Replace the example values with your own product facts before using a product template for real work.
+The case spine is [Scenario](../../00-Product/Scenario.md), `case_id: CASE-001`. Every product template
+carries that `case_id` so the worked example stays traceable.
+
+Compliance links in the case point to `COMP-001` as a structure template. A live case must use the
+live `11-Compliance/COMP-003-Compliance-Scope.md`; a template is not approval.
 
 | Template | Use for | Framework | Source |
 |---|---|---|---|
@@ -19,6 +24,8 @@ Replace the example values with your own product facts before using a product te
 | [GO-Roadmap](GO-Roadmap.md) | `06-Roadmap/` | Pichler | [GO Product Roadmap](https://romanpichler.com/tools/the-go-product-roadmap/) |
 | [Dashboard-Example](Dashboard-Example.md) | `Dashboard.md` | Dataview | working dashboard over the pre-filled templates |
 | [PERSONA-001-HDHP-Imaging-Patient](PERSONA-001-HDHP-Imaging-Patient.md) | `01-Users/Personas/` | Pichler | [Persona Template](https://www.romanpichler.com/the-persona-template/) |
+| [PERSONA-002-Buyer-Payer](PERSONA-002-Buyer-Payer.md) | `01-Users/Personas/` | Pichler | buyer hypothesis for an unresolved buyer |
+| [JOURNEY-001-Imaging-Path](JOURNEY-001-Imaging-Path.md) | `01-Users/Journey-Maps/` | Journey mapping | discovery view over the case |
 | [Discovery-Map](Discovery-Map.md) | `03-Opportunities/Discovery Map.md` | Torres | [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) |
 | [OPP-001-Outpatient-Imaging-Cost](OPP-001-Outpatient-Imaging-Cost.md) | `03-Opportunities/` | SVPG | [Opportunity assessment](https://www.svpg.com/assessing-product-opportunities/) |
 | [EXP-001-Comprehension-Test](EXP-001-Comprehension-Test.md) | `07-Delivery/Experiments/` | SVPG | [Four big risks](https://www.svpg.com/four-big-risks/) |
@@ -86,11 +93,10 @@ queryable immediately. Copy the template frontmatter, then update `id`, `status`
 correct when you copy the file, and these files sit in `99-Playbook/`, outside every folder-scoped
 query, so they never appear in a table. Do not move a template into `02-Problems/` or similar.
 
-## Folder mode
+## Vault layout
 
-This vault is a folder inside a larger Obsidian vault, so every query names its path
-(`FROM "PM vault/05-Decisions"`). If you ever open `PM vault` as its own vault, strip the
-`PM vault/` prefix from every `FROM` clause or the tables will match nothing.
+A nested vault uses a path prefix (`FROM "PM vault/05-Decisions"`). A repository-root vault uses
+`FROM "05-Decisions"`. Choose one layout and apply the same prefix to every query; do not mix them.
 
 ## Attribution
 
@@ -104,7 +110,7 @@ them are therefore share-alike. SVPG material is quoted from Marty Cagan's publi
 | Layer | Methods | Canonical artifacts |
 |---|---|---|
 | **Direction and planning** | Pichler | Product Vision Board, Strategy, GO Roadmap, Persona, solution canvas |
-| **Discovery and validation** | SVPG + Torres | Problem, Opportunity assessment, Discovery Map, Experiment |
+| **Discovery and validation** | SVPG + Torres | Journey Map, Problem, Opportunity assessment, Discovery Map, Experiment |
 | **Alignment and causality** | OKRs + Impact Mapping | Goals: one Objective, measurable KRs, Why → Who → How → What |
 | **Measurement and learning** | North Star + Pichler KPI selection | Metrics, Release, Review |
 

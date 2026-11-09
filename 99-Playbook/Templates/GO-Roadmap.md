@@ -8,6 +8,7 @@ framework: Pichler
 source: https://romanpichler.com/tools/the-go-product-roadmap/
 license: "CC BY-SA 4.0 — Roman Pichler, GO Product Roadmap v01/2023"
 example: true
+case_id: CASE-001
 ---
 
 # GO Product Roadmap — estimate pilot
@@ -16,7 +17,7 @@ example: true
 
 | NAME | GOAL (outcome) | METRICS | DATE | FEATURES (max 3–5) |
 |---|---|---|---|---|
-| Transparent Imaging MVP | Reduce out-of-pocket uncertainty before outpatient imaging (behavioural effect tested separately) | Share of eligible imaging requests that receive a pre-booking estimate | Q1 pilot | cost estimate · inclusions/exclusions · validity period |
+| Transparent Imaging MVP | Reduce out-of-pocket uncertainty before outpatient imaging (behavioural effect tested separately) | Coverage: share of eligible requests with a pre-booking estimate; outcome: patient can predict final responsibility within $400 | Q1 pilot, conditional on DEC-001 | cost estimate · inclusions/exclusions · validity period |
 
 ## Sequencing rationale
 

@@ -185,10 +185,11 @@ Replace `OPP-001` with the actual ID of your note.
 | Vision, target group and needs | `00-Product/Product.md` |
 | Strategy, differentiation and why now / why us | `00-Product/Strategy.md` |
 | Objective, Key Results and Impact Map | `00-Product/Goals.md` |
-| North Star, inputs and guardrails | `00-Product/Metrics.md` |
+| Primary coverage metric, outcome metric, inputs and guardrails | `00-Product/Metrics.md` |
 | Transformation thesis, capability map, value stream, adoption scorecard, portfolio roadmap | `09-Transformation` |
 | Product taxonomy, funding model, team topology, flow baseline, dependency map, transition roadmap | `10-Operating-Model` |
 | Compliance scope, data inventory, risk assessment, control matrix, vendor/BAA register, incident response, compliance review | `11-Compliance` |
+| Persona, JTBD, or journey map | `01-Users` |
 | Verbatim customer complaint | `01-Users/Feedback` |
 | Interview synthesis | `04-Research/Users` |
 | Market sizing or regulatory change | `04-Research/Market` |

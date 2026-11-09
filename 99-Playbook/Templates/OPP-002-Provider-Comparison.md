@@ -17,6 +17,7 @@ review_after: 2027-03-31
 framework: SVPG
 source: https://www.svpg.com/assessing-product-opportunities/
 example: true
+case_id: CASE-001
 ---
 
 # Opportunity — compare providers on cost and network fit

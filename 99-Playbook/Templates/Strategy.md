@@ -8,6 +8,7 @@ review_cadence_days: 90
 framework: Pichler
 source: https://romanpichler.com/blog/my-product-strategy-model/
 example: true
+case_id: CASE-001
 ---
 
 # Strategy — cost transparency in outpatient imaging
@@ -19,6 +20,7 @@ example: true
 | Target group | Adults on employer-sponsored HDHPs choosing outpatient imaging | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | low |
 | Needs | Know expected cost and understand inclusions/exclusions | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | low |
 | Business goals | Increase estimate coverage and reconciled accuracy | unknown | low |
+| Buyer | Unresolved — employer, payer, or provider | [PERSONA-002](PERSONA-002-Buyer-Payer.md) | none |
 | Stand-out features | Patient-readable estimate + reconciliation | hypothesis | low |
 
 ## Differentiation
@@ -29,6 +31,10 @@ example: true
 | Provider-portal estimator | Local price data | Limited to one provider | Start with one imaging type |
 | Third-party price comparison | Broad comparison | Narrow accuracy and network context | Pair with reconciliation |
 | Human-assisted estimate | Handles complexity | Does not scale | Use for discovery and edge cases |
+
+## Journey
+
+[JOURNEY-001](JOURNEY-001-Imaging-Path.md) — the experience the strategy must change.
 
 ## Deliberately not doing
 

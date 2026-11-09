@@ -11,13 +11,14 @@ created: 2026-11-08
 updated: 2026-11-09
 framework: none
 example: true
+case_id: CASE-001
 ---
 
 # Problem — out-of-pocket cost uncertainty before outpatient imaging
 
 ## Problem Statement
 
-Adults on employer-sponsored high-deductible health plans cannot estimate their out-of-pocket cost before booking outpatient imaging. They decide whether to book, where to book, and whether the expected cost is tolerable without a reliable estimate.
+Adults on employer-sponsored high-deductible health plans cannot reliably predict their final patient responsibility before booking outpatient imaging. Some receive an estimate, but coverage and accuracy are uneven: 41% received one, and 29% of those said it was not accurate to $400. They decide whether to book, where to book, and whether the expected cost is tolerable without a reliable number.
 
 ## User / Segment
 
@@ -38,6 +39,10 @@ Adults on employer-sponsored high-deductible health plans cannot estimate their 
 > Stated intent is not observed behavior. These sources do not establish that better estimates reduce postponement. The medical-debt row is population-level and not specific to imaging.
 >
 > Live research: [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md).
+
+## Journey
+
+[JOURNEY-001](JOURNEY-001-Imaging-Path.md) — where the estimate appears, and where it goes stale.
 
 ## Frequency
 
@@ -65,3 +70,7 @@ Evidence unavailable. Potential effects to measure: delayed bookings, call-centr
 ## Related Opportunities
 
 - [OPP-001](OPP-001-Outpatient-Imaging-Cost.md)
+
+## Buyer
+
+Unresolved. See [PERSONA-002](PERSONA-002-Buyer-Payer.md).

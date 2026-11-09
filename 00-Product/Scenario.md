@@ -2,6 +2,8 @@
 type: scenario
 status: active
 confidence: none
+case_id: CASE-001
+example: true
 updated: 2026-11-09
 ---
 
@@ -15,7 +17,22 @@ updated: 2026-11-09
 **Who:** Adults on employer-sponsored high-deductible health plans.
 **Situation:** Choosing outpatient imaging.
 **Decision moment:** Deciding whether to book, where to book, and whether the expected out-of-pocket cost is tolerable.
-**Uncertainty:** They do not have a reliable out-of-pocket estimate before booking.
+**Uncertainty:** They cannot reliably predict their final patient responsibility before booking. Some receive an estimate; coverage and accuracy are uneven.
+
+## Glossary
+
+| Term | Meaning in this case |
+|---|---|
+| Patient | The person receiving the imaging service |
+| Member | The person covered by the health plan |
+| Buyer | The actor who pays for the product; unresolved in this case |
+| User | The person using the estimate experience; usually the patient |
+| Estimate | A pre-booking estimate of patient responsibility, with inclusions, exclusions, and validity |
+| Patient responsibility | The final amount owed after plan payment, before any assistance or adjustment |
+
+## Journey view
+
+The case is a cost journey, not only a booking moment. See [JOURNEY-001](../99-Playbook/Templates/JOURNEY-001-Imaging-Path.md).
 
 ## Why the uncertainty matters
 
@@ -58,6 +75,10 @@ An estimate is not usable unless we specify:
 - how it is reconciled against final patient responsibility,
 - acceptable error, especially underestimation,
 - how changed services and unresolved bills are handled.
+
+## Buyer question
+
+The buyer is unresolved. The candidate buyers are an employer benefits lead, a payer product lead, or a provider finance/access lead; see [PERSONA-002](../99-Playbook/Templates/PERSONA-002-Buyer-Payer.md).
 
 ## Decision gate
 

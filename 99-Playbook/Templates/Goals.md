@@ -9,6 +9,7 @@ period: Q1 pilot
 updated: 2026-11-08
 source: "https://romanpichler.com/blog/leading-through-shared-goals/ + https://www.impactmapping.org/"
 example: true
+case_id: CASE-001
 ---
 
 # Goals — cost certainty before imaging
@@ -25,6 +26,14 @@ Reduce out-of-pocket cost uncertainty before elective outpatient imaging.
 | KR2 | Reconciled accuracy | unknown | ≥70% within $400 | end of Q1 pilot | low |
 
 > Both targets are provisional. Validate against patient expectations.
+
+## Outcome metric
+
+Share of patients who can predict their final responsibility within $400 before booking. Current: unknown. Coverage is the leading metric; prediction is the customer outcome. Comprehension is tested in [EXP-001](EXP-001-Comprehension-Test.md).
+
+## Journey
+
+[JOURNEY-001](JOURNEY-001-Imaging-Path.md) — where the behaviour change must happen.
 
 ## Impact Map
 
