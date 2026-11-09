@@ -14,11 +14,12 @@ Open the parent iCloud `Documents` vault and ensure Dataview is enabled. Open
 
 Start with something observed, not a solution:
 
-- Weak: “Add automated shift offers.”
-- Better: “Managers lose time phoning staff to cover unexpected gaps.”
+- Weak: “Add a price estimator.”
+- Better: “Adults on HDHP plans cannot tell what an outpatient imaging visit will cost before they book.”
 
-Copy `99-Playbook/Templates/PROB-001-Imaging-Cost-Problem.md` into `02-Problems/`, using the next available `PROB-NNN` ID.
-Keep the frontmatter. State who experiences the problem, when, how often, and what it costs.
+Copy `99-Playbook/Templates/PROB-001-Imaging-Cost-Problem.md` into `02-Problems/`. Rename the file
+to `PROB-NNN-your-slug.md`, set `id: PROB-NNN` to the next available ID, and replace the illustrative
+example with your problem. State who experiences the problem, when, how often, and what it costs.
 
 If you only have a feature request, run:
 
@@ -28,18 +29,21 @@ If you only have a feature request, run:
 
 ## 2. Attach evidence — 5 minutes
 
-Use the right source artifact:
+Copy the right source template, rename it, update `id:`, and replace its example:
 
-- Verbatim complaint → `01-Users/Feedback`, from [[FB-001-Imaging-Cost-Feedback]]
-- Interview synthesis → `04-Research/Users`, from [[RESEARCH-001-Imaging-Cost-Transparency]]
-- Metric or baseline → `04-Research/Data`
+- Verbatim complaint → [[FB-001-Imaging-Cost-Feedback]] into `01-Users/Feedback/`
+- Interview synthesis → [[RESEARCH-001-Imaging-Cost-Transparency]] into `04-Research/Users/`, with `category: user`
+- Metric or baseline → [[RESEARCH-001-Imaging-Cost-Transparency]] into `04-Research/Data/`, with `category: data`
 
-Link the source from the Problem's evidence table. If there is no evidence, leave the table empty,
-set `confidence: low`, and write `Evidence unavailable.` Do not make the note look stronger than it is.
+Delete the illustrative evidence rows from the Problem before adding your sources. If there is no
+evidence, leave the table empty, set `confidence: low`, and write `Evidence unavailable.` Do not make
+the note look stronger than it is.
 
 ## 3. Assess the opportunity — 7 minutes
 
-Copy [[OPP-001-Outpatient-Imaging-Cost]] into `03-Opportunities/` with the next `OPP-NNN` ID.
+Copy [[OPP-001-Outpatient-Imaging-Cost]] into `03-Opportunities/`. Rename the file to
+`OPP-NNN-your-slug.md`, set `id: OPP-NNN` to the next available ID, replace the example, and link the
+new `problem:` to your Problem note.
 
 Answer the ten questions conservatively, then name the four risks: **value, usability, feasibility,
 business viability**. Each material risk needs an owner and a test. `unknown` is a valid rating;
@@ -65,6 +69,8 @@ the cheapest way to discover you are wrong. A challenge that validates everythin
 ## 5. Design the smallest experiment — 5 minutes
 
 If a material uncertainty remains, copy [[EXP-001-Comprehension-Test]] into `07-Delivery/Experiments/`.
+Rename the file to `EXP-NNN-your-slug.md`, set `id: EXP-NNN`, replace the example, and link the new
+`opportunity:` to your Opportunity note.
 
 Name **one** risk being retired. Pre-register success, failure and kill criteria before seeing data.
 Choose the cheapest test that could change the decision: interviews, a prototype, concierge run,
@@ -78,9 +84,9 @@ Open [[Discovery Map]] and link the existing notes:
 
 ```text
 Desired outcome
-└── PROB-001
-    └── OPP-001
-        ├── CAND-001 → EXP-001
+└── PROB-NNN
+    └── OPP-NNN
+        ├── CAND-001 → EXP-NNN
         └── CAND-002
 ```
 
@@ -89,8 +95,8 @@ canonical artifact or remove it.
 
 ## 7. Decide only when evidence supports it
 
-A significant choice becomes a [[DEC-001-Build-Partner-Defer]] record with options, tradeoffs, reversibility, an
-expected outcome and a review date. The agent proposes; the human accepts.
+A significant choice becomes a [[DEC-001-Build-Partner-Defer|DEC-001]] record with options,
+tradeoffs, reversibility, an expected outcome and a review date. The agent proposes; the human accepts.
 
 Only then consider a solution brief through `/pm prd OPP-001`. If the validation gate is not met,
 the refusal is the harness working correctly.
@@ -104,7 +110,9 @@ the refusal is the harness working correctly.
 - [ ] Discovery Map links canonical notes
 - [ ] Decision and solution brief wait until justified
 
-## If you already have a defined product
+## Mature-product shortcut
 
-You do not need to manufacture a discovery exercise. Fill [[Product]], [[PM vault/00-Product/Goals|Goals]] and [[PM vault/00-Product/Metrics|Metrics]]
-with real information, then run `/pm status`. Use this guide only for the next uncertain opportunity.
+If the product already has a real definition, goals, and metrics, do not manufacture a discovery
+exercise. Confirm [[Product]], [[PM vault/00-Product/Goals|Goals]], and
+[[PM vault/00-Product/Metrics|Metrics]] are filled with real information, run `/pm status`, then use
+this guide only for the next uncertain opportunity.
