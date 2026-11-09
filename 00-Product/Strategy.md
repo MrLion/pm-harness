@@ -11,7 +11,7 @@ review_cadence_days: 90
 
 The four strategy elements from the Vision Board, elaborated. The vision endures; **strategy
 changes as you learn** — so each element is an assumption with evidence, not a declaration.
-Template and checklist: `99-Hermes/Templates/Strategy.md`.
+Template and checklist: `99-Playbook/Templates/Strategy.md`.
 
 ## Strategy elements
 | Element | Current position | Evidence | Confidence |

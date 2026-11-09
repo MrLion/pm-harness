@@ -15,7 +15,7 @@ Start with something observed, not a solution:
 - Weak: “Add automated shift offers.”
 - Better: “Managers lose time phoning staff to cover unexpected gaps.”
 
-Copy `99-Hermes/Templates/Problem.md` into `02-Problems/`, using the next available `PROB-NNN` ID.
+Copy `99-Playbook/Templates/PROB-001-Imaging-Cost-Problem.md` into `02-Problems/`, using the next available `PROB-NNN` ID.
 Keep the frontmatter. State who experiences the problem, when, how often, and what it costs.
 
 If you only have a feature request, run:

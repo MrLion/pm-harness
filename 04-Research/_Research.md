@@ -60,4 +60,4 @@ WHERE type = "research" AND (reliability = "weak" OR reliability = null)
 - [ ] **What this does NOT tell us** — mandatory section
 - [ ] Links to the `PROB` / `OPP` it supports or weakens
 
-Template: `99-Hermes/Templates/Research.md`. Set `category:` in frontmatter so the tables work.
+Template: `99-Playbook/Templates/RESEARCH-001-Imaging-Cost-Transparency.md`. Set `category:` in frontmatter so the tables work.

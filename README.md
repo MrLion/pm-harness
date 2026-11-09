@@ -79,7 +79,7 @@ Two linked views keep the reasoning visible:
 | Shipped outcome | `07-Delivery/Releases` |
 | Monthly learning and mistakes | `08-Reviews` |
 
-Templates live in `99-Hermes/Templates/`; the index is [[_Templates]].
+Templates live in `99-Playbook/Templates/`; the index is [[_Templates]].
 
 ## Creating notes correctly
 

@@ -12,7 +12,7 @@ updated: 2026-11-08
 > **Scaffold, not fact.** Nothing below is filled in. Per `[[Rules]]` §8 the agent will not invent
 > product facts — every `[FILL]` stays empty until you supply it. While `confidence: none`,
 > `/pm` refuses strategic recommendations.
-> Field definitions and checklist: `99-Hermes/Templates/Product-Vision-Board.md` (Pichler, CC BY-SA 4.0).
+> Field definitions and checklist: `99-Playbook/Templates/Product-Vision-Board.md` (Pichler, CC BY-SA 4.0).
 
 ## VISION
 > The reason for creating the product, and the positive change it should create.

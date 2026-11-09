@@ -10,9 +10,9 @@ Delete the `[!example]` block before using a template for real work.
 | Template | Use for | Framework | Source |
 |---|---|---|---|
 | [[Product-Vision-Board\|Product-Vision-Board]] | `00-Product/Product.md` | Pichler | [Vision Board](https://romanpichler.com/tools/product-vision-board/) |
-| [[PM vault/99-Hermes/Templates/Strategy\|Strategy template]] | `00-Product/Strategy.md` | Pichler | [Strategy model](https://romanpichler.com/blog/my-product-strategy-model/) |
-| [[PM vault/99-Hermes/Templates/Goals\|Goals template]] | `00-Product/Goals.md` | Pichler + OKR + Impact Mapping | [Goal-setting](https://romanpichler.com/blog/leading-through-shared-goals/) · [Impact Mapping](https://www.impactmapping.org/) |
-| [[PM vault/99-Hermes/Templates/Metrics\|Metrics template]] | `00-Product/Metrics.md` | Pichler + North Star | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) · [North Star](https://amplitude.com/books/north-star/about-north-star-framework) |
+| [[PM vault/99-Playbook/Templates/Strategy\|Strategy template]] | `00-Product/Strategy.md` | Pichler | [Strategy model](https://romanpichler.com/blog/my-product-strategy-model/) |
+| [[PM vault/99-Playbook/Templates/Goals\|Goals template]] | `00-Product/Goals.md` | Pichler + OKR + Impact Mapping | [Goal-setting](https://romanpichler.com/blog/leading-through-shared-goals/) · [Impact Mapping](https://www.impactmapping.org/) |
+| [[PM vault/99-Playbook/Templates/Metrics\|Metrics template]] | `00-Product/Metrics.md` | Pichler + North Star | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) · [North Star](https://amplitude.com/books/north-star/about-north-star-framework) |
 | [[GO-Roadmap]] | `06-Roadmap/` | Pichler | [GO Product Roadmap](https://romanpichler.com/tools/the-go-product-roadmap/) |
 | [[Dashboard-Example\|Dashboard-Example]] | `Dashboard.md` | Dataview | working dashboard over the pre-filled templates |
 | [[PERSONA-001-HDHP-Imaging-Patient]] | `01-Users/Personas/` | Pichler | [Persona Template](https://www.romanpichler.com/the-persona-template/) |
@@ -62,7 +62,7 @@ queryable immediately. Copy the frontmatter verbatim; never retype it.
 | `primary_metric` (prd) | gate on "no baseline, no brief" |
 
 **Templates carry their real `type`, not `type: template`.** That is deliberate: the schema stays
-correct when you copy the file, and these files sit in `99-Hermes/`, outside every folder-scoped
+correct when you copy the file, and these files sit in `99-Playbook/`, outside every folder-scoped
 query, so they never appear in a table. Do not move a template into `02-Problems/` or similar.
 
 ## Folder mode

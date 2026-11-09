@@ -1,6 +1,6 @@
 # Scenario
 
-> Pre-filled templates: [[PM vault/99-Hermes/Templates/_Templates|Templates]]
+> Pre-filled templates: [[PM vault/99-Playbook/Templates/_Templates|Templates]]
 
 ## Main scenario
 

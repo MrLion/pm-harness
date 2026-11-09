@@ -41,7 +41,7 @@ updated: 2026-11-08
 ## Goal → roadmap traceability
 | Objective / KR | Roadmap entry | Opportunity |
 |---|---|---|
-| [FILL] | [[Now]] | [[PM vault/99-Hermes/Templates/OPP-001-Outpatient-Imaging-Cost|OPP-001]] |
+| [FILL] | [[Now]] | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost|OPP-001]] |
 
 ## Related
 - [[PM vault/00-Product/Metrics|Metrics]] · [[PM vault/00-Product/Strategy|Strategy]] · [[Discovery Map]]

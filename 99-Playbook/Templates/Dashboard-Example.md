@@ -9,7 +9,7 @@ updated: 2026-11-08
 
 # Example Dashboard — pre-filled template data
 
-This dashboard reads `PM vault/99-Hermes/Templates`, so it renders the pre-filled examples instead of empty artifact folders.
+This dashboard reads `PM vault/99-Playbook/Templates`, so it renders the pre-filled examples instead of empty artifact folders.
 
 To use it on real notes, copy the blocks and change each `FROM` path to the matching canonical folder:
 
@@ -19,7 +19,7 @@ To use it on real notes, copy the blocks and change each `FROM` path to the matc
 
 ```dataview
 TABLE status, confidence, severity, priority
-FROM "PM vault/99-Hermes/Templates"
+FROM "PM vault/99-Playbook/Templates"
 WHERE type = "problem"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
@@ -30,7 +30,7 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 
 ```dataview
 TABLE status, confidence, recommendation
-FROM "PM vault/99-Hermes/Templates"
+FROM "PM vault/99-Playbook/Templates"
 WHERE type = "opportunity"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
@@ -41,7 +41,7 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 
 ```dataview
 TABLE status, confidence, recommendation, review_after
-FROM "PM vault/99-Hermes/Templates"
+FROM "PM vault/99-Playbook/Templates"
 WHERE type = "opportunity" AND recommendation = "Pending"
 ```
 
@@ -49,7 +49,7 @@ WHERE type = "opportunity" AND recommendation = "Pending"
 
 ```dataview
 TABLE status, date, reversibility, review_date
-FROM "PM vault/99-Hermes/Templates"
+FROM "PM vault/99-Playbook/Templates"
 WHERE type = "decision"
 SORT date DESC
 ```
@@ -58,7 +58,7 @@ SORT date DESC
 
 ```dataview
 TABLE status, opportunity, updated
-FROM "PM vault/99-Hermes/Templates"
+FROM "PM vault/99-Playbook/Templates"
 WHERE type = "prd"
 SORT updated DESC
 ```
@@ -67,7 +67,7 @@ SORT updated DESC
 
 ```dataview
 TABLE status, opportunity, start, end
-FROM "PM vault/99-Hermes/Templates"
+FROM "PM vault/99-Playbook/Templates"
 WHERE type = "experiment"
 SORT start ASC
 ```
@@ -76,7 +76,7 @@ SORT start ASC
 
 ```dataview
 TABLE category, date, reliability
-FROM "PM vault/99-Hermes/Templates"
+FROM "PM vault/99-Playbook/Templates"
 WHERE type = "research"
 SORT date DESC
 ```
@@ -85,7 +85,7 @@ SORT date DESC
 
 ```dataview
 TABLE status, date, goal, metric_result
-FROM "PM vault/99-Hermes/Templates"
+FROM "PM vault/99-Playbook/Templates"
 WHERE type = "release"
 SORT date DESC
 ```
@@ -94,7 +94,7 @@ SORT date DESC
 
 ```dataview
 LIST
-FROM "PM vault/99-Hermes/Templates"
+FROM "PM vault/99-Playbook/Templates"
 WHERE type = "review"
 SORT file.name DESC
 ```

@@ -90,6 +90,6 @@ Unknown baselines stay `unknown`; never invent them.
 
 ## 18. Respect the write boundary
 Free to write: `04-Research`, `02-Problems`, `03-Opportunities`, `07-Delivery/Experiments`,
-`08-Reviews`, `99-Hermes`.
+`08-Reviews`, `99-Playbook`.
 Draft only (propose, do not overwrite): `07-Delivery/PRDs`, `06-Roadmap`.
 Propose in chat, human commits: `00-Product`, `05-Decisions`.

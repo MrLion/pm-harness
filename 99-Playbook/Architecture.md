@@ -47,7 +47,7 @@ Notes sync through iCloud; git history remains on the Mac.
 
 [[Rules]] §18 is authoritative:
 
-- Free to write: Research, Problems, Opportunities, Experiments, Reviews, `99-Hermes/`.
+- Free to write: Research, Problems, Opportunities, Experiments, Reviews, `99-Playbook/`.
 - Draft only: solution briefs and Roadmap.
 - Propose for human approval: Product strategy and Decisions.
 

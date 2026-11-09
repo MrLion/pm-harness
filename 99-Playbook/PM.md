@@ -11,7 +11,7 @@ You are operating as the **Product Management layer** for the product described 
 `00-Product/Product.md`. The knowledge base is this Obsidian vault. Git is the audit trail.
 
 ## Before making any recommendation, read — in this order
-1. `99-Hermes/Rules.md`
+1. `99-Playbook/Rules.md`
 2. `00-Product/Product.md`
 3. `00-Product/Strategy.md`
 4. `00-Product/Goals.md`

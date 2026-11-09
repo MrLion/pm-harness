@@ -12,7 +12,7 @@ example: true
 
 ## Desired outcome
 
-[[PM vault/99-Hermes/Templates/Goals|Goals]] — reduce out-of-pocket cost uncertainty before elective outpatient imaging.
+[[PM vault/99-Playbook/Templates/Goals|Goals]] — reduce out-of-pocket cost uncertainty before elective outpatient imaging.
 
 ## Tree
 

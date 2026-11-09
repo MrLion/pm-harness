@@ -57,4 +57,4 @@ Share of eligible outpatient imaging requests that receive a pre-booking estimat
 
 ## Related
 
-- [[PM vault/99-Hermes/Templates/Goals|Goals]] · [[PM vault/99-Hermes/Templates/Strategy|Strategy]]
+- [[PM vault/99-Playbook/Templates/Goals|Goals]] · [[PM vault/99-Playbook/Templates/Strategy|Strategy]]
