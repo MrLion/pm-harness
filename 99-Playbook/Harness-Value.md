@@ -45,7 +45,23 @@ summed directly; they are weighted by time share.
 
 After a 25% overlap and adoption haircut: **5.6 hours — 14%**.
 
+## Team-count sensitivity
+
+The saving does not scale linearly with team count. More teams increase coordination time, which the
+harness only partly reduces.
+
+| Scenario | Central saving | Range | Main constraint |
+|---|---:|---:|---|
+| PM with 1–2 teams | **5.6 hrs — 14%** | 10–20% | Documentation is a larger share of the week |
+| One PM across 5 teams | **5.0 hrs — 12.6%** | 10–15% | Coordination is about 40% of the week and barely reduced |
+| Group PM over 5 PMs | **6.9 hrs — 17.2%** | 15–20% | Portfolio status and cross-team synthesis are larger |
+
+One PM across five teams saves **less** than a PM with one or two teams because the tool compresses
+documentation, recall, and traceability — not escalation, alignment, or dependency meetings.
+
 ## Aggregate estimate
+
+The aggregate below uses the 1–2 team baseline.
 
 | Measure | Estimate |
 |---|---|
