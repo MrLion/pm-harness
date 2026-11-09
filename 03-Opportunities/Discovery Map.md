@@ -23,6 +23,10 @@ Linked view of existing artifacts. Template and worked example: [[Discovery-Map]
     - **CAND-002** — assisted estimate request with human review · [[PM vault/99-Hermes/Templates/OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-001 · CAND-002]]
     - **CAND-003** — narrowly scoped self-service estimate · [[PM vault/99-Hermes/Templates/OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-001 · CAND-003]]
 
+## Related opportunities
+
+- [[PM vault/99-Hermes/Templates/OPP-002-Provider-Comparison|OPP-002]] — deferred until estimate coverage and accuracy are proven.
+
 ## Coverage check
 - [ ] Every branch starts from a desired outcome
 - [ ] Every opportunity links evidence-backed problems
