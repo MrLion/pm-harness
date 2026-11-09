@@ -24,7 +24,7 @@ Choose the mode from [[README]] / [[_Playbooks]]:
 | Existing product, signal, or next feature | [[Outcome-Led-1-to-N]] | Problems, Opportunities, Research, Decisions, Experiments, Reviews |
 | Portfolio or enterprise capability change | [[Digital-Transformation]] | [[_Transformation]] and its live artifacts |
 | Funding, team topology, flow, or governance | [[Project-to-Product]] | [[_Operating-Model]] and its live artifacts |
-| PII, PHI, ePHI, vendors, or health data | Compliance rail | [[_Compliance]] → [[COMP-001-Compliance-Scope|COMP-001]] |
+| PII, PHI, ePHI, vendors, or health data | Compliance rail | [[_Compliance]] → live [[COMP-003-Compliance-Scope|COMP-003]] |
 
 Do not read every branch. Read the branch that matches the request.
 

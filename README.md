@@ -10,6 +10,8 @@ This playbook supports four ways of working, but they answer different questions
 - **Product lifecycle:** are we creating a new product, or improving an existing one?
 - **Operating model:** are we changing a product, a portfolio, or how the organization funds and staffs product work?
 
+![PM Playbook visual](99-Playbook/Visuals/playbook_v8.png)
+
 The harness will not invent evidence, silently rewrite strategy, or produce a solution brief before
 validation. Empty fields and `Evidence unavailable.` are preferable to plausible fiction.
 
@@ -33,6 +35,10 @@ them; the commands require the `product-management` skill and the `pm` bundle.
 - Expected result: product health, the top problems and opportunities, and one recommended next action
 
 If the skill or bundle is missing, the vault still works; only `/pm` commands are unavailable.
+
+A fresh clone does not include these files. Install Hermes, place the `product-management` skill under
+`$HERMES_HOME/skills/productivity/` and `pm.yaml` under `$HERMES_HOME/skill-bundles/`, run
+`hermes bundles reload`, then test `/pm status`. See https://hermes-agent.nousresearch.com/docs/.
 
 ## Choose your playbook
 

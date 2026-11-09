@@ -45,7 +45,7 @@ example: true
 
 ## Metrics
 
-**Primary metric:** Share of eligible imaging requests that receive a pre-booking estimate.
+**Primary metric:** Share of eligible imaging requests that receive a pre-booking estimate. Eligibility is fixed at intake; cancellations after the estimate are reported separately.
 
 **Accuracy companion:** Share of reconciled estimates within $400 of final patient responsibility.
 
