@@ -147,5 +147,6 @@ Delivery can be blocked by the operating model. When that happens, do not force 
 - [Architecture](Architecture.md) — technical contract
 - [Agent Manual](Agent-Manual.md) — setup and command use
 - [Agent Walkthrough](Agent-Walkthrough.md) — guided lab
+- [Harness Value](Harness-Value.md) — time-value estimate
 - [Playbooks](Playbooks/_Playbooks.md) — playbook router
 - [Templates](Templates/_Templates.md) — artifact shapes

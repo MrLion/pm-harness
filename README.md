@@ -44,7 +44,8 @@ A fresh clone does not include these files. Install Hermes, place the `product-m
 `hermes bundles reload`, then test `/pm status`. See https://hermes-agent.nousresearch.com/docs/.
 
 Full setup and operating guide: [Agent-Manual](99-Playbook/Agent-Manual.md). Guided lab:
-[Agent Walkthrough](99-Playbook/Agent-Walkthrough.md).
+[Agent Walkthrough](99-Playbook/Agent-Walkthrough.md). Value estimate:
+[Harness Value](99-Playbook/Harness-Value.md).
 
 ## Choose your playbook
 

@@ -280,4 +280,5 @@ Before saying the harness works:
 - [Architecture](Architecture.md) — technical contract
 - [Discovery to Delivery](Discovery-to-Delivery.md) — canonical product chain
 - [Agent Walkthrough](Agent-Walkthrough.md) — guided lab
+- [Harness Value](Harness-Value.md) — time-value estimate
 - [_Playbooks](Playbooks/_Playbooks.md) — playbook router
