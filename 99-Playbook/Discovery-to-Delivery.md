@@ -117,11 +117,7 @@ Templates live in `99-Playbook/Templates/`. A template is a shape, not evidence.
 
 ## Compliance rail
 
-If the work touches PII, PHI, ePHI, vendors, or health data, the [live compliance scope](../11-Compliance/COMP-003-Compliance-Scope.md) gates delivery.
-
-- `status: draft` or `owner: Unassigned` is a stop condition
-- complete the [data inventory](Templates/Compliance/DATA-001-Data-Inventory.md), [risk assessment](Templates/Compliance/RISK-001-Privacy-Security-Risk.md), [control matrix](Templates/Compliance/CTRL-001-Control-Matrix.md), [vendor/BAA register](Templates/Compliance/VEND-001-Vendor-BAA-Register.md), and [incident plan](Templates/Compliance/INC-001-Incident-Breach-Response.md)
-- record the compliance review in [COMP-002](Templates/Compliance/COMP-002-Compliance-Review.md)
+If the work touches PII, PHI, ePHI, vendors, or health data, the [live compliance scope](../11-Compliance/COMP-003-Compliance-Scope.md) gates delivery. `status: draft` or `owner: Unassigned` is a stop condition. [Rules](Rules.md) Rule 5 defines the classification. Complete the set in [_Compliance-Templates](Templates/Compliance/_Compliance-Templates.md) and record the review.
 
 ## Operating-model escalation
 

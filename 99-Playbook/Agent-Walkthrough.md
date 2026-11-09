@@ -35,7 +35,7 @@ If `/pm` is unknown, stop and fix the bundle in [Agent Manual](Agent-Manual.md).
 |---|---|---|
 | 1. Read-only | `/pm status`, `/pm review`, analysis | Nothing |
 | 2. Draft | Write research, problems, opportunities | Check evidence |
-| 3. Gated draft | Draft PRD, decision, release | Approve the gate |
+| 3. Gated draft | Draft the PRD and release proposal; prepare decision options in conversation | Approve the gate; write and accept the decision record |
 | 4. Human-only | Product, Strategy, accepted decisions, Rules | Write and approve |
 
 Do not skip levels. The lab deliberately starts at level 1.
@@ -154,7 +154,8 @@ Then run:
 Then create the missing artifact:
 
 - use [Experiment template](Templates/EXP-001-Comprehension-Test.md) for a test
-- use [Decision template](Templates/DEC-001-Build-Partner-Defer.md) for a choice
+- use [Decision template](Templates/DEC-001-Build-Partner-Defer.md) for a choice. The agent may prepare
+  options; the human writes and accepts the record in `05-Decisions`.
 
 **Prompt:**
 

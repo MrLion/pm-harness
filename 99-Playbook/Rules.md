@@ -53,9 +53,8 @@ Before handling PII, PHI, ePHI, vendor data, or health data, determine:
 If unresolved, write `Compliance scope unresolved` and stop. Do not guess regulatory applicability.
 
 ## 6. Discovery is separate from delivery
-No PRD until the relevant opportunity has survived `/pm challenge`. No roadmap or portfolio commitment
-until the relevant evidence gate is met. Transformation and operating-model work use their own gates,
-not a product PRD gate.
+The product gates are in [Discovery to Delivery](Discovery-to-Delivery.md). Do not bypass them.
+Transformation and operating-model work use their own gates, not a product PRD gate.
 
 ## 7. Challenge every significant recommendation
 Each one carries: assumptions, contradicting evidence, alternatives considered, risks, and unknowns.
@@ -77,19 +76,7 @@ A Decision Record is required when a decision:
 Verbal decisions do not exist.
 
 ## 10. Traceability is mandatory
-Product traceability: canonical in [Discovery to Delivery](Discovery-to-Delivery.md).
-
-Transformation traceability:
-
-`Transformation Thesis → Capability Map → Value-Stream Map → Product Taxonomy → Funding → Portfolio Roadmap → Adoption → Review`
-
-Project-to-product traceability:
-
-`Product Taxonomy → Funding → Team Topology → Flow Baseline → Dependency Map → Transition Roadmap → Review`
-
-Compliance traceability:
-
-`Compliance Scope → Data Inventory → Risk → Controls → Vendor/BAA → Incident Readiness → Review`
+Traceability chains are defined in [Architecture](Architecture.md#identity-and-traceability). The product chain is canonical in [Discovery to Delivery](Discovery-to-Delivery.md).
 
 Every artifact reference is a relative Markdown link that resolves in both Obsidian and GitHub. An orphaned artifact is a defect reported in
 `/pm review`.
@@ -164,10 +151,4 @@ Answer a direct question about an artifact or output before mutating anything. �
 difference…”, and “did I say…” are questions, not write requests.
 
 ## 23. IDs live in filenames
-IDs are encoded in filenames: `PROB-004-your-slug.md`, `OPP-002-your-slug.md`.
-
-- Scan the target folder, take the highest existing numeric ID, add one, and zero-pad to three.
-- Never reuse an ID, even if a note was archived.
-- Non-standard IDs keep their template form: `REVIEW-2027-02`, `REVIEW-OM-001`.
-- `CAND-NNN` IDs are global across Opportunities. Scan every Opportunity’s `Candidate solutions`
-  table before allocating one.
+Follow [Architecture](Architecture.md#identity-and-traceability). Never invent or reuse an ID.

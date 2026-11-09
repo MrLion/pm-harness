@@ -89,22 +89,12 @@ Notes sync through iCloud; git history remains on the Mac.
 - Never move git internals into iCloud.
 - Never `git init` or clone in this folder; that creates diverging history.
 - Nested `.obsidian/` remains on disk but is ignored by git as inert machine-local state.
-- Commits are local unless a remote is explicitly configured.
+- A remote may be configured; pushing is a separate, intentional action.
 
 ## Agent write boundaries
 
-[Rules](Rules.md) Rule 21 is authoritative:
-
-**Free to write:** `04-Research`, `02-Problems`, `03-Opportunities`, `07-Delivery/Experiments`,
-`08-Reviews`, `99-Playbook/Templates`, `99-Playbook/Playbooks`, `99-Playbook/Future-Problem-Statements.md`.
-
-**Draft only — propose, do not overwrite:** `07-Delivery/PRDs`, `06-Roadmap`,
-`09-Transformation`, `10-Operating-Model`, `11-Compliance`.
-
-**Human-approved only:** `00-Product`, `05-Decisions`, `README.md`, `99-Playbook/Rules.md`,
-`99-Playbook/PM.md`, `99-Playbook/Visual-Standards.md`.
-
-Every material write updates `updated:` and leaves a reviewable git diff.
+[Rules](Rules.md) Rule 21 is authoritative. Do not restate or widen it here. Every material write
+updates `updated:` and leaves a reviewable git diff.
 
 ## Verification before declaring success
 
@@ -113,8 +103,8 @@ Check programmatically and in Obsidian; visible files alone are not proof.
 1. All Dataview sources have the correct `PM vault/` prefix.
 2. Every queried column exists in the corresponding template schema.
 3. `/pm` loads the `product-management` skill with the requested subcommand intact.
-4. Run the `product-management` skill audit script `scripts/check_wikilinks.py` and
-   `obsidian unresolved vault=Documents`.
+4. Check that relative Markdown links resolve, then run `obsidian unresolved vault=Documents` for
+   any legacy wikilinks.
 5. Open and visually verify the rendered dashboard in Obsidian.
 6. Prefilled product templates contain zero `[FILL]`; operating-model and compliance templates may
    contain `[FILL]` by design.
