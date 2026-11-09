@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="900" viewBox="0 0 1640 900">
+<rect width="1640" height="900" fill="#faf6f0"/>
+<defs><marker id="ac05621" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><polygon points="0,0 10,5 0,10" fill="#c05621"/></marker><marker id="a0f766e" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><polygon points="0,0 10,5 0,10" fill="#0f766e"/></marker><marker id="aN" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><polygon points="0,0 10,5 0,10" fill="#1e3a5f"/></marker></defs>
+<text x="80" y="66" font-size="42" font-weight="800" fill="#1e3a5f" font-family="Helvetica,Arial">The Product Playbook</text>
+<text x="80" y="112" font-size="30" font-weight="800" fill="#c05621" font-family="Helvetica,Arial">An AI harness for product management</text>
+<text x="82" y="148" font-size="20" fill="#6b7280" font-family="Helvetica,Arial">What are you changing? &#183; How is work governed?</text>
+<rect x="100" y="200" width="1290" height="80" rx="40" fill="none" stroke="#c05621" stroke-width="2.5"/>
+<rect x="112" y="205" width="330" height="70" rx="35.0" fill="#c05621"/><text x="277.0" y="248.0" font-size="27" font-weight="800" fill="#fff" text-anchor="middle" font-family="Helvetica,Arial">Vision-led 0&#8594;1</text>
+<rect x="560" y="209" width="210" height="62" rx="31.0" fill="#fff" stroke="#c05621" stroke-width="2.2"/><text x="665.0" y="248.0" font-size="22" font-weight="800" fill="#24425c" text-anchor="middle" font-family="Helvetica,Arial">Vision</text>
+<line x1="778" y1="240" x2="838" y2="240" stroke="#c05621" stroke-width="3" marker-end="url(#ac05621)"/>
+<rect x="846" y="209" width="210" height="62" rx="31.0" fill="#fff" stroke="#c05621" stroke-width="2.2"/><text x="951.0" y="248.0" font-size="22" font-weight="800" fill="#24425c" text-anchor="middle" font-family="Helvetica,Arial">Thesis</text>
+<line x1="1064" y1="240" x2="1124" y2="240" stroke="#c05621" stroke-width="3" marker-end="url(#ac05621)"/>
+<rect x="1132" y="209" width="246" height="62" rx="31.0" fill="#fff" stroke="#c05621" stroke-width="2.2"/><text x="1255.0" y="248.0" font-size="22" font-weight="800" fill="#24425c" text-anchor="middle" font-family="Helvetica,Arial">Concept test</text>
+<rect x="100" y="318" width="1290" height="80" rx="40" fill="none" stroke="#0f766e" stroke-width="2.5"/>
+<rect x="112" y="323" width="330" height="70" rx="35.0" fill="#0f766e"/><text x="277.0" y="366.0" font-size="27" font-weight="800" fill="#fff" text-anchor="middle" font-family="Helvetica,Arial">Outcome-led 1&#8594;N</text>
+<rect x="560" y="327" width="210" height="62" rx="31.0" fill="#fff" stroke="#0f766e" stroke-width="2.2"/><text x="665.0" y="366.0" font-size="22" font-weight="800" fill="#24425c" text-anchor="middle" font-family="Helvetica,Arial">Signal</text>
+<line x1="778" y1="358" x2="838" y2="358" stroke="#0f766e" stroke-width="3" marker-end="url(#a0f766e)"/>
+<rect x="846" y="327" width="260" height="62" rx="31.0" fill="#fff" stroke="#0f766e" stroke-width="2.2"/><text x="976.0" y="366.0" font-size="22" font-weight="800" fill="#24425c" text-anchor="middle" font-family="Helvetica,Arial">Problem &amp; evidence</text>
+<line x1="1114" y1="358" x2="1174" y2="358" stroke="#0f766e" stroke-width="3" marker-end="url(#a0f766e)"/>
+<rect x="1182" y="327" width="196" height="62" rx="31.0" fill="#fff" stroke="#0f766e" stroke-width="2.2"/><text x="1280.0" y="366.0" font-size="22" font-weight="800" fill="#24425c" text-anchor="middle" font-family="Helvetica,Arial">Challenge</text>
+<path d="M 1394,240 H 1470 V 482 H 1108" fill="none" stroke="#c05621" stroke-width="3" marker-end="url(#ac05621)"/>
+<path d="M 1394,358 H 1520 V 527 H 1108" fill="none" stroke="#0f766e" stroke-width="3" marker-end="url(#a0f766e)"/>
+<rect x="540" y="455" width="560" height="100" rx="26" fill="#1e3a5f"/>
+<text x="820" y="500" font-size="30" font-weight="800" fill="#fff" text-anchor="middle" font-family="Helvetica,Arial">Evidence gate</text>
+<text x="820" y="532" font-size="20" fill="#cdd9e5" text-anchor="middle" font-family="Helvetica,Arial" font-style="italic">Do we know enough to commit?</text>
+<path d="M 820,555 V 610 H 380 V 648" fill="none" stroke="#1e3a5f" stroke-width="2.5" marker-end="url(#aN)"/>
+<line x1="820" y1="610" x2="1260" y2="610" stroke="#1e3a5f" stroke-width="2.5"/>
+<path d="M 820,610 V 648" fill="none" stroke="#1e3a5f" stroke-width="2.5" marker-end="url(#aN)"/>
+<path d="M 1260,610 V 648" fill="none" stroke="#1e3a5f" stroke-width="2.5" marker-end="url(#aN)"/>
+<rect x="170" y="652" width="420" height="106" rx="20" fill="#fff" stroke="#1e3a5f" stroke-width="2.5"/><text x="380" y="698" font-size="27" font-weight="800" fill="#1e3a5f" text-anchor="middle" font-family="Helvetica,Arial">Uncertain</text><text x="380" y="732" font-size="19" fill="#6b7280" text-anchor="middle" font-family="Helvetica,Arial">Run the next test</text>
+<rect x="610" y="652" width="420" height="106" rx="20" fill="#fff" stroke="#1e3a5f" stroke-width="2.5"/><text x="820" y="698" font-size="27" font-weight="800" fill="#1e3a5f" text-anchor="middle" font-family="Helvetica,Arial">Proceed</text><text x="820" y="732" font-size="19" fill="#6b7280" text-anchor="middle" font-family="Helvetica,Arial">Deliver &#8594; Review</text>
+<rect x="1050" y="652" width="420" height="106" rx="20" fill="#fff" stroke="#1e3a5f" stroke-width="2.5"/><text x="1260" y="698" font-size="27" font-weight="800" fill="#1e3a5f" text-anchor="middle" font-family="Helvetica,Arial">No-go</text><text x="1260" y="732" font-size="19" fill="#6b7280" text-anchor="middle" font-family="Helvetica,Arial">Defer or stop</text>
+<line x1="80" y1="806" x2="1560" y2="806" stroke="#c9c4bb" stroke-width="2"/>
+<text x="80" y="842" font-size="19" font-weight="800" fill="#1e3a5f" font-family="Helvetica,Arial">Operating model</text><text x="300" y="842" font-size="17" fill="#6b7280" font-family="Helvetica,Arial">|&#160;&#160;&#160;Digital transformation &#183; Capabilities and value streams&#160;&#160;&#160;&#160;&#160;Project-to-product &#183; Funding, teams and governance</text>
+<text x="80" y="876" font-size="17" font-family="Helvetica,Arial" font-style="italic" fill="#24425c">Obsidian &#183; Evidence<tspan fill="#6b7280">&#160;&#160;&#160;&#160;&#160;</tspan><tspan fill="#c05621" font-weight="800">/pm</tspan><tspan fill="#6b7280"> &#183; Reasoning</tspan><tspan> &#160;&#160;&#160;&#160;&#160;Git &#183; Audit trail</tspan></text>
+</svg>

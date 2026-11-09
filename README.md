@@ -187,6 +187,7 @@ putting feedback into an iCloud-synced vault.
 ## Learn more
 
 - **[[_Playbooks]]** — the four playbooks and when to use each
+- **[[Visual-Standards]]** — approved canonical visual language
 - **[[_Operating-Models]]** — the operating-model template set
 - **[[Vision-Led-0-to-1]]** — new product or new market
 - **[[Outcome-Led-1-to-N]]** — existing product
