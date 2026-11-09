@@ -22,6 +22,12 @@ related:
 
 Define the durable products, platforms, and services the organization will own and fund. This is the bridge between digital transformation and project-to-product.
 
+## Current inventory
+
+| Project / product / platform | Type | Owner | Current funding | Lifecycle | Status |
+|---|---|---|---|---|---|
+| [FILL] | project / product / platform / service | [FILL] | [FILL] | [FILL] | active / sunset / ambiguous |
+
 ## Taxonomy
 
 | Product / platform / service | Customer | Outcome it owns | Owner | Lifecycle stage | Funding source | Boundary | Dependencies |

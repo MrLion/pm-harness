@@ -14,6 +14,7 @@ Portfolio and capability-change artifacts. Template index: [[_Operating-Models]]
 - Value-stream map — [[VS-001-Value-Stream-Map|VS-001]]
 - Adoption scorecard — [[ADOPT-001-Adoption-Scorecard|ADOPT-001]]
 - Portfolio roadmap — [[PORT-001-Portfolio-Roadmap|PORT-001]]
+- Operating-model review — [[REVIEW-OM-001-Operating-Model-Review|REVIEW-OM-001]]
 
 ## Rule
 

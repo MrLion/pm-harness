@@ -8,6 +8,7 @@ Structure-only templates for the two operating-model playbooks. They use portfol
 |---|---|
 | [[TAX-001-Product-Taxonomy\|TAX-001]] | Durable products, platforms, and services |
 | [[FUND-001-Funding-Model\|FUND-001]] | Portfolio or product funding and decision rights |
+| [[REVIEW-OM-001-Operating-Model-Review\|REVIEW-OM-001]] | Transformation or transition review |
 
 ## Digital transformation
 

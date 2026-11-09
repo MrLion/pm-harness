@@ -21,7 +21,7 @@ a new value proposition. The entry artifact is a **Product Vision Board**, not a
 | Why now / why us | What changed, and why are we the ones to win? | [[PM vault/99-Playbook/Templates/Strategy\|Strategy]] |
 | Goals and metrics | What outcome proves the thesis? | [[PM vault/99-Playbook/Templates/Goals\|Goals]] · [[PM vault/99-Playbook/Templates/Metrics\|Metrics]] |
 | Opportunity space | Which customer problems matter most? | [[PM vault/99-Playbook/Templates/PROB-001-Imaging-Cost-Problem\|Problem]] · [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost\|Opportunity]] · [[PM vault/99-Playbook/Templates/Discovery-Map\|Discovery Map]] |
-| What would have to be true | Which assumptions carry the thesis? | Opportunity four risks · [[PM vault/99-Playbook/Templates/DEC-001-Build-Partner-Defer\|Decision]] |
+| What would have to be true | Which assumptions carry the thesis? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost#The four big risks\|Opportunity four risks]] · [[PM vault/99-Playbook/Templates/DEC-001-Build-Partner-Defer\|Decision]] |
 | Concept tests | What is the cheapest evidence that changes the bet? | [[PM vault/99-Playbook/Templates/EXP-001-Comprehension-Test\|Experiment]] |
 | MVP | What is the smallest coherent product that tests the thesis? | [[PM vault/99-Playbook/Templates/PRD-001-Imaging-Estimate\|PRD]] |
 | Launch and review | Did the world change, and what did we learn? | [[PM vault/99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot\|Release]] · [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] |

@@ -15,6 +15,7 @@ Project-to-product and funding/team artifacts. Template index: [[_Operating-Mode
 - Flow metrics baseline — [[FLOW-001-Flow-Metrics-Baseline|FLOW-001]]
 - Dependency map — [[DEP-001-Dependency-Map|DEP-001]]
 - Transition roadmap — [[TRANS-002-Transition-Roadmap|TRANS-002]]
+- Operating-model review — [[REVIEW-OM-001-Operating-Model-Review|REVIEW-OM-001]]
 
 ## Rule
 

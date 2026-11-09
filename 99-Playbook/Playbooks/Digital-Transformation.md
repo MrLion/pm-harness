@@ -20,13 +20,13 @@ call it transformation.
 
 | Stage | Question | Artifact |
 |---|---|---|
-| Transformation thesis | What digital outcome is the organization trying to create, and why now? | Transformation thesis |
-| Capability and value-stream map | Which capabilities and value streams must change? | Capability map · value-stream map |
-| Product taxonomy | What are the durable products, platforms, and services? | Product taxonomy |
-| Funding and governance | Who funds which product, and how are outcomes reviewed? | Funding model · governance model |
-| Portfolio roadmap | What sequence of product bets delivers the transformation? | Portfolio roadmap |
-| Adoption and outcome metrics | Are the new capabilities actually used? | Adoption scorecard · outcome metrics |
-| Change review | What changed in the operating model, and what is still blocked? | Transformation review |
+| Transformation thesis | What digital outcome is the organization trying to create, and why now? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/TRANS-001-Transformation-Thesis\|Transformation thesis]] |
+| Capability and value-stream map | Which capabilities and value streams must change? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/CAP-001-Capability-Map\|Capability map]] · [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/VS-001-Value-Stream-Map\|Value-stream map]] |
+| Product taxonomy | What are the durable products, platforms, and services? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/TAX-001-Product-Taxonomy\|Product taxonomy]] |
+| Funding and governance | Who funds which product, and how are outcomes reviewed? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/FUND-001-Funding-Model\|Funding and governance model]] |
+| Portfolio roadmap | What sequence of product bets delivers the transformation? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/PORT-001-Portfolio-Roadmap\|Portfolio roadmap]] |
+| Adoption and outcome metrics | Are the new capabilities actually used? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/ADOPT-001-Adoption-Scorecard\|Adoption scorecard]] · [[PM vault/99-Playbook/Templates/Metrics\|Outcome metrics]] |
+| Change review | What changed in the operating model, and what is still blocked? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/REVIEW-OM-001-Operating-Model-Review\|Operating-model review]] |
 
 ## Existing vault templates that help
 
@@ -45,6 +45,7 @@ call it transformation.
 - [[FUND-001-Funding-Model|FUND-001]] — portfolio funding and decision rights
 - [[ADOPT-001-Adoption-Scorecard|ADOPT-001]] — adoption and changed work
 - [[PORT-001-Portfolio-Roadmap|PORT-001]] — sequenced portfolio bets
+- [[REVIEW-OM-001-Operating-Model-Review|REVIEW-OM-001]] — transformation review
 
 ## What good looks like
 

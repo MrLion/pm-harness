@@ -17,14 +17,14 @@ governance** — it is not a product lifecycle stage.
 
 | Stage | Question | Artifact |
 |---|---|---|
-| Portfolio inventory | What projects, products, and platforms exist now? | Project and product inventory |
-| Product taxonomy | Which durable products and platforms should exist? | Product taxonomy |
-| Team topology | Which teams own which product outcomes? | Team topology |
-| Funding model | How are products funded across horizons instead of project-by-project? | Product funding model |
-| Flow metrics | Where is work waiting, and how efficiently does it flow? | Flow metrics baseline |
-| Governance | What decisions move from project gates to product reviews? | Product governance model |
-| Transition roadmap | What changes first, and what proves the transition is working? | Transition roadmap |
-| Review | Are teams durable, funded, and improving flow? | Transition review |
+| Portfolio inventory | What projects, products, and platforms exist now? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/TAX-001-Product-Taxonomy#Current inventory\|Project and product inventory]] |
+| Product taxonomy | Which durable products and platforms should exist? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/TAX-001-Product-Taxonomy#Taxonomy\|Product taxonomy]] |
+| Team topology | Which teams own which product outcomes? | [[PM vault/99-Playbook/Templates/Operating-Models/Project-to-Product/TEAM-001-Team-Topology\|Team topology]] |
+| Funding model | How are products funded across horizons instead of project-by-project? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/FUND-001-Funding-Model\|Product funding model]] |
+| Flow metrics | Where is work waiting, and how efficiently does it flow? | [[PM vault/99-Playbook/Templates/Operating-Models/Project-to-Product/FLOW-001-Flow-Metrics-Baseline\|Flow metrics baseline]] |
+| Governance | What decisions move from project gates to product reviews? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/FUND-001-Funding-Model#Decision rights\|Product governance model]] |
+| Transition roadmap | What changes first, and what proves the transition is working? | [[PM vault/99-Playbook/Templates/Operating-Models/Project-to-Product/TRANS-002-Transition-Roadmap\|Transition roadmap]] |
+| Review | Are teams durable, funded, and improving flow? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/REVIEW-OM-001-Operating-Model-Review\|Operating-model review]] |
 
 ## Flow metrics to baseline
 
@@ -52,6 +52,7 @@ Use the four together. A single velocity number hides the system constraint.
 - [[FLOW-001-Flow-Metrics-Baseline|FLOW-001]] — flow time, load, efficiency, distribution
 - [[DEP-001-Dependency-Map|DEP-001]] — cross-team and cross-product dependencies
 - [[TRANS-002-Transition-Roadmap|TRANS-002]] — sequenced operating-model change
+- [[REVIEW-OM-001-Operating-Model-Review|REVIEW-OM-001]] — transition review
 
 ## What good looks like
 
