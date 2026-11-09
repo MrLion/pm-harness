@@ -5,7 +5,7 @@ updated: 2026-11-09
 
 # PM Dashboard
 
-Start · [[START-HERE]]
+Start · [[START-HERE]] · Manual · [[Agent-Manual]]
 
 Product · [[Product]] · [[Scenario]] · [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Strategy|Strategy]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]
 Roadmap · [[Now]] · [[Next]] · [[Later]]

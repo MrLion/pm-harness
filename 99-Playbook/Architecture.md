@@ -9,7 +9,8 @@ updated: 2026-11-09
 > [!info] For AI agents only
 > This page is the technical contract for agents: vault mode, folder model, frontmatter, IDs, write boundaries, git, and verification. It is not a human guide. Humans start at [[README]].
 
-Technical reference for agents and advanced users. Start with [[README]] for routing. Use
+Technical reference for agents and advanced users. Setup and operation: [[Agent-Manual]]. Start with
+[[README]] for routing. Use
 [[START-HERE]] only for the outcome-led 1→N path; use [[Vision-Led-0-to-1]] for a new product.
 
 ## Vault mode

@@ -1,5 +1,7 @@
 # Playbooks
 
+Setup and operating manual: [[Agent-Manual]].
+
 Choose by **what you are changing** and **how work is governed**.
 
 Visual language: [[Visual-Standards]].
