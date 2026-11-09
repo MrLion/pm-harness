@@ -269,6 +269,7 @@ Before saying the harness works:
 - [ ] `check_wikilinks.py` reports no unresolved wikilinks (legacy check; Markdown links are checked above)
 - [ ] `00-Product/Product.md` is filled or explicitly marked `confidence: none`
 - [ ] Live compliance scope is completed when health data is involved
+- [ ] `VERSION` matches the latest changelog entry and release tag
 - [ ] `git status` is clean after an intentional commit
 
 ## Related

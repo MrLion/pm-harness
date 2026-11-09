@@ -56,8 +56,7 @@ harness only partly reduces.
 | One PM across 5 teams | **5.0 hrs — 12.6%** | 10–15% | Coordination is about 40% of the week and barely reduced |
 | Group PM over 5 PMs | **6.9 hrs — 17.2%** | 15–20% | Portfolio status and cross-team synthesis are larger |
 
-One PM across five teams saves **less** than a PM with one or two teams because the tool compresses
-documentation, recall, and traceability — not escalation, alignment, or dependency meetings.
+One PM across five teams saves **less** than a PM with one or two teams because the tool compresses documentation, recall, and traceability — not escalation, alignment, or dependency meetings.
 
 ## Aggregate estimate
 

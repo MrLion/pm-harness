@@ -90,6 +90,8 @@ Notes sync through iCloud; git history remains on the Mac.
 - Never `git init` or clone in this folder; that creates diverging history.
 - Nested `.obsidian/` remains on disk but is ignored by git as inert machine-local state.
 - A remote may be configured; pushing is a separate, intentional action.
+- Releases are tagged `vX.Y.Z`; update `VERSION` and `CHANGELOG.md` before tagging. See
+  [VERSIONING](../VERSIONING.md).
 
 ## Agent write boundaries
 

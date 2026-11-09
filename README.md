@@ -1,5 +1,7 @@
 # PM Playbook
 
+**Version:** 0.1.0 · [Changelog](CHANGELOG.md) · [Versioning](VERSIONING.md)
+
 > [!NOTE] For humans
 > This is the human entry point: where to start, which playbook to choose, and where artifacts go. Agents start at [PM](99-Playbook/PM.md) and [Rules](99-Playbook/Rules.md); technical setup is in [Architecture](99-Playbook/Architecture.md).
 
