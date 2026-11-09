@@ -20,6 +20,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Closed the peer-review gaps: labeled the survey-to-segment transfer, separated comprehension from
   prediction, added decision follow-up for non-bookers, and specified 8–10 recent booking journeys
   as the next evidence.
+- Kept survey percentages out of the problem statement and defined the prediction capture point:
+  expected dollar amount before booking, compared with final responsibility after adjudication.
 - Made the README, Agent Manual, and Architecture platform-neutral: documented nested, root, and
   renamed vault layouts, Dataview prefix choices, and normal `.git` behavior outside the maintainer's
   macOS/iCloud setup.

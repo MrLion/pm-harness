@@ -22,7 +22,7 @@ gate: REL-001 conditional; pilot not run
 | Goal | Target | Actual | Measurement status | Met? |
 |---|---|---|---|---|
 | Pre-booking estimate coverage | 60% of eligible requests | Pending | not measured | unknown |
-| Patient prediction accuracy | ≥70% within $400 (pilot) | Pending | pilot metric; not tested by EXP-001 | unknown |
+| Patient prediction accuracy | ≥70% within $400 (pilot) | Pending | pilot metric; expected amount captured before booking; not tested by EXP-001 | unknown |
 | Decision follow-up | Estimated patients can say whether the estimate informed their choice and why | Pending | pilot metric; not measured | unknown |
 | Reconciled accuracy | 70% within $400 | Pending | not measured | unknown |
 

@@ -35,6 +35,9 @@ Share of eligible outpatient imaging requests that receive a pre-booking estimat
 |---|---|
 | Metric | Share of patients who can predict final responsibility within $400 before booking |
 | Denominator | Patients with a reconciled bill who received an estimate; non-bookers are covered separately by decision follow-up |
+| Capture point | Before booking, after the estimate is shown, and before any bill or EOB is visible. Record the patient's expected dollar amount. |
+| Comparison point | Final patient responsibility after claim adjudication. |
+| Timing rule | Do not ask retrospectively after the bill; a retrospective answer measures recall, not prediction. |
 | Source of truth | Pilot follow-up plus billing reconciliation. The comprehension study does not test prediction. |
 | Current value | unknown |
 | Why it matters | Coverage can rise while patients remain unable to predict what they will owe |

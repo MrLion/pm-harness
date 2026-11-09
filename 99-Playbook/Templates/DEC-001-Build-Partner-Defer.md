@@ -146,3 +146,9 @@ Pending
 ## Decision update
 
 When the journey research lands, record the finding that changes this decision or state explicitly that none did. A finding changes the decision only if it establishes that patients in this segment received, understood, or acted on an estimate in a way the current evidence does not show.
+
+| Date | Finding | Evidence | Decision effect |
+|---|---|---|---|
+| Pending | Pending | Pending | Continue discovery / narrow segment / explore partner / stop |
+
+A decision update that changes nothing is still useful: it shows the evidence was examined.

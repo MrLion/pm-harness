@@ -18,7 +18,7 @@ case_id: CASE-001
 
 ## Problem Statement
 
-Adults on employer-sponsored high-deductible health plans cannot reliably predict their final patient responsibility before booking outpatient imaging. Some receive an estimate, but coverage and accuracy are uneven: 41% received one, and 29% of those said it was not accurate to $400. They decide whether to book, where to book, and whether the expected cost is tolerable without a reliable number.
+Adults on employer-sponsored high-deductible health plans cannot reliably predict their final patient responsibility before booking outpatient imaging. Some receive an estimate, but coverage and accuracy are uneven. How often that happens in this segment, and how close those estimates are to final responsibility, is unknown. They decide whether to book, where to book, and whether the expected cost is tolerable without a reliable number.
 
 ## User / Segment
 
@@ -32,7 +32,7 @@ Adults on employer-sponsored high-deductible health plans cannot reliably predic
 
 | Type | Source | Date | Says what | Strength |
 |---|---|---|---|---|
-| survey | [William Blair, *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing [Experian Health *2025 State of Patient Access*](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf) | Jan 2026 | 41% received an estimate; 71% said it was accurate to $400 | weak |
+| survey | [William Blair, *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing [Experian Health *2025 State of Patient Access*](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf) | Jan 2026 | 41% received an estimate; 71% said it was accurate to $400 (29% not) | weak |
 | survey | [Experian Health *2025 State of Patient Access*](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf) | 2025 | 43% said they would likely postpone care without an accurate estimate | weak |
 | survey | Robert Wood Johnson Foundation data, [reported by William Blair](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | Jan 2026 | Among patients carrying medical debt, 66.1% had a bill in collections | weak |
 
@@ -45,6 +45,12 @@ Adults on employer-sponsored high-deductible health plans cannot reliably predic
 ## Next evidence
 
 Run 8–10 recent booking journeys, including at least 4 non-bookers. For each, record the information available at the decision point, the action taken, and the driver: uncertainty, affordability, network, urgency, or something else. Record whether the estimate changed the choice. This is the evidence that can change [DEC-001](DEC-001-Build-Partner-Defer.md).
+
+| Journey ID | Segment | Information at decision | Action | Driver | Estimate changed choice? | Source |
+|---|---|---|---|---|---|---|
+| J-01 | Pending | Pending | Pending | Pending | Pending | Pending |
+
+Use an ID, not a name. Do not record clinical details that are not needed for the decision.
 
 ## Journey
 
