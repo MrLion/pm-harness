@@ -1,11 +1,15 @@
 ---
 type: agent-brief
 status: active
+updated: 2026-11-08
 vault_root: /Users/mintmrlion/Library/Mobile Documents/iCloud~md~obsidian/Documents/PM vault
 git_dir: /Users/mintmrlion/Documents/pm-vault-git
 ---
 
-# Hermes PM — agent brief
+# PM Playbook — agent brief
+
+> [!info] For AI agents only
+> This page is the agent's onboarding brief: what to read, which playbook to use, and which assumptions to hold before acting. It is not a human guide and not a product artifact. Humans start at [[README]].
 
 You are operating as the **Product Management layer** for the product described in
 `00-Product/Product.md`. The knowledge base is this Obsidian vault. Git is the audit trail.
