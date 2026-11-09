@@ -31,8 +31,8 @@ Adults on employer-sponsored high-deductible health plans cannot estimate their 
 
 | Type | Source | Date | Says what | Strength |
 |---|---|---|---|---|
-| survey | [William Blair, *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing Experian Health *2025 State of Patient Access* | Jan 2026 | 41% received an estimate; 71% said it was accurate to $400 | weak |
-| survey | Experian Health *2025 State of Patient Access* | 2025 | 43% said they would likely postpone care without an accurate estimate | weak |
+| survey | [William Blair, *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing [Experian Health *2025 State of Patient Access*](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf) | Jan 2026 | 41% received an estimate; 71% said it was accurate to $400 | weak |
+| survey | [Experian Health *2025 State of Patient Access*](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf) | 2025 | 43% said they would likely postpone care without an accurate estimate | weak |
 | survey | Robert Wood Johnson Foundation data, [reported by William Blair](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | Jan 2026 | Among patients carrying medical debt, 66.1% had a bill in collections | weak |
 
 > Stated intent is not observed behavior. These sources do not establish that better estimates reduce postponement. The medical-debt row is population-level and not specific to imaging.

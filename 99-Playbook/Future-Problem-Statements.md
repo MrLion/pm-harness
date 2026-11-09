@@ -26,6 +26,6 @@ Patients don't get reliable out-of-pocket cost estimates before choosing care. T
 
 ## Sources
 
-- [William Blair, *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing Experian Health *2025 State of Patient Access*. Supports #8 and the medical-debt part of #4.
-- Robert Wood Johnson Foundation medical-debt data, reported by William Blair, January 2026. Supports #4.
+- [William Blair, *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing [Experian Health *2025 State of Patient Access*](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf). Supports #8 and the medical-debt part of #4.
+- [Robert Wood Johnson Foundation medical-debt data, reported by William Blair](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), January 2026. Supports #4.
 

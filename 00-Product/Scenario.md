@@ -23,9 +23,9 @@
 
 | Evidence | What it says | What it does not prove |
 |---|---|---|
-| William Blair *Consumer-Centric Healthcare 2026* | Patients receiving more estimates still report declining accuracy. | Not observed behavior change. |
-| Experian Health *2025 State of Patient Access* | 43% of patients say they will likely postpone care without an accurate estimate. | Stated intent, not observed cancellation. |
-| Robert Wood Johnson Foundation, reported by William Blair (Jan 2026) | Among patients carrying medical debt, 66.1% already had a bill in collections. | Not a measure of estimation effect. |
+| [William Blair *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | Patients receiving more estimates still report declining accuracy. | Not observed behavior change. |
+| [Experian Health *2025 State of Patient Access*](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf) | 43% of patients say they will likely postpone care without an accurate estimate. | Stated intent, not observed cancellation. |
+| [Robert Wood Johnson Foundation, reported by William Blair](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) (Jan 2026) | Among patients carrying medical debt, 66.1% already had a bill in collections. | Not a measure of estimation effect. |
 
 ## Learning sequence
 
@@ -67,5 +67,5 @@ Before committing to build, we need to know:
 
 ## Sources
 - [William Blair *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf)
-- Experian Health *2025 State of Patient Access*
+- [Experian Health *2025 State of Patient Access*](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf)
 - [Robert Wood Johnson Foundation, reported by William Blair, Jan 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf)

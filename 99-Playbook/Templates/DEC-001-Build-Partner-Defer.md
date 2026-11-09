@@ -77,7 +77,7 @@ The patient uncertainty is credible, but data ownership, the buyer, and estimate
 | S3 | [TechTarget, CMS price transparency challenges](https://www.techtarget.com/revcyclemanagement/feature/How-the-CMS-price-transparency-rule-challenges-hospitals) | Hospital machine-readable file posting is widespread, but compliant format adoption remains incomplete. |
 | S4 | [Turquoise Health, Consumer Pricing API](https://turquoise.health/api/docs) | A commercial API can return patient-specific estimates, but personalized coverage is limited by plan, other plans use pre-benefit pricing, and real patient data requires a BAA. |
 | S5 | [CMS, Progress Toward AEOB Rulemaking](https://www.cms.gov/files/document/progress-aeob-rulemaking-implementation.pdf) | The insured-patient AEOB requirement is not operational; data-exchange standards and rulemaking are still being developed. |
-| S6 | [William Blair, Consumer-Centric Healthcare 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing Experian Health | 41% received an estimate; 71% said it was accurate to $400; 43% said they would likely postpone without an accurate estimate — stated intent, not observed behaviour. |
+| S6 | [William Blair, Consumer-Centric Healthcare 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing [Experian Health](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf) | 41% received an estimate; 71% said it was accurate to $400; 43% said they would likely postpone without an accurate estimate — stated intent, not observed behaviour. |
 
 ## What each option gives up
 

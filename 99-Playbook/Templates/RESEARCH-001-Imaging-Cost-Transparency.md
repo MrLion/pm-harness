@@ -20,7 +20,7 @@ Do U.S. healthcare consumers receive useful cost estimates before care, and what
 
 ## Method
 
-Desk research: William Blair *Consumer-Centric Healthcare 2026*, citing Experian Health *2025 State of Patient Access* (survey of 213 healthcare employees and 1,004 patients); Robert Wood Johnson Foundation data as reported by William Blair.
+Desk research: [William Blair *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing [Experian Health *2025 State of Patient Access*](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf) (survey of 213 healthcare employees and 1,004 patients); Robert Wood Johnson Foundation data as [reported by William Blair](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf).
 
 ## Findings
 
@@ -36,7 +36,7 @@ Desk research: William Blair *Consumer-Centric Healthcare 2026*, citing Experian
 
 ## Raw signal
 
-> "43% indicate they will likely postpone care without an accurate estimate." — William Blair, citing Experian Health
+> "43% indicate they will likely postpone care without an accurate estimate." — [William Blair](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing [Experian Health](https://www.experian.com/content/dam/noindex/na/us/healthcare/state-of-patient-access-2025.pdf)
 
 ## What this does NOT tell us
 
