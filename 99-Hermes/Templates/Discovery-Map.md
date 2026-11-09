@@ -23,6 +23,10 @@ example: true
     - **CAND-003** — narrowly scoped self-service estimate · [[OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-001 · CAND-003]]
       - **Assumption test** [[Experiment|EXP-001]]
 
+## Related opportunities
+
+- [[OPP-002-Provider-Comparison|OPP-002]] — deferred until estimate coverage and accuracy are proven.
+
 ## Coverage check
 
 - [x] Every branch starts from a desired outcome
