@@ -13,10 +13,17 @@ distinct question; they are not competing document formats.
 
 ## Operating chain
 
-```text
-Vision → Objective / North Star → Impact Map → Discovery Map
-→ Evidence and risk gate → Decision → Solution brief → Release → Review
-```
+| Stage | Question | Artifact |
+|---|---|---|
+| Vision | What future are we trying to create? | [[PM vault/99-Playbook/Templates/Product-Vision-Board\|Product Vision Board]] |
+| Objective / North Star | What outcome aligns the work, and what customer value proves it? | [[PM vault/99-Playbook/Templates/Goals\|Goals]] · [[PM vault/99-Playbook/Templates/Metrics\|Metrics]] |
+| Impact Map | Whose behaviour must change, and what deliverable could cause it? | [[PM vault/99-Playbook/Templates/Goals\|Impact Map]] |
+| Discovery Map | Which problems, opportunities, and assumptions matter most? | [[PM vault/99-Playbook/Templates/Discovery-Map\|Discovery Map]] |
+| Evidence and risk gate | Do we know enough to commit? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost\|Opportunity]] · [[PM vault/99-Playbook/Templates/EXP-001-Comprehension-Test\|Experiment]] |
+| Decision | Which option do we choose, and why? | [[PM vault/99-Playbook/Templates/DEC-001-Build-Partner-Defer\|Decision]] |
+| Solution brief | What is the smallest coherent solution? | [[PM vault/99-Playbook/Templates/PRD-001-Imaging-Estimate\|PRD]] |
+| Release | What shipped, and what moved? | [[PM vault/99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot\|Release]] |
+| Review | What did we learn, and what risk remains? | [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] |
 
 ## Layer rules
 
@@ -56,11 +63,20 @@ prioritization score, or substitute for instrumentation.
 
 ## Operating-model chain
 
-```text
-Transformation Thesis → Capability Map → Value-Stream Map → Product Taxonomy
-→ Funding Model → Team Topology → Flow Metrics Baseline → Dependency Map
-→ Transition Roadmap → Adoption Scorecard → Portfolio Roadmap → Review
-```
+| Stage | Question | Artifact |
+|---|---|---|
+| Transformation Thesis | What digital outcome is the organization trying to create? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/TRANS-001-Transformation-Thesis\|TRANS-001]] |
+| Capability Map | Which capabilities must change? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/CAP-001-Capability-Map\|CAP-001]] |
+| Value-Stream Map | Where does work wait today? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/VS-001-Value-Stream-Map\|VS-001]] |
+| Product Taxonomy | What durable products, platforms, and services should exist? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/TAX-001-Product-Taxonomy\|TAX-001]] |
+| Funding Model | How is work funded across horizons? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/FUND-001-Funding-Model\|FUND-001]] |
+| Team Topology | Which teams own which product outcomes? | [[PM vault/99-Playbook/Templates/Operating-Models/Project-to-Product/TEAM-001-Team-Topology\|TEAM-001]] |
+| Flow Metrics Baseline | Where is work waiting, and how efficiently does it flow? | [[PM vault/99-Playbook/Templates/Operating-Models/Project-to-Product/FLOW-001-Flow-Metrics-Baseline\|FLOW-001]] |
+| Dependency Map | What blocks flow between teams or products? | [[PM vault/99-Playbook/Templates/Operating-Models/Project-to-Product/DEP-001-Dependency-Map\|DEP-001]] |
+| Transition Roadmap | What changes first, and what proves the transition is working? | [[PM vault/99-Playbook/Templates/Operating-Models/Project-to-Product/TRANS-002-Transition-Roadmap\|TRANS-002]] |
+| Adoption Scorecard | Are the new capabilities actually used? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/ADOPT-001-Adoption-Scorecard\|ADOPT-001]] |
+| Portfolio Roadmap | What sequence of product bets delivers the transformation? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/PORT-001-Portfolio-Roadmap\|PORT-001]] |
+| Review | What changed in the operating model, and what is still blocked? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/REVIEW-OM-001-Operating-Model-Review\|REVIEW-OM-001]] |
 
 ## Sources
 
