@@ -1,6 +1,6 @@
 # Problems
 
-`PROB-NNN` notes from [[Problem]] template. **Problem ≠ feature request** — convert "we need X"
+`PROB-NNN` notes from [[PROB-001-Imaging-Cost-Problem]] template. **Problem ≠ feature request** — convert "we need X"
 into "what problem would X solve" before anything is written.
 
 ```dataview

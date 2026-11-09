@@ -21,11 +21,11 @@ Adults on employer-sponsored high-deductible health plans cannot estimate their 
 
 ## User / Segment
 
-[[Persona|PERSONA-001]]
+[[PERSONA-001-HDHP-Imaging-Patient|PERSONA-001]]
 
 ## JTBD
 
-[[JTBD|JTBD-001]]
+[[JTBD-001-Know-Cost-Before-Booking|JTBD-001]]
 
 ## Evidence
 
@@ -35,7 +35,7 @@ Adults on employer-sponsored high-deductible health plans cannot estimate their 
 | survey | Experian Health *2025 State of Patient Access* | 2025 | 43% said they would likely postpone care without an accurate estimate | weak |
 | survey | Robert Wood Johnson Foundation, reported by William Blair | Jan 2026 | Among patients carrying medical debt, 66.1% had a bill in collections | weak |
 
-> Stated intent is not observed behavior. These sources do not establish that better estimates reduce postponement.
+> Stated intent is not observed behavior. These sources do not establish that better estimates reduce postponement. The medical-debt row is population-level and not specific to imaging.
 
 ## Frequency
 

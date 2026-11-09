@@ -1,6 +1,6 @@
 # Reviews
 
-`YYYY-MM.md` per month, from [[Review]]. Two questions, in this order:
+`YYYY-MM.md` per month, from [[REVIEW-2027-02-Imaging-Estimate-Pilot]]. Two questions, in this order:
 
 1. **Did the goals move?** Pichler's GO metrics: goal, target, actual, met.
 2. **Which risks were retired?** value · usability · feasibility · business viability — tested,

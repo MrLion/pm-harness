@@ -61,7 +61,7 @@ Pending
 
 ## Decision
 
-Pending — link the resulting [[Decision|DEC-001]] or updated [[OPP-001-Outpatient-Imaging-Cost|OPP-001]].
+Pending — link the resulting [[DEC-001-Build-Partner-Defer|DEC-001]] or updated [[OPP-001-Outpatient-Imaging-Cost|OPP-001]].
 
 ## Scope note
 

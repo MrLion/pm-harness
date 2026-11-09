@@ -1,6 +1,6 @@
 # Jobs to be done
 
-One note per job, from [[JTBD]]. Supporting lens for [[Problem]] and [[Persona]] — not a Pichler or
+One note per job, from [[JTBD-001-Know-Cost-Before-Booking]]. Supporting lens for [[PROB-001-Imaging-Cost-Problem]] and [[PERSONA-001-HDHP-Imaging-Patient]] — not a Pichler or
 SVPG artifact, but the clearest way to state what a user is actually trying to accomplish.
 
 ```dataview

@@ -24,8 +24,8 @@ Adults on employer-sponsored HDHPs choosing outpatient imaging.
 
 | # | Need | Evidence | Confidence |
 |---|---|---|---|
-| 1 | Know expected out-of-pocket cost before booking | [[Research\|RESEARCH-001]] | low |
-| 2 | Understand what the estimate includes and excludes | [[Research\|RESEARCH-001]] | low |
+| 1 | Know expected out-of-pocket cost before booking | [[RESEARCH-001-Imaging-Cost-Transparency\|RESEARCH-001]] | low |
+| 2 | Understand what the estimate includes and excludes | [[RESEARCH-001-Imaging-Cost-Transparency\|RESEARCH-001]] | low |
 
 ## Product
 
@@ -45,7 +45,7 @@ Adults on employer-sponsored HDHPs choosing outpatient imaging.
 
 | Field | Content |
 |---|---|
-| Competitors | Payer estimators, provider-portal estimators, third-party price comparison |
+| Competitors | Payer estimators, provider-portal estimators, third-party price comparison, human-assisted estimates |
 | Revenue sources | Unknown — buyer unresolved |
 | Cost factors | Data access, reconciliation, support |
 | Channels | Provider, payer, employer, direct patient |

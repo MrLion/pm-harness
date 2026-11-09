@@ -15,18 +15,18 @@ Delete the `[!example]` block before using a template for real work.
 | [[PM vault/99-Hermes/Templates/Metrics\|Metrics template]] | `00-Product/Metrics.md` | Pichler + North Star | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) · [North Star](https://amplitude.com/books/north-star/about-north-star-framework) |
 | [[GO-Roadmap]] | `06-Roadmap/` | Pichler | [GO Product Roadmap](https://romanpichler.com/tools/the-go-product-roadmap/) |
 | [[Dashboard-Example\|Dashboard-Example]] | `Dashboard.md` | Dataview | working dashboard over the pre-filled templates |
-| [[Persona]] | `01-Users/Personas/` | Pichler | [Persona Template](https://www.romanpichler.com/the-persona-template/) |
+| [[PERSONA-001-HDHP-Imaging-Patient]] | `01-Users/Personas/` | Pichler | [Persona Template](https://www.romanpichler.com/the-persona-template/) |
 | [[Discovery-Map]] | `03-Opportunities/Discovery Map.md` | Torres | [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) |
 | [[OPP-001-Outpatient-Imaging-Cost]] | `03-Opportunities/` | SVPG | [Opportunity assessment](https://www.svpg.com/assessing-product-opportunities/) |
-| [[Experiment]] | `07-Delivery/Experiments/` | SVPG | [Four big risks](https://www.svpg.com/four-big-risks/) |
-| [[PRD]] | `07-Delivery/PRDs/` | Pichler canvas + SVPG | [Product Canvas](https://www.romanpichler.com/tools/the-product-canvas/) |
-| [[Problem]] | `02-Problems/` | — | shared evidence-backed problem layer |
-| [[Research]] | `04-Research/` | — | evidence layer for the whole model |
-| [[Feedback]] | `01-Users/Feedback/` | — | raw signal, verbatim quotes and account frequency |
-| [[Release]] | `07-Delivery/Releases/` | Pichler | GO goal and measured result after delivery |
-| [[Decision]] | `05-Decisions/` | — | framework-neutral decision record |
-| [[Review]] | `08-Reviews/` | Pichler + SVPG | goal vs outcome, risk retired vs not |
-| [[JTBD]] | `01-Users/JTBD/` | — | supporting lens for Problem and Persona |
+| [[EXP-001-Comprehension-Test]] | `07-Delivery/Experiments/` | SVPG | [Four big risks](https://www.svpg.com/four-big-risks/) |
+| [[PRD-001-Imaging-Estimate]] | `07-Delivery/PRDs/` | Pichler canvas + SVPG | [Product Canvas](https://www.romanpichler.com/tools/the-product-canvas/) |
+| [[PROB-001-Imaging-Cost-Problem]] | `02-Problems/` | — | shared evidence-backed problem layer |
+| [[RESEARCH-001-Imaging-Cost-Transparency]] | `04-Research/` | — | evidence layer for the whole model |
+| [[FB-001-Imaging-Cost-Feedback]] | `01-Users/Feedback/` | — | raw signal, verbatim quotes and account frequency |
+| [[REL-001-Imaging-Estimate-Pilot]] | `07-Delivery/Releases/` | Pichler | GO goal and measured result after delivery |
+| [[DEC-001-Build-Partner-Defer]] | `05-Decisions/` | — | framework-neutral decision record |
+| [[REVIEW-2027-02-Imaging-Estimate-Pilot]] | `08-Reviews/` | Pichler + SVPG | goal vs outcome, risk retired vs not |
+| [[JTBD-001-Know-Cost-Before-Booking]] | `01-Users/JTBD/` | — | supporting lens for Problem and Persona |
 
 ## Opportunity examples
 

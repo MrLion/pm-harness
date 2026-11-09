@@ -38,7 +38,7 @@ Share of eligible outpatient imaging requests that receive a pre-booking estimat
 | Metric | Definition | Threshold |
 |---|---|---|
 | Reconciled accuracy | Share of reconciled estimates within $400 of final responsibility | ≥70% (provisional) |
-| Underestimation | Share of reconciled estimates under $400 | ≤10% (provisional) |
+| Underestimation | Share of reconciled estimates underestimated by more than $400 | ≤10% (provisional) |
 
 ## Supporting KPIs
 
@@ -57,4 +57,4 @@ Share of eligible outpatient imaging requests that receive a pre-booking estimat
 
 ## Related
 
-- [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Strategy|Strategy]]
+- [[PM vault/99-Hermes/Templates/Goals|Goals]] · [[PM vault/99-Hermes/Templates/Strategy|Strategy]]

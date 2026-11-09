@@ -31,8 +31,8 @@ example: true
 
 | Type | Source | Date | Count |
 |---|---|---|---|
-| secondary survey | [[Research\|RESEARCH-001]] | 2026-11-08 | 0 direct observations |
+| secondary survey | [[RESEARCH-001-Imaging-Cost-Transparency\|RESEARCH-001]] | 2026-11-08 | 0 direct observations |
 
 ## Related
 
-- [[Problem|PROB-001]]
+- [[PROB-001-Imaging-Cost-Problem|PROB-001]]

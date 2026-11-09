@@ -5,7 +5,7 @@ id: PRD-001
 status: draft
 opportunity: "[[OPP-001-Outpatient-Imaging-Cost|OPP-001]]"
 candidate_id: CAND-003
-decision: "[[Decision|DEC-001]]"
+decision: "[[DEC-001-Build-Partner-Defer|DEC-001]]"
 primary_metric: coverage
 created: 2026-11-08
 updated: 2026-11-08
@@ -19,9 +19,9 @@ example: true
 
 | Element                  | Content                                                                                   |               |
 | ------------------------ | ----------------------------------------------------------------------------------------- | ------------- |
-| Problem | [[Problem\|PROB-001]] |
+| Problem | [[PROB-001-Imaging-Cost-Problem\|PROB-001]] |
 | Opportunity | [[OPP-001-Outpatient-Imaging-Cost\|OPP-001]] |
-| Target user | [[Persona\|PERSONA-001]] |
+| Target user | [[PERSONA-001-HDHP-Imaging-Patient\|PERSONA-001]] |
 | Outcome (one sentence)   | More eligible imaging requests receive a pre-booking estimate the patient can understand. |               |
 | Prototype                | Paper prototype of one imaging estimate with inclusions, exclusions, and validity         |               |
 | Epics (big capabilities) | Estimate request · patient-readable explanation · reconciliation check                    |               |

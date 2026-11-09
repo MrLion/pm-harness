@@ -23,7 +23,7 @@ example: true
 
 | Risk | Was it tested? | Result | Now |
 |---|---|---|---|
-| usability — comprehension | yes, EXP-001 | Pending | still open |
+| usability — comprehension | planned — EXP-001, not run | not measured | still open |
 | value — changes booking decision | no | not tested | still open |
 | feasibility — data access | no | not tested | still open |
 | viability — buyer willingness | no | not tested | still open |
@@ -38,7 +38,7 @@ example: true
 
 ## Decisions still unresolved
 
-- [[Decision|DEC-001]] — build vs partner vs defer.
+- [[DEC-001-Build-Partner-Defer|DEC-001]] — build vs partner vs defer.
 
 ## Metric movement
 

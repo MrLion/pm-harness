@@ -72,7 +72,7 @@ Proceed to discovery, not build. Test comprehension and data access first.
 
 | Source | Date | Says what | Strength |
 |---|---|---|---|
-| [[Research\|RESEARCH-001]] | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would consider postponing without one | weak |
+| [[RESEARCH-001-Imaging-Cost-Transparency\|RESEARCH-001]] | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would likely postpone without an accurate estimate | weak |
 
 ### Contradicting
 
@@ -102,8 +102,8 @@ Proceed to discovery, not build. Test comprehension and data access first.
 
 ## Recommendation
 
-Pending — discovery only; no build until comprehension and data access are proven.
+Pending — discovery only; no build until comprehension and data access are proven. [[DEC-001-Build-Partner-Defer|DEC-001]] proposes defer; the recommendation stays Pending until that decision is accepted.
 
 ## Related
 
-- [[Problem|PROB-001]] · [[Decision|DEC-001]] · [[Experiment|EXP-001]] · [[PM vault/03-Opportunities/Discovery Map|Discovery Map]]
+- [[PROB-001-Imaging-Cost-Problem|PROB-001]] · [[DEC-001-Build-Partner-Defer|DEC-001]] · [[EXP-001-Comprehension-Test|EXP-001]] · [[PM vault/03-Opportunities/Discovery Map|Discovery Map]]

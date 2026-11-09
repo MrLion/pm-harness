@@ -1,6 +1,6 @@
 # Personas
 
-One note per persona from [[Persona]] (Pichler's template). A persona models a real segment; it does
+One note per persona from [[PERSONA-001-HDHP-Imaging-Patient]] (Pichler's template). A persona models a real segment; it does
 not substitute for talking to one.
 
 ```dataview

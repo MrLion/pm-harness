@@ -1,6 +1,6 @@
 # Releases
 
-What shipped, when, and what happened afterwards. Template: [[Release]], with frontmatter
+What shipped, when, and what happened afterwards. Template: [[REL-001-Imaging-Estimate-Pilot]], with frontmatter
 `date`, `goal` and `metric_result` feeding the table below.
 
 ```dataview

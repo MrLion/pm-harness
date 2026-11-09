@@ -1,6 +1,6 @@
 # Solution briefs (PRDs)
 
-`PRD-NNN` notes from [[PRD]] — a Pichler canvas plus acceptance criteria that **links a prototype**,
+`PRD-NNN` notes from [[PRD-001-Imaging-Estimate]] — a Pichler canvas plus acceptance criteria that **links a prototype**,
 because Cagan's position is that the prototype is the spec.
 
 ```dataview

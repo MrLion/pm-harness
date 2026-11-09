@@ -32,4 +32,4 @@ When I need outpatient imaging, I want to know what it will cost me before I boo
 
 ## Evidence
 
-- [[Research|RESEARCH-001]] — secondary survey evidence only.
+- [[RESEARCH-001-Imaging-Cost-Transparency|RESEARCH-001]] — secondary survey evidence only.

@@ -28,8 +28,8 @@ If you only have a feature request, run:
 
 Use the right source artifact:
 
-- Verbatim complaint → `01-Users/Feedback`, from [[Feedback]]
-- Interview synthesis → `04-Research/Users`, from [[Research]]
+- Verbatim complaint → `01-Users/Feedback`, from [[FB-001-Imaging-Cost-Feedback]]
+- Interview synthesis → `04-Research/Users`, from [[RESEARCH-001-Imaging-Cost-Transparency]]
 - Metric or baseline → `04-Research/Data`
 
 Link the source from the Problem's evidence table. If there is no evidence, leave the table empty,
@@ -62,7 +62,7 @@ the cheapest way to discover you are wrong. A challenge that validates everythin
 
 ## 5. Design the smallest experiment — 5 minutes
 
-If a material uncertainty remains, copy [[Experiment]] into `07-Delivery/Experiments/`.
+If a material uncertainty remains, copy [[EXP-001-Comprehension-Test]] into `07-Delivery/Experiments/`.
 
 Name **one** risk being retired. Pre-register success, failure and kill criteria before seeing data.
 Choose the cheapest test that could change the decision: interviews, a prototype, concierge run,
@@ -87,7 +87,7 @@ canonical artifact or remove it.
 
 ## 7. Decide only when evidence supports it
 
-A significant choice becomes a [[Decision]] record with options, tradeoffs, reversibility, an
+A significant choice becomes a [[DEC-001-Build-Partner-Defer]] record with options, tradeoffs, reversibility, an
 expected outcome and a review date. The agent proposes; the human accepts.
 
 Only then consider a solution brief through `/pm prd OPP-001`. If the validation gate is not met,
