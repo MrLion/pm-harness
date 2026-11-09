@@ -68,5 +68,5 @@ No-go for the current product horizon. The data-access and buyer assumptions fai
 
 ## Related
 
-- [[PM vault/00-Product/Future-Problem-Statements|Future problem statements]]
+- [[PM vault/99-Playbook/Future-Problem-Statements|Future problem statements]]
 - [[OPP-001-Outpatient-Imaging-Cost|OPP-001]]
