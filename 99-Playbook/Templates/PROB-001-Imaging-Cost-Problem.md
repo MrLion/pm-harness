@@ -52,6 +52,8 @@ Run 8–10 recent booking journeys, including at least 4 non-bookers. For each, 
 
 Use an ID, not a name. Do not record clinical details that are not needed for the decision.
 
+Rehearsal data: [RESEARCH-003](RESEARCH-003-Mock-Booking-Journeys.md) — eight invented journeys. It tests the capture format, not the market.
+
 ## Journey
 
 [JOURNEY-001](JOURNEY-001-Imaging-Path.md) — where the estimate appears, and where it goes stale.

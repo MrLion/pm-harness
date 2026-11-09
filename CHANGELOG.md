@@ -22,6 +22,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
   as the next evidence.
 - Kept survey percentages out of the problem statement and defined the prediction capture point:
   expected dollar amount before booking, compared with final responsibility after adjudication.
+- Added a synthetic eight-journey interview rehearsal and linked it to the problem, opportunity,
+  and decision records without treating it as evidence.
 - Made the README, Agent Manual, and Architecture platform-neutral: documented nested, root, and
   renamed vault layouts, Dataview prefix choices, and normal `.git` behavior outside the maintainer's
   macOS/iCloud setup.

@@ -32,6 +32,7 @@ live `11-Compliance/COMP-003-Compliance-Scope.md`; a template is not approval.
 | [PRD-001-Imaging-Estimate](PRD-001-Imaging-Estimate.md) | `07-Delivery/PRDs/` | Pichler canvas + SVPG | [Product Canvas](https://www.romanpichler.com/tools/the-product-canvas/) |
 | [PROB-001-Imaging-Cost-Problem](PROB-001-Imaging-Cost-Problem.md) | `02-Problems/` | — | shared evidence-backed problem layer |
 | [RESEARCH-001-Imaging-Cost-Transparency](RESEARCH-001-Imaging-Cost-Transparency.md) | `04-Research/` | — | evidence layer for the whole model |
+| [RESEARCH-003-Mock-Booking-Journeys](RESEARCH-003-Mock-Booking-Journeys.md) | `99-Playbook/Templates/` | — | synthetic rehearsal of the eight-journey capture |
 | [FB-001-Imaging-Cost-Feedback](FB-001-Imaging-Cost-Feedback.md) | `01-Users/Feedback/` | — | raw signal, verbatim quotes and account frequency |
 | [REL-001-Imaging-Estimate-Pilot](REL-001-Imaging-Estimate-Pilot.md) | `07-Delivery/Releases/` | Pichler | GO goal and measured result after delivery |
 | [DEC-001-Build-Partner-Defer](DEC-001-Build-Partner-Defer.md) | `05-Decisions/` | — | framework-neutral decision record |

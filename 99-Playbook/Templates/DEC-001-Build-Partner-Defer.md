@@ -152,3 +152,7 @@ When the journey research lands, record the finding that changes this decision o
 | Pending | Pending | Pending | Continue discovery / narrow segment / explore partner / stop |
 
 A decision update that changes nothing is still useful: it shows the evidence was examined.
+
+## Synthetic rehearsal
+
+[RESEARCH-003](RESEARCH-003-Mock-Booking-Journeys.md) is an invented eight-journey exercise. It points to continuing discovery and narrowing the next test to one clinic and one imaging type. It does not change this decision, and it is not evidence.

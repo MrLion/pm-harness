@@ -113,7 +113,7 @@ Proceed to discovery, not build. Test comprehension and data access first.
 
 ## Smallest experiment
 
-8–10 recent booking journeys, including at least 4 non-bookers, then a paper-prototype comprehension test. Record the information available at the decision point, the action, and the driver.
+8–10 recent booking journeys, including at least 4 non-bookers, then a paper-prototype comprehension test. Record the information available at the decision point, the action, and the driver. Rehearsal example: [RESEARCH-003](RESEARCH-003-Mock-Booking-Journeys.md), synthetic and not evidence.
 
 ## Recommendation
 
