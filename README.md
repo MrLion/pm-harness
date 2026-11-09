@@ -1,5 +1,8 @@
 # PM Playbook
 
+> [!info] For humans
+> This is the human entry point: where to start, which playbook to choose, and where artifacts go. Agents start at [[PM]] and [[Rules]]; technical setup is in [[Architecture]].
+
 **Obsidian is the workspace. `/pm` is the reasoning layer. Git is the audit trail.**
 
 This playbook supports four ways of working, but they answer different questions:
