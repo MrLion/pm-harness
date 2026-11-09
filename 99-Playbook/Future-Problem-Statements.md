@@ -23,3 +23,9 @@ Patients need one-place digital tools rather than repeated calls or fragmented p
 
 ## 8. Consumer cost transparency gap
 Patients don't get reliable out-of-pocket cost estimates before choosing care. This is the main active scenario.
+
+## Sources
+
+- [William Blair, *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf), citing Experian Health *2025 State of Patient Access*. Supports #8 and the medical-debt part of #4.
+- Robert Wood Johnson Foundation medical-debt data, reported by William Blair, January 2026. Supports #4.
+

@@ -66,6 +66,6 @@ Before committing to build, we need to know:
 - Not a substitute for data with the buyer, the provider, or the payer.
 
 ## Sources
-- William Blair *Consumer-Centric Healthcare 2026*
+- [William Blair *Consumer-Centric Healthcare 2026*](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf)
 - Experian Health *2025 State of Patient Access*
-- Robert Wood Johnson Foundation, reported by William Blair, Jan 2026
+- [Robert Wood Johnson Foundation, reported by William Blair, Jan 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf)
