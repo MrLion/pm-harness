@@ -20,7 +20,7 @@ The answer depends on evidence density, team count, compliance load, and how muc
 
 These estimates assume:
 
-- one senior PM
+- one senior PM on a 40-hour week
 - one or two product teams
 - existing product evidence, or a willingness to create it
 - the agent layer is installed and `/pm` works
@@ -51,7 +51,7 @@ They do not assume the harness replaces interviews, stakeholder alignment, legal
 | Documentation and admin time | **30–45% reduction** |
 | Decision-to-PRD cycle | **20–30% reduction** |
 | End-to-end product delivery cycle | **5–15% reduction** |
-| Senior PM weekly saving | **4–7 hours** after ramp |
+| Senior PM weekly saving | **4–7 hours** after ramp on a 40-hour week |
 | Time to first useful result | **1–2 hours** |
 | Time to reliable use | **2–4 weeks** |
 
