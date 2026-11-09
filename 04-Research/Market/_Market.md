@@ -3,7 +3,7 @@
 Answers Cagan's Q3 (*how big is the opportunity?*) and Q6 (*why now?*). Sizing here exists to stop
 bad bets, not to decorate a deck.
 
-> [!quote] Cagan
+> **Cagan**
 > "Assessing the size of the opportunity… remember to be conservative and realize that not every
 > opportunity needs to be a billion-dollar market."
 

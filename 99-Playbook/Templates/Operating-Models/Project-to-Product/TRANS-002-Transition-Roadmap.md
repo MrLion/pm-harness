@@ -10,9 +10,9 @@ updated: 2026-11-08
 framework: "Project to Product transition"
 source: "[FILL: method or source]"
 related:
-  - "[[TAX-001-Product-Taxonomy|TAX-001]]"
-  - "[[TEAM-001-Team-Topology|TEAM-001]]"
-  - "[[FLOW-001-Flow-Metrics-Baseline|FLOW-001]]"
+  - "[TAX-001](../Shared/TAX-001-Product-Taxonomy.md)"
+  - "[TEAM-001](TEAM-001-Team-Topology.md)"
+  - "[FLOW-001](FLOW-001-Flow-Metrics-Baseline.md)"
 ---
 
 # Transition Roadmap

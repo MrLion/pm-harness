@@ -7,8 +7,8 @@ updated: 2026-11-09
 
 # Scenario
 
-> Pre-filled templates: [[PM vault/99-Playbook/Templates/_Templates|Templates]]
-> Live research: [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026|RESEARCH-002]]
+> Pre-filled templates: [Templates](../99-Playbook/Templates/_Templates.md)
+> Live research: [RESEARCH-002](../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md)
 
 ## Main scenario
 

@@ -10,8 +10,8 @@ updated: 2026-11-08
 framework: "HIPAA + privacy/security compliance"
 source: "https://www.hhs.gov/hipaa/for-professionals/covered-entities"
 related:
-  - "[[DATA-001-Data-Inventory|DATA-001]]"
-  - "[[RISK-001-Privacy-Security-Risk|RISK-001]]"
+  - "[DATA-001](DATA-001-Data-Inventory.md)"
+  - "[RISK-001](RISK-001-Privacy-Security-Risk.md)"
 ---
 
 # Compliance Scope

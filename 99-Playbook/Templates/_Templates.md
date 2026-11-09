@@ -12,36 +12,36 @@ Replace the example values with your own product facts before using a product te
 
 | Template | Use for | Framework | Source |
 |---|---|---|---|
-| [[Product-Vision-Board\|Product-Vision-Board]] | `00-Product/Product.md` | Pichler | [Vision Board](https://romanpichler.com/tools/product-vision-board/) |
-| [[PM vault/99-Playbook/Templates/Strategy\|Strategy template]] | `00-Product/Strategy.md` | Pichler | [Strategy model](https://romanpichler.com/blog/my-product-strategy-model/) |
-| [[PM vault/99-Playbook/Templates/Goals\|Goals template]] | `00-Product/Goals.md` | Pichler + OKR + Impact Mapping | [Goal-setting](https://romanpichler.com/blog/leading-through-shared-goals/) · [Impact Mapping](https://www.impactmapping.org/) |
-| [[PM vault/99-Playbook/Templates/Metrics\|Metrics template]] | `00-Product/Metrics.md` | Pichler + North Star | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) · [North Star](https://amplitude.com/books/north-star/about-north-star-framework) |
-| [[GO-Roadmap]] | `06-Roadmap/` | Pichler | [GO Product Roadmap](https://romanpichler.com/tools/the-go-product-roadmap/) |
-| [[Dashboard-Example\|Dashboard-Example]] | `Dashboard.md` | Dataview | working dashboard over the pre-filled templates |
-| [[PERSONA-001-HDHP-Imaging-Patient]] | `01-Users/Personas/` | Pichler | [Persona Template](https://www.romanpichler.com/the-persona-template/) |
-| [[Discovery-Map]] | `03-Opportunities/Discovery Map.md` | Torres | [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) |
-| [[OPP-001-Outpatient-Imaging-Cost]] | `03-Opportunities/` | SVPG | [Opportunity assessment](https://www.svpg.com/assessing-product-opportunities/) |
-| [[EXP-001-Comprehension-Test]] | `07-Delivery/Experiments/` | SVPG | [Four big risks](https://www.svpg.com/four-big-risks/) |
-| [[PRD-001-Imaging-Estimate]] | `07-Delivery/PRDs/` | Pichler canvas + SVPG | [Product Canvas](https://www.romanpichler.com/tools/the-product-canvas/) |
-| [[PROB-001-Imaging-Cost-Problem]] | `02-Problems/` | — | shared evidence-backed problem layer |
-| [[RESEARCH-001-Imaging-Cost-Transparency]] | `04-Research/` | — | evidence layer for the whole model |
-| [[FB-001-Imaging-Cost-Feedback]] | `01-Users/Feedback/` | — | raw signal, verbatim quotes and account frequency |
-| [[REL-001-Imaging-Estimate-Pilot]] | `07-Delivery/Releases/` | Pichler | GO goal and measured result after delivery |
-| [[DEC-001-Build-Partner-Defer]] | `05-Decisions/` | — | framework-neutral decision record |
-| [[REVIEW-2027-02-Imaging-Estimate-Pilot]] | `08-Reviews/` | Pichler + SVPG | goal vs outcome, risk retired vs not |
-| [[JTBD-001-Know-Cost-Before-Booking]] | `01-Users/JTBD/` | — | supporting lens for Problem and Persona |
+| [Product-Vision-Board](Product-Vision-Board.md) | `00-Product/Product.md` | Pichler | [Vision Board](https://romanpichler.com/tools/product-vision-board/) |
+| [Strategy template](Strategy.md) | `00-Product/Strategy.md` | Pichler | [Strategy model](https://romanpichler.com/blog/my-product-strategy-model/) |
+| [Goals template](Goals.md) | `00-Product/Goals.md` | Pichler + OKR + Impact Mapping | [Goal-setting](https://romanpichler.com/blog/leading-through-shared-goals/) · [Impact Mapping](https://www.impactmapping.org/) |
+| [Metrics template](Metrics.md) | `00-Product/Metrics.md` | Pichler + North Star | [KPI selection](https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-product/) · [North Star](https://amplitude.com/books/north-star/about-north-star-framework) |
+| [GO-Roadmap](GO-Roadmap.md) | `06-Roadmap/` | Pichler | [GO Product Roadmap](https://romanpichler.com/tools/the-go-product-roadmap/) |
+| [Dashboard-Example](Dashboard-Example.md) | `Dashboard.md` | Dataview | working dashboard over the pre-filled templates |
+| [PERSONA-001-HDHP-Imaging-Patient](PERSONA-001-HDHP-Imaging-Patient.md) | `01-Users/Personas/` | Pichler | [Persona Template](https://www.romanpichler.com/the-persona-template/) |
+| [Discovery-Map](Discovery-Map.md) | `03-Opportunities/Discovery Map.md` | Torres | [Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/) |
+| [OPP-001-Outpatient-Imaging-Cost](OPP-001-Outpatient-Imaging-Cost.md) | `03-Opportunities/` | SVPG | [Opportunity assessment](https://www.svpg.com/assessing-product-opportunities/) |
+| [EXP-001-Comprehension-Test](EXP-001-Comprehension-Test.md) | `07-Delivery/Experiments/` | SVPG | [Four big risks](https://www.svpg.com/four-big-risks/) |
+| [PRD-001-Imaging-Estimate](PRD-001-Imaging-Estimate.md) | `07-Delivery/PRDs/` | Pichler canvas + SVPG | [Product Canvas](https://www.romanpichler.com/tools/the-product-canvas/) |
+| [PROB-001-Imaging-Cost-Problem](PROB-001-Imaging-Cost-Problem.md) | `02-Problems/` | — | shared evidence-backed problem layer |
+| [RESEARCH-001-Imaging-Cost-Transparency](RESEARCH-001-Imaging-Cost-Transparency.md) | `04-Research/` | — | evidence layer for the whole model |
+| [FB-001-Imaging-Cost-Feedback](FB-001-Imaging-Cost-Feedback.md) | `01-Users/Feedback/` | — | raw signal, verbatim quotes and account frequency |
+| [REL-001-Imaging-Estimate-Pilot](REL-001-Imaging-Estimate-Pilot.md) | `07-Delivery/Releases/` | Pichler | GO goal and measured result after delivery |
+| [DEC-001-Build-Partner-Defer](DEC-001-Build-Partner-Defer.md) | `05-Decisions/` | — | framework-neutral decision record |
+| [REVIEW-2027-02-Imaging-Estimate-Pilot](REVIEW-2027-02-Imaging-Estimate-Pilot.md) | `08-Reviews/` | Pichler + SVPG | goal vs outcome, risk retired vs not |
+| [JTBD-001-Know-Cost-Before-Booking](JTBD-001-Know-Cost-Before-Booking.md) | `01-Users/JTBD/` | — | supporting lens for Problem and Persona |
 
 ## Opportunity examples
 
 These extra example notes make the dashboard’s recommendation states visible:
 
-- [[OPP-002-Provider-Comparison|OPP-002 — defer]]
-- [[OPP-003-Prior-Authorization|OPP-003 — no-go]]
+- [OPP-002 — defer](OPP-002-Provider-Comparison.md)
+- [OPP-003 — no-go](OPP-003-Prior-Authorization.md)
 
 ## Operating-model templates
 
 The digital-transformation and project-to-product playbooks use a separate structure-only template
-set: [[_Operating-Models]].
+set: [_Operating-Models](Operating-Models/_Operating-Models.md).
 
 It covers product taxonomy, funding, transformation thesis, capability maps, value streams,
 adoption, portfolio roadmap, team topology, flow metrics, dependencies, and transition roadmap.
@@ -49,7 +49,7 @@ adoption, portfolio roadmap, team topology, flow metrics, dependencies, and tran
 ## Compliance templates
 
 Tier 1 health-data compliance uses a separate structure-only template set:
-[[_Compliance-Templates]].
+[_Compliance-Templates](Compliance/_Compliance-Templates.md).
 
 It covers compliance scope, data inventory, privacy/security risk, controls, vendor BAAs, incident
 response, and compliance review. Tier 2 medical-device QMS is not included.
@@ -79,7 +79,7 @@ queryable immediately. Copy the template frontmatter, then update `id`, `status`
 | `risk_type` (primary risk) | `value` · `usability` · `feasibility` · `viability` |
 | `risk_owner` | `PM` · `Design` · `Eng` · named role |
 | `candidate_id` (prd) | stable Opportunity candidate row ID, e.g. `CAND-001`; the Discovery Map links the same row |
-| `opportunity` / `decision` (PRD) | quoted Obsidian links, e.g. `"[[OPP-001-Outpatient-Imaging-Cost\|OPP-001]]"`, so traceability resolves |
+| `opportunity` / `decision` (PRD) | quoted Obsidian links, e.g. `"[OPP-001](OPP-001-Outpatient-Imaging-Cost.md)"`, so traceability resolves |
 | `primary_metric` (prd) | gate on "no baseline, no brief" |
 
 **Templates carry their real `type`, not `type: template`.** That is deliberate: the schema stays

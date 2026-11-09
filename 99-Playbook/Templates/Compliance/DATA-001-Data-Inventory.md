@@ -10,9 +10,9 @@ updated: 2026-11-08
 framework: "HIPAA minimum necessary + data mapping"
 source: "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html"
 related:
-  - "[[COMP-001-Compliance-Scope|COMP-001]]"
-  - "[[RISK-001-Privacy-Security-Risk|RISK-001]]"
-  - "[[VEND-001-Vendor-BAA-Register|VEND-001]]"
+  - "[COMP-001](COMP-001-Compliance-Scope.md)"
+  - "[RISK-001](RISK-001-Privacy-Security-Risk.md)"
+  - "[VEND-001](VEND-001-Vendor-BAA-Register.md)"
 ---
 
 # Data Inventory

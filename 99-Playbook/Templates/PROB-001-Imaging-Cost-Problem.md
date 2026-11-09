@@ -21,11 +21,11 @@ Adults on employer-sponsored high-deductible health plans cannot estimate their 
 
 ## User / Segment
 
-[[PERSONA-001-HDHP-Imaging-Patient|PERSONA-001]]
+[PERSONA-001](PERSONA-001-HDHP-Imaging-Patient.md)
 
 ## JTBD
 
-[[JTBD-001-Know-Cost-Before-Booking|JTBD-001]]
+[JTBD-001](JTBD-001-Know-Cost-Before-Booking.md)
 
 ## Evidence
 
@@ -37,7 +37,7 @@ Adults on employer-sponsored high-deductible health plans cannot estimate their 
 
 > Stated intent is not observed behavior. These sources do not establish that better estimates reduce postponement. The medical-debt row is population-level and not specific to imaging.
 >
-> Live research: [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026|RESEARCH-002]].
+> Live research: [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md).
 
 ## Frequency
 
@@ -64,4 +64,4 @@ Evidence unavailable. Potential effects to measure: delayed bookings, call-centr
 
 ## Related Opportunities
 
-- [[OPP-001-Outpatient-Imaging-Cost|OPP-001]]
+- [OPP-001](OPP-001-Outpatient-Imaging-Cost.md)

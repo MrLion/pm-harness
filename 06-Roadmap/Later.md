@@ -13,4 +13,4 @@ updated: 2026-11-08
 | | | | |
 
 ## Related
-- [[Now]] · [[Next]]
+- [Now](Now.md) · [Next](Next.md)

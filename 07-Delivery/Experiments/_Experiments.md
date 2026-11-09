@@ -1,6 +1,6 @@
 # Experiments
 
-`EXP-NNN` notes from [[EXP-001-Comprehension-Test]]. **Each experiment names one primary risk** — value,
+`EXP-NNN` notes from [EXP-001-Comprehension-Test](../../99-Playbook/Templates/EXP-001-Comprehension-Test.md). **Each experiment names one primary risk** — value,
 usability, feasibility or business viability. Secondary observations can be recorded separately. If
 you cannot say which risk is primary, it is a build, not an experiment.
 

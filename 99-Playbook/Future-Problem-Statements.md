@@ -6,7 +6,7 @@ updated: 2026-11-09
 
 # Future problem statements
 
-> [!info] For humans and agents
+> [!NOTE] For humans and agents
 > This is a shared reference list: humans use it to choose a problem space; agents use it to propose candidate problems. It is not product evidence.
 
 ## 1. Fragmented health information across systems

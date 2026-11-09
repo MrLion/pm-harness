@@ -10,9 +10,9 @@ updated: 2026-11-08
 framework: "Business capability mapping"
 source: "[FILL: method or source]"
 related:
-  - "[[TRANS-001-Transformation-Thesis|TRANS-001]]"
-  - "[[VS-001-Value-Stream-Map|VS-001]]"
-  - "[[TAX-001-Product-Taxonomy|TAX-001]]"
+  - "[TRANS-001](TRANS-001-Transformation-Thesis.md)"
+  - "[VS-001](VS-001-Value-Stream-Map.md)"
+  - "[TAX-001](../Shared/TAX-001-Product-Taxonomy.md)"
 ---
 
 # Capability Map

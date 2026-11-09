@@ -38,7 +38,7 @@ example: true
 
 ## Decisions still unresolved
 
-- [[DEC-001-Build-Partner-Defer|DEC-001]] — build vs partner vs defer.
+- [DEC-001](DEC-001-Build-Partner-Defer.md) — build vs partner vs defer.
 
 ## Metric movement
 

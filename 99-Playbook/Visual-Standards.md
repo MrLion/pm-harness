@@ -8,12 +8,12 @@ example: false
 
 # Visual Standards
 
-> [!info] For humans and agents
+> [!NOTE] For humans and agents
 > This is the shared design contract: humans approve it, agents extend it through the generator. It is not an onboarding page.
 
 Approved canonical visual language for the PM Playbook.
 
-![[playbook_v8.png]]
+![playbook_v8.png](Visuals/playbook_v8.png)
 
 ## What the visual must convey
 

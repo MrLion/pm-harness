@@ -32,4 +32,4 @@ When I need outpatient imaging, I want to know what it will cost me before I boo
 
 ## Evidence
 
-- [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026|RESEARCH-002]] — secondary survey evidence only.
+- [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) — secondary survey evidence only.

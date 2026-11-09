@@ -1,6 +1,6 @@
 # Decisions
 
-`DEC-NNN` notes from [[DEC-001-Build-Partner-Defer]]. A decision that costs more than a week of work, or is hard to
+`DEC-NNN` notes from [DEC-001-Build-Partner-Defer](../99-Playbook/Templates/DEC-001-Build-Partner-Defer.md). A decision that costs more than a week of work, or is hard to
 reverse, gets a record. Verbal decisions do not exist — if it isn't written down, it will be
 re-litigated in three weeks by someone who wasn't there.
 

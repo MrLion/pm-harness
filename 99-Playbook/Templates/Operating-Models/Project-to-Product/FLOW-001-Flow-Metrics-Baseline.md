@@ -10,8 +10,8 @@ updated: 2026-11-08
 framework: "Flow Framework"
 source: "[FILL: method or source]"
 related:
-  - "[[VS-001-Value-Stream-Map|VS-001]]"
-  - "[[DEP-001-Dependency-Map|DEP-001]]"
+  - "[VS-001](../Transformation/VS-001-Value-Stream-Map.md)"
+  - "[DEP-001](DEP-001-Dependency-Map.md)"
 ---
 
 # Flow Metrics Baseline

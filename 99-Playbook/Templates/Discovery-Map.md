@@ -12,20 +12,20 @@ example: true
 
 ## Desired outcome
 
-[[PM vault/99-Playbook/Templates/Goals|Goals]] — reduce out-of-pocket cost uncertainty before elective outpatient imaging.
+[Goals](Goals.md) — reduce out-of-pocket cost uncertainty before elective outpatient imaging.
 
 ## Tree
 
-- **[Problem]** [[PROB-001-Imaging-Cost-Problem|PROB-001]]
-  - **[Opportunity assessment]** [[OPP-001-Outpatient-Imaging-Cost|OPP-001]]
-    - **CAND-001** — integrate an existing payer/provider estimator · [[OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-001 · CAND-001]]
-    - **CAND-002** — assisted estimate request with human review · [[OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-001 · CAND-002]]
-    - **CAND-003** — narrowly scoped self-service estimate · [[OPP-001-Outpatient-Imaging-Cost#Candidate solutions|OPP-001 · CAND-003]]
-      - **Assumption test** [[EXP-001-Comprehension-Test|EXP-001]]
+- **[Problem]** [PROB-001](PROB-001-Imaging-Cost-Problem.md)
+  - **[Opportunity assessment]** [OPP-001](OPP-001-Outpatient-Imaging-Cost.md)
+    - **CAND-001** — integrate an existing payer/provider estimator · [OPP-001 · CAND-001](OPP-001-Outpatient-Imaging-Cost.md#candidate-solutions)
+    - **CAND-002** — assisted estimate request with human review · [OPP-001 · CAND-002](OPP-001-Outpatient-Imaging-Cost.md#candidate-solutions)
+    - **CAND-003** — narrowly scoped self-service estimate · [OPP-001 · CAND-003](OPP-001-Outpatient-Imaging-Cost.md#candidate-solutions)
+      - **Assumption test** [EXP-001](EXP-001-Comprehension-Test.md)
 
 ## Related opportunities
 
-- [[OPP-002-Provider-Comparison|OPP-002]] — deferred until estimate coverage and accuracy are proven.
+- [OPP-002](OPP-002-Provider-Comparison.md) — deferred until estimate coverage and accuracy are proven.
 
 ## Coverage check
 

@@ -1,6 +1,6 @@
 # Releases
 
-What shipped, when, and what happened afterwards. Template: [[REL-001-Imaging-Estimate-Pilot]], with frontmatter
+What shipped, when, and what happened afterwards. Template: [REL-001-Imaging-Estimate-Pilot](../../99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot.md), with frontmatter
 `date`, `goal` and `metric_result` feeding the table below.
 
 ```dataview

@@ -10,8 +10,8 @@ updated: 2026-11-08
 framework: "HIPAA Security Incident + Breach Notification"
 source: "https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html"
 related:
-  - "[[CTRL-001-Control-Matrix|CTRL-001]]"
-  - "[[VEND-001-Vendor-BAA-Register|VEND-001]]"
+  - "[CTRL-001](CTRL-001-Control-Matrix.md)"
+  - "[VEND-001](VEND-001-Vendor-BAA-Register.md)"
 ---
 
 # Incident and Breach Response

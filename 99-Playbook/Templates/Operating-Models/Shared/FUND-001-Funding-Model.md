@@ -10,8 +10,8 @@ updated: 2026-11-08
 framework: "Product funding + Beyond Budgeting"
 source: "[FILL: method or source]"
 related:
-  - "[[TAX-001-Product-Taxonomy|TAX-001]]"
-  - "[[PORT-001-Portfolio-Roadmap|PORT-001]]"
+  - "[TAX-001](TAX-001-Product-Taxonomy.md)"
+  - "[PORT-001](../Transformation/PORT-001-Portfolio-Roadmap.md)"
 ---
 
 # Funding Model

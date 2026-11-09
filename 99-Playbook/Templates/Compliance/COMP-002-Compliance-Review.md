@@ -11,9 +11,9 @@ updated: 2026-11-08
 framework: "Compliance review + CAPA"
 source: "[FILL: internal policy or source]"
 related:
-  - "[[COMP-001-Compliance-Scope|COMP-001]]"
-  - "[[CTRL-001-Control-Matrix|CTRL-001]]"
-  - "[[INC-001-Incident-Breach-Response|INC-001]]"
+  - "[COMP-001](COMP-001-Compliance-Scope.md)"
+  - "[CTRL-001](CTRL-001-Control-Matrix.md)"
+  - "[INC-001](INC-001-Incident-Breach-Response.md)"
 ---
 
 # Compliance Review

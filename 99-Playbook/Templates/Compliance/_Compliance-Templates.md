@@ -6,13 +6,13 @@ Baseline health-data compliance for products touching PII, PHI, ePHI, or consume
 
 | Template | Use for |
 |---|---|
-| [[COMP-001-Compliance-Scope\|COMP-001]] | Role, data classification, jurisdictions, obligations |
-| [[DATA-001-Data-Inventory\|DATA-001]] | Data elements, purpose, PHI status, retention, vendors |
-| [[RISK-001-Privacy-Security-Risk\|RISK-001]] | HIPAA-style privacy and security risk assessment |
-| [[CTRL-001-Control-Matrix\|CTRL-001]] | Administrative, physical, and technical safeguards |
-| [[VEND-001-Vendor-BAA-Register\|VEND-001]] | Vendor PHI access, BAA status, termination obligations |
-| [[INC-001-Incident-Breach-Response\|INC-001]] | Incident, containment, breach assessment, notification |
-| [[COMP-002-Compliance-Review\|COMP-002]] | Audit findings, control effectiveness, CAPA |
+| [COMP-001](COMP-001-Compliance-Scope.md) | Role, data classification, jurisdictions, obligations |
+| [DATA-001](DATA-001-Data-Inventory.md) | Data elements, purpose, PHI status, retention, vendors |
+| [RISK-001](RISK-001-Privacy-Security-Risk.md) | HIPAA-style privacy and security risk assessment |
+| [CTRL-001](CTRL-001-Control-Matrix.md) | Administrative, physical, and technical safeguards |
+| [VEND-001](VEND-001-Vendor-BAA-Register.md) | Vendor PHI access, BAA status, termination obligations |
+| [INC-001](INC-001-Incident-Breach-Response.md) | Incident, containment, breach assessment, notification |
+| [COMP-002](COMP-002-Compliance-Review.md) | Audit findings, control effectiveness, CAPA |
 
 ## Flow
 

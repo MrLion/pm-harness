@@ -10,8 +10,8 @@ updated: 2026-11-08
 framework: "HIPAA Security Rule safeguards"
 source: "https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html"
 related:
-  - "[[RISK-001-Privacy-Security-Risk|RISK-001]]"
-  - "[[DATA-001-Data-Inventory|DATA-001]]"
+  - "[RISK-001](RISK-001-Privacy-Security-Risk.md)"
+  - "[DATA-001](DATA-001-Data-Inventory.md)"
 ---
 
 # Control Matrix

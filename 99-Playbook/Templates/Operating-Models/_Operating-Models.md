@@ -6,28 +6,28 @@ Structure-only templates for the two operating-model playbooks. They use portfol
 
 | Template | Use for |
 |---|---|
-| [[TAX-001-Product-Taxonomy\|TAX-001]] | Durable products, platforms, and services |
-| [[FUND-001-Funding-Model\|FUND-001]] | Portfolio or product funding and decision rights |
-| [[REVIEW-OM-001-Operating-Model-Review\|REVIEW-OM-001]] | Transformation or transition review |
+| [TAX-001](Shared/TAX-001-Product-Taxonomy.md) | Durable products, platforms, and services |
+| [FUND-001](Shared/FUND-001-Funding-Model.md) | Portfolio or product funding and decision rights |
+| [REVIEW-OM-001](Shared/REVIEW-OM-001-Operating-Model-Review.md) | Transformation or transition review |
 
 ## Digital transformation
 
 | Template | Use for |
 |---|---|
-| [[TRANS-001-Transformation-Thesis\|TRANS-001]] | Transformation thesis and why now |
-| [[CAP-001-Capability-Map\|CAP-001]] | Capability gaps and maturity |
-| [[VS-001-Value-Stream-Map\|VS-001]] | Current value-stream flow and delays |
-| [[ADOPT-001-Adoption-Scorecard\|ADOPT-001]] | Adoption and changed work |
-| [[PORT-001-Portfolio-Roadmap\|PORT-001]] | Sequenced portfolio bets |
+| [TRANS-001](Transformation/TRANS-001-Transformation-Thesis.md) | Transformation thesis and why now |
+| [CAP-001](Transformation/CAP-001-Capability-Map.md) | Capability gaps and maturity |
+| [VS-001](Transformation/VS-001-Value-Stream-Map.md) | Current value-stream flow and delays |
+| [ADOPT-001](Transformation/ADOPT-001-Adoption-Scorecard.md) | Adoption and changed work |
+| [PORT-001](Transformation/PORT-001-Portfolio-Roadmap.md) | Sequenced portfolio bets |
 
 ## Project-to-product
 
 | Template | Use for |
 |---|---|
-| [[TEAM-001-Team-Topology\|TEAM-001]] | Durable teams and ownership |
-| [[FLOW-001-Flow-Metrics-Baseline\|FLOW-001]] | Flow time, load, efficiency, distribution |
-| [[DEP-001-Dependency-Map\|DEP-001]] | Cross-team and cross-product dependencies |
-| [[TRANS-002-Transition-Roadmap\|TRANS-002]] | Sequenced operating-model change |
+| [TEAM-001](Project-to-Product/TEAM-001-Team-Topology.md) | Durable teams and ownership |
+| [FLOW-001](Project-to-Product/FLOW-001-Flow-Metrics-Baseline.md) | Flow time, load, efficiency, distribution |
+| [DEP-001](Project-to-Product/DEP-001-Dependency-Map.md) | Cross-team and cross-product dependencies |
+| [TRANS-002](Project-to-Product/TRANS-002-Transition-Roadmap.md) | Sequenced operating-model change |
 
 ## Flow
 

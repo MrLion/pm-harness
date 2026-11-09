@@ -10,7 +10,7 @@ review_cadence_days: 180
 
 # Vision — elaboration
 
-The canonical vision statement lives in [[Product]] under **VISION**. Do not repeat or maintain a
+The canonical vision statement lives in [Product](Product.md) under **VISION**. Do not repeat or maintain a
 second version here; this note holds only the context around it.
 
 ## Why this is worth doing
@@ -20,4 +20,4 @@ second version here; this note holds only the context around it.
 - [FILL]
 
 ## Related
-- [[Product]] · [[PM vault/00-Product/Strategy|Strategy]]
+- [Product](Product.md) · [Strategy](Strategy.md)

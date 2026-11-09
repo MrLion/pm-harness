@@ -10,8 +10,8 @@ updated: 2026-11-08
 framework: "Dependency mapping"
 source: "[FILL: method or source]"
 related:
-  - "[[TEAM-001-Team-Topology|TEAM-001]]"
-  - "[[TRANS-002-Transition-Roadmap|TRANS-002]]"
+  - "[TEAM-001](TEAM-001-Team-Topology.md)"
+  - "[TRANS-002](TRANS-002-Transition-Roadmap.md)"
 ---
 
 # Dependency Map

@@ -5,7 +5,7 @@ id: EXP-001
 status: planned
 risk_type: usability
 risk_owner: Design
-opportunity: "[[OPP-001-Outpatient-Imaging-Cost|OPP-001]]"
+opportunity: "[OPP-001](OPP-001-Outpatient-Imaging-Cost.md)"
 start: 2026-11-10
 end: 2026-11-21
 cost: 5 interviews
@@ -24,7 +24,7 @@ example: true
 |---|---|
 | Risk type | usability (comprehension) |
 | Assumption | Patients can explain what an estimate includes, excludes, and how long it is valid |
-| Opportunity | [[OPP-001-Outpatient-Imaging-Cost\|OPP-001]] |
+| Opportunity | [OPP-001](OPP-001-Outpatient-Imaging-Cost.md) |
 
 ## Hypothesis
 
@@ -39,7 +39,7 @@ example: true
 | BAA in place? | Not applicable |
 | Where data is stored | Local design file; no patient data |
 | Retention and destruction | Delete after study |
-| Compliance scope | [[COMP-001-Compliance-Scope\|COMP-001]] |
+| Compliance scope | [COMP-001](Compliance/COMP-001-Compliance-Scope.md) |
 
 ## Design
 
@@ -72,7 +72,7 @@ Pending
 
 ## Decision
 
-Pending — link the resulting [[DEC-001-Build-Partner-Defer|DEC-001]] or updated [[OPP-001-Outpatient-Imaging-Cost|OPP-001]].
+Pending — link the resulting [DEC-001](DEC-001-Build-Partner-Defer.md) or updated [OPP-001](OPP-001-Outpatient-Imaging-Cost.md).
 
 ## Scope note
 

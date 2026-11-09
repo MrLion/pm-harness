@@ -46,4 +46,4 @@ Reduce out-of-pocket cost uncertainty before elective outpatient imaging.
 
 | Objective / KR | Roadmap entry | Opportunity |
 |---|---|---|
-| KR1 / KR2 | [[PM vault/06-Roadmap/Now\|NOW]] | [[OPP-001-Outpatient-Imaging-Cost\|OPP-001]] |
+| KR1 / KR2 | [NOW](../../06-Roadmap/Now.md) | [OPP-001](OPP-001-Outpatient-Imaging-Cost.md) |

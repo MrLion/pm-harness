@@ -36,4 +36,4 @@ Template and checklist: `99-Playbook/Templates/Strategy.md`.
 - [FILL]
 
 ## Related
-- [[Product]] · [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]
+- [Product](Product.md) · [Vision](Vision.md) · [Goals](Goals.md) · [Metrics](Metrics.md)

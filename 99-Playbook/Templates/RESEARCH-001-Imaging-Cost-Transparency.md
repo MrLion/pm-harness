@@ -47,5 +47,5 @@ Desk research: [William Blair *Consumer-Centric Healthcare 2026*](https://www.wi
 
 ## Implications
 
-- Supports: [[PROB-001-Imaging-Cost-Problem|PROB-001]] · [[OPP-001-Outpatient-Imaging-Cost|OPP-001]]
+- Supports: [PROB-001](PROB-001-Imaging-Cost-Problem.md) · [OPP-001](OPP-001-Outpatient-Imaging-Cost.md)
 - Weakens: any claim that an estimate alone reduces postponed care.

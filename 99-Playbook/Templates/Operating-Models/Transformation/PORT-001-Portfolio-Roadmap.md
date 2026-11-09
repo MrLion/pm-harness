@@ -10,9 +10,9 @@ updated: 2026-11-08
 framework: "GO Product Roadmap, portfolio adaptation"
 source: "[FILL: method or source]"
 related:
-  - "[[TRANS-001-Transformation-Thesis|TRANS-001]]"
-  - "[[TAX-001-Product-Taxonomy|TAX-001]]"
-  - "[[FUND-001-Funding-Model|FUND-001]]"
+  - "[TRANS-001](TRANS-001-Transformation-Thesis.md)"
+  - "[TAX-001](../Shared/TAX-001-Product-Taxonomy.md)"
+  - "[FUND-001](../Shared/FUND-001-Funding-Model.md)"
 ---
 
 # Portfolio Roadmap

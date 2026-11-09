@@ -49,4 +49,4 @@ updated: 2026-11-08
 | [FILL] | | |
 
 ## Related
-- [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Strategy|Strategy]]
+- [Goals](Goals.md) · [Strategy](Strategy.md)

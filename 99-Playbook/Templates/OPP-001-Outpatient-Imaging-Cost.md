@@ -66,10 +66,10 @@ Proceed to discovery, not build. Test comprehension and data access first.
 
 | Question | Answer |
 |---|---|
-| Data classification | [[COMP-001-Compliance-Scope\|COMP-001]] |
+| Data classification | [COMP-001](Compliance/COMP-001-Compliance-Scope.md) |
 | PHI / ePHI | None in discovery — no clinical data collected in this example |
-| Vendor / BAA | [[VEND-001-Vendor-BAA-Register\|VEND-001]] |
-| Risk and controls | [[RISK-001-Privacy-Security-Risk\|RISK-001]] · [[CTRL-001-Control-Matrix\|CTRL-001]] |
+| Vendor / BAA | [VEND-001](Compliance/VEND-001-Vendor-BAA-Register.md) |
+| Risk and controls | [RISK-001](Compliance/RISK-001-Privacy-Security-Risk.md) · [CTRL-001](Compliance/CTRL-001-Control-Matrix.md) |
 | Approval needed | Compliance owner sign-off before pilot |
 
 ## Hypothesis
@@ -82,7 +82,7 @@ Proceed to discovery, not build. Test comprehension and data access first.
 
 | Source | Date | Says what | Strength |
 |---|---|---|---|
-| [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026\|RESEARCH-002]] | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would likely postpone without an accurate estimate | weak |
+| [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would likely postpone without an accurate estimate | weak |
 
 ### Contradicting
 
@@ -112,8 +112,8 @@ Proceed to discovery, not build. Test comprehension and data access first.
 
 ## Recommendation
 
-Pending — discovery only; no build until comprehension and data access are proven. [[DEC-001-Build-Partner-Defer|DEC-001]] proposes defer; the recommendation stays Pending until that decision is accepted.
+Pending — discovery only; no build until comprehension and data access are proven. [DEC-001](DEC-001-Build-Partner-Defer.md) proposes defer; the recommendation stays Pending until that decision is accepted.
 
 ## Related
 
-- [[PROB-001-Imaging-Cost-Problem|PROB-001]] · [[DEC-001-Build-Partner-Defer|DEC-001]] · [[EXP-001-Comprehension-Test|EXP-001]] · [[PM vault/03-Opportunities/Discovery Map|Discovery Map]]
+- [PROB-001](PROB-001-Imaging-Cost-Problem.md) · [DEC-001](DEC-001-Build-Partner-Defer.md) · [EXP-001](EXP-001-Comprehension-Test.md) · [Discovery Map](../../03-Opportunities/Discovery%20Map.md)

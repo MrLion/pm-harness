@@ -10,9 +10,9 @@ updated: 2026-11-08
 framework: "HIPAA Security Rule risk analysis + NIST SP 800-30"
 source: "https://www.hhs.gov/hipaa/for-professionals/security/guidance/guidance-risk-analysis/index.html"
 related:
-  - "[[COMP-001-Compliance-Scope|COMP-001]]"
-  - "[[DATA-001-Data-Inventory|DATA-001]]"
-  - "[[CTRL-001-Control-Matrix|CTRL-001]]"
+  - "[COMP-001](COMP-001-Compliance-Scope.md)"
+  - "[DATA-001](DATA-001-Data-Inventory.md)"
+  - "[CTRL-001](CTRL-001-Control-Matrix.md)"
 ---
 
 # Privacy and Security Risk Assessment

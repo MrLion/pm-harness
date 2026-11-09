@@ -10,8 +10,8 @@ updated: 2026-11-08
 framework: "HIPAA business associate agreements"
 source: "https://hhs.gov/hipaa/for-professionals/privacy/guidance/business-associates"
 related:
-  - "[[COMP-001-Compliance-Scope|COMP-001]]"
-  - "[[DATA-001-Data-Inventory|DATA-001]]"
+  - "[COMP-001](COMP-001-Compliance-Scope.md)"
+  - "[DATA-001](DATA-001-Data-Inventory.md)"
 ---
 
 # Vendor and BAA Register

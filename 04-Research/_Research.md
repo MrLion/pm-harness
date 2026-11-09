@@ -10,10 +10,10 @@ rather than reasoning from plausibility.
 
 | Folder | Holds | Answers |
 |---|---|---|
-| [[_Market]] | market size, segmentation, timing, regulation | How big, and why now? (Cagan Q3, Q6) |
-| [[_Competitors]] | teardowns, pricing, positioning | What alternatives exist, where do they fail our group? (Cagan Q4) |
-| [[_Users]] | interviews, observation, support signal | Who hurts, how often, what do they do today? |
-| [[_Data]] | queries, metrics, instrumentation | What do the numbers actually say? |
+| [_Market](Market/_Market.md) | market size, segmentation, timing, regulation | How big, and why now? (Cagan Q3, Q6) |
+| [_Competitors](Competitors/_Competitors.md) | teardowns, pricing, positioning | What alternatives exist, where do they fail our group? (Cagan Q4) |
+| [_Users](Users/_Users.md) | interviews, observation, support signal | Who hurts, how often, what do they do today? |
+| [_Data](Data/_Data.md) | queries, metrics, instrumentation | What do the numbers actually say? |
 
 ## Evidence ladder
 

@@ -24,8 +24,8 @@ Adults on employer-sponsored HDHPs choosing outpatient imaging.
 
 | # | Need | Evidence | Confidence |
 |---|---|---|---|
-| 1 | Know expected out-of-pocket cost before booking | [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026\|RESEARCH-002]] | low |
-| 2 | Understand what the estimate includes and excludes | [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026\|RESEARCH-002]] | low |
+| 1 | Know expected out-of-pocket cost before booking | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | low |
+| 2 | Understand what the estimate includes and excludes | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | low |
 
 ## Product
 

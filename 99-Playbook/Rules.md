@@ -7,8 +7,8 @@ updated: 2026-11-09
 
 # PM Rules
 
-> [!info] For AI agents only
-> This page is the `/pm` layer’s operating law. Humans author and approve it; the agent enforces it. Humans start at [[README]].
+> [!NOTE] For AI agents only
+> This page is the `/pm` layer’s operating law. Humans author and approve it; the agent enforces it. Humans start at [README](../README.md).
 
 Operating law for the `/pm` layer. These are constraints, not suggestions.
 
@@ -21,7 +21,7 @@ Operating law for the `/pm` layer. These are constraints, not suggestions.
 - **Compliance rail** — cross-cutting; applies whenever PII, PHI, ePHI, vendors, or health data are involved.
 
 ## 1. Route before recommending
-Choose the mode from [[_Playbooks]] before applying any rule. A product rule must not be forced onto
+Choose the mode from [_Playbooks](Playbooks/_Playbooks.md) before applying any rule. A product rule must not be forced onto
 transformation or operating-model work.
 
 ## 2. Problem before solution — outcome-led only

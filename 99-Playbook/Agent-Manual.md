@@ -6,7 +6,7 @@ updated: 2026-11-09
 
 # Agent Setup and Harness Manual
 
-> [!info] For humans and agents
+> [!NOTE] For humans and agents
 > This is the practical setup and operating manual: install the agent layer, wire the vault, run the first chain, and use `/pm` without inventing evidence. It is not legal advice and it does not define the product.
 
 ## 1. What you are setting up
@@ -284,9 +284,9 @@ Before saying the harness works:
 
 ## Related
 
-- [[README]] — human entry point
-- [[START-HERE]] — outcome-led walkthrough
-- [[PM]] — agent brief
-- [[Rules]] — operating law
-- [[Architecture]] — technical contract
-- [[_Playbooks]] — playbook router
+- [README](../README.md) — human entry point
+- [START-HERE](../START-HERE.md) — outcome-led walkthrough
+- [PM](PM.md) — agent brief
+- [Rules](Rules.md) — operating law
+- [Architecture](Architecture.md) — technical contract
+- [_Playbooks](Playbooks/_Playbooks.md) — playbook router

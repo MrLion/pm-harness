@@ -10,13 +10,13 @@ updated: 2026-11-09
 framework: "HIPAA + privacy/security compliance"
 source: "https://www.hhs.gov/hipaa/for-professionals/covered-entities"
 related:
-  - "[[DATA-001-Data-Inventory|DATA-001]]"
-  - "[[RISK-001-Privacy-Security-Risk|RISK-001]]"
+  - "[DATA-001](../99-Playbook/Templates/Compliance/DATA-001-Data-Inventory.md)"
+  - "[RISK-001](../99-Playbook/Templates/Compliance/RISK-001-Privacy-Security-Risk.md)"
 ---
 
 # Compliance Scope — live
 
-> [!warning] Gate open
+> [!WARNING] Gate open
 > This scope is not decided. Do not handle PII, PHI, ePHI, or vendor data until the classification is resolved and a named owner signs off.
 
 ## 1. Product and role

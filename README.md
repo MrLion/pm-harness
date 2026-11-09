@@ -1,7 +1,7 @@
 # PM Playbook
 
-> [!info] For humans
-> This is the human entry point: where to start, which playbook to choose, and where artifacts go. Agents start at [[PM]] and [[Rules]]; technical setup is in [[Architecture]].
+> [!NOTE] For humans
+> This is the human entry point: where to start, which playbook to choose, and where artifacts go. Agents start at [PM](99-Playbook/PM.md) and [Rules](99-Playbook/Rules.md); technical setup is in [Architecture](99-Playbook/Architecture.md).
 
 **Obsidian is the workspace. `/pm` is the reasoning layer. Git is the audit trail.**
 
@@ -19,7 +19,7 @@ validation. Empty fields and `Evidence unavailable.` are preferable to plausible
 
 1. Open the iCloud **`Documents`** vault in Obsidian. `PM vault` remains a folder inside it.
 2. Enable **Dataview** in that parent vault: Settings → Community plugins.
-3. Open **[[Dashboard]]** (`PM vault/Dashboard.md`). Empty tables are normal before any artifacts exist.
+3. Open **[Dashboard](Dashboard.md)** (`PM vault/Dashboard.md`). Empty tables are normal before any artifacts exist.
 4. Choose one playbook below and follow its flow.
 
 No paid Obsidian features or GitHub repository are required.
@@ -29,8 +29,8 @@ No paid Obsidian features or GitHub repository are required.
 The `/pm` commands are a separate agent layer, not part of the vault. The vault renders without
 them; the commands require the `product-management` skill and the `pm` bundle.
 
-- Skill: `~/.hermes/profiles/pdm/skills/productivity/product-management/`
-- Bundle: `~/.hermes/profiles/pdm/skill-bundles/pm.yaml`
+- Skill: `$HERMES_HOME/skills/productivity/product-management/`
+- Bundle: `$HERMES_HOME/skill-bundles/pm.yaml`
 - Smoke test: `/pm status`
 - Expected result: product health, the top problems and opportunities, and one recommended next action
 
@@ -40,7 +40,7 @@ A fresh clone does not include these files. Install Hermes, place the `product-m
 `$HERMES_HOME/skills/productivity/` and `pm.yaml` under `$HERMES_HOME/skill-bundles/`, run
 `hermes bundles reload`, then test `/pm status`. See https://hermes-agent.nousresearch.com/docs/.
 
-Full setup and operating guide: [[Agent-Manual]].
+Full setup and operating guide: [Agent-Manual](99-Playbook/Agent-Manual.md).
 
 ## Choose your playbook
 
@@ -51,9 +51,9 @@ Ask two questions:
 
 | What you are changing | Product-model governance | Project-model governance |
 |---|---|---|
-| New product or new market | [[Vision-Led-0-to-1]] | [[Project-to-Product]] first, then [[Vision-Led-0-to-1]] |
-| Existing product | [[Outcome-Led-1-to-N]] | [[Project-to-Product]] first, then [[Outcome-Led-1-to-N]] |
-| Portfolio or enterprise capability | [[Digital-Transformation]] | [[Project-to-Product]] + [[Digital-Transformation]] |
+| New product or new market | [Vision-Led-0-to-1](99-Playbook/Playbooks/Vision-Led-0-to-1.md) | [Project-to-Product](99-Playbook/Playbooks/Project-to-Product.md) first, then [Vision-Led-0-to-1](99-Playbook/Playbooks/Vision-Led-0-to-1.md) |
+| Existing product | [Outcome-Led-1-to-N](99-Playbook/Playbooks/Outcome-Led-1-to-N.md) | [Project-to-Product](99-Playbook/Playbooks/Project-to-Product.md) first, then [Outcome-Led-1-to-N](99-Playbook/Playbooks/Outcome-Led-1-to-N.md) |
+| Portfolio or enterprise capability | [Digital-Transformation](99-Playbook/Playbooks/Digital-Transformation.md) | [Project-to-Product](99-Playbook/Playbooks/Project-to-Product.md) + [Digital-Transformation](99-Playbook/Playbooks/Digital-Transformation.md) |
 
 These are not four stages of one loop. **Vision-led** and **outcome-led** are product-lifecycle
 paths. **Digital transformation** and **project-to-product** are operating-model transitions that
@@ -65,7 +65,7 @@ funding or team structure blocks durable product work.
 ## Compliance rail
 
 Every playbook runs with a Tier 1 health-data compliance rail. Before handling PII, PHI, ePHI, or
-vendor data, start with the live [[COMP-003-Compliance-Scope|Compliance Scope]]. If its status is
+vendor data, start with the live [Compliance Scope](11-Compliance/COMP-003-Compliance-Scope.md). If its status is
 `draft` or its owner is `Unassigned`, stop and complete it before handling data.
 
 Compliance is not a fifth loop. It is a constraint that can stop or reshape any stage. Tier 2 —
@@ -81,21 +81,21 @@ new value proposition.
 
 | Stage | Question | Artifact |
 |---|---|---|
-| Vision | What future are we trying to create? | [[PM vault/99-Playbook/Templates/Product-Vision-Board\|Product Vision Board]] |
-| Target group and need | Who is it for, and what job are they trying to do? | [[PM vault/99-Playbook/Templates/PERSONA-001-HDHP-Imaging-Patient\|Persona]] · [[PM vault/99-Playbook/Templates/JTBD-001-Know-Cost-Before-Booking\|JTBD]] |
-| Why now / why us | What changed, and why are we the ones to win? | [[PM vault/99-Playbook/Templates/Strategy\|Strategy]] |
-| Goals and North Star | What outcome proves the thesis? | [[PM vault/99-Playbook/Templates/Goals\|Goals]] · [[PM vault/99-Playbook/Templates/Metrics\|Metrics]] |
-| Opportunity map | Which customer problems matter most? | [[PM vault/99-Playbook/Templates/PROB-001-Imaging-Cost-Problem\|Problem]] · [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost\|Opportunity]] · [[PM vault/99-Playbook/Templates/Discovery-Map\|Discovery Map]] |
-| What would have to be true | Which assumptions carry the thesis? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost#The four big risks\|Opportunity four risks]] · [[PM vault/99-Playbook/Templates/DEC-001-Build-Partner-Defer\|Decision]] |
-| Concept tests | What is the cheapest evidence that changes the bet? | [[PM vault/99-Playbook/Templates/EXP-001-Comprehension-Test\|Experiment]] |
-| MVP | What is the smallest coherent product that tests the thesis? | [[PM vault/99-Playbook/Templates/PRD-001-Imaging-Estimate\|PRD]] |
-| Launch and review | Did the world change, and what did we learn? | [[PM vault/99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot\|Release]] · [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] |
+| Vision | What future are we trying to create? | [Product Vision Board](99-Playbook/Templates/Product-Vision-Board.md) |
+| Target group and need | Who is it for, and what job are they trying to do? | [Persona](99-Playbook/Templates/PERSONA-001-HDHP-Imaging-Patient.md) · [JTBD](99-Playbook/Templates/JTBD-001-Know-Cost-Before-Booking.md) |
+| Why now / why us | What changed, and why are we the ones to win? | [Strategy](99-Playbook/Templates/Strategy.md) |
+| Goals and North Star | What outcome proves the thesis? | [Goals](99-Playbook/Templates/Goals.md) · [Metrics](99-Playbook/Templates/Metrics.md) |
+| Opportunity map | Which customer problems matter most? | [Problem](99-Playbook/Templates/PROB-001-Imaging-Cost-Problem.md) · [Opportunity](99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost.md) · [Discovery Map](99-Playbook/Templates/Discovery-Map.md) |
+| What would have to be true | Which assumptions carry the thesis? | [Opportunity four risks](99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost.md#the-four-big-risks) · [Decision](99-Playbook/Templates/DEC-001-Build-Partner-Defer.md) |
+| Concept tests | What is the cheapest evidence that changes the bet? | [Experiment](99-Playbook/Templates/EXP-001-Comprehension-Test.md) |
+| MVP | What is the smallest coherent product that tests the thesis? | [PRD](99-Playbook/Templates/PRD-001-Imaging-Estimate.md) |
+| Launch and review | Did the world change, and what did we learn? | [Release](99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot.md) · [Review](99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot.md) |
 
-**Entry artifact:** [[PM vault/99-Playbook/Templates/Product-Vision-Board|Product Vision Board]]
+**Entry artifact:** [Product Vision Board](99-Playbook/Templates/Product-Vision-Board.md)
 
 **Gate:** a PRD is produced only after the riskiest assumptions have concept-test evidence.
 
-**Full playbook:** [[Vision-Led-0-to-1]]
+**Full playbook:** [Vision-Led-0-to-1](99-Playbook/Playbooks/Vision-Led-0-to-1.md)
 
 ### Outcome-led 1→N
 
@@ -104,24 +104,24 @@ signal, or decide what to build next.
 
 | Stage | Question | Artifact / next step |
 |---|---|---|
-| Signal | What did we observe, and from whom? | [[PM vault/99-Playbook/Templates/FB-001-Imaging-Cost-Feedback\|Feedback]] · [[PM vault/99-Playbook/Templates/RESEARCH-001-Imaging-Cost-Transparency\|Research]] |
-| Problem | Who experiences what problem, when, and at what cost? | [[PM vault/99-Playbook/Templates/PROB-001-Imaging-Cost-Problem\|Problem]] |
+| Signal | What did we observe, and from whom? | [Feedback](99-Playbook/Templates/FB-001-Imaging-Cost-Feedback.md) · [Research](99-Playbook/Templates/RESEARCH-001-Imaging-Cost-Transparency.md) |
+| Problem | Who experiences what problem, when, and at what cost? | [Problem](99-Playbook/Templates/PROB-001-Imaging-Cost-Problem.md) |
 | Evidence | What supports or contradicts the problem? | Research, data, or `Evidence unavailable.` |
-| Opportunity | Is this worth pursuing, and what are the four risks? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost\|Opportunity]] |
-| Challenge | What would make this a no-go or defer? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost#Adversarial challenge\|Opportunity challenge]] |
-| Uncertain | What is the cheapest test that retires the primary risk? | [[PM vault/99-Playbook/Templates/EXP-001-Comprehension-Test\|Experiment]] → revise Opportunity |
-| Sufficient evidence | What are we choosing, and why? | [[PM vault/99-Playbook/Templates/DEC-001-Build-Partner-Defer\|Decision]] |
-| Solution brief | What is the smallest coherent solution? | [[PM vault/99-Playbook/Templates/PRD-001-Imaging-Estimate\|PRD]] |
-| Delivery | What shipped, and what moved? | [[PM vault/99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot\|Release]] |
-| Review | What did we learn, and what risk remains? | [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] |
+| Opportunity | Is this worth pursuing, and what are the four risks? | [Opportunity](99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost.md) |
+| Challenge | What would make this a no-go or defer? | [Opportunity challenge](99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost.md#adversarial-challenge) |
+| Uncertain | What is the cheapest test that retires the primary risk? | [Experiment](99-Playbook/Templates/EXP-001-Comprehension-Test.md) → revise Opportunity |
+| Sufficient evidence | What are we choosing, and why? | [Decision](99-Playbook/Templates/DEC-001-Build-Partner-Defer.md) |
+| Solution brief | What is the smallest coherent solution? | [PRD](99-Playbook/Templates/PRD-001-Imaging-Estimate.md) |
+| Delivery | What shipped, and what moved? | [Release](99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot.md) |
+| Review | What did we learn, and what risk remains? | [Review](99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot.md) |
 
-**Entry artifact:** [[PM vault/99-Playbook/Templates/FB-001-Imaging-Cost-Feedback|Feedback]] or a
+**Entry artifact:** [Feedback](99-Playbook/Templates/FB-001-Imaging-Cost-Feedback.md) or a
 Problem note.
 
 **Gate:** a solution brief is written only after the opportunity has evidence, a challenge, and a
 defined metric baseline.
 
-**Full playbook:** [[Outcome-Led-1-to-N]]
+**Full playbook:** [Outcome-Led-1-to-N](99-Playbook/Playbooks/Outcome-Led-1-to-N.md)
 
 Both loops use the same artifacts. The difference is the entry point and the evidence gate.
 
@@ -131,15 +131,15 @@ These are not product lifecycle stages. They change the conditions under which p
 
 | Transition | Use when | First artifact | Playbook |
 |---|---|---|---|
-| Digital transformation | The unit of change is a portfolio or enterprise capability | Transformation thesis and capability map | [[Digital-Transformation]] |
-| Project-to-product | Project funding, team topology, or governance blocks durable product teams | Product taxonomy and flow baseline | [[Project-to-Product]] |
+| Digital transformation | The unit of change is a portfolio or enterprise capability | Transformation thesis and capability map | [Digital-Transformation](99-Playbook/Playbooks/Digital-Transformation.md) |
+| Project-to-product | Project funding, team topology, or governance blocks durable product teams | Product taxonomy and flow baseline | [Project-to-Product](99-Playbook/Playbooks/Project-to-Product.md) |
 
 ## Two linked views
 
 Both loops keep the reasoning visible through the same two views:
 
-- **[[Discovery Map]]** — outcome → problems → opportunities → alternative solutions → experiments
-- **[[PM vault/00-Product/Goals|Goals]]** — Objective and Key Results plus goal → actor → behaviour change → deliverable
+- **[Discovery Map](03-Opportunities/Discovery%20Map.md)** — outcome → problems → opportunities → alternative solutions → experiments
+- **[Goals](00-Product/Goals.md)** — Objective and Key Results plus goal → actor → behaviour change → deliverable
 
 ## Commands
 
@@ -181,7 +181,7 @@ Replace `OPP-001` with the actual ID of your note.
 | Shipped outcome | `07-Delivery/Releases` |
 | Monthly learning and mistakes | `08-Reviews` |
 
-Templates live in `99-Playbook/Templates/`; the index is [[_Templates]].
+Templates live in `99-Playbook/Templates/`; the index is [_Templates](99-Playbook/Templates/_Templates.md).
 
 ## Creating notes correctly
 
@@ -224,21 +224,21 @@ Templates live in `99-Playbook/Templates/`; the index is [[_Templates]].
 ## Permissions and privacy
 
 Research, problems, opportunities, experiments and reviews are agent-writable. PRDs and roadmap
-changes are drafts. Product strategy and accepted decisions require human approval; see [[Rules]].
+changes are drafts. Product strategy and accepted decisions require human approval; see [Rules](99-Playbook/Rules.md).
 
 Customer quotes and account names can be sensitive. Remove unnecessary personal information before
 putting feedback into an iCloud-synced vault.
 
 ## Learn more
 
-- **[[_Playbooks]]** — the four playbooks and when to use each
-- **[[Visual-Standards]]** — approved canonical visual language
-- **[[_Operating-Models]]** — the operating-model template set
-- **[[_Compliance]]** — Tier 1 compliance rail
-- **[[_Compliance-Templates]]** — compliance template set
-- **[[Vision-Led-0-to-1]]** — new product or new market
-- **[[Outcome-Led-1-to-N]]** — existing product
-- **[[Digital-Transformation]]** — portfolio or enterprise capability change
-- **[[Project-to-Product]]** — funding, team topology, and governance transition
-- **[[START-HERE]]** — first guided workflow for the outcome-led path
-- **[[Architecture]]** — folder mode, frontmatter, query paths, git and agent write boundaries
+- **[_Playbooks](99-Playbook/Playbooks/_Playbooks.md)** — the four playbooks and when to use each
+- **[Visual-Standards](99-Playbook/Visual-Standards.md)** — approved canonical visual language
+- **[_Operating-Models](99-Playbook/Templates/Operating-Models/_Operating-Models.md)** — the operating-model template set
+- **[_Compliance](11-Compliance/_Compliance.md)** — Tier 1 compliance rail
+- **[_Compliance-Templates](99-Playbook/Templates/Compliance/_Compliance-Templates.md)** — compliance template set
+- **[Vision-Led-0-to-1](99-Playbook/Playbooks/Vision-Led-0-to-1.md)** — new product or new market
+- **[Outcome-Led-1-to-N](99-Playbook/Playbooks/Outcome-Led-1-to-N.md)** — existing product
+- **[Digital-Transformation](99-Playbook/Playbooks/Digital-Transformation.md)** — portfolio or enterprise capability change
+- **[Project-to-Product](99-Playbook/Playbooks/Project-to-Product.md)** — funding, team topology, and governance transition
+- **[START-HERE](START-HERE.md)** — first guided workflow for the outcome-led path
+- **[Architecture](99-Playbook/Architecture.md)** — folder mode, frontmatter, query paths, git and agent write boundaries

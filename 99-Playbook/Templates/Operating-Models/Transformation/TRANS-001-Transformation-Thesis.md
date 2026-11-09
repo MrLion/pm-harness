@@ -11,9 +11,9 @@ updated: 2026-11-08
 framework: "Transformation thesis + capability-based planning"
 source: "[FILL: method or source]"
 related:
-  - "[[CAP-001-Capability-Map|CAP-001]]"
-  - "[[TAX-001-Product-Taxonomy|TAX-001]]"
-  - "[[PORT-001-Portfolio-Roadmap|PORT-001]]"
+  - "[CAP-001](CAP-001-Capability-Map.md)"
+  - "[TAX-001](../Shared/TAX-001-Product-Taxonomy.md)"
+  - "[PORT-001](PORT-001-Portfolio-Roadmap.md)"
 ---
 
 # Transformation Thesis

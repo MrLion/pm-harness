@@ -50,5 +50,5 @@ citing [Experian Health, *2025 State of Patient Access*](https://www.experian.co
 
 ## Implications
 
-- Supports: [[PROB-001-Imaging-Cost-Problem|PROB-001]] · [[OPP-001-Outpatient-Imaging-Cost|OPP-001]]
+- Supports: [PROB-001](../99-Playbook/Templates/PROB-001-Imaging-Cost-Problem.md) · [OPP-001](../99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost.md)
 - Weakens: any claim that an estimate alone reduces postponed care.

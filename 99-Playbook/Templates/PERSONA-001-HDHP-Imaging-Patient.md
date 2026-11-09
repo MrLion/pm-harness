@@ -31,8 +31,8 @@ example: true
 
 | Type | Source | Date | Count |
 |---|---|---|---|
-| secondary survey | [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026\|RESEARCH-002]] | 2026-11-08 | 0 direct observations |
+| secondary survey | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | 2026-11-08 | 0 direct observations |
 
 ## Related
 
-- [[PROB-001-Imaging-Cost-Problem|PROB-001]]
+- [PROB-001](PROB-001-Imaging-Cost-Problem.md)

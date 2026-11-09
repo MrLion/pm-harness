@@ -10,8 +10,8 @@ updated: 2026-11-08
 framework: "Value stream mapping"
 source: "[FILL: method or source]"
 related:
-  - "[[CAP-001-Capability-Map|CAP-001]]"
-  - "[[FLOW-001-Flow-Metrics-Baseline|FLOW-001]]"
+  - "[CAP-001](CAP-001-Capability-Map.md)"
+  - "[FLOW-001](../Project-to-Product/FLOW-001-Flow-Metrics-Baseline.md)"
 ---
 
 # Value-Stream Map

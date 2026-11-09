@@ -16,8 +16,8 @@ example: true
 
 | Element | Current position | Evidence | Confidence |
 |---|---|---|---|
-| Target group | Adults on employer-sponsored HDHPs choosing outpatient imaging | [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026\|RESEARCH-002]] | low |
-| Needs | Know expected cost and understand inclusions/exclusions | [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026\|RESEARCH-002]] | low |
+| Target group | Adults on employer-sponsored HDHPs choosing outpatient imaging | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | low |
+| Needs | Know expected cost and understand inclusions/exclusions | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | low |
 | Business goals | Increase estimate coverage and reconciled accuracy | unknown | low |
 | Stand-out features | Patient-readable estimate + reconciliation | hypothesis | low |
 

@@ -10,8 +10,8 @@ updated: 2026-11-08
 framework: "Adoption and outcome measurement"
 source: "[FILL: method or source]"
 related:
-  - "[[TRANS-001-Transformation-Thesis|TRANS-001]]"
-  - "[[PORT-001-Portfolio-Roadmap|PORT-001]]"
+  - "[TRANS-001](TRANS-001-Transformation-Thesis.md)"
+  - "[PORT-001](PORT-001-Portfolio-Roadmap.md)"
 ---
 
 # Adoption Scorecard

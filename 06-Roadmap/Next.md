@@ -17,4 +17,4 @@ Shaped, not started. Each row needs a validated opportunity behind it.
 > Nothing belongs here on the strength of a stakeholder request alone.
 
 ## Related
-- [[Now]] · [[Later]] · [[PM vault/00-Product/Strategy|Strategy]]
+- [Now](Now.md) · [Later](Later.md) · [Strategy](../00-Product/Strategy.md)

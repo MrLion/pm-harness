@@ -23,7 +23,7 @@ example: true
 | Contents | Pre-booking estimate for one outpatient imaging type |
 | GOAL it was meant to move | Reduce out-of-pocket uncertainty before imaging |
 | Roadmap row | NOW |
-| Related opportunity / brief | [[OPP-001-Outpatient-Imaging-Cost\|OPP-001]] · [[PRD-001-Imaging-Estimate\|PRD-001]] |
+| Related opportunity / brief | [OPP-001](OPP-001-Outpatient-Imaging-Cost.md) · [PRD-001](PRD-001-Imaging-Estimate.md) |
 
 ## Metric movement
 
@@ -37,9 +37,9 @@ example: true
 | Check | Evidence |
 |---|---|
 | Vendor / BAA | Not applicable — no vendor in example |
-| Privacy-security risk | [[RISK-001-Privacy-Security-Risk\|RISK-001]] |
-| Controls | [[CTRL-001-Control-Matrix\|CTRL-001]] |
-| Incident plan | [[INC-001-Incident-Breach-Response\|INC-001]] |
+| Privacy-security risk | [RISK-001](Compliance/RISK-001-Privacy-Security-Risk.md) |
+| Controls | [CTRL-001](Compliance/CTRL-001-Control-Matrix.md) |
+| Incident plan | [INC-001](Compliance/INC-001-Incident-Breach-Response.md) |
 | Approval | Compliance owner |
 
 ## What surprised us

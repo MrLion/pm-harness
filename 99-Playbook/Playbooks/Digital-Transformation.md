@@ -20,32 +20,32 @@ call it transformation.
 
 | Stage | Question | Artifact |
 |---|---|---|
-| Transformation thesis | What digital outcome is the organization trying to create, and why now? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/TRANS-001-Transformation-Thesis\|Transformation thesis]] |
-| Capability and value-stream map | Which capabilities and value streams must change? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/CAP-001-Capability-Map\|Capability map]] · [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/VS-001-Value-Stream-Map\|Value-stream map]] |
-| Product taxonomy | What are the durable products, platforms, and services? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/TAX-001-Product-Taxonomy\|Product taxonomy]] |
-| Funding and governance | Who funds which product, and how are outcomes reviewed? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/FUND-001-Funding-Model\|Funding and governance model]] |
-| Portfolio roadmap | What sequence of product bets delivers the transformation? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/PORT-001-Portfolio-Roadmap\|Portfolio roadmap]] |
-| Adoption and outcome metrics | Are the new capabilities actually used? | [[PM vault/99-Playbook/Templates/Operating-Models/Transformation/ADOPT-001-Adoption-Scorecard\|Adoption scorecard]] · [[PM vault/99-Playbook/Templates/Metrics\|Outcome metrics]] |
-| Change review | What changed in the operating model, and what is still blocked? | [[PM vault/99-Playbook/Templates/Operating-Models/Shared/REVIEW-OM-001-Operating-Model-Review\|Operating-model review]] |
+| Transformation thesis | What digital outcome is the organization trying to create, and why now? | [Transformation thesis](../Templates/Operating-Models/Transformation/TRANS-001-Transformation-Thesis.md) |
+| Capability and value-stream map | Which capabilities and value streams must change? | [Capability map](../Templates/Operating-Models/Transformation/CAP-001-Capability-Map.md) · [Value-stream map](../Templates/Operating-Models/Transformation/VS-001-Value-Stream-Map.md) |
+| Product taxonomy | What are the durable products, platforms, and services? | [Product taxonomy](../Templates/Operating-Models/Shared/TAX-001-Product-Taxonomy.md) |
+| Funding and governance | Who funds which product, and how are outcomes reviewed? | [Funding and governance model](../Templates/Operating-Models/Shared/FUND-001-Funding-Model.md) |
+| Portfolio roadmap | What sequence of product bets delivers the transformation? | [Portfolio roadmap](../Templates/Operating-Models/Transformation/PORT-001-Portfolio-Roadmap.md) |
+| Adoption and outcome metrics | Are the new capabilities actually used? | [Adoption scorecard](../Templates/Operating-Models/Transformation/ADOPT-001-Adoption-Scorecard.md) · [Outcome metrics](../Templates/Metrics.md) |
+| Change review | What changed in the operating model, and what is still blocked? | [Operating-model review](../Templates/Operating-Models/Shared/REVIEW-OM-001-Operating-Model-Review.md) |
 
 ## Existing vault templates that help
 
-- [[PM vault/99-Playbook/Templates/Product-Vision-Board\|Product Vision Board]] for each product in the portfolio
-- [[PM vault/99-Playbook/Templates/Strategy\|Strategy]] for portfolio and product differentiation
-- [[PM vault/99-Playbook/Templates/Goals\|Goals]] and [[PM vault/99-Playbook/Templates/Metrics\|Metrics]] for outcome and adoption measures
-- [[PM vault/99-Playbook/Templates/GO-Roadmap\|GO Roadmap]] for product-level sequencing
-- [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] for the learning loop
+- [Product Vision Board](../Templates/Product-Vision-Board.md) for each product in the portfolio
+- [Strategy](../Templates/Strategy.md) for portfolio and product differentiation
+- [Goals](../Templates/Goals.md) and [Metrics](../Templates/Metrics.md) for outcome and adoption measures
+- [GO Roadmap](../Templates/GO-Roadmap.md) for product-level sequencing
+- [Review](../Templates/REVIEW-2027-02-Imaging-Estimate-Pilot.md) for the learning loop
 
 ## Templates
 
-- [[TRANS-001-Transformation-Thesis|TRANS-001]] — transformation thesis and why now
-- [[CAP-001-Capability-Map|CAP-001]] — capability gaps and maturity
-- [[VS-001-Value-Stream-Map|VS-001]] — current value-stream flow and delays
-- [[TAX-001-Product-Taxonomy|TAX-001]] — durable products, platforms, and services
-- [[FUND-001-Funding-Model|FUND-001]] — portfolio funding and decision rights
-- [[ADOPT-001-Adoption-Scorecard|ADOPT-001]] — adoption and changed work
-- [[PORT-001-Portfolio-Roadmap|PORT-001]] — sequenced portfolio bets
-- [[REVIEW-OM-001-Operating-Model-Review|REVIEW-OM-001]] — transformation review
+- [TRANS-001](../Templates/Operating-Models/Transformation/TRANS-001-Transformation-Thesis.md) — transformation thesis and why now
+- [CAP-001](../Templates/Operating-Models/Transformation/CAP-001-Capability-Map.md) — capability gaps and maturity
+- [VS-001](../Templates/Operating-Models/Transformation/VS-001-Value-Stream-Map.md) — current value-stream flow and delays
+- [TAX-001](../Templates/Operating-Models/Shared/TAX-001-Product-Taxonomy.md) — durable products, platforms, and services
+- [FUND-001](../Templates/Operating-Models/Shared/FUND-001-Funding-Model.md) — portfolio funding and decision rights
+- [ADOPT-001](../Templates/Operating-Models/Transformation/ADOPT-001-Adoption-Scorecard.md) — adoption and changed work
+- [PORT-001](../Templates/Operating-Models/Transformation/PORT-001-Portfolio-Roadmap.md) — sequenced portfolio bets
+- [REVIEW-OM-001](../Templates/Operating-Models/Shared/REVIEW-OM-001-Operating-Model-Review.md) — transformation review
 
 ## What good looks like
 

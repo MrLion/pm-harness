@@ -1,19 +1,19 @@
 # Playbooks
 
-Setup and operating manual: [[Agent-Manual]].
+Setup and operating manual: [Agent-Manual](../Agent-Manual.md).
 
 Choose by **what you are changing** and **how work is governed**.
 
-Visual language: [[Visual-Standards]].
+Visual language: [Visual-Standards](../Visual-Standards.md).
 
-Compliance rail: [[_Compliance]] — complete the Tier 1 scope before handling PII, PHI, or ePHI.
+Compliance rail: [_Compliance](../../11-Compliance/_Compliance.md) — complete the Tier 1 scope before handling PII, PHI, or ePHI.
 
 | Playbook | Use when |
 |---|---|
-| [[Vision-Led-0-to-1]] | New product, new market, or a new value proposition |
-| [[Outcome-Led-1-to-N]] | Existing product; improve an outcome from signal |
-| [[Digital-Transformation]] | Portfolio or enterprise capability change |
-| [[Project-to-Product]] | Project funding, team topology, or governance blocks durable product work |
+| [Vision-Led-0-to-1](Vision-Led-0-to-1.md) | New product, new market, or a new value proposition |
+| [Outcome-Led-1-to-N](Outcome-Led-1-to-N.md) | Existing product; improve an outcome from signal |
+| [Digital-Transformation](Digital-Transformation.md) | Portfolio or enterprise capability change |
+| [Project-to-Product](Project-to-Product.md) | Project funding, team topology, or governance blocks durable product work |
 
 Vision-led and outcome-led are product-lifecycle paths. Digital transformation and project-to-product
 are operating-model transitions; they change funding, team topology, governance, and metrics before

@@ -5,13 +5,13 @@ updated: 2026-11-09
 
 # PM Dashboard
 
-Start · [[START-HERE]] · Manual · [[Agent-Manual]]
+Start · [START-HERE](START-HERE.md) · Manual · [Agent-Manual](99-Playbook/Agent-Manual.md)
 
-Product · [[Product]] · [[Scenario]] · [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Strategy|Strategy]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]
-Roadmap · [[Now]] · [[Next]] · [[Later]]
-Discovery · [[Discovery Map]]
-Transformation · [[_Transformation]] · Operating model · [[_Operating-Model]] · Compliance · [[_Compliance]]
-Operating · [[PM]] · [[Rules]]
+Product · [Product](00-Product/Product.md) · [Scenario](00-Product/Scenario.md) · [Vision](00-Product/Vision.md) · [Strategy](00-Product/Strategy.md) · [Goals](00-Product/Goals.md) · [Metrics](00-Product/Metrics.md)
+Roadmap · [Now](06-Roadmap/Now.md) · [Next](06-Roadmap/Next.md) · [Later](06-Roadmap/Later.md)
+Discovery · [Discovery Map](03-Opportunities/Discovery%20Map.md)
+Transformation · [_Transformation](09-Transformation/_Transformation.md) · Operating model · [_Operating-Model](10-Operating-Model/_Operating-Model.md) · Compliance · [_Compliance](11-Compliance/_Compliance.md)
+Operating · [PM](99-Playbook/PM.md) · [Rules](99-Playbook/Rules.md)
 
 ---
 

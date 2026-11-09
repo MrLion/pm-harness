@@ -17,17 +17,17 @@ metric, or a feature request that must be converted into a problem.
 
 | Stage | Question | Artifact |
 |---|---|---|
-| Signal | What did we observe, and from whom? | [[PM vault/99-Playbook/Templates/FB-001-Imaging-Cost-Feedback\|Feedback]] · [[PM vault/99-Playbook/Templates/RESEARCH-001-Imaging-Cost-Transparency\|Research]] |
-| Problem | Who experiences what problem, when, and at what cost? | [[PM vault/99-Playbook/Templates/PROB-001-Imaging-Cost-Problem\|Problem]] |
-| Opportunity | Is this worth pursuing, and what are the four risks? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost\|Opportunity]] |
-| Challenge | What would make this a no-go or defer? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost#Adversarial challenge\|Opportunity challenge]] |
-| Experiment | What is the cheapest test that retires the primary risk? | [[PM vault/99-Playbook/Templates/EXP-001-Comprehension-Test\|Experiment]] |
-| Decision | Which option do we choose, and why? | [[PM vault/99-Playbook/Templates/DEC-001-Build-Partner-Defer\|Decision]] |
-| PRD | What is the smallest coherent solution brief? | [[PM vault/99-Playbook/Templates/PRD-001-Imaging-Estimate\|PRD]] |
-| Release | What shipped, and what moved? | [[PM vault/99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot\|Release]] |
-| Review | What did we learn, and what risk remains? | [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] |
+| Signal | What did we observe, and from whom? | [Feedback](../Templates/FB-001-Imaging-Cost-Feedback.md) · [Research](../Templates/RESEARCH-001-Imaging-Cost-Transparency.md) |
+| Problem | Who experiences what problem, when, and at what cost? | [Problem](../Templates/PROB-001-Imaging-Cost-Problem.md) |
+| Opportunity | Is this worth pursuing, and what are the four risks? | [Opportunity](../Templates/OPP-001-Outpatient-Imaging-Cost.md) |
+| Challenge | What would make this a no-go or defer? | [Opportunity challenge](../Templates/OPP-001-Outpatient-Imaging-Cost.md#adversarial-challenge) |
+| Experiment | What is the cheapest test that retires the primary risk? | [Experiment](../Templates/EXP-001-Comprehension-Test.md) |
+| Decision | Which option do we choose, and why? | [Decision](../Templates/DEC-001-Build-Partner-Defer.md) |
+| PRD | What is the smallest coherent solution brief? | [PRD](../Templates/PRD-001-Imaging-Estimate.md) |
+| Release | What shipped, and what moved? | [Release](../Templates/REL-001-Imaging-Estimate-Pilot.md) |
+| Review | What did we learn, and what risk remains? | [Review](../Templates/REVIEW-2027-02-Imaging-Estimate-Pilot.md) |
 
-The detailed first-run workflow is [[START-HERE]].
+The detailed first-run workflow is [START-HERE](../../START-HERE.md).
 
 ## Gates
 

@@ -1,9 +1,9 @@
 # Start Here
 
-> [!info] For humans
-> This is a human walkthrough of the outcome-led 1→N path. Agents start at [[PM]] and [[Rules]].
+> [!NOTE] For humans
+> This is a human walkthrough of the outcome-led 1→N path. Agents start at [PM](99-Playbook/PM.md) and [Rules](99-Playbook/Rules.md).
 
-> This is the **outcome-led 1→N** path for an existing product. For a new product, new market, or new value proposition, start with [[Vision-Led-0-to-1]].
+> This is the **outcome-led 1→N** path for an existing product. For a new product, new market, or new value proposition, start with [Vision-Led-0-to-1](99-Playbook/Playbooks/Vision-Led-0-to-1.md).
 
 Use this guide to produce your first useful artifact in about 30 minutes. The goal is **one honest
 problem-to-experiment chain**, not a complete vault.
@@ -11,9 +11,9 @@ problem-to-experiment chain**, not a complete vault.
 ## Before you begin
 
 Open the parent iCloud `Documents` vault and ensure Dataview is enabled. Open
-[[Dashboard]] (`PM vault/Dashboard.md`); empty tables are expected. The technical setup is in [[Architecture]].
+[Dashboard](Dashboard.md) (`PM vault/Dashboard.md`); empty tables are expected. The technical setup is in [Architecture](99-Playbook/Architecture.md).
 
-> If the problem involves PII, PHI, ePHI, or vendor data, complete the live [[COMP-003-Compliance-Scope|Compliance Scope]] before step 1. A draft scope or `Unassigned` owner is a stop condition.
+> If the problem involves PII, PHI, ePHI, or vendor data, complete the live [Compliance Scope](11-Compliance/COMP-003-Compliance-Scope.md) before step 1. A draft scope or `Unassigned` owner is a stop condition.
 
 ## 1. Capture a problem — 5 minutes
 
@@ -36,9 +36,9 @@ If you only have a feature request, run:
 
 Copy the right source template, rename it, update `id:`, and replace its example:
 
-- Verbatim complaint → [[FB-001-Imaging-Cost-Feedback]] into `01-Users/Feedback/`
-- Interview synthesis → [[RESEARCH-001-Imaging-Cost-Transparency]] into `04-Research/Users/`, with `category: user`
-- Metric or baseline → [[RESEARCH-001-Imaging-Cost-Transparency]] into `04-Research/Data/`, with `category: data`
+- Verbatim complaint → [FB-001-Imaging-Cost-Feedback](99-Playbook/Templates/FB-001-Imaging-Cost-Feedback.md) into `01-Users/Feedback/`
+- Interview synthesis → [RESEARCH-001-Imaging-Cost-Transparency](99-Playbook/Templates/RESEARCH-001-Imaging-Cost-Transparency.md) into `04-Research/Users/`, with `category: user`
+- Metric or baseline → [RESEARCH-001-Imaging-Cost-Transparency](99-Playbook/Templates/RESEARCH-001-Imaging-Cost-Transparency.md) into `04-Research/Data/`, with `category: data`
 
 Delete the illustrative evidence rows from the Problem before adding your sources. If there is no
 evidence, leave the table empty, set `confidence: low`, and write `Evidence unavailable.` Do not make
@@ -46,7 +46,7 @@ the note look stronger than it is.
 
 ## 3. Assess the opportunity — 7 minutes
 
-Copy [[OPP-001-Outpatient-Imaging-Cost]] into `03-Opportunities/`. Rename the file to
+Copy [OPP-001-Outpatient-Imaging-Cost](99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost.md) into `03-Opportunities/`. Rename the file to
 `OPP-NNN-your-slug.md`, set `id: OPP-NNN` to the next available ID, replace the example, and link the
 new `problem:` to your Problem note.
 
@@ -73,7 +73,7 @@ the cheapest way to discover you are wrong. A challenge that validates everythin
 
 ## 5. Design the smallest experiment — 5 minutes
 
-If a material uncertainty remains, copy [[EXP-001-Comprehension-Test]] into `07-Delivery/Experiments/`.
+If a material uncertainty remains, copy [EXP-001-Comprehension-Test](99-Playbook/Templates/EXP-001-Comprehension-Test.md) into `07-Delivery/Experiments/`.
 Rename the file to `EXP-NNN-your-slug.md`, set `id: EXP-NNN`, replace the example, and link the new
 `opportunity:` to your Opportunity note.
 
@@ -85,7 +85,7 @@ Do not write a PRD merely because you have a promising idea.
 
 ## 6. Link the reasoning — 3 minutes
 
-Open [[Discovery Map]] and link the existing notes:
+Open [Discovery Map](03-Opportunities/Discovery%20Map.md) and link the existing notes:
 
 ```text
 Desired outcome
@@ -100,7 +100,7 @@ canonical artifact or remove it.
 
 ## 7. Decide only when evidence supports it
 
-A significant choice becomes a [[DEC-001-Build-Partner-Defer|DEC-001]] record with options,
+A significant choice becomes a [DEC-001](99-Playbook/Templates/DEC-001-Build-Partner-Defer.md) record with options,
 tradeoffs, reversibility, an expected outcome and a review date. The agent proposes; the human accepts.
 
 Only then consider a solution brief through `/pm prd OPP-001`. If the validation gate is not met,
@@ -118,6 +118,6 @@ the refusal is the harness working correctly.
 ## Mature-product shortcut
 
 If the product already has a real definition, goals, and metrics, do not manufacture a discovery
-exercise. Confirm [[Product]], [[PM vault/00-Product/Goals|Goals]], and
-[[PM vault/00-Product/Metrics|Metrics]] are filled with real information, run `/pm status`, then use
+exercise. Confirm [Product](00-Product/Product.md), [Goals](00-Product/Goals.md), and
+[Metrics](00-Product/Metrics.md) are filled with real information, run `/pm status`, then use
 this guide only for the next uncertain opportunity.

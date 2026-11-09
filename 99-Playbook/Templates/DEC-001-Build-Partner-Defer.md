@@ -99,9 +99,9 @@ Against the criteria, defer scores best on speed to validated learning, reversib
 
 | Risk | Applies? | Evidence | Owner |
 |---|---|---|---|
-| HIPAA covered entity / business associate | Not assessed in example | [[COMP-001-Compliance-Scope\|COMP-001]] | Compliance owner |
-| PHI / ePHI handling | None in example | [[DATA-001-Data-Inventory\|DATA-001]] | Compliance owner |
-| Vendor BAA | Not applicable — no vendor selected | [[VEND-001-Vendor-BAA-Register\|VEND-001]] | Compliance owner |
+| HIPAA covered entity / business associate | Not assessed in example | [COMP-001](Compliance/COMP-001-Compliance-Scope.md) | Compliance owner |
+| PHI / ePHI handling | None in example | [DATA-001](Compliance/DATA-001-Data-Inventory.md) | Compliance owner |
+| Vendor BAA | Not applicable — no vendor selected | [VEND-001](Compliance/VEND-001-Vendor-BAA-Register.md) | Compliance owner |
 | Medical-device QMS | Not applicable — not a device or SaMD | Not a device or SaMD | Compliance owner |
 
 ## Residual risk and dissent

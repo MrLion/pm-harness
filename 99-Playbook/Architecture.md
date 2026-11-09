@@ -6,12 +6,12 @@ updated: 2026-11-09
 
 # Architecture
 
-> [!info] For AI agents only
-> This page is the technical contract for agents: vault mode, folder model, frontmatter, IDs, write boundaries, git, and verification. It is not a human guide. Humans start at [[README]].
+> [!NOTE] For AI agents only
+> This page is the technical contract for agents: vault mode, folder model, frontmatter, IDs, write boundaries, git, and verification. It is not a human guide. Humans start at [README](../README.md).
 
-Technical reference for agents and advanced users. Setup and operation: [[Agent-Manual]]. Start with
-[[README]] for routing. Use
-[[START-HERE]] only for the outcome-led 1→N path; use [[Vision-Led-0-to-1]] for a new product.
+Technical reference for agents and advanced users. Setup and operation: [Agent-Manual](Agent-Manual.md). Start with
+[README](../README.md) for routing. Use
+[START-HERE](../START-HERE.md) only for the outcome-led 1→N path; use [Vision-Led-0-to-1](Playbooks/Vision-Led-0-to-1.md) for a new product.
 
 ## Vault mode
 
@@ -44,9 +44,9 @@ standalone vault.
 
 Templates live under `99-Playbook/Templates/`. Template indexes:
 
-- [[_Templates]] — product-lifecycle templates
-- [[_Operating-Models]] — transformation and project-to-product templates
-- [[_Compliance-Templates]] — Tier 1 compliance templates
+- [_Templates](Templates/_Templates.md) — product-lifecycle templates
+- [_Operating-Models](Templates/Operating-Models/_Operating-Models.md) — transformation and project-to-product templates
+- [_Compliance-Templates](Templates/Compliance/_Compliance-Templates.md) — Tier 1 compliance templates
 
 ## Frontmatter is the data layer
 
@@ -58,7 +58,7 @@ Dataview reads YAML frontmatter, not headings:
 - Missing keys produce blank columns; wrong `type` values make notes invisible to queries.
 
 Copy the template frontmatter, then update `id`, `status`, links, and `updated:`. Never leave example
-values in a live artifact. The schema contract is in [[_Templates]].
+values in a live artifact. The schema contract is in [_Templates](Templates/_Templates.md).
 
 ## Identity and traceability
 
@@ -93,7 +93,7 @@ Notes sync through iCloud; git history remains on the Mac.
 
 ## Agent write boundaries
 
-[[Rules]] Rule 21 is authoritative:
+[Rules](Rules.md) Rule 21 is authoritative:
 
 **Free to write:** `04-Research`, `02-Problems`, `03-Opportunities`, `07-Delivery/Experiments`,
 `08-Reviews`, `99-Playbook/Templates`, `99-Playbook/Playbooks`, `99-Playbook/Future-Problem-Statements.md`.

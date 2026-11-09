@@ -68,5 +68,5 @@ Defer. Revisit after the estimate pilot establishes coverage and reconciled accu
 
 ## Related
 
-- [[PM vault/99-Playbook/Future-Problem-Statements|Future problem statements]]
-- [[OPP-001-Outpatient-Imaging-Cost|OPP-001]]
+- [Future problem statements](../Future-Problem-Statements.md)
+- [OPP-001](OPP-001-Outpatient-Imaging-Cost.md)

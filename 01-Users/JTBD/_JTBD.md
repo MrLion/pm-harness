@@ -1,6 +1,6 @@
 # Jobs to be done
 
-One note per job, from [[JTBD-001-Know-Cost-Before-Booking]]. Supporting lens for [[PROB-001-Imaging-Cost-Problem]] and [[PERSONA-001-HDHP-Imaging-Patient]] — not a Pichler or
+One note per job, from [JTBD-001-Know-Cost-Before-Booking](../../99-Playbook/Templates/JTBD-001-Know-Cost-Before-Booking.md). Supporting lens for [PROB-001-Imaging-Cost-Problem](../../99-Playbook/Templates/PROB-001-Imaging-Cost-Problem.md) and [PERSONA-001-HDHP-Imaging-Patient](../../99-Playbook/Templates/PERSONA-001-HDHP-Imaging-Patient.md) — not a Pichler or
 SVPG artifact, but the clearest way to state what a user is actually trying to accomplish.
 
 ```dataview

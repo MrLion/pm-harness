@@ -16,15 +16,15 @@ a new value proposition. The entry artifact is a **Product Vision Board**, not a
 
 | Stage | Question | Artifact |
 |---|---|---|
-| Vision | What future are we trying to create? | [[PM vault/99-Playbook/Templates/Product-Vision-Board\|Product Vision Board]] |
-| Target group and need | Who is it for, and what job are they trying to do? | [[PM vault/99-Playbook/Templates/PERSONA-001-HDHP-Imaging-Patient\|Persona]] · [[PM vault/99-Playbook/Templates/JTBD-001-Know-Cost-Before-Booking\|JTBD]] |
-| Why now / why us | What changed, and why are we the ones to win? | [[PM vault/99-Playbook/Templates/Strategy\|Strategy]] |
-| Goals and metrics | What outcome proves the thesis? | [[PM vault/99-Playbook/Templates/Goals\|Goals]] · [[PM vault/99-Playbook/Templates/Metrics\|Metrics]] |
-| Opportunity space | Which customer problems matter most? | [[PM vault/99-Playbook/Templates/PROB-001-Imaging-Cost-Problem\|Problem]] · [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost\|Opportunity]] · [[PM vault/99-Playbook/Templates/Discovery-Map\|Discovery Map]] |
-| What would have to be true | Which assumptions carry the thesis? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost#The four big risks\|Opportunity four risks]] · [[PM vault/99-Playbook/Templates/DEC-001-Build-Partner-Defer\|Decision]] |
-| Concept tests | What is the cheapest evidence that changes the bet? | [[PM vault/99-Playbook/Templates/EXP-001-Comprehension-Test\|Experiment]] |
-| MVP | What is the smallest coherent product that tests the thesis? | [[PM vault/99-Playbook/Templates/PRD-001-Imaging-Estimate\|PRD]] |
-| Launch and review | Did the world change, and what did we learn? | [[PM vault/99-Playbook/Templates/REL-001-Imaging-Estimate-Pilot\|Release]] · [[PM vault/99-Playbook/Templates/REVIEW-2027-02-Imaging-Estimate-Pilot\|Review]] |
+| Vision | What future are we trying to create? | [Product Vision Board](../Templates/Product-Vision-Board.md) |
+| Target group and need | Who is it for, and what job are they trying to do? | [Persona](../Templates/PERSONA-001-HDHP-Imaging-Patient.md) · [JTBD](../Templates/JTBD-001-Know-Cost-Before-Booking.md) |
+| Why now / why us | What changed, and why are we the ones to win? | [Strategy](../Templates/Strategy.md) |
+| Goals and metrics | What outcome proves the thesis? | [Goals](../Templates/Goals.md) · [Metrics](../Templates/Metrics.md) |
+| Opportunity space | Which customer problems matter most? | [Problem](../Templates/PROB-001-Imaging-Cost-Problem.md) · [Opportunity](../Templates/OPP-001-Outpatient-Imaging-Cost.md) · [Discovery Map](../Templates/Discovery-Map.md) |
+| What would have to be true | Which assumptions carry the thesis? | [Opportunity four risks](../Templates/OPP-001-Outpatient-Imaging-Cost.md#the-four-big-risks) · [Decision](../Templates/DEC-001-Build-Partner-Defer.md) |
+| Concept tests | What is the cheapest evidence that changes the bet? | [Experiment](../Templates/EXP-001-Comprehension-Test.md) |
+| MVP | What is the smallest coherent product that tests the thesis? | [PRD](../Templates/PRD-001-Imaging-Estimate.md) |
+| Launch and review | Did the world change, and what did we learn? | [Release](../Templates/REL-001-Imaging-Estimate-Pilot.md) · [Review](../Templates/REVIEW-2027-02-Imaging-Estimate-Pilot.md) |
 
 ## Gates
 

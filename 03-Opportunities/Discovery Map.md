@@ -8,7 +8,7 @@ updated: 2026-11-08
 
 # Discovery Map — Opportunity Solution Tree
 
-Linked view of existing artifacts. Template and worked example: [[Discovery-Map]].
+Linked view of existing artifacts. Template and worked example: [Discovery-Map](../99-Playbook/Templates/Discovery-Map.md).
 **Do not duplicate problem, opportunity or solution content here — link the canonical notes.**
 
 ## Desired outcome

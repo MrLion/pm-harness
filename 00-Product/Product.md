@@ -9,9 +9,9 @@ updated: 2026-11-09
 
 # Product Vision Board
 
-> **Scaffold, not fact.** Nothing below is filled in. Per [[Rules]] Rule 11 the agent will not invent
+> **Scaffold, not fact.** Nothing below is filled in. Per [Rules](../99-Playbook/Rules.md) Rule 11 the agent will not invent
 > product facts — every `[FILL]` stays empty until you supply it. While `confidence: none`,
-> `/pm` refuses strategic recommendations. Context: [[PM vault/00-Product/Scenario|Scenario]].
+> `/pm` refuses strategic recommendations. Context: [Scenario](Scenario.md).
 > Field definitions and checklist: `99-Playbook/Templates/Product-Vision-Board.md` (Pichler, CC BY-SA 4.0).
 
 ## VISION
@@ -54,4 +54,4 @@ updated: 2026-11-09
 | Channels | [FILL] |
 
 ## Related
-- [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Strategy|Strategy]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]
+- [Vision](Vision.md) · [Strategy](Strategy.md) · [Goals](Goals.md) · [Metrics](Metrics.md)

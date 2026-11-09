@@ -19,4 +19,4 @@ Full field definitions and checklist: `99-Playbook/Templates/GO-Roadmap.md`.
 [FILL: Why this order — dependencies, cost of delay, which risk gets retired first.]
 
 ## Related
-- [[Next]] · [[Later]] · [[PM vault/00-Product/Goals|Goals]]
+- [Next](Next.md) · [Later](Later.md) · [Goals](../00-Product/Goals.md)

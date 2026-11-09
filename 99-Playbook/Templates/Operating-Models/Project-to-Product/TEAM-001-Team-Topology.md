@@ -10,9 +10,9 @@ updated: 2026-11-08
 framework: "Team Topologies"
 source: "[FILL: method or source]"
 related:
-  - "[[TAX-001-Product-Taxonomy|TAX-001]]"
-  - "[[FUND-001-Funding-Model|FUND-001]]"
-  - "[[DEP-001-Dependency-Map|DEP-001]]"
+  - "[TAX-001](../Shared/TAX-001-Product-Taxonomy.md)"
+  - "[FUND-001](../Shared/FUND-001-Funding-Model.md)"
+  - "[DEP-001](DEP-001-Dependency-Map.md)"
 ---
 
 # Team Topology

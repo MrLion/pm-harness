@@ -10,8 +10,8 @@ updated: 2026-11-08
 framework: "Product taxonomy"
 source: "[FILL: method or source]"
 related:
-  - "[[FUND-001-Funding-Model|FUND-001]]"
-  - "[[TEAM-001-Team-Topology|TEAM-001]]"
+  - "[FUND-001](FUND-001-Funding-Model.md)"
+  - "[TEAM-001](../Project-to-Product/TEAM-001-Team-Topology.md)"
 ---
 
 # Product Taxonomy
