@@ -55,6 +55,8 @@ case_id: CASE-001
 
 5 moderated interviews using a paper prototype of an outpatient imaging estimate.
 
+After the participant explains inclusions, exclusions, and validity, ask: **“Name one charge that might still be missing from this estimate.”** Record the answer verbatim. The probe tests whether the participant can identify a gap, not whether they know the exact billing structure.
+
 | Field | Content |
 |---|---|
 | Population | Adults on employer-sponsored HDHPs who have recently sought outpatient imaging |
@@ -68,6 +70,8 @@ case_id: CASE-001
 |---|---|---|
 | ≥4 of 5 explain all three correctly | ≤3 of 5 explain all three | ≤2 of 5 explain all three; prototype unusable |
 
+The missing-charge probe is recorded separately. It does not change the pass/fail rule in this round.
+
 ## Result
 
 Pending
@@ -75,6 +79,7 @@ Pending
 ## Secondary observations
 
 - Record where patients look first, what they ask, and which terms confuse them.
+- Missing-charge probe: record whether the participant names a plausible charge (radiologist, facility, contrast, anesthesia, interpretation) or says none.
 - Do not treat these as evidence of behavioural impact.
 
 ## What we learned
