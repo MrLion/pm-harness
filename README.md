@@ -1,8 +1,8 @@
-# Hermes PM
+# PM Playbook
 
-Turn customer signal and feature requests into evidence-backed problems, opportunities, decisions,
-experiments and delivery briefs. **Obsidian is the workspace; `/pm` is the reasoning layer; git is
-the audit trail.**
+Turn a product thesis into validated bets, or turn customer signal into evidence-backed changes.
+Two product-lifecycle playbooks and two operating-model playbooks. **Obsidian is the workspace;
+`/pm` is the reasoning layer; git is the audit trail.**
 
 The harness will not invent evidence, silently rewrite strategy, or produce a solution brief before
 validation. Empty fields and `Evidence unavailable.` are preferable to plausible fiction.
@@ -12,26 +12,33 @@ validation. Empty fields and `Evidence unavailable.` are preferable to plausible
 1. Open the iCloud **`Documents`** vault in Obsidian. `PM vault` remains a folder inside it.
 2. Enable **Dataview** in that parent vault: Settings → Community plugins.
 3. Open **`PM vault/Dashboard.md`**. Empty tables are normal before any artifacts exist.
-4. Follow **[[START-HERE]]** for your first problem-to-experiment workflow.
+4. Open the playbook for your path below.
 
 No paid Obsidian features or GitHub repository are required.
 
-## Choose your starting point
+## Choose your playbook
 
-| You have… | Start here |
-|---|---|
-| A feature idea | Convert it to a problem with `/pm discover <area>` |
-| A user complaint or support signal | Create a Feedback note, then a Problem |
-| Interview or market material | Add a Research note and link the claims it supports |
-| Several possible opportunities | `/pm analyze OPP-001` |
-| An opportunity you feel optimistic about | `/pm challenge OPP-001` |
-| A defined product with goals and metrics | Fill Product, Goals and Metrics, then `/pm status` |
-| No defined product yet | Start with research and problems; skip strategy and PRDs |
-| Existing PRDs, roadmaps or decision documents | Add them as source material, then `/pm review` |
+Ask two questions:
 
-Replace `OPP-001` with the actual ID of your note.
+1. **What are you changing?** A product, a portfolio, or the operating model.
+2. **How is work governed?** Project funding or durable product teams.
 
-## The operating loop
+| What you are changing | Product-model governance | Project-model governance |
+|---|---|---|
+| New product or new market | [[Vision-Led-0-to-1]] | [[Project-to-Product]] first, then [[Vision-Led-0-to-1]] |
+| Existing product | [[Outcome-Led-1-to-N]] | [[Project-to-Product]] first, then [[Outcome-Led-1-to-N]] |
+| Portfolio or enterprise capability | [[Digital-Transformation]] | [[Project-to-Product]] + [[Digital-Transformation]] |
+
+These are not four stages of one loop. **Vision-led** and **outcome-led** are product-lifecycle paths.
+**Digital transformation** and **project-to-product** are operating-model transitions that change
+funding, team topology, governance, and metrics before product discovery can run cleanly.
+
+If you are unsure, start with the product-lifecycle question. Use project-to-product only when
+funding or team structure blocks durable product work.
+
+## The outcome-led loop
+
+For the vision-led path, see [[Vision-Led-0-to-1]].
 
 ```text
 Problem → Evidence → Opportunity → Challenge
@@ -121,6 +128,10 @@ putting feedback into an iCloud-synced vault.
 
 ## Learn more
 
-- **[[START-HERE]]** — first guided workflow
+- **[[_Playbooks]]** — the four playbooks and when to use each
+- **[[Vision-Led-0-to-1]]** — new product or new market
+- **[[Outcome-Led-1-to-N]]** — existing product
+- **[[Digital-Transformation]]** — portfolio or enterprise capability change
+- **[[Project-to-Product]]** — funding, team topology, and governance transition
 - **[[Frameworks]]** — how Pichler, SVPG, Torres, Impact Mapping, OKRs and North Star fit together
 - **[[Architecture]]** — folder mode, frontmatter, query paths, git and agent write boundaries

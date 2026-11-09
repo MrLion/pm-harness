@@ -1,5 +1,7 @@
 # Start Here
 
+> This is the **outcome-led 1→N** path for an existing product. For a new product, new market, or new value proposition, start with [[Vision-Led-0-to-1]].
+
 Use this guide to produce your first useful artifact in about 30 minutes. The goal is **one honest
 problem-to-experiment chain**, not a complete vault.
 
