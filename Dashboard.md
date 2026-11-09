@@ -5,7 +5,7 @@ updated: 2026-11-09
 
 # PM Dashboard
 
-Start · [START-HERE](START-HERE.md) · Manual · [Agent-Manual](99-Playbook/Agent-Manual.md) · Chain · [Discovery-to-Delivery](99-Playbook/Discovery-to-Delivery.md)
+Start · [START-HERE](START-HERE.md) · Manual · [Agent-Manual](99-Playbook/Agent-Manual.md) · Chain · [Discovery-to-Delivery](99-Playbook/Discovery-to-Delivery.md) · Walkthrough · [Agent-Walkthrough](99-Playbook/Agent-Walkthrough.md)
 
 Product · [Product](00-Product/Product.md) · [Scenario](00-Product/Scenario.md) · [Vision](00-Product/Vision.md) · [Strategy](00-Product/Strategy.md) · [Goals](00-Product/Goals.md) · [Metrics](00-Product/Metrics.md)
 Roadmap · [Now](06-Roadmap/Now.md) · [Next](06-Roadmap/Next.md) · [Later](06-Roadmap/Later.md)

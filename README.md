@@ -43,7 +43,8 @@ A fresh clone does not include these files. Install Hermes, place the `product-m
 `$HERMES_HOME/skills/productivity/` and `pm.yaml` under `$HERMES_HOME/skill-bundles/`, run
 `hermes bundles reload`, then test `/pm status`. See https://hermes-agent.nousresearch.com/docs/.
 
-Full setup and operating guide: [Agent-Manual](99-Playbook/Agent-Manual.md).
+Full setup and operating guide: [Agent-Manual](99-Playbook/Agent-Manual.md). Guided lab:
+[Agent Walkthrough](99-Playbook/Agent-Walkthrough.md).
 
 ## Choose your playbook
 

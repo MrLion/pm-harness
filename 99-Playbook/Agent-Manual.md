@@ -279,4 +279,5 @@ Before saying the harness works:
 - [Rules](Rules.md) — operating law
 - [Architecture](Architecture.md) — technical contract
 - [Discovery to Delivery](Discovery-to-Delivery.md) — canonical product chain
+- [Agent Walkthrough](Agent-Walkthrough.md) — guided lab
 - [_Playbooks](Playbooks/_Playbooks.md) — playbook router

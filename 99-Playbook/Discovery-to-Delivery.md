@@ -150,5 +150,6 @@ Delivery can be blocked by the operating model. When that happens, do not force 
 - [Rules](Rules.md) — operating law
 - [Architecture](Architecture.md) — technical contract
 - [Agent Manual](Agent-Manual.md) — setup and command use
+- [Agent Walkthrough](Agent-Walkthrough.md) — guided lab
 - [Playbooks](Playbooks/_Playbooks.md) — playbook router
 - [Templates](Templates/_Templates.md) — artifact shapes

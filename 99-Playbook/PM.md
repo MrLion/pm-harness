@@ -27,7 +27,8 @@ Choose the mode from [README](../README.md) / [_Playbooks](Playbooks/_Playbooks.
 | PII, PHI, ePHI, vendors, or health data | Compliance rail | [_Compliance](../11-Compliance/_Compliance.md) → live [COMP-003](../11-Compliance/COMP-003-Compliance-Scope.md) |
 
 Do not read every branch. Read the branch that matches the request. The canonical product chain and
-transition gates are in [Discovery to Delivery](Discovery-to-Delivery.md).
+transition gates are in [Discovery to Delivery](Discovery-to-Delivery.md). New users should run the
+[Agent Walkthrough](Agent-Walkthrough.md) first.
 
 ## Read order
 

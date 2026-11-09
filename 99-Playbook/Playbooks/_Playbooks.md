@@ -1,7 +1,7 @@
 # Playbooks
 
 Setup and operating manual: [Agent-Manual](../Agent-Manual.md). Canonical product chain:
-[Discovery to Delivery](../Discovery-to-Delivery.md).
+[Discovery to Delivery](../Discovery-to-Delivery.md). Guided lab: [Agent Walkthrough](../Agent-Walkthrough.md).
 
 Choose by **what you are changing** and **how work is governed**.
 
