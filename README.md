@@ -194,5 +194,4 @@ putting feedback into an iCloud-synced vault.
 - **[[Digital-Transformation]]** — portfolio or enterprise capability change
 - **[[Project-to-Product]]** — funding, team topology, and governance transition
 - **[[START-HERE]]** — first guided workflow for the outcome-led path
-- **[[Frameworks]]** — how Pichler, SVPG, Torres, Impact Mapping, OKRs and North Star fit together
 - **[[Architecture]]** — folder mode, frontmatter, query paths, git and agent write boundaries
