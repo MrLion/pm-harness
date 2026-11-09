@@ -97,7 +97,7 @@ Proceed to discovery, not build. Test comprehension and data access first.
 | CAND-002 | candidate | Assisted estimate request with human review | Handles complex cases without a full build | Concierge test | test |
 | CAND-003 | candidate | Narrow self-service estimate for one imaging type | Limits scope and data complexity | Paper prototype + comprehension test | test |
 
-## Hermes Challenge
+## Adversarial challenge
 
 - What if we are wrong? The load-bearing assumption is that patients act on cost information.
 - What evidence contradicts this? Patients may choose on referral, urgency, or convenience.

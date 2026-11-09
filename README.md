@@ -85,7 +85,7 @@ signal, or decide what to build next.
 | Problem | Who experiences what problem, when, and at what cost? | [[PM vault/99-Playbook/Templates/PROB-001-Imaging-Cost-Problem\|Problem]] |
 | Evidence | What supports or contradicts the problem? | Research, data, or `Evidence unavailable.` |
 | Opportunity | Is this worth pursuing, and what are the four risks? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost\|Opportunity]] |
-| Challenge | What would make this a no-go or defer? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost#Hermes Challenge\|Opportunity challenge]] |
+| Challenge | What would make this a no-go or defer? | [[PM vault/99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost#Adversarial challenge\|Opportunity challenge]] |
 | Uncertain | What is the cheapest test that retires the primary risk? | [[PM vault/99-Playbook/Templates/EXP-001-Comprehension-Test\|Experiment]] → revise Opportunity |
 | Sufficient evidence | What are we choosing, and why? | [[PM vault/99-Playbook/Templates/DEC-001-Build-Partner-Defer\|Decision]] |
 | Solution brief | What is the smallest coherent solution? | [[PM vault/99-Playbook/Templates/PRD-001-Imaging-Estimate\|PRD]] |

@@ -4,7 +4,7 @@ status: active
 version: 3
 ---
 
-# Hermes PM Rules
+# PM Rules
 
 Operating law for the `/pm` layer. These are constraints, not suggestions.
 

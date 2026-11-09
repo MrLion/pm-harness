@@ -2,7 +2,7 @@
 type: dashboard
 ---
 
-# Hermes PM Dashboard
+# PM Dashboard
 
 Start · [[START-HERE]]
 
