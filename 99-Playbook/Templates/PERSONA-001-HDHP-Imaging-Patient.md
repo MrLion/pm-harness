@@ -6,7 +6,7 @@ status: draft
 confidence: low
 evidence_count: 0
 created: 2026-11-08
-updated: 2026-11-08
+updated: 2026-11-09
 framework: Pichler
 source: https://www.romanpichler.com/the-persona-template/
 example: true
@@ -31,7 +31,7 @@ example: true
 
 | Type | Source | Date | Count |
 |---|---|---|---|
-| secondary survey | [[RESEARCH-001-Imaging-Cost-Transparency\|RESEARCH-001]] | 2026-11-08 | 0 direct observations |
+| secondary survey | [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026\|RESEARCH-002]] | 2026-11-08 | 0 direct observations |
 
 ## Related
 

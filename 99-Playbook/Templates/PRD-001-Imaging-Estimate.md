@@ -8,7 +8,7 @@ candidate_id: CAND-003
 decision: "[[DEC-001-Build-Partner-Defer|DEC-001]]"
 primary_metric: coverage
 created: 2026-11-08
-updated: 2026-11-08
+updated: 2026-11-09
 framework: "Pichler (Product Canvas) + SVPG (prototype-as-spec)"
 example: true
 ---
@@ -57,12 +57,12 @@ example: true
 
 | Question | Answer |
 |---|---|
-| Data used | [FILL] |
-| PII / PHI / ePHI | [FILL] |
-| BAA required | [FILL] |
+| Data used | Synthetic prototype data only |
+| PII / PHI / ePHI | None |
+| BAA required | Not applicable |
 | Risk assessment | [[RISK-001-Privacy-Security-Risk\|RISK-001]] |
 | Controls | [[CTRL-001-Control-Matrix\|CTRL-001]] |
-| Compliance approval | [FILL] |
+| Compliance approval | Compliance owner sign-off before pilot |
 
 ## Risks
 

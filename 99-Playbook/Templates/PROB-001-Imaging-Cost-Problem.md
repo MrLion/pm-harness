@@ -8,7 +8,7 @@ confidence: low
 frequency: unknown
 severity: unknown
 created: 2026-11-08
-updated: 2026-11-08
+updated: 2026-11-09
 framework: none
 example: true
 ---
@@ -36,6 +36,8 @@ Adults on employer-sponsored high-deductible health plans cannot estimate their 
 | survey | Robert Wood Johnson Foundation data, [reported by William Blair](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | Jan 2026 | Among patients carrying medical debt, 66.1% had a bill in collections | weak |
 
 > Stated intent is not observed behavior. These sources do not establish that better estimates reduce postponement. The medical-debt row is population-level and not specific to imaging.
+>
+> Live research: [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026|RESEARCH-002]].
 
 ## Frequency
 

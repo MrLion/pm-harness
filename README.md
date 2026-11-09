@@ -17,7 +17,7 @@ validation. Empty fields and `Evidence unavailable.` are preferable to plausible
 
 1. Open the iCloud **`Documents`** vault in Obsidian. `PM vault` remains a folder inside it.
 2. Enable **Dataview** in that parent vault: Settings → Community plugins.
-3. Open **`PM vault/Dashboard.md`**. Empty tables are normal before any artifacts exist.
+3. Open **[[Dashboard]]** (`PM vault/Dashboard.md`). Empty tables are normal before any artifacts exist.
 4. Choose one playbook below and follow its flow.
 
 No paid Obsidian features or GitHub repository are required.

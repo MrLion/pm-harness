@@ -2,11 +2,14 @@
 type: visual-standard
 artifact: visual-standard
 status: approved
-updated: 2026-11-08
+updated: 2026-11-09
 example: false
 ---
 
 # Visual Standards
+
+> [!info] For humans and agents
+> This is the shared design contract: humans approve it, agents extend it through the generator. It is not an onboarding page.
 
 Approved canonical visual language for the PM Playbook.
 

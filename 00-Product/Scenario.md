@@ -1,6 +1,14 @@
+---
+type: scenario
+status: active
+confidence: none
+updated: 2026-11-09
+---
+
 # Scenario
 
 > Pre-filled templates: [[PM vault/99-Playbook/Templates/_Templates|Templates]]
+> Live research: [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026|RESEARCH-002]]
 
 ## Main scenario
 

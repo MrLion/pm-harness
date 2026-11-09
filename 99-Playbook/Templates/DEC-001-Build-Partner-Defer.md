@@ -6,10 +6,10 @@ status: proposed
 date: 2026-11-08
 review_date: 2026-12-08
 reversibility: high
-expected_outcome: TBD
+expected_outcome: "By 2026-12-08, 4 of 5 patients can explain the estimate and estimate data is accessible."
 actual_outcome: Pending
 framework: none
-updated: 2026-11-08
+updated: 2026-11-09
 example: true
 ---
 
@@ -99,10 +99,10 @@ Against the criteria, defer scores best on speed to validated learning, reversib
 
 | Risk | Applies? | Evidence | Owner |
 |---|---|---|---|
-| HIPAA covered entity / business associate | [FILL] | [[COMP-001-Compliance-Scope\|COMP-001]] | [FILL] |
-| PHI / ePHI handling | [FILL] | [[DATA-001-Data-Inventory\|DATA-001]] | [FILL] |
-| Vendor BAA | [FILL] | [[VEND-001-Vendor-BAA-Register\|VEND-001]] | [FILL] |
-| Medical-device QMS | [FILL] | [FILL] | [FILL] |
+| HIPAA covered entity / business associate | Not assessed in example | [[COMP-001-Compliance-Scope\|COMP-001]] | Compliance owner |
+| PHI / ePHI handling | None in example | [[DATA-001-Data-Inventory\|DATA-001]] | Compliance owner |
+| Vendor BAA | Not applicable — no vendor selected | [[VEND-001-Vendor-BAA-Register\|VEND-001]] | Compliance owner |
+| Medical-device QMS | Not applicable — not a device or SaMD | Not a device or SaMD | Compliance owner |
 
 ## Residual risk and dissent
 

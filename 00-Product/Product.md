@@ -4,14 +4,14 @@ status: draft
 confidence: none
 artifact: product-vision-board
 framework: Pichler
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
 # Product Vision Board
 
-> **Scaffold, not fact.** Nothing below is filled in. Per `[[Rules]]` §8 the agent will not invent
+> **Scaffold, not fact.** Nothing below is filled in. Per [[Rules]] Rule 11 the agent will not invent
 > product facts — every `[FILL]` stays empty until you supply it. While `confidence: none`,
-> `/pm` refuses strategic recommendations.
+> `/pm` refuses strategic recommendations. Context: [[PM vault/00-Product/Scenario|Scenario]].
 > Field definitions and checklist: `99-Playbook/Templates/Product-Vision-Board.md` (Pichler, CC BY-SA 4.0).
 
 ## VISION

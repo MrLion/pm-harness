@@ -1,12 +1,13 @@
 ---
 type: dashboard
+updated: 2026-11-09
 ---
 
 # PM Dashboard
 
 Start · [[START-HERE]]
 
-Product · [[Product]] · [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Strategy|Strategy]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]
+Product · [[Product]] · [[Scenario]] · [[PM vault/00-Product/Vision|Vision]] · [[PM vault/00-Product/Strategy|Strategy]] · [[PM vault/00-Product/Goals|Goals]] · [[PM vault/00-Product/Metrics|Metrics]]
 Roadmap · [[Now]] · [[Next]] · [[Later]]
 Discovery · [[Discovery Map]]
 Transformation · [[_Transformation]] · Operating model · [[_Operating-Model]] · Compliance · [[_Compliance]]

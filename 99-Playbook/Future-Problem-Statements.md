@@ -1,3 +1,9 @@
+---
+type: reference
+status: active
+updated: 2026-11-09
+---
+
 # Future problem statements
 
 ## 1. Fragmented health information across systems

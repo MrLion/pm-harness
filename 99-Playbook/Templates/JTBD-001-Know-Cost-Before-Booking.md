@@ -4,7 +4,7 @@ artifact: jtbd
 id: JTBD-001
 status: draft
 confidence: low
-updated: 2026-11-08
+updated: 2026-11-09
 framework: "Jobs to be Done"
 example: true
 ---
@@ -32,4 +32,4 @@ When I need outpatient imaging, I want to know what it will cost me before I boo
 
 ## Evidence
 
-- [[RESEARCH-001-Imaging-Cost-Transparency|RESEARCH-001]] — secondary survey evidence only.
+- [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026|RESEARCH-002]] — secondary survey evidence only.

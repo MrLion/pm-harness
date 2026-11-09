@@ -3,7 +3,7 @@ type: strategy
 artifact: strategy
 status: draft
 confidence: low
-updated: 2026-11-08
+updated: 2026-11-09
 review_cadence_days: 90
 framework: Pichler
 source: https://romanpichler.com/blog/my-product-strategy-model/
@@ -16,8 +16,8 @@ example: true
 
 | Element | Current position | Evidence | Confidence |
 |---|---|---|---|
-| Target group | Adults on employer-sponsored HDHPs choosing outpatient imaging | [[RESEARCH-001-Imaging-Cost-Transparency\|RESEARCH-001]] | low |
-| Needs | Know expected cost and understand inclusions/exclusions | [[RESEARCH-001-Imaging-Cost-Transparency\|RESEARCH-001]] | low |
+| Target group | Adults on employer-sponsored HDHPs choosing outpatient imaging | [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026\|RESEARCH-002]] | low |
+| Needs | Know expected cost and understand inclusions/exclusions | [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026\|RESEARCH-002]] | low |
 | Business goals | Increase estimate coverage and reconciled accuracy | unknown | low |
 | Stand-out features | Patient-readable estimate + reconciliation | hypothesis | low |
 

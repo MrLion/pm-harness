@@ -2,13 +2,13 @@
 
 Product-lifecycle templates have four layers: **the artifact structure** → **the source's field
 definition** (quoted, with attribution) → **the checklist criteria** used to judge a filled note →
-**a collapsible worked example**. The example is a fictional product ("Lantern", a clinic shift
-scheduling tool) used consistently across all templates so the traceability chain is visible.
+**a worked example**. The example is the fictional HDHP outpatient-imaging scenario used consistently
+across all templates so the traceability chain is visible.
 
 Operating-model templates are structure-only: they use `[FILL]` prompts because portfolio,
 capability, funding, and team facts must come from real evidence.
 
-Delete the `[!example]` block before using a product template for real work.
+Replace the example values with your own product facts before using a product template for real work.
 
 | Template | Use for | Framework | Source |
 |---|---|---|---|
@@ -61,7 +61,7 @@ columns from the `a:` and `b:` keys of each note; `WHERE type = "x"` filters on 
 `SORT date DESC` uses the frontmatter `date:`, not the file's modification time.
 
 Which is why every template's frontmatter **is** the instance schema — a note created from it is
-queryable immediately. Copy the frontmatter verbatim; never retype it.
+queryable immediately. Copy the template frontmatter, then update `id`, `status`, links, and `updated:`; never retype the schema from memory.
 
 | Key | Allowed values → how it is used |
 |---|---|
@@ -90,7 +90,7 @@ query, so they never appear in a table. Do not move a template into `02-Problems
 
 This vault is a folder inside a larger Obsidian vault, so every query names its path
 (`FROM "PM vault/05-Decisions"`). If you ever open `PM vault` as its own vault, strip the
-`PM vault/` prefix from all 33 `FROM` clauses or the tables will match nothing.
+`PM vault/` prefix from every `FROM` clause or the tables will match nothing.
 
 ## Attribution
 

@@ -6,7 +6,7 @@ period: 2027-02
 date: 2027-02-15
 status: draft
 framework: "Pichler (goal vs outcome) + SVPG (risk retired vs not)"
-updated: 2026-11-08
+updated: 2026-11-09
 example: true
 ---
 
@@ -51,11 +51,11 @@ example: true
 
 | Check | Result |
 |---|---|
-| Incidents | [FILL] |
-| Audit findings | [FILL] |
-| Access review | [FILL] |
-| Vendor / BAA | [FILL] |
-| Corrective actions | [FILL] |
+| Incidents | None in example |
+| Audit findings | None |
+| Access review | Reviewed |
+| Vendor / BAA | No vendor in example |
+| Corrective actions | None |
 
 ## Next period
 

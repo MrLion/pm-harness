@@ -1,7 +1,7 @@
 ---
 type: agent-brief
 status: active
-updated: 2026-11-08
+updated: 2026-11-09
 vault_root: /Users/mintmrlion/Library/Mobile Documents/iCloud~md~obsidian/Documents/PM vault
 git_dir: /Users/mintmrlion/Documents/pm-vault-git
 ---
@@ -31,7 +31,8 @@ Do not read every branch. Read the branch that matches the request.
 ## Read order
 
 1. [[Rules]] — operating constraints.
-2. [[_Playbooks]] — choose the mode.
+2. [[_Playbooks]] — choose the mode. If choosing a new problem space, read
+   [[Future-Problem-Statements]].
 3. If health data or vendors are involved: [[_Compliance]] and
    [[COMP-001-Compliance-Scope|COMP-001]].
 4. For product work: [[PM vault/00-Product/Product|Product]] → Strategy → Goals → Metrics.

@@ -12,7 +12,7 @@ recommendation: Pending
 risk_type: value
 risk_owner: PM
 created: 2026-11-08
-updated: 2026-11-08
+updated: 2026-11-09
 review_after: 2026-12-08
 framework: SVPG
 source: https://www.svpg.com/assessing-product-opportunities/
@@ -67,10 +67,10 @@ Proceed to discovery, not build. Test comprehension and data access first.
 | Question | Answer |
 |---|---|
 | Data classification | [[COMP-001-Compliance-Scope\|COMP-001]] |
-| PHI / ePHI | [FILL] |
+| PHI / ePHI | None in discovery — no clinical data collected in this example |
 | Vendor / BAA | [[VEND-001-Vendor-BAA-Register\|VEND-001]] |
 | Risk and controls | [[RISK-001-Privacy-Security-Risk\|RISK-001]] · [[CTRL-001-Control-Matrix\|CTRL-001]] |
-| Approval needed | [FILL] |
+| Approval needed | Compliance owner sign-off before pilot |
 
 ## Hypothesis
 
@@ -82,7 +82,7 @@ Proceed to discovery, not build. Test comprehension and data access first.
 
 | Source | Date | Says what | Strength |
 |---|---|---|---|
-| [[RESEARCH-001-Imaging-Cost-Transparency\|RESEARCH-001]] | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would likely postpone without an accurate estimate | weak |
+| [[RESEARCH-002-William-Blair-Consumer-Healthcare-2026\|RESEARCH-002]] | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would likely postpone without an accurate estimate | weak |
 
 ### Contradicting
 

@@ -1,7 +1,7 @@
 ---
 type: architecture
 status: active
-updated: 2026-11-08
+updated: 2026-11-09
 ---
 
 # Architecture
@@ -95,7 +95,7 @@ Notes sync through iCloud; git history remains on the Mac.
 [[Rules]] Rule 21 is authoritative:
 
 **Free to write:** `04-Research`, `02-Problems`, `03-Opportunities`, `07-Delivery/Experiments`,
-`08-Reviews`, `99-Playbook/Templates`, `99-Playbook/Playbooks`.
+`08-Reviews`, `99-Playbook/Templates`, `99-Playbook/Playbooks`, `99-Playbook/Future-Problem-Statements.md`.
 
 **Draft only — propose, do not overwrite:** `07-Delivery/PRDs`, `06-Roadmap`,
 `09-Transformation`, `10-Operating-Model`, `11-Compliance`.

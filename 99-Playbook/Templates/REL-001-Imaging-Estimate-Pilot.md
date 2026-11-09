@@ -9,7 +9,7 @@ metric_result: Pending
 roadmap: NOW
 created: 2026-11-08
 framework: Pichler
-updated: 2026-11-08
+updated: 2026-11-09
 example: true
 ---
 
@@ -36,11 +36,11 @@ example: true
 
 | Check | Evidence |
 |---|---|
-| Vendor / BAA | [FILL] |
+| Vendor / BAA | Not applicable — no vendor in example |
 | Privacy-security risk | [[RISK-001-Privacy-Security-Risk\|RISK-001]] |
 | Controls | [[CTRL-001-Control-Matrix\|CTRL-001]] |
 | Incident plan | [[INC-001-Incident-Breach-Response\|INC-001]] |
-| Approval | [FILL] |
+| Approval | Compliance owner |
 
 ## What surprised us
 

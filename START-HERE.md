@@ -11,7 +11,7 @@ problem-to-experiment chain**, not a complete vault.
 ## Before you begin
 
 Open the parent iCloud `Documents` vault and ensure Dataview is enabled. Open
-`PM vault/Dashboard.md`; empty tables are expected. The technical setup is in [[Architecture]].
+[[Dashboard]] (`PM vault/Dashboard.md`); empty tables are expected. The technical setup is in [[Architecture]].
 
 > If the problem involves PII, PHI, ePHI, or vendor data, complete [[COMP-001-Compliance-Scope|Compliance Scope]] before step 1.
 

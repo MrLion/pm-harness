@@ -12,7 +12,7 @@ cost: 5 interviews
 created: 2026-11-08
 framework: SVPG
 source: https://www.svpg.com/four-big-risks/
-updated: 2026-11-08
+updated: 2026-11-09
 example: true
 ---
 
@@ -34,11 +34,11 @@ example: true
 
 | Field | Answer |
 |---|---|
-| Real PHI used? | [FILL: yes/no] |
-| De-identified or synthetic data? | [FILL] |
-| BAA in place? | [FILL] |
-| Where data is stored | [FILL] |
-| Retention and destruction | [FILL] |
+| Real PHI used? | No |
+| De-identified or synthetic data? | Synthetic paper prototype only |
+| BAA in place? | Not applicable |
+| Where data is stored | Local design file; no patient data |
+| Retention and destruction | Delete after study |
 | Compliance scope | [[COMP-001-Compliance-Scope\|COMP-001]] |
 
 ## Design
