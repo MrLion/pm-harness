@@ -7,6 +7,9 @@ updated: 2026-11-08
 
 # PM Rules
 
+> [!info] For AI agents only
+> This page is the `/pm` layer’s operating law. Humans author and approve it; the agent enforces it. Humans start at [[README]].
+
 Operating law for the `/pm` layer. These are constraints, not suggestions.
 
 ## Operating modes
