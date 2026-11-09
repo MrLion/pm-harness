@@ -17,7 +17,7 @@ updated: 2026-11-09
 **Who:** Adults on employer-sponsored high-deductible health plans.
 **Situation:** Choosing outpatient imaging.
 **Decision moment:** Deciding whether to book, where to book, and whether the expected out-of-pocket cost is tolerable.
-**Uncertainty:** They cannot reliably predict their final patient responsibility before booking. Some receive an estimate; coverage and accuracy are uneven.
+**Uncertainty:** They cannot reliably predict their final patient responsibility before booking. Some receive an estimate; coverage and accuracy are uneven. The survey evidence is broader than this segment; see [PROB-001](../99-Playbook/Templates/PROB-001-Imaging-Cost-Problem.md).
 
 ## Glossary
 

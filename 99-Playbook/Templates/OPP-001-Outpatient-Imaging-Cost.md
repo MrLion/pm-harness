@@ -109,11 +109,11 @@ Proceed to discovery, not build. Test comprehension and data access first.
 - Which claims are unsupported? That an accurate estimate reduces postponement.
 - Are we solving the right problem, or a symptom? The problem is uncertainty, not necessarily price level.
 - What would invalidate the opportunity outright? Patients do not change any decision, or an existing estimator is sufficient.
-- What is the cheapest way to find out? Recent-decision interviews plus a comprehension prototype.
+- What is the cheapest way to find out? 8–10 recent booking journeys, including non-bookers, then a comprehension prototype.
 
 ## Smallest experiment
 
-5 recent-decision interviews, then a paper-prototype comprehension test.
+8–10 recent booking journeys, including at least 4 non-bookers, then a paper-prototype comprehension test. Record the information available at the decision point, the action, and the driver.
 
 ## Recommendation
 

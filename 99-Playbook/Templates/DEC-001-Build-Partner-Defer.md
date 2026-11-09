@@ -142,3 +142,7 @@ By 2026-12-08, we know whether 4 of 5 patients can explain the estimate and whet
 ## Actual outcome
 
 Pending
+
+## Decision update
+
+When the journey research lands, record the finding that changes this decision or state explicitly that none did. A finding changes the decision only if it establishes that patients in this segment received, understood, or acted on an estimate in a way the current evidence does not show.

@@ -29,7 +29,7 @@ Reduce out-of-pocket cost uncertainty before elective outpatient imaging.
 
 ## Outcome metric
 
-Share of patients who can predict their final responsibility within $400 before booking. Current: unknown. Coverage is the leading metric; prediction is the customer outcome. Comprehension is tested in [EXP-001](EXP-001-Comprehension-Test.md).
+Share of patients who can predict their final responsibility within $400 before booking. Current: unknown. Coverage is the leading metric; prediction is the customer outcome. Comprehension is tested in [EXP-001](EXP-001-Comprehension-Test.md); prediction is measured in the pilot with reconciled bills.
 
 ## Journey
 

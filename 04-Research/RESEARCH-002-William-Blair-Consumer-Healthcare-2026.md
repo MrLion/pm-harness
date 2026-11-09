@@ -44,7 +44,7 @@ citing [Experian Health, *2025 State of Patient Access*](https://www.experian.co
 ## What this does NOT tell us
 
 - Whether the 43% actually cancel or postpone.
-- Whether the respondents are employer-sponsored HDHP members choosing imaging.
+- Whether respondents are employer-sponsored HDHP members choosing imaging. Do not transfer the 41%, 71%, or 43% figures to that segment without segment-level evidence.
 - Whether an estimate would change a booking decision.
 - Whether estimates are accurate enough for a specific service.
 

@@ -38,7 +38,13 @@ Adults on employer-sponsored high-deductible health plans cannot reliably predic
 
 > Stated intent is not observed behavior. These sources do not establish that better estimates reduce postponement. The medical-debt row is population-level and not specific to imaging.
 >
+> **Segment transfer:** the survey population is broader than employer-sponsored HDHP members choosing imaging. The 41% and 71% figures are a reason to investigate this segment, not a segment estimate. Frequency and accuracy in this journey are unknown.
+>
 > Live research: [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md).
+
+## Next evidence
+
+Run 8–10 recent booking journeys, including at least 4 non-bookers. For each, record the information available at the decision point, the action taken, and the driver: uncertainty, affordability, network, urgency, or something else. Record whether the estimate changed the choice. This is the evidence that can change [DEC-001](DEC-001-Build-Partner-Defer.md).
 
 ## Journey
 
@@ -46,7 +52,7 @@ Adults on employer-sponsored high-deductible health plans cannot reliably predic
 
 ## Frequency
 
-Unknown. The source does not report frequency for employer-sponsored HDHP members choosing imaging.
+Unknown for this segment. The source does not report frequency for employer-sponsored HDHP members choosing imaging.
 
 ## Severity
 

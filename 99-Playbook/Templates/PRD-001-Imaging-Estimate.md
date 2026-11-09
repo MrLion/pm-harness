@@ -61,7 +61,7 @@ case_id: CASE-001
 
 **Primary coverage metric:** Share of eligible imaging requests that receive a pre-booking estimate. Eligibility is fixed at intake; cancellations after the estimate are reported separately.
 
-**Outcome metric:** Share of patients who can predict final responsibility within $400 before booking.
+**Outcome metric:** Share of patients who can predict final responsibility within $400 before booking. Measured in the pilot with reconciled bills; the paper prototype tests comprehension only.
 
 **Accuracy companion:** Share of reconciled estimates within $400 of final patient responsibility.
 

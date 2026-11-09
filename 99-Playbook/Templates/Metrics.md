@@ -34,7 +34,8 @@ Share of eligible outpatient imaging requests that receive a pre-booking estimat
 | Field | Answer |
 |---|---|
 | Metric | Share of patients who can predict final responsibility within $400 before booking |
-| Source of truth | Comprehension study plus billing reconciliation |
+| Denominator | Patients with a reconciled bill who received an estimate; non-bookers are covered separately by decision follow-up |
+| Source of truth | Pilot follow-up plus billing reconciliation. The comprehension study does not test prediction. |
 | Current value | unknown |
 | Why it matters | Coverage can rise while patients remain unable to predict what they will owe |
 
@@ -57,7 +58,7 @@ Share of eligible outpatient imaging requests that receive a pre-booking estimat
 
 | Layer | Metric | Definition | Current | Source of truth | Owner |
 |---|---|---|---|---|---|
-| Lagging (outcome) | Booking decisions after estimate | Share of patients who book, switch, or defer after seeing estimate | unknown | booking + survey | PM |
+| Lagging (outcome) | Decision follow-up | Among all patients who received an estimate, including non-bookers: action taken; whether the estimate informed the choice; driver: uncertainty, affordability, network, or urgency | unknown | booking + short follow-up | PM |
 | Leading (behaviour) | Estimate views | Share of eligible requests with an estimate opened | unknown | product analytics | Eng |
 | Health (guardrail) | Complaint rate | Surprise-bill complaints per 1,000 bookings | unknown | support | PM |
 | Diagnostic | Cancellation after estimate | Share of estimated requests cancelled after viewing the estimate | unknown | booking system | PM |
@@ -69,6 +70,8 @@ Share of eligible outpatient imaging requests that receive a pre-booking estimat
 | Non-booker estimate coverage | Request system may not capture abandonment | Add event tracking |
 | Cancellation after estimate | Request system may not distinguish cancellation from abandonment | Tag cancellation reason and timestamp |
 | Final patient responsibility | Needs billing reconciliation | Partner data review |
+| Decision follow-up for non-bookers | Request and booking systems may not identify people who never booked | Add a short follow-up at estimate delivery, with consent |
+| Reason for the choice | Current systems record the action, not the driver | Ask one open question: what drove the choice? |
 
 ## Related
 

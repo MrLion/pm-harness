@@ -17,6 +17,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Reworked the HDHP imaging worked example: corrected the problem statement, added a buyer and
   journey-map view, separated coverage from patient outcome, made the release conditional, and
   aligned the compliance scenario across templates.
+- Closed the peer-review gaps: labeled the survey-to-segment transfer, separated comprehension from
+  prediction, added decision follow-up for non-bookers, and specified 8–10 recent booking journeys
+  as the next evidence.
 - Made the README, Agent Manual, and Architecture platform-neutral: documented nested, root, and
   renamed vault layouts, Dataview prefix choices, and normal `.git` behavior outside the maintainer's
   macOS/iCloud setup.

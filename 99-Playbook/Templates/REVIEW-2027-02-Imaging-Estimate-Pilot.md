@@ -22,7 +22,8 @@ gate: REL-001 conditional; pilot not run
 | Goal | Target | Actual | Measurement status | Met? |
 |---|---|---|---|---|
 | Pre-booking estimate coverage | 60% of eligible requests | Pending | not measured | unknown |
-| Patient prediction accuracy | 4 of 5 can predict responsibility within $400 | Pending | not measured | unknown |
+| Patient prediction accuracy | ≥70% within $400 (pilot) | Pending | pilot metric; not tested by EXP-001 | unknown |
+| Decision follow-up | Estimated patients can say whether the estimate informed their choice and why | Pending | pilot metric; not measured | unknown |
 | Reconciled accuracy | 70% within $400 | Pending | not measured | unknown |
 
 ## Risks retired
@@ -51,7 +52,8 @@ gate: REL-001 conditional; pilot not run
 | Metric | Start | End | Δ | Commentary |
 |---|---|---|---|---|
 | Estimate coverage | unknown | Pending | — | report after pilot |
-| Patient prediction accuracy | unknown | Pending | — | report after pilot |
+| Patient prediction accuracy | unknown | Pending | — | pilot only; requires reconciled bills |
+| Decision follow-up | unknown | Pending | — | report separately for bookers, switchers, deferrers, and non-bookers |
 | Reconciled accuracy | unknown | Pending | — | report after pilot |
 
 ## Compliance review

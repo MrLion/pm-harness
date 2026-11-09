@@ -37,6 +37,9 @@ case_id: CASE-001
 
 > We believe a patient-readable estimate with inclusions, exclusions, and validity will cause at least 4 of 5 interviewed patients to explain all three correctly, measured by a comprehension task.
 
+> [!NOTE] What this does not test
+> This test measures comprehension only. It does not test whether the patient can predict final responsibility. Prediction requires reconciled bills and belongs in the pilot, not this prototype.
+
 ## Data handling
 
 | Field | Answer |
@@ -84,4 +87,4 @@ Pending — link the resulting [DEC-001](DEC-001-Build-Partner-Defer.md) or upda
 
 ## Scope note
 
-This tests comprehension, not reduced postponement. Behavioural impact requires a separate pilot.
+This tests comprehension, not prediction of final responsibility and not reduced postponement. Prediction requires reconciled bills; behavioural impact requires a separate pilot.
