@@ -1,96 +1,172 @@
 ---
 type: rules
 status: active
-version: 3
+version: 4
+updated: 2026-11-08
 ---
 
 # PM Rules
 
 Operating law for the `/pm` layer. These are constraints, not suggestions.
 
-## 1. Problem before solution
-Never assume a requested feature is the correct solution. Convert "we need X" into
-"what problem would X solve?" and refuse to advance until that is answered.
+## Operating modes
 
-## 2. Evidence before confidence
+- **Vision-led 0→1** — starts from a product thesis and target future.
+- **Outcome-led 1→N** — starts from customer signal about an existing product.
+- **Digital transformation** — changes portfolio capabilities, value streams, and funding.
+- **Project-to-product** — changes funding, team topology, flow, and governance.
+- **Compliance rail** — cross-cutting; applies whenever PII, PHI, ePHI, vendors, or health data are involved.
+
+## 1. Route before recommending
+Choose the mode from [[_Playbooks]] before applying any rule. A product rule must not be forced onto
+transformation or operating-model work.
+
+## 2. Problem before solution — outcome-led only
+For an existing product, convert “we need X” into “what problem would X solve?” and refuse to advance
+until that is answered.
+
+For a new product, the entry point is a **thesis**, not a problem backlog. Do not force vision-led work
+into a problem-first sequence.
+
+## 3. Evidence before confidence
 Label every claim: **Fact** / **Observation** / **Hypothesis** / **Assumption** / **Opinion**.
-Never present a hypothesis as a fact. `confidence:` frontmatter must reflect the weakest
-load-bearing claim, not the strongest.
+Never present a hypothesis as a fact. `confidence:` frontmatter must reflect the weakest load-bearing
+claim, not the strongest.
 
-## 3. Discovery is separate from delivery
-No PRD for an opportunity that has not survived `/pm challenge`. No roadmap entry for a
-problem with no evidence table filled in.
+## 4. Empty product definition blocks strategy
+If `00-Product/Product.md` is `[FILL]` or `confidence: none`, say so explicitly. That blocks strategy,
+roadmap, decision, and PRD recommendations. It does not block research, problems, opportunities,
+experiments, or compliance work.
 
-## 4. Challenge every significant recommendation
-Each one carries: assumptions, contradicting evidence, alternatives considered, risks, unknowns.
+## 5. Compliance scope before health data
+Before handling PII, PHI, ePHI, vendor data, or health data, determine:
+
+- covered-entity or business-associate status
+- PII / PHI / ePHI / de-identified / limited-data-set status
+- BAA requirement
+- medical-device or SaMD classification
+- applicable jurisdictions
+
+If unresolved, write `Compliance scope unresolved` and stop. Do not guess regulatory applicability.
+
+## 6. Discovery is separate from delivery
+No PRD until the relevant opportunity has survived `/pm challenge`. No roadmap or portfolio commitment
+until the relevant evidence gate is met. Transformation and operating-model work use their own gates,
+not a product PRD gate.
+
+## 7. Challenge every significant recommendation
+Each one carries: assumptions, contradicting evidence, alternatives considered, risks, and unknowns.
 A recommendation missing any of the five is incomplete, not concise.
 
-## 5. Cheapest experiment first
-When uncertainty is high, recommend the cheapest test that could materially reduce it,
-before recommending a build.
+## 8. Cheapest safe experiment first
+When uncertainty is high, recommend the cheapest test that could materially reduce it before
+recommending a build. The test must also satisfy the data-handling and compliance constraints.
 
-## 6. Decisions are explicit and recorded
-Any decision that costs more than a week of work, or is hard to reverse, produces a
-Decision Record. Verbal decisions do not exist.
+## 9. Decisions are explicit and recorded
+A Decision Record is required when a decision:
 
-## 7. Traceability is mandatory
-`Problem → Evidence → Opportunity → Challenge`. If uncertainty is high, run an
-**Experiment** and revise the Opportunity before deciding. Then:
-`Decision → PRD → Delivery → Metrics → Review`.
-Every artifact reference is an Obsidian internal link. An orphaned artifact is a defect to report in `/pm review`.
+- costs more than a week of work
+- is hard to reverse
+- changes regulatory posture or data handling
+- changes a vendor or BAA obligation
+- changes funding, team topology, or governance
 
-## 8. Never fabricate evidence
-If information is unavailable, write `Evidence unavailable.` Do not invent customer quotes,
-metrics, market sizes, competitor behaviour, or dates. Do not fill a table to look complete.
+Verbal decisions do not exist.
 
-## 9. Scores support judgement, they do not replace it
-A score is a conversation starter. Never let a number close a discussion that evidence
-has not closed.
+## 10. Traceability is mandatory
+Product traceability:
 
-## 10. Keep the knowledge base current
-When new information materially changes understanding, update the artifact — frontmatter
-`updated:` date included — rather than leaving the stale claim in place.
+`Problem → Evidence → Opportunity → Challenge → Experiment or Decision → PRD → Release → Review`
 
-## 11. Staleness is a finding
-Flag artifacts past `review_after` / `review_cadence_days`, artifacts whose `updated:` date is
-missing, opportunities with no `review_after`, accepted decisions with no `review_date`, decisions
-whose expected outcome was never recorded, and metrics with no baseline. Silence about staleness is
-a failure.
+Transformation traceability:
 
-## 12. Declare the framework
-Every artifact's frontmatter names its framework (`Pichler`, `SVPG`, `Torres`, `North Star`,
-`Impact Mapping`, `OKR`, `none`, or a declared combination). Do not invent a hybrid structure
-silently — if a note departs from its template, say which and why.
+`Transformation Thesis → Capability Map → Value-Stream Map → Product Taxonomy → Funding → Portfolio Roadmap → Adoption → Review`
 
-## 13. No-go is an answer
-A Product Opportunity Assessment may recommend **no-go**, and that is a successful outcome — it
-saved the build. A `/pm challenge` run that never produces a no-go, a defer, or a kill is broken,
-not thorough.
+Project-to-product traceability:
 
-## 14. Risks need owners
-Name the four SVPG risks (value, usability, feasibility, business viability) and state which is
-load-bearing. A risk with no owner and no test is not risk management, it is decoration.
+`Product Taxonomy → Funding → Team Topology → Flow Baseline → Dependency Map → Transition Roadmap → Review`
 
-## 15. One goal at a time
+Compliance traceability:
+
+`Compliance Scope → Data Inventory → Risk → Controls → Vendor/BAA → Incident Readiness → Review`
+
+Every artifact reference is an Obsidian internal link. An orphaned artifact is a defect reported in
+`/pm review`.
+
+## 11. Never fabricate evidence
+If information is unavailable, write `Evidence unavailable.` Do not invent customer quotes, metrics,
+market sizes, competitor behaviour, regulatory applicability, or dates.
+
+Pre-filled template examples are illustrative. Never cite an example row, ID, quote, or metric as
+product evidence.
+
+## 12. Scores support judgement, not replace it
+A score is a conversation starter. Never let a number close a discussion that evidence has not closed.
+
+## 13. Keep the knowledge base current
+When new information materially changes understanding, update the artifact — frontmatter `updated:`
+included — rather than leaving the stale claim in place.
+
+## 14. Staleness is a finding
+Flag artifacts past `review_after` / `review_cadence_days`, artifacts with missing `updated:`,
+opportunities with no `review_after`, accepted decisions with no `review_date`, decisions with no
+recorded expected outcome, metrics with no baseline, compliance reviews that are overdue, and
+transformation or operating-model reviews that have not run.
+
+## 15. Declare the framework
+Every artifact’s frontmatter names its framework: `Pichler`, `SVPG`, `Torres`, `North Star`,
+`Impact Mapping`, `OKR`, `Team Topologies`, `Flow Framework`, `Transformation thesis`,
+`HIPAA/compliance`, `none`, or a declared combination. Do not invent a hybrid structure silently.
+
+## 16. No-go is an answer
+A Product Opportunity Assessment may recommend **no-go**, and that is a successful outcome — it saved
+the build. A `/pm challenge` run that never produces a no-go, a defer, or a kill is broken, not thorough.
+
+## 17. Risks need owners
+For product opportunities, name the four SVPG risks — value, usability, feasibility, business
+viability — and state which is load-bearing.
+
+For transformation and operating-model work, name adoption, funding, team/flow, and dependency risks.
+For compliance work, name privacy, security, and regulatory risks.
+
+Compliance risk is not forced into the four SVPG risks. A risk with no owner and no test is decoration.
+
+## 18. One goal at a time
 Per Pichler: a roadmap row carries a single goal. Two concurrent goals in one row means the row is
 really two rows, or the goal is not yet understood.
 
-## 16. Maps are views, not duplicate knowledge
-The Opportunity Solution Tree links canonical Goals, Problems, Opportunities, solution briefs and
-Experiments. Pre-validation solution candidates live as `CAND-NNN` rows in the Opportunity's
-`Candidate solutions` section; every map branch names that exact ID and links its parent
-Opportunity section. A validated `CAND-` row links the PRD created from it via `candidate_id:`.
-Never create a candidate, solution or opportunity that exists only in the map. Use the map to expose
-alternatives, missing evidence and orphaned branches.
+## 19. Maps are views, not duplicate knowledge
+The Opportunity Solution Tree links canonical Goals, Problems, Opportunities, solution briefs, and
+Experiments. Pre-validation solution candidates live as `CAND-NNN` rows in the Opportunity’s
+`Candidate solutions` section; every map branch names that exact ID and links its parent Opportunity
+section. A validated `CAND-` row links the PRD created from it via `candidate_id:`.
 
-## 17. Goals and metrics remain falsifiable
+Never create a candidate, solution, or opportunity that exists only in the map.
+
+## 20. Goals and metrics remain falsifiable
 An OKR has one Objective per horizon and measurable Key Results. A North Star Metric represents
 customer value, has a precise definition and source, and is supported by inputs and guardrails.
 Unknown baselines stay `unknown`; never invent them.
 
-## 18. Respect the write boundary
-Free to write: `04-Research`, `02-Problems`, `03-Opportunities`, `07-Delivery/Experiments`,
-`08-Reviews`, `99-Playbook`.
-Draft only (propose, do not overwrite): `07-Delivery/PRDs`, `06-Roadmap`, `09-Transformation`,
-`10-Operating-Model`, `11-Compliance`.
-Propose in chat, human commits: `00-Product`, `05-Decisions`.
+## 21. Respect the write boundary
+**Free to write:** `04-Research`, `02-Problems`, `03-Opportunities`, `07-Delivery/Experiments`,
+`08-Reviews`, `99-Playbook/Templates`, `99-Playbook/Playbooks`.
+
+**Draft only — propose, do not overwrite:** `07-Delivery/PRDs`, `06-Roadmap`,
+`09-Transformation`, `10-Operating-Model`, `11-Compliance`.
+
+**Human-approved only:** `00-Product`, `05-Decisions`, `README.md`, `99-Playbook/Rules.md`,
+`99-Playbook/PM.md`, `99-Playbook/Visual-Standards.md`.
+
+## 22. Answer before writing
+Answer a direct question about an artifact or output before mutating anything. “Why…”, “what’s the
+difference…”, and “did I say…” are questions, not write requests.
+
+## 23. IDs live in filenames
+IDs are encoded in filenames: `PROB-004-your-slug.md`, `OPP-002-your-slug.md`.
+
+- Scan the target folder, take the highest existing numeric ID, add one, and zero-pad to three.
+- Never reuse an ID, even if a note was archived.
+- Non-standard IDs keep their template form: `REVIEW-2027-02`, `REVIEW-OM-001`.
+- `CAND-NNN` IDs are global across Opportunities. Scan every Opportunity’s `Candidate solutions`
+  table before allocating one.
