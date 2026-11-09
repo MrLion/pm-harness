@@ -44,6 +44,22 @@ They do not assume the harness replaces interviews, stakeholder alignment, legal
 | Stakeholder alignment and meetings | 3–6 hrs/week | 3–5 hrs/week | 0–15% | Low |
 | Build and launch | unchanged | unchanged | ~0% | High |
 
+## 40-hour roll-up
+
+The task table is not summed directly. This roll-up applies each reduction to its share of a 40-hour
+week.
+
+| Activity | Share | Time | Reduction used | Saved |
+|---|---:|---:|---:|---:|
+| Docs, status, reporting | 18% | 7.2 hrs | 40% | 2.9 hrs |
+| Discovery synthesis | 18% | 7.2 hrs | 30% | 2.2 hrs |
+| PRD, decision, review | 18% | 7.2 hrs | 25% | 1.8 hrs |
+| Meetings and alignment | 31% | 12.4 hrs | 5% | 0.6 hrs |
+| Delivery and operations | 16% | 6.4 hrs | 0% | 0 hrs |
+| **Total** | | **40 hrs** | | **7.5 hrs — 18.7%** |
+
+After a 25% overlap and adoption haircut: **5.6 hours — 14%**.
+
 ## Aggregate estimate
 
 | Measure | Estimate |
