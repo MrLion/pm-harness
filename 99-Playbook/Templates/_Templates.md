@@ -113,10 +113,8 @@ Solution Tree links desired outcomes to problems, alternative solutions and assu
 duplicating their canonical notes. OKRs and Impact Mapping align each horizon around one Objective
 and explicit behaviour change. North Star adds one customer-value metric with inputs and guardrails.
 
-The operating chain is therefore:
-
-`Vision → Objective / North Star → Impact Map → Discovery Map → Evidence and risk gate →
-Decision → Solution brief → Release → Review`.
+The canonical chain is in [Discovery to Delivery](../Discovery-to-Delivery.md). This page maps methods
+to artifacts; it does not restate the chain.
 
 Impact Mapping reference materials are CC BY 4.0 (Gojko Adzic). Torres and Amplitude material is
 linked and summarized rather than reproduced in bulk.

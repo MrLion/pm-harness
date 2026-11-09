@@ -12,6 +12,9 @@ This playbook supports four ways of working, but they answer different questions
 
 ![PM Playbook visual](99-Playbook/Visuals/playbook_v8.png)
 
+The canonical discovery-to-delivery chain and its transition gates are in
+[Discovery to Delivery](99-Playbook/Discovery-to-Delivery.md).
+
 The harness will not invent evidence, silently rewrite strategy, or produce a solution brief before
 validation. Empty fields and `Evidence unavailable.` are preferable to plausible fiction.
 
@@ -188,7 +191,7 @@ Templates live in `99-Playbook/Templates/`; the index is [_Templates](99-Playboo
 - Copy the template's **frontmatter verbatim**, then fill the values.
 - Never change `type:`; Dataview uses it to route notes into tables.
 - Allocate the next ID from the highest existing ID in that folder.
-- Link canonical artifacts with Obsidian internal links; do not duplicate their contents.
+- Link canonical artifacts with relative Markdown links that resolve in both Obsidian and GitHub; do not duplicate their contents.
 - Templates carry an illustrative example. Replace it with your own evidence before using the note for real work.
 - Leave unknowns as `unknown`; do not invent baselines, quotes, dates or market figures.
 - Update `updated:` whenever the note materially changes.

@@ -216,21 +216,8 @@ The agent proposes; the human accepts.
 
 ## 7. The artifact chain
 
-| Stage | Artifact | Folder |
-|---|---|---|
-| Signal | Feedback or research note | `01-Users/Feedback/` · `04-Research/` |
-| Problem | Problem note | `02-Problems/` |
-| Opportunity | Opportunity assessment | `03-Opportunities/` |
-| Challenge | Adversarial challenge section | `03-Opportunities/` |
-| Test | Experiment | `07-Delivery/Experiments/` |
-| Decision | Decision record | `05-Decisions/` |
-| Solution | PRD / solution brief | `07-Delivery/PRDs/` |
-| Release | Release record | `07-Delivery/Releases/` |
-| Learning | Review | `08-Reviews/` |
-
-Product traceability:
-
-`Problem → Evidence → Opportunity → Challenge → Experiment or Decision → PRD → Release → Review`
+The canonical product chain, stage questions, artifacts, and transition gates live in
+[Discovery to Delivery](Discovery-to-Delivery.md). This manual does not restate them.
 
 ## 8. Write boundaries
 
@@ -266,7 +253,8 @@ integrates it. Do not let two agents write the same artifact folder concurrently
 | Product strategy blocked | `00-Product/Product.md` | Fill the product spine |
 | PRD refused | Evidence, challenge, baseline | Run the missing experiment |
 | Compliance work blocked | `COMP-003` status/owner | Complete scope and assign owner |
-| `check_wikilinks.py` fails | Script output | Fix file target or anchor; image embeds are skipped |
+| Markdown link broken | Open the target; GitHub shows 404 | Fix the relative path or anchor |
+| `check_wikilinks.py` fails | Script output | Fix file target or anchor; this is a legacy wikilink check |
 | Agent writes too much | Write boundary | Check `Rules.md` Rule 21 |
 
 ## 11. Verification checklist
@@ -276,8 +264,9 @@ Before saying the harness works:
 - [ ] `hermes bundles list` shows `/pm`
 - [ ] `/pm status` returns a report, not an error
 - [ ] Dashboard tables render in Obsidian
-- [ ] `obsidian unresolved` reports no unresolved links
-- [ ] `check_wikilinks.py` reports no unresolved, ambiguous, or broken-anchor links
+- [ ] Relative Markdown links resolve on GitHub: open the README and click the main links
+- [ ] `obsidian unresolved` reports no unresolved legacy wikilinks
+- [ ] `check_wikilinks.py` reports no unresolved wikilinks (legacy check; Markdown links are checked above)
 - [ ] `00-Product/Product.md` is filled or explicitly marked `confidence: none`
 - [ ] Live compliance scope is completed when health data is involved
 - [ ] `git status` is clean after an intentional commit
@@ -289,4 +278,5 @@ Before saying the harness works:
 - [PM](PM.md) — agent brief
 - [Rules](Rules.md) — operating law
 - [Architecture](Architecture.md) — technical contract
+- [Discovery to Delivery](Discovery-to-Delivery.md) — canonical product chain
 - [_Playbooks](Playbooks/_Playbooks.md) — playbook router

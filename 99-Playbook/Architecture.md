@@ -69,11 +69,11 @@ IDs live in filenames: `PROB-004-your-slug.md`, `OPP-002-your-slug.md`.
 - Non-standard IDs keep their template form: `REVIEW-2027-02`, `REVIEW-OM-001`.
 - `CAND-NNN` IDs are global across Opportunities. Scan every Opportunity’s `Candidate solutions`
   table before allocating one.
-- Link canonical artifacts with Obsidian internal links.
+- Link canonical artifacts with relative Markdown links that resolve in both Obsidian and GitHub.
 
 Traceability chains:
 
-- Product: `Problem → Evidence → Opportunity → Challenge → Experiment or Decision → PRD → Release → Review`
+- Product: canonical in [Discovery to Delivery](Discovery-to-Delivery.md)
 - Transformation: `Transformation Thesis → Capability Map → Value-Stream Map → Product Taxonomy → Funding → Portfolio Roadmap → Adoption → Review`
 - Project-to-product: `Product Taxonomy → Funding → Team Topology → Flow Baseline → Dependency Map → Transition Roadmap → Review`
 - Compliance: `Compliance Scope → Data Inventory → Risk → Controls → Vendor/BAA → Incident Readiness → Review`

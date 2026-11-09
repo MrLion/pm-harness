@@ -77,9 +77,7 @@ A Decision Record is required when a decision:
 Verbal decisions do not exist.
 
 ## 10. Traceability is mandatory
-Product traceability:
-
-`Problem → Evidence → Opportunity → Challenge → Experiment or Decision → PRD → Release → Review`
+Product traceability: canonical in [Discovery to Delivery](Discovery-to-Delivery.md).
 
 Transformation traceability:
 
@@ -93,7 +91,7 @@ Compliance traceability:
 
 `Compliance Scope → Data Inventory → Risk → Controls → Vendor/BAA → Incident Readiness → Review`
 
-Every artifact reference is an Obsidian internal link. An orphaned artifact is a defect reported in
+Every artifact reference is a relative Markdown link that resolves in both Obsidian and GitHub. An orphaned artifact is a defect reported in
 `/pm review`.
 
 ## 11. Never fabricate evidence

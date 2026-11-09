@@ -1,6 +1,7 @@
 # Playbooks
 
-Setup and operating manual: [Agent-Manual](../Agent-Manual.md).
+Setup and operating manual: [Agent-Manual](../Agent-Manual.md). Canonical product chain:
+[Discovery to Delivery](../Discovery-to-Delivery.md).
 
 Choose by **what you are changing** and **how work is governed**.
 
