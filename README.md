@@ -20,14 +20,29 @@ The canonical discovery-to-delivery chain and its transition gates are in
 The harness will not invent evidence, silently rewrite strategy, or produce a solution brief before
 validation. Empty fields and `Evidence unavailable.` are preferable to plausible fiction.
 
+## Platform and vault layout
+
+The maintainer runs this on macOS with iCloud, but the harness is not tied to either. It is Markdown
+files plus an Obsidian vault.
+
+| Layout | Obsidian vault root | Dataview prefix |
+|---|---|---|
+| Nested (default) | Parent folder containing `PM vault` | `PM vault/` |
+| Repository root | The `PM vault` folder itself | none — remove `PM vault/` from every query |
+| Renamed nested | Parent folder containing the renamed folder | the folder name |
+
+On Windows or Linux, clone or copy the repository anywhere, open the chosen folder in Obsidian,
+enable Dataview, and use the matching prefix. A fresh clone uses a normal `.git` directory; the
+external git pointer described in `Architecture` is the maintainer's macOS/iCloud setup only.
+
 ## Start in five minutes
 
-1. Open the iCloud **`Documents`** vault in Obsidian. `PM vault` remains a folder inside it.
-2. Enable **Dataview** in that parent vault: Settings → Community plugins.
-3. Open **[Dashboard](Dashboard.md)** (`PM vault/Dashboard.md`). Empty tables are normal before any artifacts exist.
+1. Open the folder that contains the harness in Obsidian. Any local or synced folder works.
+2. Enable **Dataview** in that vault: Settings → Community plugins.
+3. Open **[Dashboard](Dashboard.md)**. Empty tables are normal before any artifacts exist.
 4. Choose one playbook below and follow its flow.
 
-No paid Obsidian features or GitHub repository are required.
+No paid Obsidian features or GitHub account are required.
 
 ## Agent layer
 
@@ -204,13 +219,13 @@ Templates live in `99-Playbook/Templates/`; the index is [_Templates](99-Playboo
 
 | Symptom | Meaning | Action |
 |---|---|---|
-| Grey query blocks | Dataview is not loading | Enable it in the parent `Documents` vault |
+| Grey query blocks | Dataview is not loading | Enable it in the vault that contains the harness |
 | Empty tables | Usually no artifacts yet | Add one correctly typed note |
-| Note missing from a table | Wrong `type`, folder or query prefix | Check frontmatter and the `PM vault/` path |
+| Note missing from a table | Wrong `type`, folder or query prefix | Check frontmatter and the Dataview prefix for your layout |
 | Blank column | Frontmatter key missing | Copy the template schema |
 | New note not immediately visible | Obsidian index lag | Wait a few seconds |
 | Stale item shown | Frontmatter `updated:` is old | Review and update the artifact |
-| Git behaves unexpectedly | `.git` is a pointer file | Do not `git init` or clone here |
+| Git behaves unexpectedly | `.git` is a pointer file | This is the maintainer's external-git setup; do not move git internals into a synced folder |
 
 ## Operating cadence
 
@@ -234,7 +249,7 @@ Research, problems, opportunities, experiments and reviews are agent-writable. P
 changes are drafts. Product strategy and accepted decisions require human approval; see [Rules](99-Playbook/Rules.md).
 
 Customer quotes and account names can be sensitive. Remove unnecessary personal information before
-putting feedback into an iCloud-synced vault.
+putting feedback into a shared or synced vault.
 
 ## Learn more
 

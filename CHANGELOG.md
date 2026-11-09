@@ -7,6 +7,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+### Changed
+
+- Made the README, Agent Manual, and Architecture platform-neutral: documented nested, root, and
+  renamed vault layouts, Dataview prefix choices, and normal `.git` behavior outside the maintainer's
+  macOS/iCloud setup.
+
 ## [0.1.0] - 2026-11-09
 
 ### Added

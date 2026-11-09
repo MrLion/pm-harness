@@ -13,13 +13,18 @@ updated: 2026-11-09
 
 | Layer | What it is | Where it lives |
 |---|---|---|
-| Vault | Product brain: notes, templates, evidence, decisions | Obsidian `Documents/PM vault` |
+| Vault | Product brain: notes, templates, evidence, decisions | `PM vault` in any Obsidian vault |
 | Agent skill | PM procedures and gates | `$HERMES_HOME/skills/productivity/product-management/` |
 | Bundle | Turns `/pm` into the PM command | `$HERMES_HOME/skill-bundles/pm.yaml` |
-| Git | Local audit trail | `PM vault/.git` → `~/Documents/pm-vault-git` |
+| Git | Local audit trail | `.git` in the repo; the maintainer uses an external git directory |
 | Compliance rail | Health-data gate | `11-Compliance/` |
 
 The vault works without the agent layer. `/pm` commands do not.
+
+> [!NOTE] Platform
+> The paths below show the maintainer's macOS + iCloud deployment. The harness is platform-neutral.
+> On Windows or Linux, use your own folder and a normal `.git`; keep the Dataview prefix aligned with
+> the vault layout in [README](../README.md#platform-and-vault-layout).
 
 ## 2. Prerequisites
 
@@ -81,24 +86,26 @@ If `/pm` is unknown, the bundle is not registered. If it loads but reads the wro
 
 ### 4.1 Folder mode
 
-`PM vault` is a folder inside the registered `Documents` vault. Every Dataview query must use:
+`PM vault` can be a nested folder or the vault root.
 
-```text
-FROM "PM vault/02-Problems"
-```
+| Layout | Dataview source |
+|---|---|
+| Nested folder | `FROM "PM vault/02-Problems"` |
+| Repository root | `FROM "02-Problems"` |
+| Renamed folder | `FROM "<folder>/02-Problems"` |
 
-Do not register `PM vault` as a separate vault unless you deliberately strip the prefix from every
-query.
+Choose one layout and apply the same prefix to every query. Do not mix nested and root queries.
 
 ### 4.2 Git
 
 ```bash
-cd "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/PM vault"
+cd "<path to PM vault>"
 git status
 git log -1 --oneline
 ```
 
-The `.git` file points to `~/Documents/pm-vault-git`. Never move git internals into iCloud.
+On this machine `.git` points to `~/Documents/pm-vault-git`. A fresh clone uses a normal `.git`
+directory. Never move git internals into a synced folder if that causes conflicts.
 
 ### 4.3 Verify links and rendering
 

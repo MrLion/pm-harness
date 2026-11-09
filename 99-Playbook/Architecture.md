@@ -15,14 +15,13 @@ Technical reference for agents and advanced users. Setup and operation: [Agent-M
 
 ## Vault mode
 
-`PM vault` is a **folder inside the registered iCloud `Documents` Obsidian vault**, not a
-standalone vault.
+`PM vault` is a **folder inside the registered iCloud `Documents` Obsidian vault** in the maintainer's
+deployment. A portable install may open the repository as the vault root.
 
-- Dataview is installed and enabled in `Documents/.obsidian/plugins/dataview/`.
+- Dataview is enabled in the vault that contains the harness.
 - A nested `PM vault/.obsidian/` is ignored by Obsidian and is not tracked in git.
-- Every Dataview source includes the folder prefix: `FROM "PM vault/02-Problems"`.
-- Do not register the folder as a separate vault merely to fix empty tables. Convert modes only
-  deliberately; doing so requires removing the prefix from every query.
+- Nested layout uses `FROM "PM vault/02-Problems"`; root layout uses `FROM "02-Problems"`.
+- Choose one layout. Do not mix prefixes across queries.
 
 ## Folder model
 
@@ -83,11 +82,11 @@ solution briefs, and Experiments. It never replaces those notes.
 
 ## Git
 
-The vault’s `.git` is a pointer file to `~/Documents/pm-vault-git`, deliberately outside iCloud.
-Notes sync through iCloud; git history remains on the Mac.
+In the maintainer's deployment, the vault’s `.git` is a pointer file to `~/Documents/pm-vault-git`,
+deliberately outside iCloud. A fresh clone uses a normal `.git` directory.
 
-- Never move git internals into iCloud.
-- Never `git init` or clone in this folder; that creates diverging history.
+- In the maintainer's setup, never move git internals into iCloud.
+- Do not create a nested git repository inside a checkout; that creates diverging history.
 - Nested `.obsidian/` remains on disk but is ignored by git as inert machine-local state.
 - A remote may be configured; pushing is a separate, intentional action.
 - Releases are tagged `vX.Y.Z`; update `VERSION` and `CHANGELOG.md` before tagging. See
