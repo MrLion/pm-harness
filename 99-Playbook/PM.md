@@ -2,8 +2,8 @@
 type: agent-brief
 status: active
 updated: 2026-11-09
-vault_root: "PM vault"
-git_dir: "~/Documents/pm-vault-git"
+vault_root: "."
+git_dir: ".git"
 ---
 
 # PM Playbook — agent brief

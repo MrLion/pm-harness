@@ -101,24 +101,24 @@ When the user says "pre-fill the templates", fill the template body — not just
 - Adding a new section to an existing product template reintroduces `[FILL]`; rerun the zero-FILL check after every bulk edit, not only at initial prefill.
 - The template index page (`_Templates.md`) is part of the deliverable: update its worked-example scenario, its `[!example]` instruction, and any stated `FROM` count whenever the template set or scenario changes.
 - Operating-model templates live under `99-Playbook/Templates/Operating-Models/` and are structure-only; their `[FILL]` prompts are intentional. Exclude that subtree from the product-template zero-FILL check.
-- After pre-filling, run the static audit `python scripts/check_wikilinks.py`, then confirm with
-  `obsidian unresolved vault=Documents`. The script checks file targets plus heading/block anchors;
-  `obsidian unresolved` covers file targets only. Every `[[ID]]`, including frontmatter links, must
-  resolve inside the registered vault; unresolved targets make Obsidian create empty notes when clicked.
+- After pre-filling, run `python3 scripts/validate_vault.py` from the repository root. It checks
+  Markdown links and anchors, frontmatter, ID uniqueness, filename/ID consistency, and product-template
+  fill markers. Then confirm with `obsidian unresolved vault=<vault-name>` for Obsidian's own target index.
 - If a link resolves but opens a **template** rather than the canonical artifact, do not call it
   correct. Either create the canonical note or mark the map as illustrative.
 - The pre-filled set is illustrative, not product evidence — label it as such.
 - In Markdown tables, ordinary Markdown links need no pipe escaping; if a note still uses an
   Obsidian wikilink, write `[[Note\|Alias]]` because the unescaped `|` is parsed as a column separator.
-- After a bulk edit in the GitHub-published vault, run the Markdown checker from
-  `obsidian-vault-operations` (`convert_wikilinks_to_markdown.py --check`); `check_wikilinks.py`
-  only sees wikilinks and reports zero after conversion.
+- After a bulk edit in the GitHub-published vault, run `python3 scripts/validate_vault.py`. Do not use
+  `check_wikilinks.py` as the link gate; it only sees wikilinks and reports zero after conversion.
 
 ## Dashboard examples
 
 When adding an example dashboard to `99-Playbook/Templates/`:
 
-- Point example queries at `PM vault/99-Playbook/Templates` so the pre-filled examples render, and state the canonical `FROM` paths to use on real notes.
+- Point example queries at the templates folder with `FROM ""` plus
+  `contains(file.folder, "99-Playbook/Templates")` so they work in either layout, and state the
+  canonical paths to use on real notes.
 - Make the sample data exercise every filter. Name the `Pending` subset **pending recommendation**, not **no recommendation**: `Pending` is a recommendation value. The folder needs at least one `Pending` and one non-`Pending` opportunity; with one row the filtered and unfiltered tables look identical and teach nothing.
 - Avoid two full opportunity lists. One canonical table plus one explicitly labelled subset or action queue is enough.
 - When a dashboard section looks wrong, inspect the query predicate and the actual rows before explaining the field. Report the exact row set (“both tables return OPP-001 because it is the only opportunity and its recommendation is Pending”) instead of restating the definition.
@@ -239,14 +239,14 @@ The repository can be opened as a **root vault** or as a **folder inside a paren
 layout before writing queries:
 
 - Dataview must be enabled in the vault that contains the harness.
-- Root layout: `FROM "02-Problems"`.
-- Nested layout: `FROM "PM vault/02-Problems"` — use the actual containing folder name.
-- Do not mix layouts. Ask which mode before bulk-editing queries.
+- Standard Dashboard: `FROM ""` plus type filters; works in root and nested layouts.
+- Custom folder-scoped query: `FROM "02-Problems"` at root, `FROM "PM vault/02-Problems"` nested.
+- Do not mix custom prefixes. Ask which mode before bulk-editing queries.
 
 For the full static audit sequence (schemas, queries, links, freshness, gates, rendering), load
 `references/harness-audit.md`. The vault is now GitHub-published: body links are relative Markdown,
-not wikilinks. Load `obsidian-vault-operations` and read its `github-publishing` reference; run its
-`convert_wikilinks_to_markdown.py --check` script. Do not reintroduce `[[...]]` into body content.
+not wikilinks. Run `python3 scripts/validate_vault.py` as the link and contract gate. Do not
+reintroduce `[[...]]` into body content.
 Links in this skill shown as `[[...]]` are Obsidian-only examples and must be translated when the
 vault is GitHub-published. For turning research documents into template-level examples, load
 `references/scenario-sourcing.md`. For the four-playbook router, lifecycle-vs-operating-model
@@ -276,7 +276,7 @@ Dataview tables read **frontmatter keys**, not headings. `TABLE status, date` sh
 The user invokes `/pm <subcommand> [args]`. Treat the trailing text as the subcommand.
 Natural language also works; map it to the nearest subcommand and say which one you ran.
 
-`/pm` is a **skill bundle**, not a built-in command: `~/.hermes/profiles/pdm/skill-bundles/pm.yaml`
+`/pm` is a **skill bundle**, not a built-in command: `$HERMES_HOME/skill-bundles/pm.yaml`
 (`name: pm`, member skill `product-management`, plus an `instruction` block that maps trailing text
 to a subcommand). Bundles live in `$HERMES_HOME/skill-bundles/`. Edit that YAML to change routing;
 `hermes bundles list` verifies registration only — it does **not** verify that paths inside the

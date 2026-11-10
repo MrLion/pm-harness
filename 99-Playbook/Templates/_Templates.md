@@ -96,8 +96,9 @@ query, so they never appear in a table. Do not move a template into `02-Problems
 
 ## Vault layout
 
-A nested vault uses a path prefix (`FROM "PM vault/05-Decisions"`). A repository-root vault uses
-`FROM "05-Decisions"`. Choose one layout and apply the same prefix to every query; do not mix them.
+The standard Dashboard uses `FROM ""` plus type filters and works in nested or root layouts. A
+custom folder-scoped query uses a prefix (`FROM "PM vault/05-Decisions"` nested, `FROM
+"05-Decisions"` root); do not mix them.
 
 ## Attribution
 

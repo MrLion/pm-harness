@@ -19,8 +19,8 @@ Operating · [PM](99-Playbook/PM.md) · [Rules](99-Playbook/Rules.md)
 
 ```dataview
 TABLE status, confidence, severity, priority
-FROM "PM vault/02-Problems"
-WHERE type = "problem" AND status != "closed"
+FROM ""
+WHERE type = "problem" AND status != "closed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC,
      choice(severity = "low", 0, choice(severity = "medium", 1, 2)) DESC
 ```
@@ -29,8 +29,8 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 
 ```dataview
 TABLE status, confidence, recommendation
-FROM "PM vault/03-Opportunities"
-WHERE type = "opportunity" AND status != "closed"
+FROM ""
+WHERE type = "opportunity" AND status != "closed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 
@@ -38,16 +38,16 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 
 ```dataview
 TABLE confidence, review_after
-FROM "PM vault/03-Opportunities"
-WHERE type = "opportunity" AND status != "closed" AND (recommendation = null OR recommendation = "Pending")
+FROM ""
+WHERE type = "opportunity" AND status != "closed" AND (recommendation = null OR recommendation = "Pending") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 ```
 
 ## Decisions
 
 ```dataview
 TABLE status, date, reversibility, review_date
-FROM "PM vault/05-Decisions"
-WHERE type = "decision"
+FROM ""
+WHERE type = "decision" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT date DESC
 LIMIT 12
 ```
@@ -56,8 +56,8 @@ LIMIT 12
 
 ```dataview
 TABLE date, review_date, reversibility
-FROM "PM vault/05-Decisions"
-WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending")
+FROM ""
+WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT review_date ASC
 ```
 
@@ -65,8 +65,8 @@ SORT review_date ASC
 
 ```dataview
 TABLE status, opportunity, updated
-FROM "PM vault/07-Delivery/PRDs"
-WHERE type = "prd"
+FROM ""
+WHERE type = "prd" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT updated DESC
 ```
 
@@ -74,8 +74,8 @@ SORT updated DESC
 
 ```dataview
 TABLE status, opportunity, start, end
-FROM "PM vault/07-Delivery/Experiments"
-WHERE type = "experiment" AND status != "completed"
+FROM ""
+WHERE type = "experiment" AND status != "completed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT start ASC
 ```
 
@@ -83,8 +83,8 @@ SORT start ASC
 
 ```dataview
 TABLE category, date, reliability
-FROM "PM vault/04-Research"
-WHERE type = "research"
+FROM ""
+WHERE type = "research" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT date DESC
 LIMIT 15
 ```
@@ -93,8 +93,8 @@ LIMIT 15
 
 ```dataview
 TABLE status, confidence, owner, updated
-FROM "PM vault/09-Transformation"
-WHERE type != null AND type != "transformation-index"
+FROM ""
+WHERE contains(file.folder, "09-Transformation") AND type != null AND type != "transformation-index" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT updated DESC
 ```
 
@@ -102,8 +102,8 @@ SORT updated DESC
 
 ```dataview
 TABLE status, confidence, owner, updated
-FROM "PM vault/10-Operating-Model"
-WHERE type != null AND type != "operating-model-index"
+FROM ""
+WHERE contains(file.folder, "10-Operating-Model") AND type != null AND type != "operating-model-index" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT updated DESC
 ```
 
@@ -111,8 +111,8 @@ SORT updated DESC
 
 ```dataview
 TABLE status, confidence, owner, updated
-FROM "PM vault/11-Compliance"
-WHERE type != null AND type != "compliance-index"
+FROM ""
+WHERE contains(file.folder, "11-Compliance") AND type != null AND type != "compliance-index" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT updated DESC
 ```
 
@@ -120,8 +120,8 @@ SORT updated DESC
 
 ```dataview
 TABLE type, status
-FROM "PM vault/00-Product" OR "PM vault/01-Users" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research" OR "PM vault/06-Roadmap" OR "PM vault/08-Reviews" OR "PM vault/09-Transformation" OR "PM vault/10-Operating-Model" OR "PM vault/11-Compliance"
-WHERE type != null AND (updated = null OR updated = "" OR updated = "YYYY-MM-DD")
+FROM ""
+WHERE type != null AND (updated = null OR updated = "" OR updated = "YYYY-MM-DD") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT file.name ASC
 ```
 
@@ -129,8 +129,8 @@ SORT file.name ASC
 
 ```dataview
 TABLE type, updated
-FROM "PM vault/00-Product" OR "PM vault/01-Users" OR "PM vault/02-Problems" OR "PM vault/03-Opportunities" OR "PM vault/05-Decisions" OR "PM vault/07-Delivery" OR "PM vault/04-Research" OR "PM vault/06-Roadmap" OR "PM vault/08-Reviews" OR "PM vault/09-Transformation" OR "PM vault/10-Operating-Model" OR "PM vault/11-Compliance"
-WHERE type != null AND (updated != null AND updated != "") AND date(updated) < date(today) - dur(30 days)
+FROM ""
+WHERE type != null AND (updated != null AND updated != "") AND date(updated) < date(today) - dur(30 days) AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT updated ASC
 ```
 
@@ -138,8 +138,8 @@ SORT updated ASC
 
 ```dataview
 TABLE status, confidence, review_after
-FROM "PM vault/03-Opportunities"
-WHERE type = "opportunity" AND status != "closed" AND review_after != null AND date(review_after) <= date(today)
+FROM ""
+WHERE type = "opportunity" AND status != "closed" AND review_after != null AND date(review_after) <= date(today) AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT review_after ASC
 ```
 
@@ -147,8 +147,8 @@ SORT review_after ASC
 
 ```dataview
 TABLE status, review_date, reversibility
-FROM "PM vault/05-Decisions"
-WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending") AND review_date != null AND date(review_date) <= date(today)
+FROM ""
+WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending") AND review_date != null AND date(review_date) <= date(today) AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT review_date ASC
 ```
 
@@ -158,8 +158,8 @@ SORT review_date ASC
 
 ```dataview
 TABLE status, confidence, updated
-FROM "PM vault/03-Opportunities"
-WHERE type = "opportunity" AND status != "closed"
+FROM ""
+WHERE type = "opportunity" AND status != "closed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
       AND (review_after = null OR review_after = "" OR review_after = "YYYY-MM-DD")
 SORT file.name ASC
 ```
@@ -168,8 +168,8 @@ SORT file.name ASC
 
 ```dataview
 TABLE status, actual_outcome, updated
-FROM "PM vault/05-Decisions"
-WHERE type = "decision" AND status = "accepted"
+FROM ""
+WHERE type = "decision" AND status = "accepted" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
       AND (actual_outcome = null OR actual_outcome = "Pending")
       AND (review_date = null OR review_date = "" OR review_date = "YYYY-MM-DD")
 SORT file.name ASC
@@ -179,8 +179,8 @@ SORT file.name ASC
 
 ```dataview
 TABLE type, updated, review_cadence_days
-FROM "PM vault/00-Product" OR "PM vault/01-Users" OR "PM vault/06-Roadmap" OR "PM vault/08-Reviews"
-WHERE review_cadence_days != null AND (updated != null AND updated != "" AND updated != "YYYY-MM-DD") AND date(updated) < date(today) - dur(review_cadence_days + " days")
+FROM ""
+WHERE review_cadence_days != null AND (updated != null AND updated != "" AND updated != "YYYY-MM-DD") AND date(updated) < date(today) - dur(review_cadence_days + " days") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT updated ASC
 ```
 
@@ -188,7 +188,7 @@ SORT updated ASC
 
 ```dataview
 LIST
-FROM "PM vault/08-Reviews"
-WHERE type = "review"
+FROM ""
+WHERE type = "review" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
 SORT file.name DESC
 ```

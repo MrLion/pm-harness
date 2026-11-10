@@ -40,13 +40,13 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 
 ## 4. Links and naming
 
-- **GitHub-published vault:** run the `obsidian-vault-operations` Markdown checker
-  (`convert_wikilinks_to_markdown.py --check`) for relative targets and heading anchors. It is the
-  link gate after conversion. `check_wikilinks.py` sees only wikilinks and will report zero; do not
-  present that as a link audit.
-- **Obsidian-only vault:** run `python scripts/check_wikilinks.py` first: it checks file targets,
-  escaped table aliases, and heading/block anchors against the registered parent root.
-- `check_wikilinks.py` skips `![[image.png]]` embeds. Use it with `obsidian unresolved`: if an image is reported, confirm the asset exists and trust Obsidian's verdict.
+- **All layouts:** run `python3 scripts/validate_vault.py` from the repository root. It checks relative
+  Markdown targets, heading anchors, frontmatter, ID uniqueness, filename/ID consistency, and
+  product-template fill markers. It is the link and contract gate.
+- **Obsidian-only legacy links:** run `python scripts/check_wikilinks.py` only when the vault still
+  contains `[[...]]`. It will report zero after conversion; do not present that as a link audit.
+- Use `obsidian unresolved` as a second target index. If an image is reported, confirm the asset
+  exists and trust Obsidian's verdict.
 - `obsidian orphans` scans the whole parent vault; filter output to `PM vault/`. A root page such as
   `Dashboard` or `Scenario` with no incoming wikilink is a navigation gap even if reachable by path.
   Index notes (`_*`) and non-Markdown assets are expected orphans; report content pages first.

@@ -11,6 +11,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 - Repository copy of the agent layer under `agent/`: the `product-management` skill, its references
   and checker, and the `pm` bundle template.
+- `scripts/validate_vault.py`, a contract validator for Markdown links and anchors, frontmatter, IDs,
+  filename/ID consistency, product-template fill markers, open gates, and overdue decisions.
+- GitHub Actions validation on every push and pull request.
+- `scripts/install_agent_layer.py`, which installs the skill and writes the absolute vault path into
+  `pm.yaml`.
+- `examples/vertical-slice/`, a synthetic end-to-end fixture from product to review.
+- `LICENSE` (MIT) and `NOTICE` separating MIT from CC BY-SA 4.0 content.
 
 ### Changed
 

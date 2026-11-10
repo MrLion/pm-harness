@@ -23,45 +23,40 @@ The vault works without the agent layer. `/pm` commands do not.
 
 > [!NOTE] Platform
 > The paths below show the maintainer's macOS + iCloud deployment. The harness is platform-neutral.
-> On Windows or Linux, use your own folder and a normal `.git`; keep the Dataview prefix aligned with
-> the vault layout in [README](../README.md#platform-and-vault-layout).
+> On Windows or Linux, use your own folder and a normal `.git`. The standard Dashboard needs no
+> folder prefix; only custom folder-scoped queries do. See [README](../README.md#platform-and-vault-layout).
 
 ## 2. Prerequisites
 
 - Obsidian installed.
-- The parent `Documents` vault opened in Obsidian — not `PM vault` as a separate vault.
-- Dataview enabled in the parent vault: Settings → Community plugins.
+- The vault folder opened in Obsidian — either the parent folder or the repository root.
+- Dataview enabled in that vault: Settings → Community plugins.
 - Hermes installed for `/pm` commands.
 - Git available for local audit.
 
 Verify Obsidian first:
 
-1. Open `Documents`.
-2. Open `PM vault/Dashboard.md`.
+1. Open the vault that contains the harness.
+2. Open `Dashboard.md`.
 3. Confirm the Dataview tables render as tables, even if empty.
 
 ## 3. Install the agent layer
 
-The skill and bundle are profile-local. They are not part of the vault repo.
+The skill and bundle are profile-local. The repository holds the source in `agent/`; the vault does
+not load them from there.
 
-### 3.1 Install the skill
+### 3.1 Run the installer
 
-Copy the skill folder from this repository:
+```bash
+export HERMES_HOME="$HOME/.hermes/profiles/pdm"
+python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
+```
 
-`agent/skills/productivity/product-management/` → `$HERMES_HOME/skills/productivity/product-management/`
+The installer copies the skill to `$HERMES_HOME/skills/productivity/product-management/` and writes
+`pm.yaml` to `$HERMES_HOME/skill-bundles/pm.yaml` with the absolute vault path. It refuses to run if
+the target does not contain `99-Playbook/Rules.md`.
 
-It must contain `SKILL.md` and its `references/` and `scripts/` folders.
-
-### 3.2 Install the bundle
-
-Copy `agent/skill-bundles/pm.yaml` to:
-
-`$HERMES_HOME/skill-bundles/pm.yaml`
-
-Edit its `Vault root:` line to the absolute path of your vault. The bundle must point at the skill
-and at `99-Playbook/Rules.md`.
-
-### 3.3 Reload and verify
+### 3.2 Reload and verify
 
 ```bash
 hermes bundles list
@@ -87,13 +82,14 @@ If `/pm` is unknown, the bundle is not registered. If it loads but reads the wro
 
 `PM vault` can be a nested folder or the vault root.
 
-| Layout | Dataview source |
+| Query | Dataview source |
 |---|---|
-| Nested folder | `FROM "PM vault/02-Problems"` |
-| Repository root | `FROM "02-Problems"` |
-| Renamed folder | `FROM "<folder>/02-Problems"` |
+| Standard Dashboard | `FROM ""` plus type filters |
+| Custom nested query | `FROM "PM vault/02-Problems"` |
+| Custom root query | `FROM "02-Problems"` |
 
-Choose one layout and apply the same prefix to every query. Do not mix nested and root queries.
+The standard Dashboard is layout-agnostic. Only custom folder-scoped queries need a prefix; do not
+mix nested and root custom queries.
 
 ### 4.2 Git
 
@@ -109,10 +105,11 @@ directory. Never move git internals into a synced folder if that causes conflict
 ### 4.3 Verify links and rendering
 
 ```bash
-python3 "$HERMES_HOME/skills/productivity/product-management/scripts/check_wikilinks.py" \
-  "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/PM vault"
-obsidian unresolved vault=Documents
+python3 scripts/validate_vault.py "<path to the vault>"
 ```
+
+The validator checks Markdown links and anchors, frontmatter, ID uniqueness, and filename/ID
+consistency. It exits non-zero on errors.
 
 Then open `Dashboard.md` and confirm the tables render.
 
@@ -253,14 +250,14 @@ integrates it. Do not let two agents write the same artifact folder concurrently
 |---|---|---|
 | `/pm` unknown | `hermes bundles list` | Register or reload `pm.yaml` |
 | `/pm` reads old rules | `pm.yaml` path | Point to `99-Playbook/Rules.md` |
-| Tables empty | Parent vault and Dataview | Open `Documents`, enable Dataview |
-| Tables still empty | `FROM` prefix | Use `FROM "PM vault/<folder>"` |
+| Tables empty | Vault and Dataview | Open the vault, enable Dataview |
+| Tables still empty | Dataview not enabled or wrong `type` | Run `python3 scripts/validate_vault.py`; the standard Dashboard needs no prefix |
 | Links unresolved | `obsidian unresolved` | Fix target or parent-vault registration |
 | Product strategy blocked | `00-Product/Product.md` | Fill the product spine |
 | PRD refused | Evidence, challenge, baseline | Run the missing experiment |
 | Compliance work blocked | `COMP-003` status/owner | Complete scope and assign owner |
 | Markdown link broken | Open the target; GitHub shows 404 | Fix the relative path or anchor |
-| `check_wikilinks.py` fails | Script output | Fix file target or anchor; this is a legacy wikilink check |
+| `scripts/validate_vault.py` fails | Validator output | Fix the link, anchor, frontmatter, ID, or template marker it names |
 | Agent writes too much | Write boundary | Check `Rules.md` Rule 21 |
 
 ## 11. Verification checklist
@@ -272,7 +269,7 @@ Before saying the harness works:
 - [ ] Dashboard tables render in Obsidian
 - [ ] Relative Markdown links resolve on GitHub: open the README and click the main links
 - [ ] `obsidian unresolved` reports no unresolved legacy wikilinks
-- [ ] `check_wikilinks.py` reports no unresolved wikilinks (legacy check; Markdown links are checked above)
+- [ ] `python3 scripts/validate_vault.py` reports 0 errors
 - [ ] `00-Product/Product.md` is filled or explicitly marked `confidence: none`
 - [ ] Live compliance scope is completed when health data is involved
 - [ ] `VERSION` matches the latest changelog entry and release tag

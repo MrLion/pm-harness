@@ -25,15 +25,16 @@ validation. Empty fields and `Evidence unavailable.` are preferable to plausible
 The maintainer runs this on macOS with iCloud, but the harness is not tied to either. It is Markdown
 files plus an Obsidian vault.
 
-| Layout | Obsidian vault root | Dataview prefix |
+| Layout | Obsidian vault root | Standard Dashboard |
 |---|---|---|
-| Nested (default) | Parent folder containing `PM vault` | `PM vault/` |
-| Repository root | The `PM vault` folder itself | none — remove `PM vault/` from every query |
-| Renamed nested | Parent folder containing the renamed folder | the folder name |
+| Nested (default) | Parent folder containing `PM vault` | works as-is |
+| Repository root | The `PM vault` folder itself | works as-is |
+| Renamed nested | Parent folder containing the renamed folder | works as-is |
 
-On Windows or Linux, clone or copy the repository anywhere, open the chosen folder in Obsidian,
-enable Dataview, and use the matching prefix. A fresh clone uses a normal `.git` directory; the
-external git pointer described in `Architecture` is the maintainer's macOS/iCloud setup only.
+On Windows or Linux, clone or copy the repository anywhere and open the chosen folder in Obsidian.
+The Dashboard uses `FROM ""` and type filters, so it does not need a folder prefix. Custom
+folder-scoped queries can use a prefix, but the standard tables do not. A fresh clone uses a normal
+`.git` directory; the external git pointer is the maintainer's macOS/iCloud setup only.
 
 ## Start in five minutes
 
@@ -57,9 +58,23 @@ them; the commands require the `product-management` skill and the `pm` bundle.
 
 If the skill or bundle is missing, the vault still works; only `/pm` commands are unavailable.
 
-A fresh clone does not include these files. Install Hermes, place the `product-management` skill under
-`$HERMES_HOME/skills/productivity/` and `pm.yaml` under `$HERMES_HOME/skill-bundles/`, run
-`hermes bundles reload`, then test `/pm status`. See https://hermes-agent.nousresearch.com/docs/.
+A fresh clone includes the source in `agent/`, but it is not loaded until you install it. Run:
+
+```bash
+python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
+hermes bundles reload
+```
+
+Then test `/pm status`. See https://hermes-agent.nousresearch.com/docs/.
+
+## Validate
+
+```bash
+python3 scripts/validate_vault.py
+```
+
+The validator checks relative Markdown links and anchors, frontmatter, ID uniqueness, filename/ID
+consistency, and product-template fill markers. It runs in CI on every push and pull request.
 
 Full setup and operating guide: [Agent-Manual](99-Playbook/Agent-Manual.md). Guided lab:
 [Agent Walkthrough](99-Playbook/Agent-Walkthrough.md). Value estimate:
@@ -223,7 +238,7 @@ Templates live in `99-Playbook/Templates/`; the index is [_Templates](99-Playboo
 |---|---|---|
 | Grey query blocks | Dataview is not loading | Enable it in the vault that contains the harness |
 | Empty tables | Usually no artifacts yet | Add one correctly typed note |
-| Note missing from a table | Wrong `type`, folder or query prefix | Check frontmatter and the Dataview prefix for your layout |
+| Note missing from a table | Wrong `type` or Dataview not enabled | Check frontmatter; run `python3 scripts/validate_vault.py` |
 | Blank column | Frontmatter key missing | Copy the template schema |
 | New note not immediately visible | Obsidian index lag | Wait a few seconds |
 | Stale item shown | Frontmatter `updated:` is old | Review and update the artifact |
@@ -265,4 +280,10 @@ putting feedback into a shared or synced vault.
 - **[Digital-Transformation](99-Playbook/Playbooks/Digital-Transformation.md)** — portfolio or enterprise capability change
 - **[Project-to-Product](99-Playbook/Playbooks/Project-to-Product.md)** — funding, team topology, and governance transition
 - **[START-HERE](START-HERE.md)** — first guided workflow for the outcome-led path
+- **[Worked vertical slice](examples/vertical-slice/README.md)** — synthetic chain from product to review
 - **[Architecture](99-Playbook/Architecture.md)** — folder mode, frontmatter, query paths, git and agent write boundaries
+
+## License
+
+MIT for scripts, the agent layer, and original documentation. Pichler-derived template sections are
+CC BY-SA 4.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).

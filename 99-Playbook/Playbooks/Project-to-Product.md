@@ -1,7 +1,6 @@
 ---
 type: playbook
 artifact: playbook
-id: PLAYBOOK-004
 status: active
 updated: 2026-11-08
 framework: "Project to Product + Flow Framework"

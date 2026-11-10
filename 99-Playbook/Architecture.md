@@ -20,8 +20,8 @@ deployment. A portable install may open the repository as the vault root.
 
 - Dataview is enabled in the vault that contains the harness.
 - A nested `PM vault/.obsidian/` is ignored by Obsidian and is not tracked in git.
-- Nested layout uses `FROM "PM vault/02-Problems"`; root layout uses `FROM "02-Problems"`.
-- Choose one layout. Do not mix prefixes across queries.
+- The standard Dashboard uses `FROM ""` plus type filters, so it works in nested and root layouts.
+- Custom folder-scoped queries must use a prefix that matches the layout.
 
 ## Folder model
 
@@ -101,10 +101,10 @@ updates `updated:` and leaves a reviewable git diff.
 
 Check programmatically and in Obsidian; visible files alone are not proof.
 
-1. All Dataview sources have the correct `PM vault/` prefix.
+1. Dataview sources are either `FROM ""` with type filters or use the correct folder prefix.
 2. Every queried column exists in the corresponding template schema.
 3. `/pm` loads the `product-management` skill with the requested subcommand intact.
-4. Check that relative Markdown links resolve, then run `obsidian unresolved vault=Documents` for
+4. Check that relative Markdown links resolve, then run `obsidian unresolved vault=<vault-name>` for
    any legacy wikilinks.
 5. Open and visually verify the rendered dashboard in Obsidian.
 6. Prefilled product templates contain zero `[FILL]`; operating-model and compliance templates may

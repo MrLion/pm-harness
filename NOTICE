@@ -1,0 +1,46 @@
+# Licensing notice
+
+This repository contains more than one license. The license for a file depends on what it contains.
+
+## MIT
+
+The MIT License in `LICENSE` applies to:
+
+- `scripts/`
+- `agent/`
+- the original documentation in `README.md`, `START-HERE.md`, `VERSIONING.md`, `CHANGELOG.md`,
+  `Dashboard.md`, and `99-Playbook/` except the CC BY-SA files listed below
+- original artifact text in `00-Product/` through `11-Compliance/`
+
+## CC BY-SA 4.0
+
+The following files contain Pichler-derived field definitions, checklists, or template structures.
+They are licensed under **Creative Commons Attribution-ShareAlike 4.0 International**:
+
+- `99-Playbook/Templates/Product-Vision-Board.md`
+- `99-Playbook/Templates/GO-Roadmap.md`
+- Pichler-derived sections of:
+  - `99-Playbook/Templates/Strategy.md`
+  - `99-Playbook/Templates/Goals.md`
+  - `99-Playbook/Templates/Metrics.md`
+  - `99-Playbook/Templates/PERSONA-001-HDHP-Imaging-Patient.md`
+  - `99-Playbook/Templates/PERSONA-002-Buyer-Payer.md`
+  - `99-Playbook/Templates/PRD-001-Imaging-Estimate.md`
+
+Attribution: Roman Pichler / Pichler Consulting Limited.  
+Source: https://www.romanpichler.com/  
+License: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+These files are share-alike. If you adapt them, distribute the adapted material under the same
+license and preserve this attribution.
+
+## Other sources
+
+- Impact Mapping material is CC BY 4.0, Gojko Adzic: https://www.impactmapping.org/
+- SVPG, Torres, and Amplitude material is linked and summarized rather than reproduced in bulk.
+- Survey and market sources are cited in the notes; their own terms apply.
+
+## No legal advice
+
+This notice records the current repository structure. It is not legal advice. Confirm licensing with
+the rights holders before commercial redistribution.

@@ -1,7 +1,7 @@
 # Agent layer
 
 > [!NOTE] For humans
-> This folder is the source for the agent layer. It is not loaded automatically from the repository. Copy it into your Hermes profile once, then edit the vault path.
+> This folder is the source for the agent layer. It is not loaded automatically from the repository. Run the installer once to copy it into your Hermes profile and write the vault path.
 
 ## What is here
 
@@ -12,24 +12,15 @@
 
 ## Install
 
-Set `HERMES_HOME` to the profile that should own the agent. On this machine that is
-`~/.hermes/profiles/pdm`.
+From the repository root:
 
 ```bash
 export HERMES_HOME="$HOME/.hermes/profiles/pdm"
-
-mkdir -p "$HERMES_HOME/skills/productivity" "$HERMES_HOME/skill-bundles"
-cp -R agent/skills/productivity/product-management "$HERMES_HOME/skills/productivity/"
-cp agent/skill-bundles/pm.yaml "$HERMES_HOME/skill-bundles/pm.yaml"
+python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
 ```
 
-Edit `pm.yaml` and replace:
-
-```text
-Vault root: <absolute path to the vault root>
-```
-
-with the absolute path that contains `99-Playbook/Rules.md`.
+The installer copies the skill and writes `pm.yaml` with the absolute vault path. It refuses to run
+if the target does not contain `99-Playbook/Rules.md`.
 
 Then reload and verify:
 

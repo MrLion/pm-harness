@@ -1,7 +1,6 @@
 ---
 type: playbook
 artifact: playbook
-id: PLAYBOOK-003
 status: active
 updated: 2026-11-08
 framework: "Transformation thesis + capability/value-stream mapping + product taxonomy"

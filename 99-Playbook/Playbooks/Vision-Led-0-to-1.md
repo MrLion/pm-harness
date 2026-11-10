@@ -1,7 +1,6 @@
 ---
 type: playbook
 artifact: playbook
-id: PLAYBOOK-001
 status: active
 updated: 2026-11-08
 framework: "Pichler + Torres + SVPG"
