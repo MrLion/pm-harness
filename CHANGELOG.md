@@ -9,8 +9,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Added
 
-- Repository copy of the agent layer under `agent/`: the `product-management` skill, its references
-  and checker, and the `pm` bundle template.
+- Repository copy of the agent layer under `agent/`: the `pm` skill, its references and checker, and
+  the `pm` bundle template.
 - `scripts/validate_vault.py`, a contract validator for Markdown links and anchors, frontmatter, IDs,
   filename/ID consistency, product-template fill markers, open gates, and overdue decisions.
 - GitHub Actions validation on every push and pull request.
@@ -45,8 +45,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Added the worked example to CI as a second validation step.
 - Removed the last folder-scoped `FROM "PM vault/..."` queries from the index pages; they now use
   `FROM ""` with a folder filter and the `project` marker.
-- Documented the desktop fallback: the shared gateway rejects bundles, so use
-  `/product-management status` there; `/pm` remains available in `hermes --cli`.
+- Renamed the skill to `pm`, so `/pm` is one command on both surfaces: the desktop gateway resolves
+  the skill, and the classic CLI resolves the bundle.
 
 ## [0.1.0] - 2026-11-09
 

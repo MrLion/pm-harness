@@ -105,7 +105,7 @@ Check programmatically and in Obsidian; visible files alone are not proof.
 1. Dataview sources are `FROM ""` with `project = "pm-harness"` and type filters. The project marker
    keeps a shared Obsidian vault from leaking sibling notes into the dashboard.
 2. Every queried column exists in the corresponding template schema.
-3. `/pm` loads the `product-management` skill with the requested subcommand intact.
+3. `/pm` loads the `pm` skill with the requested subcommand intact.
 4. Check that relative Markdown links resolve, then run `obsidian unresolved vault=<vault-name>` for
    any legacy wikilinks.
 5. Open and visually verify the rendered dashboard in Obsidian.

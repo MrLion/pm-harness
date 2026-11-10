@@ -5,6 +5,7 @@ Use when the user asks for time savings, ROI, throughput, or the harness's busin
 ## Rules
 
 - Never present an estimate as a measured benchmark. State assumptions, confidence, and the validation plan.
+- Report whole percentages and at most one decimal of hours. Do not quote two-decimal percentages such as 18.7% or 12.6%: they imply measured precision the model does not have. Use a range for the headline.
 - Use the user's stated workweek. Default to 40 hours. A different workweek changes absolute hours, not the percentage range.
 - Build a weighted roll-up: `activity share of the week × realistic reduction`, then apply an overlap/adoption haircut. Do not add independent per-task savings as if they stack.
 - Keep one weighted roll-up table. Do not keep a separate per-task savings table beside it; the two drift and imply additive savings.
@@ -21,9 +22,9 @@ Use when the user asks for time savings, ROI, throughput, or the harness's busin
 | PRD, decision, review | 18% | 7.2 hrs | 25% | 1.8 hrs |
 | Meetings and alignment | 31% | 12.4 hrs | 5% | 0.6 hrs |
 | Delivery and operations | 16% | 6.4 hrs | 0% | 0 hrs |
-| **Total** | | **40 hrs** | | **7.5 hrs — 18.7%** |
+| **Total** | | **40 hrs** | | **7.5 hrs — ~19%** |
 
-Apply a 20–25% overlap/adoption haircut for a central estimate near **5.6 hours — 14%**. Keep the range at **10–20% of total PM time** unless the user supplies a baseline.
+Apply a 20–25% overlap/adoption haircut for a central estimate near **5–6 hours — ~14%**. Keep the range at **10–20% of total PM time** unless the user supplies a baseline.
 
 ## Validation
 
@@ -43,9 +44,9 @@ the harness only partly reduces.
 
 | Scenario | Central saving | Range | Main constraint |
 |---|---:|---:|---|
-| PM with 1–2 teams | **5.6 hrs — 14%** | 10–20% | Documentation is a larger share of the week |
-| One PM across 5 teams | **5.0 hrs — 12.6%** | 10–15% | Coordination is about 40% of the week and barely reduced |
-| Group PM over 5 PMs | **6.9 hrs — 17.2%** | 15–20% | Portfolio status and cross-team synthesis are larger |
+| PM with 1–2 teams | **5.6 hrs — ~14%** | 10–20% | Documentation is a larger share of the week |
+| One PM across 5 teams | **5.0 hrs — ~13%** | 10–15% | Coordination is about 40% of the week and barely reduced |
+| Group PM over 5 PMs | **6.9 hrs — ~17%** | 15–20% | Portfolio status and cross-team synthesis are larger |
 
 One PM across five teams saves **less** than a PM with one or two teams: the tool compresses
 documentation, recall, and traceability — not escalation, alignment, or dependency meetings. Do not

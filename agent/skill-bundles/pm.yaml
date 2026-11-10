@@ -1,7 +1,7 @@
 name: pm
 description: "Product management layer — /pm status, discover, analyze, challenge, prd, decide, review"
 skills:
-  - product-management
+  - pm
 instruction: |
   The trailing text after /pm is the SUBCOMMAND, not a question. Dispatch it:
 

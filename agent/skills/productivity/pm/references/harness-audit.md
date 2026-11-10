@@ -13,7 +13,8 @@ Use for `/pm review`, any static vault audit, or before declaring a harness chan
 
 ## 2. Frontmatter contract
 
-- Parse every template's frontmatter as YAML; require a dict with the real artifact `type`.
+- Parse every template's frontmatter as YAML; require a dict with the real artifact `type` and the
+  project marker (`project: pm-harness` for live/templates, `pm-harness-example` for fixtures).
 - Require standard enums: confidence `none → low → medium → high`; research reliability
   `weak → medium → strong`; primary risk `value / usability / feasibility / viability`.
 - Require `updated:` on typed artifact templates. Missing maintenance dates are a finding.
@@ -27,7 +28,8 @@ Use for `/pm review`, any static vault audit, or before declaring a harness chan
 
 ## 3. Dataview reliability
 
-- Check every `FROM` uses the current folder-mode prefix.
+- Check the standard Dashboard uses `FROM ""` plus `project = "pm-harness"`, type filters, and excludes `99-Playbook`, `agent`, and `examples`. A type filter alone does not isolate a shared vault.
+- Check custom folder-scoped queries use the prefix for the actual layout; do not mix root and nested prefixes.
 - Check every typed artifact folder (and index note) query filters on `type`; otherwise index notes and unrelated notes become rows.
 - For every `TABLE` column, compare against the matching template schema; a column without a schema key renders blank.
 - Sort confidence/severity/reliability by rank, not alphabetically. A nested choice is a working pattern:
@@ -41,16 +43,17 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 ## 4. Links and naming
 
 - **All layouts:** run `python3 scripts/validate_vault.py` from the repository root. It checks relative
-  Markdown targets, heading anchors, frontmatter, ID uniqueness, filename/ID consistency, and
-  product-template fill markers. It is the link and contract gate.
+  Markdown targets, heading anchors, frontmatter, ID uniqueness, filename/ID consistency, project
+  markers, real calendar dates, approved-scope fields, and product-template fill markers. It is the
+  link and contract gate. Run the example scope separately.
 - **Obsidian-only legacy links:** run `python scripts/check_wikilinks.py` only when the vault still
-  contains `[[...]]`. It will report zero after conversion; do not present that as a link audit.
+  contains `[[...]]`. It reports zero after conversion; do not present that as a link audit.
 - Use `obsidian unresolved` as a second target index. If an image is reported, confirm the asset
   exists and trust Obsidian's verdict.
 - `obsidian orphans` scans the whole parent vault; filter output to `PM vault/`. A root page such as
   `Dashboard` or `Scenario` with no incoming wikilink is a navigation gap even if reachable by path.
   Index notes (`_*`) and non-Markdown assets are expected orphans; report content pages first.
-- Then run `obsidian unresolved vault=Documents` for Obsidian's own file-target index, and
+- Then run `obsidian unresolved vault=<vault-name>` for Obsidian's own file-target index, and
   `obsidian links path="..."` on the note to see the resolved target paths.
 - Do not treat `obsidian unresolved` as a complete correctness check: it does not validate anchors
   or semantic target. A link that opens a template when the map should open a canonical artifact is
@@ -75,7 +78,9 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 - After a folder or template rename, grep for the old token in prose, code paths, Dataview `FROM`
   clauses, and link targets; the Markdown checker will not catch stale plain-text paths or prose
   claims.
-- Also grep the `/pm` bundle (`~/.hermes/profiles/pdm/skill-bundles/pm.yaml`) for the old folder path; `hermes bundles list` proves registration only, not that the instruction points at an existing `Rules.md`.
+- Also grep both the live `/pm` bundle (`$HERMES_HOME/skill-bundles/pm.yaml`) and the
+  repo source (`agent/skill-bundles/pm.yaml`) for the old folder path; `hermes bundles list` proves
+  registration only, not that the instruction points at an existing `Rules.md`.
 
 ## 5. Workflow gates
 
@@ -85,7 +90,13 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 - Reviews distinguish measured miss, unknown, and not measured.
 - A Review must not claim a risk was tested when the linked Experiment is still `status: planned`.
 - A planned or future-dated Review must not report compliance checks as completed. Use `Pending — pilot not run` or `Not assessed — example`; `None`, `Reviewed`, and `No findings` imply work that has not happened.
-- The compliance gate is the **live** `11-Compliance` scope, not the `COMP-001` template. Require `status: approved` or `active`, resolved data classification and jurisdiction, and a named owner; `draft` or `Unassigned` is a stop condition.
+- Require `case_id` in `00-Product/Scenario.md` and every prefilled product template. A template example without the case spine is an orphaned fragment; `_Templates.md` must name the case.
+- For a booking, payment, or service case, require a journey-map view under `01-Users/Journey-Maps/`; ensure each pain row links to a Problem or Opportunity and is not the only place that artifact exists.
+- When the buyer is unresolved, require a buyer/payer persona marked `confidence: none` and `evidence_count: 0`; a PRD or release that implies a buyer is a contradiction.
+- Separate the coverage metric from the customer-outcome metric. Coverage can rise while prediction or decision quality does not; require both in Metrics, PRD, Goals, Release, and Review.
+- A Release marked `planned` while the Decision is `defer`/`no-go` or the buyer is unresolved is a contradiction. Require `conditional`, the gate, named owners, and a simulated/pending review.
+- A Decision record should include status quo as an explicit option when the real choice is “do something” versus “keep the current path”.
+- The compliance gate is the **live** `11-Compliance` scope, not the `COMP-001` template. Require `status: approved` or `active`, resolved data classification and jurisdiction, and a named owner; `draft` or `Unassigned` is a stop condition. The validator enforces these fields; a green validator run is still not a substitute for reading the scope.
 - Cross-check metric direction words (under/over a threshold) across Metrics, PRD and Goals; a
   reversed guardrail is a material defect.
 
@@ -101,7 +112,7 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 
 ## 7. Page-level audits
 
-For README, START-HERE, PM, Rules, Architecture, Visual-Standards, Future-Problem-Statements, and Agent-Manual audits:
+For README, START-HERE, PM, Rules, Architecture, Visual-Standards, Future-Problem-Statements, Agent-Manual, Agent-Walkthrough, Discovery-to-Delivery, and Harness-Value audits:
 
 - Treat the product chain as a single-source-of-truth artifact. `99-Playbook/Discovery-to-Delivery.md`
   owns it; README, Agent-Manual, Architecture, Rules, and `_Templates` must link to it, not restate it.
@@ -110,9 +121,8 @@ For README, START-HERE, PM, Rules, Architecture, Visual-Standards, Future-Proble
 
 - Require an audience callout: README/START-HERE **For humans**; PM/Rules/Architecture **For AI
   agents only**; Visual-Standards, Future-Problem-Statements, and Agent-Manual **For humans and agents**.
-- README must state the agent layer is external: skill path, bundle path, `/pm status` smoke test,
-  and expected output. A vault that renders without `/pm` is not broken; a README that omits the
-  prerequisite is incomplete.
+- README must state the agent-layer source under `agent/`, the profile-local target paths, the `/pm status` smoke test, and expected output. A vault that renders without `/pm` is not broken; a README that omits the prerequisite is incomplete.
+- Public setup docs must not assume macOS or iCloud. Check for root, nested, and renamed-folder layouts and confirm each stated Dataview prefix matches the chosen layout; a fresh clone uses a normal `.git` directory.
 - Grep the page and its headings for `Hermes`; vault naming is `PM Playbook`, `PM Rules`, `PM Dashboard`, not the old brand.
 - Cross-check every named Rules section against the current numbering; do not trust `§18` or other
   stale section references.

@@ -1,13 +1,13 @@
 ---
-name: product-management
+name: pm
 description: "PM work on the Obsidian vault: discovery to review."
-version: 1.9.0
+version: 1.15.0
 author: PM Playbook
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [product-management, pm, obsidian, discovery, prd, roadmap, decisions]
+    tags: [pm, product-management, obsidian, discovery, prd, roadmap, decisions]
 ---
 
 # Product Management Harness
@@ -20,9 +20,13 @@ from there.
 **Published repository: https://github.com/MrLion/pm-harness (public).** Body links are relative
 Markdown, not Obsidian wikilinks.
 
+A synced vault may contain spaces and may keep `.git` outside the sync folder. Treat that as one
+deployment, not a harness requirement. A fresh clone uses a normal `.git` directory.
+
 **Before changing vault wiring, load `obsidian-vault-operations`.** The vault can be opened as a
 root vault or as a folder inside a parent vault. Dataview queries must match that layout. Do not
-re-register the vault merely to fix empty tables.
+re-register the vault merely to fix empty tables; files visible in Obsidian plus rendered Dataview
+tables are the success signals.
 
 Nothing in this skill overrides `99-Playbook/Rules.md` in the vault — that file is the law and may
 evolve beyond this skill. Read it first every session.
@@ -35,7 +39,7 @@ challenge, or critique product work. Also load it when a request arrives as a fe
 harness's job is to convert that into a problem first. Also load it when the user supplies a
 research document or URL and asks for scenario/example generation from that source, or asks to
 restructure the README, playbooks, or operating-model documentation, add compliance/privacy/security
-controls to the playbook, or asks for the harness's time savings, ROI, or value case. For setup, read `99-Playbook/Agent-Manual.md` first; for a guided first run, use `99-Playbook/Agent-Walkthrough.md`. The manual is reference; the walkthrough is the lab, not policy. For PM vs Product Owner decision rights, load `references/role-boundaries.md`.
+controls to the playbook, asks for the harness's time savings, ROI, or value case, or asks to harden the repository for a fresh clone (validator, CI, installer, licensing). For setup, read `99-Playbook/Agent-Manual.md` first; for a guided first run, use `99-Playbook/Agent-Walkthrough.md`. The manual is reference; the walkthrough is the lab, not policy. For PM vs Product Owner decision rights, load `references/role-boundaries.md`.
 
 ## Read order (before any substantive recommendation)
 
@@ -86,6 +90,20 @@ When the user says "pre-fill the templates", fill the template body — not just
 
 - Replace every `[FILL]` in the chosen template with scenario data. A collapsible `> [!example]`
   callout above an otherwise blank template is **not** a pre-filled template.
+- Give the worked example one `case_id` in `00-Product/Scenario.md` and in every prefilled product
+  template; `_Templates.md` names the case spine. Details: `references/scenario-sourcing.md`.
+- Before calling the worked case coherent, run the measurement and rehearsal checks: label any
+  survey-to-segment transfer, separate comprehension from prediction, define the denominator for
+  non-bookers, and record prediction timing. Internal consistency is not enough if the case measures
+  the wrong population or asks for recall after the bill.
+  Details: `references/scenario-sourcing.md#worked-case-review-measurement-and-rehearsal-traps`.
+- **Prediction timing is part of the metric.** Capture the patient's expected dollar amount before
+  booking, after the estimate is shown, and before any bill or EOB is visible; compare it with final
+  responsibility after adjudication. A retrospective answer measures recall, not prediction.
+- **A synthetic rehearsal is not evidence.** Keep it in `99-Playbook/Templates/`, mark it
+  `synthetic` with `confidence: none`, link it to the capture form, and leave the live decision
+  unchanged. Use it to derive the exact next-test prompt; never let it fill `actual_outcome` or
+  silently change a decision.
 - Fill the real **product-lifecycle** templates in `99-Playbook/Templates/` in place. Do not create a separate
   `Pre-filled/` folder — the user rejected that shape.
 - Keep frontmatter `type:` and section headings intact so the files remain renderable and
@@ -102,23 +120,25 @@ When the user says "pre-fill the templates", fill the template body — not just
 - The template index page (`_Templates.md`) is part of the deliverable: update its worked-example scenario, its `[!example]` instruction, and any stated `FROM` count whenever the template set or scenario changes.
 - Operating-model templates live under `99-Playbook/Templates/Operating-Models/` and are structure-only; their `[FILL]` prompts are intentional. Exclude that subtree from the product-template zero-FILL check.
 - After pre-filling, run `python3 scripts/validate_vault.py` from the repository root. It checks
-  Markdown links and anchors, frontmatter, ID uniqueness, filename/ID consistency, and product-template
-  fill markers. Then confirm with `obsidian unresolved vault=<vault-name>` for Obsidian's own target index.
+  Markdown links and anchors, frontmatter, ID uniqueness, filename/ID consistency, `project` markers,
+  real calendar dates, approved-scope fields, product-template fill markers, open gates, and overdue
+  decisions. Use `obsidian unresolved vault=<vault-name>` only as a second target index for legacy
+  wikilinks.
 - If a link resolves but opens a **template** rather than the canonical artifact, do not call it
   correct. Either create the canonical note or mark the map as illustrative.
 - The pre-filled set is illustrative, not product evidence — label it as such.
 - In Markdown tables, ordinary Markdown links need no pipe escaping; if a note still uses an
   Obsidian wikilink, write `[[Note\|Alias]]` because the unescaped `|` is parsed as a column separator.
-- After a bulk edit in the GitHub-published vault, run `python3 scripts/validate_vault.py`. Do not use
-  `check_wikilinks.py` as the link gate; it only sees wikilinks and reports zero after conversion.
+- After a bulk edit in the GitHub-published vault, run `python3 scripts/validate_vault.py`. Do not
+  use `check_wikilinks.py` as the link gate; it only sees wikilinks and reports zero after conversion.
 
 ## Dashboard examples
 
 When adding an example dashboard to `99-Playbook/Templates/`:
 
 - Point example queries at the templates folder with `FROM ""` plus
-  `contains(file.folder, "99-Playbook/Templates")` so they work in either layout, and state the
-  canonical paths to use on real notes.
+  `contains(file.folder, "99-Playbook/Templates")` and `project = "pm-harness"` so they work in either
+  layout, and state the canonical paths to use on real notes.
 - Make the sample data exercise every filter. Name the `Pending` subset **pending recommendation**, not **no recommendation**: `Pending` is a recommendation value. The folder needs at least one `Pending` and one non-`Pending` opportunity; with one row the filtered and unfiltered tables look identical and teach nothing.
 - Avoid two full opportunity lists. One canonical table plus one explicitly labelled subset or action queue is enough.
 - When a dashboard section looks wrong, inspect the query predicate and the actual rows before explaining the field. Report the exact row set (“both tables return OPP-001 because it is the only opportunity and its recommendation is Pending”) instead of restating the definition.
@@ -134,10 +154,11 @@ The vault's templates encode two published methods. Use them as written in
 | `00-Product/Product.md` | Pichler | Product Vision Board: VISION · TARGET GROUP · NEEDS · PRODUCT (3–5 stand-out features) · BUSINESS GOALS + extended board |
 | `00-Product/Strategy.md` | Pichler | strategy elements + differentiation + priority thesis |
 | `00-Product/Goals.md` | Pichler + OKR + Impact Mapping | one Objective, measurable KRs, actor → behaviour change → deliverable map |
-| `00-Product/Metrics.md` | Pichler + North Star | one customer-value North Star, inputs, guardrails and supporting KPIs |
+| `00-Product/Metrics.md` | Pichler + North Star | primary coverage metric + customer-outcome metric, inputs, guardrails and supporting KPIs |
 | `03-Opportunities/Discovery Map.md` | Torres | Opportunity Solution Tree (OST) linking goal → problems → opportunities → solutions → experiments |
 | `06-Roadmap/*` | Pichler | GO Product Roadmap rows: NAME · GOAL · METRICS · DATE · FEATURES (max 3–5) |
 | `01-Users/Personas/` | Pichler | persona template with evidence count |
+| `01-Users/Journey-Maps/` | Journey mapping | stages, actors, touchpoints, pain, evidence, links to Problems and Opportunities; a view, not evidence |
 | `01-Users/Feedback/` | none | verbatim signal, source, sentiment and account frequency |
 | `07-Delivery/Releases/` | Pichler | shipped goal, measured result, surprises and follow-up |
 | `03-Opportunities/` | SVPG | 10-question opportunity assessment + four big risks |
@@ -239,14 +260,21 @@ The repository can be opened as a **root vault** or as a **folder inside a paren
 layout before writing queries:
 
 - Dataview must be enabled in the vault that contains the harness.
-- Standard Dashboard: `FROM ""` plus type filters; works in root and nested layouts.
-- Custom folder-scoped query: `FROM "02-Problems"` at root, `FROM "PM vault/02-Problems"` nested.
-- Do not mix custom prefixes. Ask which mode before bulk-editing queries.
+- The standard Dashboard uses `FROM ""` plus `project = "pm-harness"` and type filters; it works in
+  root, nested, and renamed layouts. The project marker is what isolates a shared vault.
+- Every artifact note carries `project: pm-harness`; fixtures use `pm-harness-example`. A note without
+  the marker is invisible to the Dashboard.
+- A custom folder-scoped query uses `FROM "02-Problems"` at root or `FROM "PM vault/02-Problems"` nested.
+- Do not mix custom prefixes. Ask which mode before bulk-editing custom queries.
+
+macOS with iCloud is one deployment, not a requirement. On Windows or Linux, any local or synced
+folder works; a fresh clone uses a normal `.git` directory.
 
 For the full static audit sequence (schemas, queries, links, freshness, gates, rendering), load
-`references/harness-audit.md`. The vault is now GitHub-published: body links are relative Markdown,
-not wikilinks. Run `python3 scripts/validate_vault.py` as the link and contract gate. Do not
-reintroduce `[[...]]` into body content.
+`references/harness-audit.md`. The vault is GitHub-published: body links are relative Markdown, not
+wikilinks. Run `python3 scripts/validate_vault.py` as the link and contract gate; do not reintroduce
+`[[...]]` into body content. For fresh-clone hardening, validator/CI setup, project-marker isolation, installer collision behavior,
+license separation, and the worked-slice acceptance check, load `references/repo-hardening.md`.
 Links in this skill shown as `[[...]]` are Obsidian-only examples and must be translated when the
 vault is GitHub-published. For turning research documents into template-level examples, load
 `references/scenario-sourcing.md`. For the four-playbook router, lifecycle-vs-operating-model
@@ -263,8 +291,8 @@ Dataview tables read **frontmatter keys**, not headings. `TABLE status, date` sh
 `key:` values; `WHERE type = "decision"` filters on `type:`. A note with the wrong `type` is
 **invisible** to every table in the vault, and a missing key renders as a blank column.
 
-- When creating a note, copy the template's frontmatter, then update `id`, `status`, links, and
-  `updated:`. Never retype the schema from memory and never leave the template's ID in place.
+- When creating a note, copy the template's frontmatter, then update `project`, `id`, `status`, links,
+  and `updated:`. Never retype the schema from memory and never leave the template's ID in place.
 - Never change `type:` — it is the routing key for every query.
 - Templates carry their *real* type (not `type: template`) so copies are queryable immediately;
   they sit in `99-Playbook/Templates/`, outside all folder-scoped queries.
@@ -274,23 +302,28 @@ Dataview tables read **frontmatter keys**, not headings. `TABLE status, date` sh
 ## Commands
 
 The user invokes `/pm <subcommand> [args]`. Treat the trailing text as the subcommand.
-
-If the desktop app returns `unsupported_command`, invoke the skill directly as
-`/product-management <subcommand> [args]`. The desktop shared gateway does not execute bundles; the
-`/pm` alias works in `hermes --cli`.
 Natural language also works; map it to the nearest subcommand and say which one you ran.
 
 `/pm` is a **skill bundle**, not a built-in command: `$HERMES_HOME/skill-bundles/pm.yaml`
-(`name: pm`, member skill `product-management`, plus an `instruction` block that maps trailing text
-to a subcommand). Bundles live in `$HERMES_HOME/skill-bundles/`. Edit that YAML to change routing;
+(`name: pm`, member skill `pm`, plus an `instruction` block that maps trailing text to a subcommand). Bundles live in `$HERMES_HOME/skill-bundles/`. Edit that YAML to change routing;
 `hermes bundles list` verifies registration only — it does **not** verify that paths inside the
 instruction still exist. The trailing text arrives in the scaffold header as `User instruction:
 <text>` — same turn, never a separate message.
 
-The agent layer is external, not a repo artifact. README must state the skill path, the bundle path,
-a `/pm status` smoke test, and the expected result; the vault must remain usable without the bundle.
-The full setup and operating manual is `99-Playbook/Agent-Manual.md`; keep README, Architecture, and
-Dashboard linked to it.
+**Desktop shared gateway.** The desktop app does not execute bundles, but it executes the `pm`
+skill. `/pm` is therefore one command on every surface: the desktop resolves the skill, and the
+classic CLI resolves the bundle. If `/pm` returns `unsupported_command` on desktop, the installed
+skill is still named `product-management`; reinstall the renamed `pm` skill.
+
+The repository ships the agent-layer source under `agent/`: `agent/skills/productivity/pm/`
+and `agent/skill-bundles/pm.yaml`. It is still profile-local at runtime. Install it with
+`python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"`, then run
+`hermes bundles reload`. The installer validates the source bundle, writes the absolute vault path into `pm.yaml`, and refuses
+a target without `99-Playbook/Rules.md`. It also refuses to overwrite an existing skill or bundle
+unless `--update` is passed. The repo copy is a snapshot, not runtime: when this skill changes, sync
+the updated skill and bundle back into `agent/` before tagging a release. README must state the source, installer command, `/pm status` smoke test, and
+expected result; the vault must remain usable without the bundle. The full setup and operating manual is `99-Playbook/Agent-Manual.md`; keep README,
+Architecture, and Dashboard linked to it.
 After any folder or template rename, grep `pm.yaml` for the old path and update it. A stale
 `99-Hermes/Rules.md` in the bundle is a live routing bug even when `hermes bundles list` is green.
 
@@ -386,6 +419,11 @@ accepted-but-unresolved decisions are separate findings from stale `updated:` da
 - **One requested change = one change.** When asked to fix a link, change only that link in the
   named template. Do not rename files, add examples, rewrite dashboards or decision records, or fill
   live artifact notes unless asked. Revert incidental edits before reporting.
+- **Critique review is read-only unless the user asks for fixes.** Verify each claim against actual
+  files and counts first; report what is right, wrong, or overstated. Do not patch while reviewing.
+- **Finish means committed and verified.** When the user says finish/do it, run the validator,
+  commit, push, and confirm the remote ref and CI conclusion. A dirty tree or local-only pass is not
+  finished.
 - **Ready-to-use docs, not patchwork.** When asked to restructure a multi-mode README or guide, rewrite the whole narrative coherently. A router that links to other pages while the body still shows only one mode is a partial patch; every promised loop/mode and its entry gate must be visible in the main document, and the body terminology must match the router.
 - **One source of truth per layer.** README routes, `_Playbooks` carries playbook/methods/lineage, and individual playbooks carry flow. Do not reintroduce a standalone Frameworks/Methods page beside them unless the user explicitly asks for a separate reference.
 - **One canonical product chain.** `99-Playbook/Discovery-to-Delivery.md` owns the product chain and transition gates. README, Agent-Manual, Architecture, Rules, and `_Templates` must link to it rather than restate it. Divergent chain wording (`Experiment or Decision` vs `Experiment → Decision`, `Solution brief` vs `PRD`) is a documentation defect.
@@ -408,6 +446,12 @@ instead of restating them.
 
 Release/versioning follows the `obsidian-vault-operations` skill: `VERSION`, `CHANGELOG.md`, and
 `VERSIONING.md` must agree before a tag; never tag uncommitted work.
+
+Public setup docs must not assume macOS or iCloud. The standard Dashboard uses `FROM ""` plus
+`project = "pm-harness"` and type filters; custom folder-scoped queries carry the matching root,
+nested, or renamed-folder prefix. Treat the external `.git` pointer as one deployment. Repo copies of
+profile-local files must be sanitized: no absolute user paths; the bundle carries a `Vault root:
+<absolute path>` placeholder and the installer writes the real path.
 
 Simplified permission ladders must mirror `Rules.md` Rule 21 exactly. `05-Decisions` is
 human-approved only; an agent may prepare options, not write or accept the decision record.
@@ -467,9 +511,23 @@ Every write updates `updated:` in frontmatter and leaves a git-committable diff.
 | Add compliance as a fifth product loop | Treat it as a cross-cutting rail; Tier 2 only after medical-device/SaMD classification |
 | Treat a report named in a template as a live source | Create a `04-Research/RESEARCH-NNN` note with the source URL and link it from the evidence rows |
 | Treat a compliance template as the gate | Require a live `11-Compliance` scope with `approved`/`active`, resolved classification/jurisdiction, and a named owner |
+| Call a coverage metric a North Star | Keep coverage as the leading metric and add a customer-outcome metric; coverage can rise while decisions do not improve |
+| Keep a release `planned` while the decision is `defer` or the buyer is unresolved | Make it `conditional`, with the decision/buyer/compliance gate, named owners, and a simulated review |
+| Write “patients cannot estimate” when the source shows partial estimate receipt | Write “cannot reliably predict,” and split the segment by receipt and accuracy |
+| Ship prefilled templates without a case spine | Add `case_id`, a linked Scenario, a journey map, a buyer hypothesis, and a glossary |
 | Trust `hermes bundles list` as proof the bundle is correct | Grep `pm.yaml` for old folder paths after every rename; registration does not validate the instruction body |
+| Assume `/pm` is a bundle only | Ship the `pm` skill too; desktop executes the skill, the classic CLI executes the bundle, and the command stays `/pm` |
 | Give a live research note the template's ID | Allocate a new live ID (`RESEARCH-002` when the template is `RESEARCH-001`) and repoint evidence rows to it |
 | Trust a template-index narrative (“Lantern”, “33 FROM”, “delete [!example]”) | Re-derive the example scenario, clause count, and live artifact counts from the current files |
+| Treat the profile-local skill/bundle as shipped with the repo | Add the source under `agent/` and install instructions; the `$HERMES_HOME` copy is still required at runtime |
+| Assume macOS/iCloud in public setup docs | Document root, nested, and renamed layouts with matching Dataview prefixes; the external git pointer is one deployment |
 | Use `[[...]]` in a GitHub-published vault | Use relative Markdown links; GitHub renders literal brackets |
-| Treat `obsidian unresolved` as a Markdown link check | It only sees wikilinks; run the Markdown checker after conversion |
+| Treat `obsidian unresolved` as a Markdown link check | It only sees wikilinks; run `python3 scripts/validate_vault.py` after conversion |
+| Rely on prompt rules for gates and IDs | Add the executable validator and CI; prose is not enforcement |
+| Ship a fresh clone with `PM vault/` prefixes and a placeholder bundle path | Use `FROM ""` plus `project = "pm-harness"` and the installer script |
+| Let the installer overwrite an existing skill or bundle | Refuse collisions by default; require `--update` |
+| Rely on `type:` filters to isolate a shared vault | Require `project: pm-harness`; sibling projects can use the same `type` values |
+| Accept an approved compliance scope with `Unassigned` or unknown fields | Validate named owner, data classification, and jurisdiction in the validator |
+| Call a synthetic fixture a live vertical slice | Mark it `example: true` / `synthetic: true`; keep live outcomes pending |
+| Claim one license for a repo with Pichler-derived templates | Split MIT and CC BY-SA in `LICENSE` plus `NOTICE` |
 | Invent a plausible metric or quote | `Evidence unavailable.` |

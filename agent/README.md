@@ -7,7 +7,7 @@
 
 | Path | Purpose |
 |---|---|
-| `skills/productivity/product-management/` | PM skill: procedures, references, and the wikilink checker |
+| `skills/productivity/pm/` | PM skill: procedures, references, and the wikilink checker |
 | `skill-bundles/pm.yaml` | `/pm` command routing |
 
 ## Install
@@ -35,11 +35,11 @@ hermes bundles reload
 Start Hermes and run:
 
 ```text
-/product-management status
+/pm status
 ```
 
-In the classic CLI (`hermes --cli`), the bundle also works as `/pm status`. The Hermes desktop shared
-gateway does not execute bundles; use the skill command there.
+The same `/pm status` works on both surfaces: the desktop gateway resolves the `pm` skill, and the
+classic CLI resolves the `pm` bundle.
 
 Expected result: a read-only status report, not an error.
 

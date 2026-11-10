@@ -15,7 +15,7 @@ updated: 2026-11-09
 | Layer | What it is | Where it lives |
 |---|---|---|
 | Vault | Product brain: notes, templates, evidence, decisions | `PM vault` in any Obsidian vault |
-| Agent skill | PM procedures and gates | `$HERMES_HOME/skills/productivity/product-management/` |
+| Agent skill | PM procedures and gates | `$HERMES_HOME/skills/productivity/pm/` |
 | Bundle | Turns `/pm` into the PM command | `$HERMES_HOME/skill-bundles/pm.yaml` |
 | Git | Local audit trail | `.git` in the repo; the maintainer uses an external git directory |
 | Compliance rail | Health-data gate | `11-Compliance/` |
@@ -55,7 +55,7 @@ python3 -m pip install -r scripts/requirements.txt
 python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
 ```
 
-The installer copies the skill to `$HERMES_HOME/skills/productivity/product-management/` and writes
+The installer copies the skill to `$HERMES_HOME/skills/productivity/pm/` and writes
 `pm.yaml` to `$HERMES_HOME/skill-bundles/pm.yaml` with the absolute vault path. It validates the source
 bundle first, refuses to run if the target does not contain `99-Playbook/Rules.md`, and refuses to
 overwrite an existing skill or bundle unless you pass `--update`.
@@ -68,20 +68,20 @@ hermes bundles show pm
 hermes bundles reload
 ```
 
-Then start Hermes and run the skill command:
+Then start Hermes and run:
 
 ```text
-/product-management status
+/pm status
 ```
 
-The classic CLI (`hermes --cli`) also supports the bundle as `/pm status`. The Hermes desktop shared
-gateway does not execute bundles, so `/pm` returns `unsupported_command` there; use the skill command.
+The same command works in the classic CLI and the desktop app: the desktop resolves the `pm` skill,
+the CLI resolves the `pm` bundle.
 
 Expected result: product health, top problems and opportunities, stale artifacts, and one recommended
 next action. On an empty vault, it should say what is missing rather than inventing a product.
 
-If `/pm` is unknown, the bundle is not registered. If it loads but reads the wrong rules file, fix
-`pm.yaml`.
+If `/pm` is unknown, the skill or bundle is not installed in this profile. Check `hermes skills list`
+and `hermes bundles list`, then reinstall. If it loads but reads the wrong rules file, fix `pm.yaml`.
 
 ## 4. Wire the vault
 
@@ -255,8 +255,8 @@ integrates it. Do not let two agents write the same artifact folder concurrently
 
 | Symptom | Check | Fix |
 |---|---|---|
-| `/pm` unknown | `hermes bundles list` | Register or reload `pm.yaml`; in desktop use `/product-management status` |
-| `/pm` returns `unsupported_command` | Desktop shared gateway | Use `/product-management status`, or run `/pm` from `hermes --cli` |
+| `/pm` unknown | `hermes bundles list`; `hermes skills list` | Register/reload `pm.yaml`; reinstall the `pm` skill if desktop cannot resolve it |
+| `/pm` returns `unsupported_command` | Old `product-management` skill is installed | Reinstall the renamed `pm` skill with `--update` |
 | `/pm` reads old rules | `pm.yaml` path | Point to `99-Playbook/Rules.md` |
 | Tables empty | Vault and Dataview | Open the vault, enable Dataview |
 | Tables still empty | Dataview not enabled, wrong `type`, or missing `project` | Run `python3 scripts/validate_vault.py`; live notes need `project: pm-harness` |

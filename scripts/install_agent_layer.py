@@ -54,7 +54,7 @@ def main() -> int:
     vault = Path(args.vault).expanduser().resolve()
     hermes_home = Path(args.hermes_home).expanduser().resolve()
 
-    source_skill = repo / "agent" / "skills" / "productivity" / "product-management"
+    source_skill = repo / "agent" / "skills" / "productivity" / "pm"
     source_bundle = repo / "agent" / "skill-bundles" / "pm.yaml"
     if not source_skill.exists() or not source_bundle.exists():
         print("Run this from the repository checkout.", file=sys.stderr)
@@ -76,15 +76,15 @@ def main() -> int:
         print("Bundle template is not a mapping.", file=sys.stderr)
         return 2
     skills = parsed.get("skills")
-    if not isinstance(skills, list) or "product-management" not in skills:
-        print("Bundle template does not declare the product-management skill.", file=sys.stderr)
+    if not isinstance(skills, list) or "pm" not in skills:
+        print("Bundle template does not declare the pm skill.", file=sys.stderr)
         return 2
     instruction = str(parsed.get("instruction", ""))
     if PLACEHOLDER not in instruction or "99-Playbook/Rules.md" not in instruction:
         print("Bundle template is missing the vault root or Rules.md instruction.", file=sys.stderr)
         return 2
 
-    target_skill = hermes_home / "skills" / "productivity" / "product-management"
+    target_skill = hermes_home / "skills" / "productivity" / "pm"
     target_bundle = hermes_home / "skill-bundles" / "pm.yaml"
     collisions = [p for p in (target_skill, target_bundle) if p.exists()]
     if collisions and not args.update:

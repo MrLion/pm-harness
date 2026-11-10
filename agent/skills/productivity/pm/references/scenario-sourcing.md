@@ -35,6 +35,20 @@ scenarios to populate templates.
 - Before committing the scenario, verify that the chain is coherent: the problem, the evidence, the
   experiment, the metric and the decision must point at the same journey, not a generic market fact.
 
+## Case spine and completeness
+
+- Give the worked example one `case_id` (for example `CASE-001`) in `00-Product/Scenario.md` and in
+every prefilled product template. `_Templates.md` names the case spine. A template with an example
+but no `case_id` is an orphaned fragment, not part of the case.
+- When the buyer is unresolved, add a buyer/payer persona marked `confidence: none` and
+  `evidence_count: 0`. Do not let the PRD, roadmap, or release imply a buyer that the decision
+  record has not named.
+- For any booking, payment, or service case, add a journey map under `01-Users/Journey-Maps/`. It is
+  a view: stages, actor, touchpoint, pain, evidence, and links to Problems and Opportunities. It is
+  not evidence and must not be the only place a problem exists.
+- Put a short glossary in the scenario for role terms that drift: patient, member, buyer, user,
+  estimate, patient responsibility. Use those terms consistently across templates.
+
 ## Pre-filled templates vs example callouts
 
 - "Pre-fill the templates" means fill the template body: replace every `[FILL]` with scenario data.
@@ -79,8 +93,61 @@ plus a contradictory example is still a failed example pass.
   claimed value is a better patient decision. A guardrail needs a threshold, not just a direction.
 - **Decision honesty:** an example may show a gate, not a foregone build. Compare build, partner and
   defer when data ownership, buyer, estimate accuracy or implementation cost are unresolved.
+- **Evidence-to-problem wording:** if the source says a share of users already receive the artifact,
+  do not write that users "cannot" get it. Write the precise failure — coverage and accuracy are
+  uneven — and split the segment by whether they received it and whether it was accurate.
+- **Coverage vs outcome:** a coverage metric is a leading metric, not a North Star. Pair it with an
+  outcome metric (for example, whether the patient can predict final responsibility within tolerance)
+  and propagate both through Goals, PRD, roadmap, release, and review. A coverage metric can rise
+  while the customer outcome does not move.
+- **Release status follows the decision:** if the decision is `defer`/`no-go`, or the buyer is
+  unresolved, the release record is `conditional`, not `planned`. Add the gate, named owners, and a
+  simulated/pending review. Do not imply a scheduled launch behind an open gate.
+- **Decision options include status quo:** compare build, partner, defer, and do-nothing. Status quo
+  is the baseline the other options must beat, not a neutral default.
 - **Scope consistency:** use one journey and one procedure name across the chain (for example, avoid
   switching from outpatient imaging to colonoscopy). A capability deferred in Release must not appear
   in the initial roadmap release; align PRD, Roadmap and Release feature scope explicitly.
 - **Final sweep:** grep the templates for the old claim, the old procedure name, the old metric, and
   the old release scope. Fix every hit before committing or reporting completion.
+
+## Worked-case review: measurement and rehearsal traps
+
+Run these checks before calling a multi-template case coherent. A case can be internally consistent
+and still measure the wrong population or the wrong outcome.
+
+1. **Survey-to-segment transfer.** If the source surveys a broad consumer or patient population and
+the case names a narrower segment, label the transfer explicitly. State that the figures are a reason
+to investigate, not a segment estimate, and that frequency and accuracy in the segment are unknown.
+   Close the gap with recent journeys from that segment, including people who did not complete the
+   action — for a booking case, 8–10 journeys with at least 4 non-bookers. Record the information
+   available at the decision point, the action taken, whether the artifact changed the choice, and
+   the driver (uncertainty, affordability, network, urgency, or another reason). Do not present the
+   broader survey as segment evidence.
+
+2. **Comprehension vs prediction.** A comprehension test asks whether someone can explain
+   inclusions, exclusions, and validity. Prediction asks whether they can forecast the final amount.
+   A patient can understand an estimate perfectly and still receive a materially different bill.
+   Keep comprehension as the prototype result; measure prediction in a pilot with reconciled bills.
+   In the review, label the prediction row as a pilot metric and state that the formative test did
+   not measure it. Do not set a four-of-five prediction target on a five-person comprehension study.
+
+3. **Denominator bias against non-bookers.** Coverage counts who saw the estimate; reconciliation
+   counts people who eventually received a bill. Both miss people who switched, deferred, or never
+   booked. Add a short decision follow-up for everyone who received an estimate, reported separately
+   from reconciliation: action taken, whether the estimate informed the choice, and what drove it.
+   State the denominator explicitly: prediction accuracy is among reconciled estimates; decision
+   follow-up is among all estimate recipients. Without that split, the case can look successful while
+   the people most affected are invisible.
+
+4. **Prediction capture timing.** Record the patient's expected dollar amount before booking, after
+   the estimate is shown, and before any bill or EOB is visible. Compare it with final responsibility
+   after claim adjudication. Do not ask after the bill; that measures recall, not prediction. State
+   the capture point in the metric, PRD, and review so the pilot cannot drift.
+
+5. **Synthetic rehearsal.** A mock interview set is a rehearsal, not evidence. Keep it in
+   `99-Playbook/Templates/`, mark it `synthetic` with `confidence: none`, link it to the capture form,
+   and keep the live decision `Pending` or `defer`. Use it to expose failure modes and derive the exact
+   next-test prompt. For example, if participants cannot tell what an estimate covers, add a
+   missing-charge probe to the comprehension test. Never let the rehearsal update `actual_outcome` or
+   change the decision.
