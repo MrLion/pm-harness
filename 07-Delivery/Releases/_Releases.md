@@ -5,8 +5,8 @@ What shipped, when, and what happened afterwards. Template: [REL-001-Imaging-Est
 
 ```dataview
 TABLE date, goal, metric_result
-FROM "PM vault/07-Delivery/Releases"
-WHERE type = "release"
+FROM ""
+WHERE type = "release" AND contains(file.folder, "07-Delivery/Releases") AND project = "pm-harness"
 SORT date DESC
 ```
 

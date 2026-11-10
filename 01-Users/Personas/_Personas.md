@@ -5,8 +5,8 @@ not substitute for talking to one.
 
 ```dataview
 TABLE status, confidence, evidence_count
-FROM "PM vault/01-Users/Personas"
-WHERE type = "persona"
+FROM ""
+WHERE type = "persona" AND contains(file.folder, "01-Users/Personas") AND project = "pm-harness"
 SORT evidence_count ASC
 ```
 

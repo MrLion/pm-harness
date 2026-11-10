@@ -38,8 +38,8 @@ load-bearing evidence.
 
 ```dataview
 TABLE category, date, reliability
-FROM "PM vault/04-Research"
-WHERE type = "research"
+FROM ""
+WHERE type = "research" AND contains(file.folder, "04-Research") AND project = "pm-harness"
 SORT date DESC
 ```
 
@@ -47,8 +47,8 @@ SORT date DESC
 
 ```dataview
 TABLE category, reliability
-FROM "PM vault/04-Research"
-WHERE type = "research" AND (reliability = "weak" OR reliability = null)
+FROM ""
+WHERE type = "research" AND (reliability = "weak" OR reliability = null) AND contains(file.folder, "04-Research") AND project = "pm-harness"
 ```
 
 ## Intake checklist for every research note

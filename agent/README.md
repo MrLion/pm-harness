@@ -35,8 +35,11 @@ hermes bundles reload
 Start Hermes and run:
 
 ```text
-/pm status
+/product-management status
 ```
+
+In the classic CLI (`hermes --cli`), the bundle also works as `/pm status`. The Hermes desktop shared
+gateway does not execute bundles; use the skill command there.
 
 Expected result: a read-only status report, not an error.
 

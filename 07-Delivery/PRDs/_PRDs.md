@@ -5,8 +5,8 @@ because Cagan's position is that the prototype is the spec.
 
 ```dataview
 TABLE status, opportunity, updated, primary_metric
-FROM "PM vault/07-Delivery/PRDs"
-WHERE type = "prd"
+FROM ""
+WHERE type = "prd" AND contains(file.folder, "07-Delivery/PRDs") AND project = "pm-harness"
 SORT updated DESC
 ```
 

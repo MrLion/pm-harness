@@ -5,8 +5,8 @@ into "what problem would X solve" before anything is written.
 
 ```dataview
 TABLE status, confidence, frequency, severity
-FROM "PM vault/02-Problems"
-WHERE type = "problem" AND status != "closed"
+FROM ""
+WHERE type = "problem" AND status != "closed" AND contains(file.folder, "02-Problems") AND project = "pm-harness"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 

@@ -26,7 +26,7 @@ Alternatives include "a spreadsheet and a WhatsApp group". Doing nothing is alwa
 
 ```dataview
 TABLE date, reliability, source
-FROM "PM vault/04-Research/Competitors"
-WHERE type = "research"
+FROM ""
+WHERE type = "research" AND contains(file.folder, "04-Research/Competitors") AND project = "pm-harness"
 SORT date DESC
 ```

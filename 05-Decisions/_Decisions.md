@@ -6,8 +6,8 @@ re-litigated in three weeks by someone who wasn't there.
 
 ```dataview
 TABLE status, date, reversibility, review_date
-FROM "PM vault/05-Decisions"
-WHERE type = "decision"
+FROM ""
+WHERE type = "decision" AND contains(file.folder, "05-Decisions") AND project = "pm-harness"
 SORT date DESC
 LIMIT 12
 ```
@@ -16,8 +16,8 @@ LIMIT 12
 
 ```dataview
 TABLE date, review_date, expected_outcome
-FROM "PM vault/05-Decisions"
-WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending")
+FROM ""
+WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending") AND contains(file.folder, "05-Decisions") AND project = "pm-harness"
 SORT review_date ASC
 ```
 

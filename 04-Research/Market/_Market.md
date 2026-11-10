@@ -28,7 +28,7 @@ bad bets, not to decorate a deck.
 
 ```dataview
 TABLE date, reliability, source
-FROM "PM vault/04-Research/Market"
-WHERE type = "research"
+FROM ""
+WHERE type = "research" AND contains(file.folder, "04-Research/Market") AND project = "pm-harness"
 SORT date DESC
 ```

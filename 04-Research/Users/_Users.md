@@ -29,7 +29,7 @@ and where most value risk is actually retired.
 
 ```dataview
 TABLE date, reliability, source
-FROM "PM vault/04-Research/Users"
-WHERE type = "research"
+FROM ""
+WHERE type = "research" AND contains(file.folder, "04-Research/Users") AND project = "pm-harness"
 SORT date DESC
 ```

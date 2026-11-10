@@ -68,11 +68,14 @@ hermes bundles show pm
 hermes bundles reload
 ```
 
-Then start Hermes and run:
+Then start Hermes and run the skill command:
 
 ```text
-/pm status
+/product-management status
 ```
+
+The classic CLI (`hermes --cli`) also supports the bundle as `/pm status`. The Hermes desktop shared
+gateway does not execute bundles, so `/pm` returns `unsupported_command` there; use the skill command.
 
 Expected result: product health, top problems and opportunities, stale artifacts, and one recommended
 next action. On an empty vault, it should say what is missing rather than inventing a product.
@@ -252,7 +255,8 @@ integrates it. Do not let two agents write the same artifact folder concurrently
 
 | Symptom | Check | Fix |
 |---|---|---|
-| `/pm` unknown | `hermes bundles list` | Register or reload `pm.yaml` |
+| `/pm` unknown | `hermes bundles list` | Register or reload `pm.yaml`; in desktop use `/product-management status` |
+| `/pm` returns `unsupported_command` | Desktop shared gateway | Use `/product-management status`, or run `/pm` from `hermes --cli` |
 | `/pm` reads old rules | `pm.yaml` path | Point to `99-Playbook/Rules.md` |
 | Tables empty | Vault and Dataview | Open the vault, enable Dataview |
 | Tables still empty | Dataview not enabled, wrong `type`, or missing `project` | Run `python3 scripts/validate_vault.py`; live notes need `project: pm-harness` |

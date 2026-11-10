@@ -274,6 +274,10 @@ Dataview tables read **frontmatter keys**, not headings. `TABLE status, date` sh
 ## Commands
 
 The user invokes `/pm <subcommand> [args]`. Treat the trailing text as the subcommand.
+
+If the desktop app returns `unsupported_command`, invoke the skill directly as
+`/product-management <subcommand> [args]`. The desktop shared gateway does not execute bundles; the
+`/pm` alias works in `hermes --cli`.
 Natural language also works; map it to the nearest subcommand and say which one you ran.
 
 `/pm` is a **skill bundle**, not a built-in command: `$HERMES_HOME/skill-bundles/pm.yaml`

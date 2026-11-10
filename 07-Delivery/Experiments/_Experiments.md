@@ -6,8 +6,8 @@ you cannot say which risk is primary, it is a build, not an experiment.
 
 ```dataview
 TABLE status, risk_type, risk_owner, opportunity, start, end
-FROM "PM vault/07-Delivery/Experiments"
-WHERE type = "experiment" AND status != "completed"
+FROM ""
+WHERE type = "experiment" AND status != "completed" AND contains(file.folder, "07-Delivery/Experiments") AND project = "pm-harness"
 SORT start ASC
 ```
 

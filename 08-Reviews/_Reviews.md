@@ -8,8 +8,8 @@
 
 ```dataview
 LIST
-FROM "PM vault/08-Reviews"
-WHERE type = "review"
+FROM ""
+WHERE type = "review" AND contains(file.folder, "08-Reviews") AND project = "pm-harness"
 SORT file.name DESC
 ```
 

@@ -56,7 +56,7 @@ them; the commands require the `product-management` skill and the `pm` bundle.
 - Smoke test: `/pm status`
 - Expected result: product health, the top problems and opportunities, and one recommended next action
 
-If the skill or bundle is missing, the vault still works; only `/pm` commands are unavailable.
+If the skill or bundle is missing, the vault still works; only the command layer is unavailable.
 
 A fresh clone includes the source in `agent/`, but it is not loaded until you install it. Run:
 
@@ -66,7 +66,9 @@ python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
 hermes bundles reload
 ```
 
-Then test `/pm status`. See https://hermes-agent.nousresearch.com/docs/.
+Then test the command. The classic CLI supports the bundle: `hermes --cli`, then `/pm status`.
+The Hermes desktop shared gateway does not execute bundles; in desktop use `/product-management status`.
+See https://hermes-agent.nousresearch.com/docs/.
 
 ## Validate
 

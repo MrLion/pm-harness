@@ -28,7 +28,7 @@ gives GO Roadmap rows their metrics a baseline.
 
 ```dataview
 TABLE date, reliability, source
-FROM "PM vault/04-Research/Data"
-WHERE type = "research"
+FROM ""
+WHERE type = "research" AND contains(file.folder, "04-Research/Data") AND project = "pm-harness"
 SORT date DESC
 ```

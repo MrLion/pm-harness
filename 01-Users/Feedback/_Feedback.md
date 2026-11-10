@@ -8,8 +8,8 @@ wording, the date, and who said it.
 
 ```dataview
 TABLE date, source, sentiment
-FROM "PM vault/01-Users/Feedback"
-WHERE type = "feedback"
+FROM ""
+WHERE type = "feedback" AND contains(file.folder, "01-Users/Feedback") AND project = "pm-harness"
 SORT date DESC
 LIMIT 15
 ```

@@ -43,6 +43,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Extended the validator to reject impossible calendar dates and to require a named owner, data
   classification, and jurisdiction on any `approved` or `active` compliance scope.
 - Added the worked example to CI as a second validation step.
+- Removed the last folder-scoped `FROM "PM vault/..."` queries from the index pages; they now use
+  `FROM ""` with a folder filter and the `project` marker.
+- Documented the desktop fallback: the shared gateway rejects bundles, so use
+  `/product-management status` there; `/pm` remains available in `hermes --cli`.
 
 ## [0.1.0] - 2026-11-09
 

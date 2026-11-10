@@ -5,8 +5,8 @@ SVPG artifact, but the clearest way to state what a user is actually trying to a
 
 ```dataview
 TABLE status, confidence
-FROM "PM vault/01-Users/JTBD"
-WHERE type = "jtbd"
+FROM ""
+WHERE type = "jtbd" AND contains(file.folder, "01-Users/JTBD") AND project = "pm-harness"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 

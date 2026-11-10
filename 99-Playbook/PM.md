@@ -71,3 +71,6 @@ Follow [Architecture](Architecture.md#identity-and-traceability). Do not invent 
 
 `/pm status` · `/pm discover` · `/pm analyze <ID>` · `/pm challenge <ID>` · `/pm prd <ID>` ·
 `/pm review` · `/pm decide <question>`
+
+In the desktop app, use `/product-management <subcommand>`; the desktop shared gateway does not
+execute bundles. The `/pm` form works in `hermes --cli`.
