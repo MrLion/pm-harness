@@ -5,13 +5,13 @@ status: active
 confidence: none
 case_id: CASE-001
 example: true
-updated: 2026-11-09
+updated: 2026-11-10
 ---
 
 # Scenario
 
 > Pre-filled templates: [Templates](../99-Playbook/Templates/_Templates.md)
-> Live research: [RESEARCH-002](../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md)
+> Source: [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf)
 
 ## Main scenario
 

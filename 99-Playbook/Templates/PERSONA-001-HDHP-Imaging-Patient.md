@@ -7,7 +7,7 @@ status: draft
 confidence: low
 evidence_count: 0
 created: 2026-11-08
-updated: 2026-11-09
+updated: 2026-11-10
 framework: Pichler
 source: https://www.romanpichler.com/the-persona-template/
 example: true
@@ -43,7 +43,7 @@ case_id: CASE-001
 
 | Type | Source | Date | Count |
 |---|---|---|---|
-| secondary survey | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | 2026-11-08 | 0 direct observations |
+| secondary survey | [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | 2026-11-08 | 0 direct observations |
 
 ## Related
 

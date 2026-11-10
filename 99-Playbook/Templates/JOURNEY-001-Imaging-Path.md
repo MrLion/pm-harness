@@ -5,7 +5,7 @@ artifact: journey-map
 id: JOURNEY-001
 status: draft
 confidence: low
-updated: 2026-11-09
+updated: 2026-11-10
 framework: "Journey mapping"
 example: true
 case_id: CASE-001
@@ -33,7 +33,7 @@ case_id: CASE-001
 | 1. Trigger | Patient / clinician | Receives a referral or order for imaging | Clinic visit, portal, phone | Does not know whether imaging is covered or what it will cost | Hypothesis from scenario; no direct observation | [PROB-001](PROB-001-Imaging-Cost-Problem.md) |
 | 2. Provider search | Patient | Looks for an in-network imaging provider | Payer directory, provider site, referral | Network status and location are easier to compare than cost | Hypothesis | [PROB-001](PROB-001-Imaging-Cost-Problem.md) |
 | 3. Scheduling | Patient / scheduler | Books a date and location | Phone, portal, front desk | Cost is often unavailable at the moment of booking | Hypothesis | [PROB-001](PROB-001-Imaging-Cost-Problem.md) |
-| 4. Pre-service estimate | Patient / provider staff / payer tool | Requests or receives an estimate | Portal, phone, paper, app | Inclusions, exclusions, validity, and final responsibility are unclear | Secondary survey only; see [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | [OPP-001](OPP-001-Outpatient-Imaging-Cost.md) |
+| 4. Pre-service estimate | Patient / provider staff / payer tool | Requests or receives an estimate | Portal, phone, paper, app | Inclusions, exclusions, validity, and final responsibility are unclear | Secondary survey only; see [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | [OPP-001](OPP-001-Outpatient-Imaging-Cost.md) |
 | 5. Check-in | Patient / front desk | Confirms identity, coverage, and payment responsibility | Front desk, kiosk, phone | Estimate may not match the service actually performed | Hypothesis | [OPP-001](OPP-001-Outpatient-Imaging-Cost.md) |
 | 6. Imaging | Patient / technologist | Receives the service | Imaging center | Order changes can change the price | Hypothesis | [OPP-001](OPP-001-Outpatient-Imaging-Cost.md) |
 | 7. Claim and EOB | Payer / patient | Claim is adjudicated; patient receives an explanation of benefits | Payer portal, mail | Final responsibility differs from the estimate | Source needed | [OPP-001](OPP-001-Outpatient-Imaging-Cost.md) |

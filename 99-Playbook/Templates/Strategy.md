@@ -4,7 +4,7 @@ project: pm-harness
 artifact: strategy
 status: draft
 confidence: low
-updated: 2026-11-09
+updated: 2026-11-10
 review_cadence_days: 90
 framework: Pichler
 source: https://romanpichler.com/blog/my-product-strategy-model/
@@ -18,8 +18,8 @@ case_id: CASE-001
 
 | Element | Current position | Evidence | Confidence |
 |---|---|---|---|
-| Target group | Adults on employer-sponsored HDHPs choosing outpatient imaging | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | low |
-| Needs | Know expected cost and understand inclusions/exclusions | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | low |
+| Target group | Adults on employer-sponsored HDHPs choosing outpatient imaging | [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | low |
+| Needs | Know expected cost and understand inclusions/exclusions | [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | low |
 | Business goals | Increase estimate coverage and reconciled accuracy | unknown | low |
 | Buyer | Unresolved — employer, payer, or provider | [PERSONA-002](PERSONA-002-Buyer-Payer.md) | none |
 | Stand-out features | Patient-readable estimate + reconciliation | hypothesis | low |

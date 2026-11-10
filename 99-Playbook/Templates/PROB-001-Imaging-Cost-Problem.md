@@ -9,7 +9,7 @@ confidence: low
 frequency: unknown
 severity: unknown
 created: 2026-11-08
-updated: 2026-11-09
+updated: 2026-11-10
 framework: none
 example: true
 case_id: CASE-001
@@ -41,7 +41,7 @@ Adults on employer-sponsored high-deductible health plans cannot reliably predic
 >
 > **Segment transfer:** the survey population is broader than employer-sponsored HDHP members choosing imaging. The 41% and 71% figures are a reason to investigate this segment, not a segment estimate. Frequency and accuracy in this journey are unknown.
 >
-> Live research: [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md).
+> Source: [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf).
 
 ## Next evidence
 

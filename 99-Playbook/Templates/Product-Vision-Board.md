@@ -4,7 +4,7 @@ project: pm-harness
 artifact: product-vision-board
 status: draft
 confidence: low
-updated: 2026-11-09
+updated: 2026-11-10
 framework: Pichler
 source: https://romanpichler.com/tools/product-vision-board/
 license: "CC BY-SA 4.0 — Roman Pichler, Product Vision Board v01/2023"
@@ -26,8 +26,8 @@ Adults on employer-sponsored HDHPs choosing outpatient imaging.
 
 | # | Need | Evidence | Confidence |
 |---|---|---|---|
-| 1 | Know expected out-of-pocket cost before booking | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | low |
-| 2 | Understand what the estimate includes and excludes | [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | low |
+| 1 | Know expected out-of-pocket cost before booking | [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | low |
+| 2 | Understand what the estimate includes and excludes | [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | low |
 
 ## Product
 

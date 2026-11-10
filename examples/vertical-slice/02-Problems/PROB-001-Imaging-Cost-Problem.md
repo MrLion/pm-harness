@@ -8,7 +8,7 @@ priority: high
 confidence: low
 frequency: unknown
 severity: unknown
-updated: 2026-11-09
+updated: 2026-11-10
 framework: none
 example: true
 synthetic: true
@@ -29,7 +29,7 @@ The survey evidence is broader than this segment:
 - 71% of those said it was accurate to $400.
 - 43% said they would likely postpone without an accurate estimate — stated intent, not observed behaviour.
 
-Source: [RESEARCH-002](../../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md).
+Source: [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf).
 
 ## Segment note
 

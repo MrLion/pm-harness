@@ -5,7 +5,7 @@ artifact: jtbd
 id: JTBD-001
 status: draft
 confidence: low
-updated: 2026-11-09
+updated: 2026-11-10
 framework: "Jobs to be Done"
 example: true
 case_id: CASE-001
@@ -43,7 +43,7 @@ When I need elective outpatient imaging and my deductible is not met, I want to 
 
 ## Evidence
 
-- [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) — secondary survey evidence only.
+- [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) — secondary survey evidence only.
 
 ## Journey
 

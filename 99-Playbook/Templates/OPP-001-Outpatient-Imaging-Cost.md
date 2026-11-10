@@ -13,7 +13,7 @@ recommendation: Pending
 risk_type: value
 risk_owner: PM
 created: 2026-11-08
-updated: 2026-11-09
+updated: 2026-11-10
 review_after: 2026-12-08
 framework: SVPG
 source: https://www.svpg.com/assessing-product-opportunities/
@@ -88,7 +88,7 @@ Proceed to discovery, not build. Test comprehension and data access first.
 
 | Source | Date | Says what | Strength |
 |---|---|---|---|
-| [RESEARCH-002](../../04-Research/RESEARCH-002-William-Blair-Consumer-Healthcare-2026.md) | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would likely postpone without an accurate estimate | weak |
+| [William Blair 2026](https://www.williamblair.com/-/media/downloads/eqr/2026/williamblair_consumer-centric-healthcare-2026-update.pdf) | 2026-11-08 | 41% receive estimates; 71% accurate to $400; 43% would likely postpone without an accurate estimate | weak |
 
 ### Contradicting
 
