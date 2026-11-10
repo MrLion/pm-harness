@@ -48,27 +48,23 @@ No paid Obsidian features or GitHub account are required.
 ## Agent layer
 
 The `/pm` commands are a separate agent layer, not part of the vault. The vault renders without
-them; the `/pm` command resolves the `pm` skill on desktop and the `pm` bundle in the classic CLI.
+them. `/pm` is the `pm` skill, so the desktop and the classic CLI expose one command, not two.
 
 - Source: [`agent/`](agent/README.md)
 - Skill: `$HERMES_HOME/skills/productivity/pm/`
-- Bundle: `$HERMES_HOME/skill-bundles/pm.yaml`
 - Smoke test: `/pm status`
 - Expected result: product health, the top problems and opportunities, and one recommended next action
 
-If the skill or bundle is missing, the vault still works; only the command layer is unavailable.
+If the skill is missing, the vault still works; only the command layer is unavailable.
 
 A fresh clone includes the source in `agent/`, but it is not loaded until you install it. Run:
 
 ```bash
 python3 -m pip install -r scripts/requirements.txt
 python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
-hermes bundles reload
 ```
 
-Then test `/pm status`. The same command works on both surfaces: the desktop gateway resolves the `pm`
-skill, and the classic CLI resolves the `pm` bundle. See
-https://hermes-agent.nousresearch.com/docs/.
+Then test `/pm status`. See https://hermes-agent.nousresearch.com/docs/.
 
 ## Validate
 

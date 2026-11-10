@@ -2,7 +2,7 @@
 type: manual
 project: pm-harness
 status: active
-updated: 2026-11-09
+updated: 2026-11-10
 ---
 
 # Agent Setup and Harness Manual
@@ -15,8 +15,7 @@ updated: 2026-11-09
 | Layer | What it is | Where it lives |
 |---|---|---|
 | Vault | Product brain: notes, templates, evidence, decisions | `PM vault` in any Obsidian vault |
-| Agent skill | PM procedures and gates | `$HERMES_HOME/skills/productivity/pm/` |
-| Bundle | Turns `/pm` into the PM command | `$HERMES_HOME/skill-bundles/pm.yaml` |
+| Agent skill | PM procedures, gates, and the `/pm` command | `$HERMES_HOME/skills/productivity/pm/` |
 | Git | Local audit trail | `.git` in the repo; the maintainer uses an external git directory |
 | Compliance rail | Health-data gate | `11-Compliance/` |
 
@@ -33,7 +32,7 @@ The vault works without the agent layer. `/pm` commands do not.
 - The vault folder opened in Obsidian — either the parent folder or the repository root.
 - Dataview enabled in that vault: Settings → Community plugins.
 - Hermes installed for `/pm` commands.
-- Python 3.9+ with PyYAML for the validator and installer.
+- Python 3.9+ with PyYAML for the validator.
 - Git available for local audit.
 
 Verify Obsidian first:
@@ -44,8 +43,8 @@ Verify Obsidian first:
 
 ## 3. Install the agent layer
 
-The skill and bundle are profile-local. The repository holds the source in `agent/`; the vault does
-not load them from there.
+The skill is profile-local. The repository holds the source in `agent/`; the vault does not load it
+from there.
 
 ### 3.1 Run the installer
 
@@ -55,33 +54,27 @@ python3 -m pip install -r scripts/requirements.txt
 python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
 ```
 
-The installer copies the skill to `$HERMES_HOME/skills/productivity/pm/` and writes
-`pm.yaml` to `$HERMES_HOME/skill-bundles/pm.yaml` with the absolute vault path. It validates the source
-bundle first, refuses to run if the target does not contain `99-Playbook/Rules.md`, and refuses to
-overwrite an existing skill or bundle unless you pass `--update`.
+The installer copies the skill to `$HERMES_HOME/skills/productivity/pm/`, refuses to run if the
+target does not contain `99-Playbook/Rules.md`, and refuses to overwrite an existing skill unless
+you pass `--update`.
 
-### 3.2 Reload and verify
+### 3.2 Verify
 
-```bash
-hermes bundles list
-hermes bundles show pm
-hermes bundles reload
-```
-
-Then start Hermes and run:
+Start a new Hermes chat and run:
 
 ```text
 /pm status
 ```
 
-The same command works in the classic CLI and the desktop app: the desktop resolves the `pm` skill,
-the CLI resolves the `pm` bundle.
+The same command works in the classic CLI and the desktop app. There is no bundle, so the command
+list shows one `/pm`, not two.
 
 Expected result: product health, top problems and opportunities, stale artifacts, and one recommended
 next action. On an empty vault, it should say what is missing rather than inventing a product.
 
-If `/pm` is unknown, the skill or bundle is not installed in this profile. Check `hermes skills list`
-and `hermes bundles list`, then reinstall. If it loads but reads the wrong rules file, fix `pm.yaml`.
+If `/pm` is unknown, the skill is not installed in this profile. Check `hermes skills list`, then
+reinstall. If it loads but reads the wrong rules file, check that the vault contains
+`99-Playbook/Rules.md`.
 
 ## 4. Wire the vault
 
@@ -255,9 +248,9 @@ integrates it. Do not let two agents write the same artifact folder concurrently
 
 | Symptom | Check | Fix |
 |---|---|---|
-| `/pm` unknown | `hermes bundles list`; `hermes skills list` | Register/reload `pm.yaml`; reinstall the `pm` skill if desktop cannot resolve it |
-| `/pm` returns `unsupported_command` | Old `product-management` skill is installed | Reinstall the renamed `pm` skill with `--update` |
-| `/pm` reads old rules | `pm.yaml` path | Point to `99-Playbook/Rules.md` |
+| `/pm` unknown | `hermes skills list` | Reinstall the `pm` skill with the installer |
+| `/pm` appears twice | Old bundle still installed | Delete `$HERMES_HOME/skill-bundles/pm.yaml`; start a new chat |
+| `/pm` reads the wrong vault | Current working directory | Run Hermes from the vault root or open the vault that contains `99-Playbook/Rules.md` |
 | Tables empty | Vault and Dataview | Open the vault, enable Dataview |
 | Tables still empty | Dataview not enabled, wrong `type`, or missing `project` | Run `python3 scripts/validate_vault.py`; live notes need `project: pm-harness` |
 | Links unresolved | `obsidian unresolved` | Fix target or parent-vault registration |
@@ -266,14 +259,14 @@ integrates it. Do not let two agents write the same artifact folder concurrently
 | Compliance work blocked | `COMP-003` status/owner | Complete scope and assign owner |
 | Markdown link broken | Open the target; GitHub shows 404 | Fix the relative path or anchor |
 | `scripts/validate_vault.py` fails | Validator output | Fix the link, anchor, frontmatter, ID, project marker, date, or approved-scope field it names |
-| Installer refuses | Existing skill or `pm.yaml` | Inspect the paths; re-run with `--update` only when replacement is intended |
+| Installer refuses | Existing skill | Inspect the path; re-run with `--update` only when replacement is intended |
 | Agent writes too much | Write boundary | Check `Rules.md` Rule 21 |
 
 ## 11. Verification checklist
 
 Before saying the harness works:
 
-- [ ] `hermes bundles list` shows `/pm`
+- [ ] `hermes skills list` shows `pm`
 - [ ] `/pm status` returns a report, not an error
 - [ ] Dashboard tables render in Obsidian
 - [ ] Relative Markdown links resolve on GitHub: open the README and click the main links

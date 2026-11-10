@@ -14,7 +14,7 @@ Each page in the PM harness has one job. A new page must link to the owner of a 
 | `99-Playbook/Harness-Value.md` | Time-value estimates, assumptions, validation plan | Become a measured benchmark or sales claim |
 | `99-Playbook/Playbooks/_Playbooks.md` | Playbook/method lineage and router | Restate the canonical product chain |
 | `99-Playbook/Templates/_Templates.md` | Artifact shapes and framework mapping | Restate a competing chain |
-| `agent/README.md` | Source and install instructions for the profile-local skill and bundle | Claim the repo loads `/pm` automatically |
+| `agent/README.md` | Source and install instructions for the profile-local skill | Claim the repo loads `/pm` automatically |
 
 ## Rules
 
@@ -28,4 +28,4 @@ Each page in the PM harness has one job. A new page must link to the owner of a 
 - When deleting a section, grep for sentences that refer to it. A removed table can leave a dangling explanation of a table that no longer exists.
 - Value/ROI numbers are hypotheses, not measurements. Keep the assumptions, confidence, non-benefits, and validation measures with the estimate; do not move a percentage into README, Agent-Manual, or a playbook as a headline claim. Keep one weighted 40-hour roll-up, not a separate per-task table; see `value-estimation.md`.
 - Public setup docs must not assume macOS or iCloud. Document root, nested, and renamed-folder layouts with matching Dataview prefixes; the external `.git` pointer is one deployment.
-- The repo ships the agent-layer source under `agent/`; the runtime still requires copying it into `$HERMES_HOME`. Do not describe the repo copy as an installed `/pm` bundle.
+- The repo ships the agent-layer source under `agent/`; the runtime still requires copying it into `$HERMES_HOME`. Do not describe the repo copy as an installed `/pm` command.

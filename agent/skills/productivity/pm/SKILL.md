@@ -304,28 +304,22 @@ Dataview tables read **frontmatter keys**, not headings. `TABLE status, date` sh
 The user invokes `/pm <subcommand> [args]`. Treat the trailing text as the subcommand.
 Natural language also works; map it to the nearest subcommand and say which one you ran.
 
-`/pm` is a **skill bundle**, not a built-in command: `$HERMES_HOME/skill-bundles/pm.yaml`
-(`name: pm`, member skill `pm`, plus an `instruction` block that maps trailing text to a subcommand). Bundles live in `$HERMES_HOME/skill-bundles/`. Edit that YAML to change routing;
-`hermes bundles list` verifies registration only — it does **not** verify that paths inside the
-instruction still exist. The trailing text arrives in the scaffold header as `User instruction:
-<text>` — same turn, never a separate message.
+`/pm` is the `pm` **skill**, not a built-in command and not a bundle. Hermes registers the skill
+from `$HERMES_HOME/skills/productivity/pm/` as the slash command `/pm`. The trailing text arrives in
+the scaffold header as `User instruction: <text>` — same turn, never a separate message.
 
-**Desktop shared gateway.** The desktop app does not execute bundles, but it executes the `pm`
-skill. `/pm` is therefore one command on every surface: the desktop resolves the skill, and the
-classic CLI resolves the bundle. If `/pm` returns `unsupported_command` on desktop, the installed
-skill is still named `product-management`; reinstall the renamed `pm` skill.
+Do not install a bundle named `pm` beside the skill: the desktop lists both, so `/pm` appears twice.
+One skill is the single command on every surface, including the classic CLI.
 
-The repository ships the agent-layer source under `agent/`: `agent/skills/productivity/pm/`
-and `agent/skill-bundles/pm.yaml`. It is still profile-local at runtime. Install it with
-`python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"`, then run
-`hermes bundles reload`. The installer validates the source bundle, writes the absolute vault path into `pm.yaml`, and refuses
-a target without `99-Playbook/Rules.md`. It also refuses to overwrite an existing skill or bundle
-unless `--update` is passed. The repo copy is a snapshot, not runtime: when this skill changes, sync
-the updated skill and bundle back into `agent/` before tagging a release. README must state the source, installer command, `/pm status` smoke test, and
-expected result; the vault must remain usable without the bundle. The full setup and operating manual is `99-Playbook/Agent-Manual.md`; keep README,
-Architecture, and Dashboard linked to it.
-After any folder or template rename, grep `pm.yaml` for the old path and update it. A stale
-`99-Hermes/Rules.md` in the bundle is a live routing bug even when `hermes bundles list` is green.
+The repository ships the agent-layer source under `agent/skills/productivity/pm/`. It is still
+profile-local at runtime. Install it with
+`python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"`. The installer refuses
+a target without `99-Playbook/Rules.md` and refuses to overwrite an existing skill unless `--update`
+is passed. The repo copy is a snapshot, not runtime: when this skill changes, sync the updated skill
+back into `agent/` before tagging a release. README must state the source, installer command,
+`/pm status` smoke test, and expected result; the vault must remain usable without the skill. The
+full setup and operating manual is `99-Playbook/Agent-Manual.md`; keep README, Architecture, and
+Dashboard linked to it.
 
 ### `/pm status`
 Read-only. Report, in this order, and keep it tight:
@@ -450,8 +444,8 @@ Release/versioning follows the `obsidian-vault-operations` skill: `VERSION`, `CH
 Public setup docs must not assume macOS or iCloud. The standard Dashboard uses `FROM ""` plus
 `project = "pm-harness"` and type filters; custom folder-scoped queries carry the matching root,
 nested, or renamed-folder prefix. Treat the external `.git` pointer as one deployment. Repo copies of
-profile-local files must be sanitized: no absolute user paths; the bundle carries a `Vault root:
-<absolute path>` placeholder and the installer writes the real path.
+profile-local files must be sanitized: no absolute user paths. The skill resolves the vault at
+runtime from the directory that contains `99-Playbook/Rules.md`; no vault path is embedded.
 
 Simplified permission ladders must mirror `Rules.md` Rule 21 exactly. `05-Decisions` is
 human-approved only; an agent may prepare options, not write or accept the decision record.
@@ -515,17 +509,17 @@ Every write updates `updated:` in frontmatter and leaves a git-committable diff.
 | Keep a release `planned` while the decision is `defer` or the buyer is unresolved | Make it `conditional`, with the decision/buyer/compliance gate, named owners, and a simulated review |
 | Write “patients cannot estimate” when the source shows partial estimate receipt | Write “cannot reliably predict,” and split the segment by receipt and accuracy |
 | Ship prefilled templates without a case spine | Add `case_id`, a linked Scenario, a journey map, a buyer hypothesis, and a glossary |
-| Trust `hermes bundles list` as proof the bundle is correct | Grep `pm.yaml` for old folder paths after every rename; registration does not validate the instruction body |
-| Assume `/pm` is a bundle only | Ship the `pm` skill too; desktop executes the skill, the classic CLI executes the bundle, and the command stays `/pm` |
+| Trust `hermes bundles list` as proof the command is correct | Do not ship a bundle; verify `hermes skills list` shows `pm` and `/pm status` returns a report |
+| Ship a bundle beside the skill | Install only the `pm` skill; a same-name bundle makes `/pm` appear twice on desktop |
 | Give a live research note the template's ID | Allocate a new live ID (`RESEARCH-002` when the template is `RESEARCH-001`) and repoint evidence rows to it |
 | Trust a template-index narrative (“Lantern”, “33 FROM”, “delete [!example]”) | Re-derive the example scenario, clause count, and live artifact counts from the current files |
-| Treat the profile-local skill/bundle as shipped with the repo | Add the source under `agent/` and install instructions; the `$HERMES_HOME` copy is still required at runtime |
+| Treat the profile-local skill as shipped with the repo | Add the source under `agent/` and install instructions; the `$HERMES_HOME` copy is still required at runtime |
 | Assume macOS/iCloud in public setup docs | Document root, nested, and renamed layouts with matching Dataview prefixes; the external git pointer is one deployment |
 | Use `[[...]]` in a GitHub-published vault | Use relative Markdown links; GitHub renders literal brackets |
 | Treat `obsidian unresolved` as a Markdown link check | It only sees wikilinks; run `python3 scripts/validate_vault.py` after conversion |
 | Rely on prompt rules for gates and IDs | Add the executable validator and CI; prose is not enforcement |
-| Ship a fresh clone with `PM vault/` prefixes and a placeholder bundle path | Use `FROM ""` plus `project = "pm-harness"` and the installer script |
-| Let the installer overwrite an existing skill or bundle | Refuse collisions by default; require `--update` |
+| Ship a fresh clone with `PM vault/` prefixes | Use `FROM ""` plus `project = "pm-harness"` and the installer script |
+| Let the installer overwrite an existing skill | Refuse collisions by default; require `--update` |
 | Rely on `type:` filters to isolate a shared vault | Require `project: pm-harness`; sibling projects can use the same `type` values |
 | Accept an approved compliance scope with `Unassigned` or unknown fields | Validate named owner, data classification, and jurisdiction in the validator |
 | Call a synthetic fixture a live vertical slice | Mark it `example: true` / `synthetic: true`; keep live outcomes pending |

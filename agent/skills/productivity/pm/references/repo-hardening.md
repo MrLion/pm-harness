@@ -55,26 +55,27 @@ invisible to every Dashboard table even when its `type:` is correct.
 
 ## 3. Installer, not a placeholder path
 
-Do not ship a bundle whose only setup step is "edit `<absolute path>`". Provide:
+Do not ship a bundle. A bundle and a skill with the same name both register as `/pm`, so the desktop
+shows the command twice. Ship one `pm` skill and let Hermes register it.
+
+Provide:
 
 ```bash
 python3 -m pip install -r scripts/requirements.txt
 python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
-hermes bundles reload
 ```
 
 The installer should:
 
-- validate the source bundle before copying anything: YAML parses, exactly one placeholder, the
-  `pm` skill is declared, and the instruction points at `99-Playbook/Rules.md`;
-- copy the skill and write the bundle with the absolute vault path;
-- refuse to run when `99-Playbook/Rules.md` is absent;
-- refuse to overwrite an existing skill or `pm.yaml` unless `--update` is passed;
-- report the colliding paths and the `--update` remedy.
+- copy the `agent/skills/productivity/pm/` tree into the profile;
+- refuse to run when the target vault lacks `99-Playbook/Rules.md`;
+- refuse to overwrite an existing skill unless `--update` is passed;
+- report the colliding path and the `--update` remedy.
 
-The placeholder in `agent/skill-bundles/pm.yaml` remains a template input, not the install path.
-`PyYAML` is required; `scripts/requirements.txt` is the install source, and a missing dependency
-should be reported as an actionable error, not a traceback.
+The skill resolves the vault at runtime from the directory containing `99-Playbook/Rules.md`; it
+embeds no absolute vault path. `PyYAML` is required by the validator, not by the installer;
+`scripts/requirements.txt` is the install source, and a missing dependency should be reported as an
+actionable error, not a traceback.
 
 Also remove maintainer-specific paths from `PM.md` (`vault_root`, `git_dir`); use `.` and `.git`, not
 iCloud home paths.
@@ -104,8 +105,8 @@ Before saying a clone works:
 - CI runs both validator commands as separate steps.
 - The Dashboard has no `PM vault/` hardcoding, and every `WHERE` clause carries `project = "pm-harness"`.
 - Every live artifact has `project: pm-harness`; fixtures use `pm-harness-example`.
-- `scripts/install_agent_layer.py` refuses an existing skill or bundle without `--update`, preserves
-the existing files when it refuses, and writes a bundle without the placeholder when allowed.
+- `scripts/install_agent_layer.py` refuses an existing skill without `--update` and preserves the
+  existing files when it refuses.
 - A deliberately invalid approved compliance scope fails: `Unassigned` owner, unknown classification
   or jurisdiction, and an impossible date should each produce an error.
 - `PM.md` has no absolute home path.

@@ -9,13 +9,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ### Added
 
-- Repository copy of the agent layer under `agent/`: the `pm` skill, its references and checker, and
-  the `pm` bundle template.
+- Repository copy of the agent layer under `agent/`: the `pm` skill, its references and checker.
 - `scripts/validate_vault.py`, a contract validator for Markdown links and anchors, frontmatter, IDs,
   filename/ID consistency, product-template fill markers, open gates, and overdue decisions.
 - GitHub Actions validation on every push and pull request.
-- `scripts/install_agent_layer.py`, which installs the skill and writes the absolute vault path into
-  `pm.yaml`, plus `scripts/requirements.txt` for its PyYAML dependency.
+- `scripts/install_agent_layer.py`, which installs the `pm` skill, plus `scripts/requirements.txt`
+  for the validator's PyYAML dependency.
 - `examples/vertical-slice/`, a synthetic end-to-end fixture from product to review.
 - `LICENSE` (MIT) and `NOTICE` separating MIT from CC BY-SA 4.0 content.
 
@@ -36,8 +35,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Made the README, Agent Manual, and Architecture platform-neutral: documented nested, root, and
   renamed vault layouts, Dataview prefix choices, and normal `.git` behavior outside the maintainer's
   macOS/iCloud setup.
-- Hardened the installer: it validates the source bundle before copying, refuses to overwrite an
-  existing skill or `pm.yaml`, and requires `--update` for replacement.
+- Hardened the installer: it refuses to overwrite an existing skill without `--update`.
 - Added a `project: pm-harness` marker to every artifact and constrained all Dashboard queries to it,
   so a shared Obsidian vault cannot leak sibling `type:` notes into the PM tables.
 - Extended the validator to reject impossible calendar dates and to require a named owner, data
@@ -45,8 +43,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Added the worked example to CI as a second validation step.
 - Removed the last folder-scoped `FROM "PM vault/..."` queries from the index pages; they now use
   `FROM ""` with a folder filter and the `project` marker.
-- Renamed the skill to `pm`, so `/pm` is one command on both surfaces: the desktop gateway resolves
-  the skill, and the classic CLI resolves the bundle.
+- Renamed the skill to `pm` and removed the same-name bundle. Hermes now registers one `/pm`
+  command on every surface instead of showing the skill and the bundle as two entries.
 
 ## [0.1.0] - 2026-11-09
 

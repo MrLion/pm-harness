@@ -3,7 +3,7 @@
 | Script | Purpose |
 |---|---|
 | `validate_vault.py` | Validate links, anchors, frontmatter, IDs, template fill markers, and gates |
-| `install_agent_layer.py` | Install the skill and write the vault path into `pm.yaml` |
+| `install_agent_layer.py` | Install the `pm` skill into a Hermes profile |
 
 ## Validate
 
@@ -20,8 +20,7 @@ Exit code 1 means an error. Warnings do not fail CI.
 ```bash
 export HERMES_HOME="$HOME/.hermes/profiles/pdm"
 python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
-hermes bundles reload
 ```
 
-Use `--update` to replace an existing skill or `pm.yaml`. Without it, the installer refuses to
-overwrite either target.
+Use `--update` to replace an existing skill. Without it, the installer refuses to overwrite the
+target.

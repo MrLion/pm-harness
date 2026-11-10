@@ -3,7 +3,7 @@ type: walkthrough
 project: pm-harness
 artifact: walkthrough
 status: active
-updated: 2026-11-09
+updated: 2026-11-10
 ---
 
 # Agent Walkthrough
@@ -28,7 +28,7 @@ updated: 2026-11-09
 - [ ] Git is clean, or you know what is uncommitted.
 - [ ] You accept that an empty vault is a valid starting state.
 
-If `/pm` is unknown, stop and fix the bundle in [Agent Manual](Agent-Manual.md).
+If `/pm` is unknown, stop and fix the skill installation in [Agent Manual](Agent-Manual.md).
 
 ## Permission ladder
 

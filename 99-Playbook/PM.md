@@ -2,7 +2,7 @@
 type: agent-brief
 project: pm-harness
 status: active
-updated: 2026-11-09
+updated: 2026-11-10
 vault_root: "."
 git_dir: ".git"
 ---
@@ -72,5 +72,4 @@ Follow [Architecture](Architecture.md#identity-and-traceability). Do not invent 
 `/pm status` · `/pm discover` · `/pm analyze <ID>` · `/pm challenge <ID>` · `/pm prd <ID>` ·
 `/pm review` · `/pm decide <question>`
 
-`/pm` works in both the desktop app and `hermes --cli`: desktop resolves the `pm` skill, and the CLI
-resolves the `pm` bundle.
+`/pm` is the `pm` skill, so the desktop app and `hermes --cli` expose the same single command.

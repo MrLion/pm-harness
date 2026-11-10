@@ -78,9 +78,9 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 - After a folder or template rename, grep for the old token in prose, code paths, Dataview `FROM`
   clauses, and link targets; the Markdown checker will not catch stale plain-text paths or prose
   claims.
-- Also grep both the live `/pm` bundle (`$HERMES_HOME/skill-bundles/pm.yaml`) and the
-  repo source (`agent/skill-bundles/pm.yaml`) for the old folder path; `hermes bundles list` proves
-  registration only, not that the instruction points at an existing `Rules.md`.
+- Also grep both the live skill (`$HERMES_HOME/skills/productivity/pm/SKILL.md`) and the repo
+  source (`agent/skills/productivity/pm/SKILL.md`) for the old folder path; `hermes skills list`
+  proves registration only, not that the skill text points at an existing `Rules.md`.
 
 ## 5. Workflow gates
 
