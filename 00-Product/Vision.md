@@ -1,5 +1,6 @@
 ---
 type: vision
+project: pm-harness
 artifact: vision
 framework: Pichler
 status: draft

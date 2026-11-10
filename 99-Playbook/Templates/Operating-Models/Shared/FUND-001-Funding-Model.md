@@ -1,5 +1,6 @@
 ---
 type: funding-model
+project: pm-harness
 artifact: funding-model
 id: FUND-001
 scope: portfolio

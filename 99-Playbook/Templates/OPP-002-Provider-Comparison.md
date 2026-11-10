@@ -1,5 +1,6 @@
 ---
 type: opportunity
+project: pm-harness
 artifact: opportunity-assessment
 id: OPP-002
 status: discovery

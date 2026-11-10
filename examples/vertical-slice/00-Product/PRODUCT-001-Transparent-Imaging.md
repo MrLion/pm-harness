@@ -1,5 +1,6 @@
 ---
 type: product
+project: pm-harness-example
 artifact: product-vision-board
 id: PRODUCT-001
 status: draft

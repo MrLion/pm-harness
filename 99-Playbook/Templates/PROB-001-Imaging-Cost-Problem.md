@@ -1,5 +1,6 @@
 ---
 type: problem
+project: pm-harness
 artifact: problem
 id: PROB-001
 status: discovery

@@ -1,5 +1,6 @@
 ---
 type: release
+project: pm-harness-example
 artifact: release
 id: REL-001
 status: conditional

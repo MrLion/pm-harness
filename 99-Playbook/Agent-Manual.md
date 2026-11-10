@@ -1,5 +1,6 @@
 ---
 type: manual
+project: pm-harness
 status: active
 updated: 2026-11-09
 ---
@@ -32,6 +33,7 @@ The vault works without the agent layer. `/pm` commands do not.
 - The vault folder opened in Obsidian — either the parent folder or the repository root.
 - Dataview enabled in that vault: Settings → Community plugins.
 - Hermes installed for `/pm` commands.
+- Python 3.9+ with PyYAML for the validator and installer.
 - Git available for local audit.
 
 Verify Obsidian first:
@@ -49,12 +51,14 @@ not load them from there.
 
 ```bash
 export HERMES_HOME="$HOME/.hermes/profiles/pdm"
+python3 -m pip install -r scripts/requirements.txt
 python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
 ```
 
 The installer copies the skill to `$HERMES_HOME/skills/productivity/product-management/` and writes
-`pm.yaml` to `$HERMES_HOME/skill-bundles/pm.yaml` with the absolute vault path. It refuses to run if
-the target does not contain `99-Playbook/Rules.md`.
+`pm.yaml` to `$HERMES_HOME/skill-bundles/pm.yaml` with the absolute vault path. It validates the source
+bundle first, refuses to run if the target does not contain `99-Playbook/Rules.md`, and refuses to
+overwrite an existing skill or bundle unless you pass `--update`.
 
 ### 3.2 Reload and verify
 
@@ -84,7 +88,7 @@ If `/pm` is unknown, the bundle is not registered. If it loads but reads the wro
 
 | Query | Dataview source |
 |---|---|
-| Standard Dashboard | `FROM ""` plus type filters |
+| Standard Dashboard | `FROM ""` plus `project = "pm-harness"` and type filters |
 | Custom nested query | `FROM "PM vault/02-Problems"` |
 | Custom root query | `FROM "02-Problems"` |
 
@@ -251,13 +255,14 @@ integrates it. Do not let two agents write the same artifact folder concurrently
 | `/pm` unknown | `hermes bundles list` | Register or reload `pm.yaml` |
 | `/pm` reads old rules | `pm.yaml` path | Point to `99-Playbook/Rules.md` |
 | Tables empty | Vault and Dataview | Open the vault, enable Dataview |
-| Tables still empty | Dataview not enabled or wrong `type` | Run `python3 scripts/validate_vault.py`; the standard Dashboard needs no prefix |
+| Tables still empty | Dataview not enabled, wrong `type`, or missing `project` | Run `python3 scripts/validate_vault.py`; live notes need `project: pm-harness` |
 | Links unresolved | `obsidian unresolved` | Fix target or parent-vault registration |
 | Product strategy blocked | `00-Product/Product.md` | Fill the product spine |
 | PRD refused | Evidence, challenge, baseline | Run the missing experiment |
 | Compliance work blocked | `COMP-003` status/owner | Complete scope and assign owner |
 | Markdown link broken | Open the target; GitHub shows 404 | Fix the relative path or anchor |
-| `scripts/validate_vault.py` fails | Validator output | Fix the link, anchor, frontmatter, ID, or template marker it names |
+| `scripts/validate_vault.py` fails | Validator output | Fix the link, anchor, frontmatter, ID, project marker, date, or approved-scope field it names |
+| Installer refuses | Existing skill or `pm.yaml` | Inspect the paths; re-run with `--update` only when replacement is intended |
 | Agent writes too much | Write boundary | Check `Rules.md` Rule 21 |
 
 ## 11. Verification checklist

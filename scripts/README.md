@@ -8,6 +8,7 @@
 ## Validate
 
 ```bash
+python3 -m pip install -r scripts/requirements.txt
 python3 scripts/validate_vault.py
 python3 scripts/validate_vault.py examples/vertical-slice
 ```
@@ -21,3 +22,6 @@ export HERMES_HOME="$HOME/.hermes/profiles/pdm"
 python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
 hermes bundles reload
 ```
+
+Use `--update` to replace an existing skill or `pm.yaml`. Without it, the installer refuses to
+overwrite either target.

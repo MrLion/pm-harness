@@ -1,5 +1,6 @@
 ---
 type: research
+project: pm-harness
 artifact: research
 id: RESEARCH-001
 category: market

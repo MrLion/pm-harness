@@ -1,5 +1,6 @@
 ---
 type: product
+project: pm-harness
 artifact: product-vision-board
 status: draft
 confidence: low

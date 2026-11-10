@@ -1,5 +1,6 @@
 ---
 type: flow-metrics-baseline
+project: pm-harness
 artifact: flow-metrics-baseline
 id: FLOW-001
 scope: value-stream

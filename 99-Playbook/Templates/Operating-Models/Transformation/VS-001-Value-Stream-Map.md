@@ -1,5 +1,6 @@
 ---
 type: value-stream-map
+project: pm-harness
 artifact: value-stream-map
 id: VS-001
 scope: value-stream

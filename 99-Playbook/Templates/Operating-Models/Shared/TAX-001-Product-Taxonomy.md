@@ -1,5 +1,6 @@
 ---
 type: product-taxonomy
+project: pm-harness
 artifact: product-taxonomy
 id: TAX-001
 scope: portfolio

@@ -1,5 +1,6 @@
 ---
 type: discovery-map
+project: pm-harness
 artifact: discovery-map
 framework: Torres
 outcome: Reduce out-of-pocket cost uncertainty before outpatient imaging

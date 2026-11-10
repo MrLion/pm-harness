@@ -1,5 +1,6 @@
 ---
 type: playbook
+project: pm-harness
 artifact: playbook
 status: active
 updated: 2026-11-09

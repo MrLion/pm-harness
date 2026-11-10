@@ -1,5 +1,6 @@
 ---
 type: research
+project: pm-harness
 artifact: research
 id: RESEARCH-003
 category: user

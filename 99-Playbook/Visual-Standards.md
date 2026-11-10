@@ -1,5 +1,6 @@
 ---
 type: visual-standard
+project: pm-harness
 artifact: visual-standard
 status: approved
 updated: 2026-11-09

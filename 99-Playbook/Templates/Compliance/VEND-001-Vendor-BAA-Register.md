@@ -1,5 +1,6 @@
 ---
 type: vendor-baa-register
+project: pm-harness
 artifact: vendor-baa-register
 id: VEND-001
 scope: product

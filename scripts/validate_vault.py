@@ -5,7 +5,8 @@ Checks:
 - relative Markdown links and anchors resolve
 - frontmatter parses
 - artifact IDs are unique and match filenames
-- artifact notes have type, status, and a valid updated date
+- artifact notes have project, type, status, and a real calendar updated date
+- approved compliance scopes have a named owner, data classification, and jurisdiction
 - the live compliance gate is visibly open when it is still draft
 - accepted decisions with an overdue review are reported
 - product templates contain no unresolved [FILL] markers
@@ -28,13 +29,15 @@ import urllib.parse
 from collections import defaultdict
 from pathlib import Path
 
-import yaml
+try:
+    import yaml
+except ImportError:  # pragma: no cover - reported in main()
+    yaml = None
 
 LINK_RE = re.compile(r"!?\[([^\]]*)\]\(([^)]+)\)")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*?)\s*#*\s*$")
 ID_IN_NAME_RE = re.compile(r"^([A-Z]+(?:-[A-Z]+)?-\d{3,4}(?:-\d{2})?)")
 CONTENT_DIR_RE = re.compile(r"^\d{2}-")
-DATE_RE = r"^\d{4}-\d{2}-\d{2}$"
 
 
 def slugify(value: str) -> str:
@@ -156,6 +159,8 @@ def check_frontmatter(root: Path, files: list[Path]) -> tuple[list[str], list[st
                 )
             if not data.get("type"):
                 errors.append(f"{path}: artifact with id {note_id!r} has no type")
+            if not data.get("project"):
+                errors.append(f"{path}: artifact with id {note_id!r} has no project marker")
             if data.get("type") != "feedback" and not data.get("status"):
                 errors.append(f"{path}: artifact with id {note_id!r} has no status")
             updated = data.get("updated")
@@ -163,8 +168,11 @@ def check_frontmatter(root: Path, files: list[Path]) -> tuple[list[str], list[st
                 errors.append(f"{path}: artifact with id {note_id!r} has no updated date")
             elif isinstance(updated, dt.date):
                 pass
-            elif isinstance(updated, str) and re.match(DATE_RE, updated):
-                pass
+            elif isinstance(updated, str):
+                try:
+                    dt.date.fromisoformat(updated)
+                except ValueError:
+                    errors.append(f"{path}: updated is not a real YYYY-MM-DD date: {updated!r}")
             else:
                 errors.append(f"{path}: updated is not YYYY-MM-DD: {updated!r}")
         if data.get("type") == "decision" and data.get("status") == "accepted":
@@ -176,12 +184,20 @@ def check_frontmatter(root: Path, files: list[Path]) -> tuple[list[str], list[st
                         warnings.append(f"{path}: accepted decision review is overdue ({review_date})")
                 except ValueError:
                     errors.append(f"{path}: invalid review_date {review_date!r}")
-        if (
-            data.get("type") == "compliance-scope"
-            and data.get("status") == "draft"
-            and "99-Playbook/Templates" not in path.as_posix()
-        ):
-            warnings.append(f"{path}: compliance gate is open (status: draft)")
+        if data.get("type") == "compliance-scope":
+            status = str(data.get("status", ""))
+            if status == "draft" and "99-Playbook/Templates" not in path.as_posix():
+                warnings.append(f"{path}: compliance gate is open (status: draft)")
+            if status in {"approved", "active"}:
+                owner = str(data.get("owner", "")).strip()
+                if not owner or owner.lower() in {"unassigned", "unknown", "unsure", "tbd", "todo"} or "[FILL" in owner:
+                    errors.append(f"{path}: approved compliance scope has no named owner")
+                classification = str(data.get("data_classification", "")).strip()
+                if not classification or classification.lower() in {"unknown", "unsure", "tbd", "todo"} or "[FILL" in classification:
+                    errors.append(f"{path}: approved compliance scope has no data classification")
+                jurisdiction = str(data.get("jurisdiction", "")).strip()
+                if not jurisdiction or jurisdiction.lower() in {"unknown", "unsure", "none", "tbd", "todo"} or "[FILL" in jurisdiction:
+                    errors.append(f"{path}: approved compliance scope has no jurisdiction")
     return errors, warnings, ids
 
 
@@ -223,6 +239,13 @@ def main() -> int:
     parser.add_argument("root", nargs="?", default=".", help="vault root")
     parser.add_argument("--json", action="store_true", help="print JSON")
     args = parser.parse_args()
+
+    if yaml is None:
+        print(
+            "PyYAML is required. Run: python3 -m pip install -r scripts/requirements.txt",
+            file=sys.stderr,
+        )
+        return 2
 
     root = Path(args.root).expanduser().resolve()
     if not root.exists():

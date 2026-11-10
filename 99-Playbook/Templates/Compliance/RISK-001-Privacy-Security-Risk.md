@@ -1,5 +1,6 @@
 ---
 type: privacy-security-risk
+project: pm-harness
 artifact: privacy-security-risk
 id: RISK-001
 scope: product

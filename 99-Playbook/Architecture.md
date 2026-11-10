@@ -1,5 +1,6 @@
 ---
 type: architecture
+project: pm-harness
 status: active
 updated: 2026-11-09
 ---
@@ -56,7 +57,7 @@ Dataview reads YAML frontmatter, not headings:
 - `SORT date DESC` uses the frontmatter `date:`, not file modification time.
 - Missing keys produce blank columns; wrong `type` values make notes invisible to queries.
 
-Copy the template frontmatter, then update `id`, `status`, links, and `updated:`. Never leave example
+Copy the template frontmatter, then update `project`, `id`, `status`, links, and `updated:`. Never leave example
 values in a live artifact. The schema contract is in [_Templates](Templates/_Templates.md).
 
 ## Identity and traceability
@@ -101,7 +102,8 @@ updates `updated:` and leaves a reviewable git diff.
 
 Check programmatically and in Obsidian; visible files alone are not proof.
 
-1. Dataview sources are either `FROM ""` with type filters or use the correct folder prefix.
+1. Dataview sources are `FROM ""` with `project = "pm-harness"` and type filters. The project marker
+   keeps a shared Obsidian vault from leaking sibling notes into the dashboard.
 2. Every queried column exists in the corresponding template schema.
 3. `/pm` loads the `product-management` skill with the requested subcommand intact.
 4. Check that relative Markdown links resolve, then run `obsidian unresolved vault=<vault-name>` for

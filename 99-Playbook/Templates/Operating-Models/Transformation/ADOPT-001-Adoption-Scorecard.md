@@ -1,5 +1,6 @@
 ---
 type: adoption-scorecard
+project: pm-harness
 artifact: adoption-scorecard
 id: ADOPT-001
 scope: portfolio

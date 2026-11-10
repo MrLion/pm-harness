@@ -1,10 +1,13 @@
 ---
 type: compliance-scope
+project: pm-harness
 artifact: compliance-scope
 id: COMP-001
 scope: product
 status: draft
 confidence: none
+data_classification: unsure
+jurisdiction: unsure
 owner: "[FILL: compliance owner]"
 updated: 2026-11-08
 framework: "HIPAA + privacy/security compliance"

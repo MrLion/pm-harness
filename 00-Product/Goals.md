@@ -1,5 +1,6 @@
 ---
 type: goals
+project: pm-harness
 artifact: goals
 framework: "Pichler + OKR + Impact Mapping"
 status: draft

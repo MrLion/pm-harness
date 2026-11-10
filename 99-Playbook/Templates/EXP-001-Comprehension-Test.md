@@ -1,5 +1,6 @@
 ---
 type: experiment
+project: pm-harness
 artifact: experiment
 id: EXP-001
 status: planned

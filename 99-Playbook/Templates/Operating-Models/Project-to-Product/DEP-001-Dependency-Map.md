@@ -1,5 +1,6 @@
 ---
 type: dependency-map
+project: pm-harness
 artifact: dependency-map
 id: DEP-001
 scope: portfolio

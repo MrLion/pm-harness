@@ -69,7 +69,7 @@ columns from the `a:` and `b:` keys of each note; `WHERE type = "x"` filters on 
 `SORT date DESC` uses the frontmatter `date:`, not the file's modification time.
 
 Which is why every template's frontmatter **is** the instance schema — a note created from it is
-queryable immediately. Copy the template frontmatter, then update `id`, `status`, links, and `updated:`; never retype the schema from memory.
+queryable immediately. Copy the template frontmatter, then update `project`, `id`, `status`, links, and `updated:`; never retype the schema from memory. Live notes use `project: pm-harness`; the worked example uses `project: pm-harness-example`.
 
 | Key | Allowed values → how it is used |
 |---|---|

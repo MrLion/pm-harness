@@ -1,5 +1,6 @@
 ---
 type: portfolio-roadmap
+project: pm-harness
 artifact: portfolio-roadmap
 id: PORT-001
 scope: portfolio

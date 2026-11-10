@@ -1,5 +1,6 @@
 ---
 type: scenario
+project: pm-harness
 status: active
 confidence: none
 case_id: CASE-001

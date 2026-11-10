@@ -1,5 +1,6 @@
 ---
 type: dashboard
+project: pm-harness
 artifact: dashboard
 status: example
 example: true
@@ -20,7 +21,7 @@ To use it on real notes, copy the blocks and change each `FROM` path to the matc
 ```dataview
 TABLE status, confidence, severity, priority
 FROM ""
-WHERE type = "problem" AND contains(file.folder, "99-Playbook/Templates")
+WHERE type = "problem" AND contains(file.folder, "99-Playbook/Templates") AND project = "pm-harness"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 
@@ -31,7 +32,7 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 ```dataview
 TABLE status, confidence, recommendation
 FROM ""
-WHERE type = "opportunity" AND contains(file.folder, "99-Playbook/Templates")
+WHERE type = "opportunity" AND contains(file.folder, "99-Playbook/Templates") AND project = "pm-harness"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 
@@ -42,7 +43,7 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 ```dataview
 TABLE status, confidence, recommendation, review_after
 FROM ""
-WHERE type = "opportunity" AND recommendation = "Pending" AND contains(file.folder, "99-Playbook/Templates")
+WHERE type = "opportunity" AND recommendation = "Pending" AND contains(file.folder, "99-Playbook/Templates") AND project = "pm-harness"
 ```
 
 ## Decisions
@@ -50,7 +51,7 @@ WHERE type = "opportunity" AND recommendation = "Pending" AND contains(file.fold
 ```dataview
 TABLE status, date, reversibility, review_date
 FROM ""
-WHERE type = "decision" AND contains(file.folder, "99-Playbook/Templates")
+WHERE type = "decision" AND contains(file.folder, "99-Playbook/Templates") AND project = "pm-harness"
 SORT date DESC
 ```
 
@@ -59,7 +60,7 @@ SORT date DESC
 ```dataview
 TABLE status, opportunity, updated
 FROM ""
-WHERE type = "prd" AND contains(file.folder, "99-Playbook/Templates")
+WHERE type = "prd" AND contains(file.folder, "99-Playbook/Templates") AND project = "pm-harness"
 SORT updated DESC
 ```
 
@@ -68,7 +69,7 @@ SORT updated DESC
 ```dataview
 TABLE status, opportunity, start, end
 FROM ""
-WHERE type = "experiment" AND contains(file.folder, "99-Playbook/Templates")
+WHERE type = "experiment" AND contains(file.folder, "99-Playbook/Templates") AND project = "pm-harness"
 SORT start ASC
 ```
 
@@ -77,7 +78,7 @@ SORT start ASC
 ```dataview
 TABLE category, date, reliability
 FROM ""
-WHERE type = "research" AND contains(file.folder, "99-Playbook/Templates")
+WHERE type = "research" AND contains(file.folder, "99-Playbook/Templates") AND project = "pm-harness"
 SORT date DESC
 ```
 
@@ -86,7 +87,7 @@ SORT date DESC
 ```dataview
 TABLE status, date, goal, metric_result
 FROM ""
-WHERE type = "release" AND contains(file.folder, "99-Playbook/Templates")
+WHERE type = "release" AND contains(file.folder, "99-Playbook/Templates") AND project = "pm-harness"
 SORT date DESC
 ```
 
@@ -95,6 +96,6 @@ SORT date DESC
 ```dataview
 LIST
 FROM ""
-WHERE type = "review" AND contains(file.folder, "99-Playbook/Templates")
+WHERE type = "review" AND contains(file.folder, "99-Playbook/Templates") AND project = "pm-harness"
 SORT file.name DESC
 ```

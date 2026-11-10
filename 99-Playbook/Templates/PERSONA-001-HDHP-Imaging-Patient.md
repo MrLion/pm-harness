@@ -1,5 +1,6 @@
 ---
 type: persona
+project: pm-harness
 artifact: persona
 id: PERSONA-001
 status: draft

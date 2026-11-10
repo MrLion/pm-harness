@@ -1,5 +1,6 @@
 ---
 type: operating-model-index
+project: pm-harness
 status: active
 updated: 2026-11-08
 ---

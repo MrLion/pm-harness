@@ -1,5 +1,6 @@
 ---
 type: dashboard
+project: pm-harness
 updated: 2026-11-09
 ---
 
@@ -20,7 +21,7 @@ Operating · [PM](99-Playbook/PM.md) · [Rules](99-Playbook/Rules.md)
 ```dataview
 TABLE status, confidence, severity, priority
 FROM ""
-WHERE type = "problem" AND status != "closed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "problem" AND status != "closed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC,
      choice(severity = "low", 0, choice(severity = "medium", 1, 2)) DESC
 ```
@@ -30,7 +31,7 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 ```dataview
 TABLE status, confidence, recommendation
 FROM ""
-WHERE type = "opportunity" AND status != "closed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "opportunity" AND status != "closed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confidence = "medium", 2, 3))) ASC
 ```
 
@@ -39,7 +40,7 @@ SORT choice(confidence = "none", 0, choice(confidence = "low", 1, choice(confide
 ```dataview
 TABLE confidence, review_after
 FROM ""
-WHERE type = "opportunity" AND status != "closed" AND (recommendation = null OR recommendation = "Pending") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "opportunity" AND status != "closed" AND (recommendation = null OR recommendation = "Pending") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 ```
 
 ## Decisions
@@ -47,7 +48,7 @@ WHERE type = "opportunity" AND status != "closed" AND (recommendation = null OR 
 ```dataview
 TABLE status, date, reversibility, review_date
 FROM ""
-WHERE type = "decision" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "decision" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT date DESC
 LIMIT 12
 ```
@@ -57,7 +58,7 @@ LIMIT 12
 ```dataview
 TABLE date, review_date, reversibility
 FROM ""
-WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT review_date ASC
 ```
 
@@ -66,7 +67,7 @@ SORT review_date ASC
 ```dataview
 TABLE status, opportunity, updated
 FROM ""
-WHERE type = "prd" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "prd" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT updated DESC
 ```
 
@@ -75,7 +76,7 @@ SORT updated DESC
 ```dataview
 TABLE status, opportunity, start, end
 FROM ""
-WHERE type = "experiment" AND status != "completed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "experiment" AND status != "completed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT start ASC
 ```
 
@@ -84,7 +85,7 @@ SORT start ASC
 ```dataview
 TABLE category, date, reliability
 FROM ""
-WHERE type = "research" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "research" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT date DESC
 LIMIT 15
 ```
@@ -94,7 +95,7 @@ LIMIT 15
 ```dataview
 TABLE status, confidence, owner, updated
 FROM ""
-WHERE contains(file.folder, "09-Transformation") AND type != null AND type != "transformation-index" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE contains(file.folder, "09-Transformation") AND type != null AND type != "transformation-index" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT updated DESC
 ```
 
@@ -103,7 +104,7 @@ SORT updated DESC
 ```dataview
 TABLE status, confidence, owner, updated
 FROM ""
-WHERE contains(file.folder, "10-Operating-Model") AND type != null AND type != "operating-model-index" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE contains(file.folder, "10-Operating-Model") AND type != null AND type != "operating-model-index" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT updated DESC
 ```
 
@@ -112,7 +113,7 @@ SORT updated DESC
 ```dataview
 TABLE status, confidence, owner, updated
 FROM ""
-WHERE contains(file.folder, "11-Compliance") AND type != null AND type != "compliance-index" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE contains(file.folder, "11-Compliance") AND type != null AND type != "compliance-index" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT updated DESC
 ```
 
@@ -121,7 +122,7 @@ SORT updated DESC
 ```dataview
 TABLE type, status
 FROM ""
-WHERE type != null AND (updated = null OR updated = "" OR updated = "YYYY-MM-DD") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type != null AND (updated = null OR updated = "" OR updated = "YYYY-MM-DD") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT file.name ASC
 ```
 
@@ -130,7 +131,7 @@ SORT file.name ASC
 ```dataview
 TABLE type, updated
 FROM ""
-WHERE type != null AND (updated != null AND updated != "") AND date(updated) < date(today) - dur(30 days) AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type != null AND (updated != null AND updated != "") AND date(updated) < date(today) - dur(30 days) AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT updated ASC
 ```
 
@@ -139,7 +140,7 @@ SORT updated ASC
 ```dataview
 TABLE status, confidence, review_after
 FROM ""
-WHERE type = "opportunity" AND status != "closed" AND review_after != null AND date(review_after) <= date(today) AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "opportunity" AND status != "closed" AND review_after != null AND date(review_after) <= date(today) AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT review_after ASC
 ```
 
@@ -148,7 +149,7 @@ SORT review_after ASC
 ```dataview
 TABLE status, review_date, reversibility
 FROM ""
-WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending") AND review_date != null AND date(review_date) <= date(today) AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "decision" AND status = "accepted" AND (actual_outcome = null OR actual_outcome = "Pending") AND review_date != null AND date(review_date) <= date(today) AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT review_date ASC
 ```
 
@@ -159,7 +160,7 @@ SORT review_date ASC
 ```dataview
 TABLE status, confidence, updated
 FROM ""
-WHERE type = "opportunity" AND status != "closed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "opportunity" AND status != "closed" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
       AND (review_after = null OR review_after = "" OR review_after = "YYYY-MM-DD")
 SORT file.name ASC
 ```
@@ -169,7 +170,7 @@ SORT file.name ASC
 ```dataview
 TABLE status, actual_outcome, updated
 FROM ""
-WHERE type = "decision" AND status = "accepted" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "decision" AND status = "accepted" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
       AND (actual_outcome = null OR actual_outcome = "Pending")
       AND (review_date = null OR review_date = "" OR review_date = "YYYY-MM-DD")
 SORT file.name ASC
@@ -180,7 +181,7 @@ SORT file.name ASC
 ```dataview
 TABLE type, updated, review_cadence_days
 FROM ""
-WHERE review_cadence_days != null AND (updated != null AND updated != "" AND updated != "YYYY-MM-DD") AND date(updated) < date(today) - dur(review_cadence_days + " days") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE review_cadence_days != null AND (updated != null AND updated != "" AND updated != "YYYY-MM-DD") AND date(updated) < date(today) - dur(review_cadence_days + " days") AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT updated ASC
 ```
 
@@ -189,6 +190,6 @@ SORT updated ASC
 ```dataview
 LIST
 FROM ""
-WHERE type = "review" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples")
+WHERE type = "review" AND !contains(file.folder, "99-Playbook") AND !contains(file.folder, "agent") AND !contains(file.folder, "examples") AND project = "pm-harness"
 SORT file.name DESC
 ```

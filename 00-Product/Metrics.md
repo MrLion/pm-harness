@@ -1,5 +1,6 @@
 ---
 type: metrics
+project: pm-harness
 artifact: metrics
 framework: "Pichler + North Star"
 status: draft

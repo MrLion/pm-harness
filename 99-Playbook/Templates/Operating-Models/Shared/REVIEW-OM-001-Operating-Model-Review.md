@@ -1,5 +1,6 @@
 ---
 type: operating-model-review
+project: pm-harness
 artifact: operating-model-review
 id: REVIEW-OM-001
 scope: portfolio

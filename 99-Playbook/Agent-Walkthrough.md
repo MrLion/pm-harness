@@ -1,5 +1,6 @@
 ---
 type: walkthrough
+project: pm-harness
 artifact: walkthrough
 status: active
 updated: 2026-11-09

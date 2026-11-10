@@ -1,5 +1,6 @@
 ---
 type: data-inventory
+project: pm-harness
 artifact: data-inventory
 id: DATA-001
 scope: product

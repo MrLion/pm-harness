@@ -1,5 +1,6 @@
 ---
 type: compliance-review
+project: pm-harness
 artifact: compliance-review
 id: COMP-002
 scope: product

@@ -1,5 +1,6 @@
 ---
 type: team-topology
+project: pm-harness
 artifact: team-topology
 id: TEAM-001
 scope: team

@@ -1,5 +1,6 @@
 ---
 type: agent-brief
+project: pm-harness
 status: active
 updated: 2026-11-09
 vault_root: "."

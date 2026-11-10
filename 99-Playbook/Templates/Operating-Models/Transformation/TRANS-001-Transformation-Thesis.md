@@ -1,5 +1,6 @@
 ---
 type: transformation-thesis
+project: pm-harness
 artifact: transformation-thesis
 id: TRANS-001
 scope: portfolio

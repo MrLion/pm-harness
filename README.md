@@ -61,6 +61,7 @@ If the skill or bundle is missing, the vault still works; only `/pm` commands ar
 A fresh clone includes the source in `agent/`, but it is not loaded until you install it. Run:
 
 ```bash
+python3 -m pip install -r scripts/requirements.txt
 python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
 hermes bundles reload
 ```
@@ -70,6 +71,7 @@ Then test `/pm status`. See https://hermes-agent.nousresearch.com/docs/.
 ## Validate
 
 ```bash
+python3 -m pip install -r scripts/requirements.txt
 python3 scripts/validate_vault.py
 ```
 

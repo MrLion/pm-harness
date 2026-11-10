@@ -1,5 +1,6 @@
 ---
 type: journey-map
+project: pm-harness
 artifact: journey-map
 id: JOURNEY-001
 status: draft

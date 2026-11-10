@@ -1,5 +1,6 @@
 ---
 type: strategy
+project: pm-harness
 artifact: strategy
 status: draft
 confidence: low

@@ -1,5 +1,6 @@
 ---
 type: release
+project: pm-harness
 artifact: release
 id: REL-001
 date: 2027-01-15

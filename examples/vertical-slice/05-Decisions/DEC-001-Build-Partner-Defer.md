@@ -1,5 +1,6 @@
 ---
 type: decision
+project: pm-harness-example
 artifact: decision
 id: DEC-001
 status: proposed

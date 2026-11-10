@@ -1,5 +1,6 @@
 ---
 type: value-note
+project: pm-harness
 status: active
 confidence: low
 updated: 2026-11-09

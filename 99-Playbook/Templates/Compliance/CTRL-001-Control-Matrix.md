@@ -1,5 +1,6 @@
 ---
 type: control-matrix
+project: pm-harness
 artifact: control-matrix
 id: CTRL-001
 scope: product

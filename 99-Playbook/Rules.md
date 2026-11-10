@@ -1,5 +1,6 @@
 ---
 type: rules
+project: pm-harness
 status: active
 version: 4
 updated: 2026-11-09

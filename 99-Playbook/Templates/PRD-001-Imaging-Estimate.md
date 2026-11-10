@@ -1,5 +1,6 @@
 ---
 type: prd
+project: pm-harness
 artifact: solution-brief
 id: PRD-001
 status: draft

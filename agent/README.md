@@ -16,11 +16,13 @@ From the repository root:
 
 ```bash
 export HERMES_HOME="$HOME/.hermes/profiles/pdm"
+python3 -m pip install -r scripts/requirements.txt
 python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
 ```
 
-The installer copies the skill and writes `pm.yaml` with the absolute vault path. It refuses to run
-if the target does not contain `99-Playbook/Rules.md`.
+The installer copies the skill and writes `pm.yaml` with the absolute vault path. It validates the
+source bundle first, refuses to run if the target does not contain `99-Playbook/Rules.md`, and refuses
+to overwrite an existing skill or `pm.yaml` unless you pass `--update`.
 
 Then reload and verify:
 

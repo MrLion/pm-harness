@@ -15,7 +15,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
   filename/ID consistency, product-template fill markers, open gates, and overdue decisions.
 - GitHub Actions validation on every push and pull request.
 - `scripts/install_agent_layer.py`, which installs the skill and writes the absolute vault path into
-  `pm.yaml`.
+  `pm.yaml`, plus `scripts/requirements.txt` for its PyYAML dependency.
 - `examples/vertical-slice/`, a synthetic end-to-end fixture from product to review.
 - `LICENSE` (MIT) and `NOTICE` separating MIT from CC BY-SA 4.0 content.
 
@@ -36,6 +36,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 - Made the README, Agent Manual, and Architecture platform-neutral: documented nested, root, and
   renamed vault layouts, Dataview prefix choices, and normal `.git` behavior outside the maintainer's
   macOS/iCloud setup.
+- Hardened the installer: it validates the source bundle before copying, refuses to overwrite an
+  existing skill or `pm.yaml`, and requires `--update` for replacement.
+- Added a `project: pm-harness` marker to every artifact and constrained all Dashboard queries to it,
+  so a shared Obsidian vault cannot leak sibling `type:` notes into the PM tables.
+- Extended the validator to reject impossible calendar dates and to require a named owner, data
+  classification, and jurisdiction on any `approved` or `active` compliance scope.
+- Added the worked example to CI as a second validation step.
 
 ## [0.1.0] - 2026-11-09
 

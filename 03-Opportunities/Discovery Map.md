@@ -1,5 +1,6 @@
 ---
 type: discovery-map
+project: pm-harness
 artifact: discovery-map
 framework: Torres
 outcome: TBD

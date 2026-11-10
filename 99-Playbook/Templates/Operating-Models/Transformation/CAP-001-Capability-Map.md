@@ -1,5 +1,6 @@
 ---
 type: capability-map
+project: pm-harness
 artifact: capability-map
 id: CAP-001
 scope: portfolio
