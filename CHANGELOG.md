@@ -10,6 +10,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 ### Added
 
 - Repository copy of the agent layer under `agent/`: the `pm` skill, its references and checker.
+- `scripts/doctor.py`, a human-operator setup check for the vault, skill, Dataview, git, and
+  first-problem state.
+- `scripts/new_artifact.py`, a blank `PROB-NNN` scaffold with automatic ID allocation.
+- `/pm doctor` and `/pm start` onboarding commands.
+- A single three-stage first-run path in `START-HERE.md`; README now routes to it instead of
+  duplicating setup.
 - `scripts/validate_vault.py`, a contract validator for Markdown links and anchors, frontmatter, IDs,
   filename/ID consistency, product-template fill markers, open gates, and overdue decisions.
 - GitHub Actions validation on every push and pull request.

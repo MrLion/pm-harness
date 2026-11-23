@@ -2,13 +2,13 @@
 type: manual
 project: pm-harness
 status: active
-updated: 2026-11-10
+updated: 2026-11-23
 ---
 
 # Agent Setup and Harness Manual
 
 > [!NOTE] For humans and agents
-> This is the practical setup and operating manual: install the agent layer, wire the vault, run the first chain, and use `/pm` without inventing evidence. It is not legal advice and it does not define the product.
+> This is the reference manual: install the agent layer, wire the vault, and use `/pm` without inventing evidence. For the first 30 minutes, use [START-HERE](../START-HERE.md); this page is the lookup, not the first-run path. It is not legal advice and it does not define the product.
 
 ## 1. What you are setting up
 
@@ -63,8 +63,12 @@ you pass `--update`.
 Start a new Hermes chat and run:
 
 ```text
+/pm doctor
 /pm status
 ```
+
+`/pm doctor` reports PASS / WARN / FAIL and one next action. A warning about an empty first problem or
+a draft compliance scope is expected.
 
 The same command works in the classic CLI and the desktop app. There is no bundle, so the command
 list shows one `/pm`, not two.
@@ -248,7 +252,8 @@ integrates it. Do not let two agents write the same artifact folder concurrently
 
 | Symptom | Check | Fix |
 |---|---|---|
-| `/pm` unknown | `hermes skills list` | Reinstall the `pm` skill with the installer |
+| `/pm` unknown | `hermes skills list` | Reinstall the `pm` skill; run `/pm doctor` |
+| Setup unclear | `/pm doctor` | Fix the failed check it names |
 | `/pm` appears twice | Old bundle still installed | Delete `$HERMES_HOME/skill-bundles/pm.yaml`; start a new chat |
 | `/pm` reads the wrong vault | Current working directory | Run Hermes from the vault root or open the vault that contains `99-Playbook/Rules.md` |
 | Tables empty | Vault and Dataview | Open the vault, enable Dataview |

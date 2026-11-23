@@ -2,8 +2,28 @@
 
 | Script | Purpose |
 |---|---|
+| `doctor.py` | Check vault wiring, skill install, Dataview, git, and the first-problem state |
+| `new_artifact.py` | Allocate the next `PROB-NNN` and create a blank problem scaffold |
 | `validate_vault.py` | Validate links, anchors, frontmatter, IDs, template fill markers, and gates |
 | `install_agent_layer.py` | Install the `pm` skill into a Hermes profile |
+
+## Doctor
+
+```bash
+python3 scripts/doctor.py --vault . --hermes-home "$HERMES_HOME"
+```
+
+Exit code 1 means a blocking check failed. Warnings do not block the vault.
+
+## Create a problem scaffold
+
+```bash
+python3 scripts/new_artifact.py --vault . --type problem \
+  --title "Patients cannot predict imaging cost" --slug imaging-cost
+```
+
+The script allocates the next `PROB-NNN`, creates the file in `02-Problems/`, and leaves the body
+sections for the operator to fill. It does not invent evidence.
 
 ## Validate
 

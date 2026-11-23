@@ -1,7 +1,7 @@
 ---
 name: pm
 description: "PM work on the Obsidian vault: discovery to review."
-version: 1.15.0
+version: 1.19.0
 author: PM Playbook
 license: MIT
 platforms: [linux, macos, windows]
@@ -311,6 +311,14 @@ the scaffold header as `User instruction: <text>` — same turn, never a separat
 Do not install a bundle named `pm` beside the skill: the desktop lists both, so `/pm` appears twice.
 One skill is the single command on every surface, including the classic CLI.
 
+After installing, renaming, or removing the skill, start a new chat. The desktop builds its command
+list when the app process starts, so an old `/product-management` entry or a duplicate `/pm` is a
+cached palette, not an installed command. Verify the files first with `hermes skills list` (`pm`
+only) and `hermes bundles list` (empty); restart Hermes if the palette still disagrees.
+
+If `$HERMES_HOME/skill-bundles/pm.yaml` exists, archive it before verifying. A bundle beside the
+skill registers a second `/pm` entry on desktop even when the skill itself is correct.
+
 The repository ships the agent-layer source under `agent/skills/productivity/pm/`. It is still
 profile-local at runtime. Install it with
 `python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"`. The installer refuses
@@ -320,6 +328,20 @@ back into `agent/` before tagging a release. README must state the source, insta
 `/pm status` smoke test, and expected result; the vault must remain usable without the skill. The
 full setup and operating manual is `99-Playbook/Agent-Manual.md`; keep README, Architecture, and
 Dashboard linked to it.
+
+### `/pm doctor`
+Read-only setup check for a human operator. Run:
+`python3 scripts/doctor.py --vault . --hermes-home "$HERMES_HOME"`
+Report PASS / WARN / FAIL and one next action. Do not edit files. A warning about an empty first
+problem or a draft compliance scope is expected, not a failure.
+
+### `/pm start`
+Guided first run. Ask three questions: new or existing product, who has the problem, and what was
+observed. Then create a blank problem scaffold:
+`python3 scripts/new_artifact.py --vault . --type problem --title "<title>" --slug "<slug>"`
+Fill the Problem Statement, User / Segment, JTBD, Evidence, and Next evidence sections from the
+answers. Leave `confidence: low`, `frequency: unknown`, `severity: unknown`, and `Buyer: Unresolved`
+when the answer is not evidenced. Do not write a PRD or decision.
 
 ### `/pm status`
 Read-only. Report, in this order, and keep it tight:
@@ -344,6 +366,9 @@ Procedure:
 5. Rank by severity × frequency × evidence strength, then propose at most 3 worth pursuing
 6. Update `03-Opportunities/Discovery Map.md` by linking the new canonical notes under the
    relevant desired outcome. Do not paste their content into the map.
+7. If `Goals.md` has no approved objective, do not draw an opportunity tree and do not invent the
+   desired outcome. Link the candidate problems as discovery candidates, mark the outcome `TBD`,
+   and leave the coverage check unchecked. A blocked map is correct; a fabricated goal is not.
 
 Rules: a problem with no source is an assumption — label it `confidence: low` and put it in
 `Unknowns`. Never fabricate a quote, a metric, or a competitor claim. Say `Evidence unavailable.`
@@ -418,6 +443,16 @@ accepted-but-unresolved decisions are separate findings from stale `updated:` da
 - **Finish means committed and verified.** When the user says finish/do it, run the validator,
   commit, push, and confirm the remote ref and CI conclusion. A dirty tree or local-only pass is not
   finished.
+- **Undo a discovery run by reverting its commit, not by hand-deleting the notes.** Discovery adds
+  a research note, problem notes, and a map edit as one logical change; `git revert --no-edit
+  <commit>` restores the map and removes the notes together and leaves an auditable history. Verify
+  the tree, run both validators, and confirm CI. Do not reset or force-push a published vault.
+- **Removing a live `RESEARCH-NNN` note is a link refactor, not just a delete.** The note is the
+  evidence target for problem, opportunity, persona, journey, strategy, and template pages plus the
+  worked example. Grep every `RESEARCH-NNN` link, repoint each to the external source URL or remove
+  the unsupported claim, update `updated:` on every edited page, then run
+  `python3 scripts/validate_vault.py` and the example validator. Deleting only the research file
+  leaves broken evidence links and a failing contract check.
 - **Ready-to-use docs, not patchwork.** When asked to restructure a multi-mode README or guide, rewrite the whole narrative coherently. A router that links to other pages while the body still shows only one mode is a partial patch; every promised loop/mode and its entry gate must be visible in the main document, and the body terminology must match the router.
 - **One source of truth per layer.** README routes, `_Playbooks` carries playbook/methods/lineage, and individual playbooks carry flow. Do not reintroduce a standalone Frameworks/Methods page beside them unless the user explicitly asks for a separate reference.
 - **One canonical product chain.** `99-Playbook/Discovery-to-Delivery.md` owns the product chain and transition gates. README, Agent-Manual, Architecture, Rules, and `_Templates` must link to it rather than restate it. Divergent chain wording (`Experiment or Decision` vs `Experiment → Decision`, `Solution brief` vs `PRD`) is a documentation defect.
@@ -471,9 +506,14 @@ the weighted roll-up; state one 40-hour roll-up, the overlap/adoption haircut, a
 
 ## ID allocation
 
-Scan the target folder, take the highest existing number, add one, zero-pad to 3
-(`PROB-007` → `PROB-008`). Never reuse an ID. Get the real numbers by listing the directory —
-do not guess from memory.
+Scan the whole artifact namespace before choosing an ID: the live folder, `99-Playbook/Templates/`,
+and `examples/`. IDs are global, and the validator rejects duplicates across those locations. Take
+the highest existing number across all of them, add one, zero-pad to 3 (`PROB-007` → `PROB-008`).
+Never reuse an ID. Get the real numbers by listing the directories — do not guess from memory.
+
+A template occupies its ID permanently: if the template is `PROB-001`, the first live problem note is
+`PROB-002`, even when `02-Problems/` is empty. The same applies to research notes; check the template
+set before allocating `RESEARCH-NNN`.
 
 Artifact notes encode their identifier in the filename (`OPP-001-<slug>.md`,
 `PROB-004-<slug>.md`). The dashboard File column is then the ID; do not duplicate an `id` column

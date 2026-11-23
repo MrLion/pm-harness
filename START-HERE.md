@@ -1,123 +1,168 @@
 # Start Here
 
 > [!NOTE] For humans
-> This is a human walkthrough of the outcome-led 1→N path. Agents start at [PM](99-Playbook/PM.md) and [Rules](99-Playbook/Rules.md).
+> This is the first-run path for a human operator. It takes you from opening the vault to one real problem note in about 30 minutes. Agents start at [PM](99-Playbook/PM.md) and [Rules](99-Playbook/Rules.md).
 
-> This is the **outcome-led 1→N** path for an existing product. For a new product, new market, or new value proposition, start with [Vision-Led-0-to-1](99-Playbook/Playbooks/Vision-Led-0-to-1.md).
+**One path, three stages:** see the vault work → see the agent work → produce one real problem note.
 
-Use this guide to produce your first useful artifact in about 30 minutes. The goal is **one honest
-problem-to-experiment chain**, not a complete vault.
+The harness does not require a filled product or a finished strategy to begin discovery. An empty vault is a valid starting state; what it will not do is invent evidence to fill it.
 
 ## Before you begin
 
-Open the parent iCloud `Documents` vault and ensure Dataview is enabled. Open
-[Dashboard](Dashboard.md) (`PM vault/Dashboard.md`); empty tables are expected. The technical setup is in [Architecture](99-Playbook/Architecture.md).
+1. Open the folder that contains `99-Playbook/Rules.md` in Obsidian.
+2. Enable **Dataview**: Settings → Community plugins.
+3. Open [Dashboard](Dashboard.md). Empty tables are expected.
 
-> If the problem involves PII, PHI, ePHI, or vendor data, complete the live [Compliance Scope](11-Compliance/COMP-003-Compliance-Scope.md) before step 1. A draft scope or `Unassigned` owner is a stop condition.
+If the problem involves PII, PHI, ePHI, or vendor data, stop and read the live [Compliance Scope](11-Compliance/COMP-003-Compliance-Scope.md). A `draft` scope or `Unassigned` owner blocks health-data work.
 
-## 1. Capture a problem — 5 minutes
+---
 
-Start with something observed, not a solution:
+## Stage 1 — See the vault work — 5 minutes
+
+Open [Dashboard](Dashboard.md).
+
+You should see tables, even if they are empty. That proves Obsidian and Dataview are working. It does not prove the agent is installed.
+
+| What you see | What it means |
+|---|---|
+| Tables render | Obsidian and Dataview are working |
+| Tables are empty | Correct; no live artifacts exist yet |
+| Tables show raw query text | Dataview is not enabled |
+| Tables show sibling-project notes | The `project: pm-harness` filter is missing |
+
+Then choose your route:
+
+- **I only need the vault** → skip to [Stage 3](#stage-3--produce-one-real-problem-note--15-minutes).
+- **I want the `/pm` agent** → continue to Stage 2.
+
+---
+
+## Stage 2 — See the agent work — 10 minutes
+
+The skill is profile-local. The vault does not load it from `agent/` at runtime.
+
+From the repository root:
+
+```bash
+python3 -m pip install -r scripts/requirements.txt
+python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
+```
+
+Start a **new Hermes chat**, then run:
+
+```text
+/pm doctor
+/pm status
+```
+
+`/pm doctor` checks the vault, skill, Dataview, git, compliance gate, and first-problem state. `/pm status` should return a report, not an error. On an empty vault it should say what is missing.
+
+If `/pm` is unknown, the skill is not installed in this profile. See [Agent Manual](99-Playbook/Agent-Manual.md).
+
+Full setup reference: [Agent Manual](99-Playbook/Agent-Manual.md). Guided lab: [Agent Walkthrough](99-Playbook/Agent-Walkthrough.md).
+
+---
+
+## Stage 3 — Produce one real problem note — 15 minutes
+
+Use `PROB-` for problems, `OPP-` for opportunities, `RESEARCH-` for evidence, `DEC-` for decisions, and `EXP-` for experiments.
+
+### 3.1 Capture the observation
+
+Ask three questions:
+
+1. Is this a new product or an existing one?
+2. Who has the problem?
+3. What did you observe?
+
+Use an observation, not a feature request:
 
 - Weak: “Add a price estimator.”
 - Better: “Adults on HDHP plans cannot tell what an outpatient imaging visit will cost before they book.”
 
-Copy `99-Playbook/Templates/PROB-001-Imaging-Cost-Problem.md` into `02-Problems/`. Rename the file
-to `PROB-NNN-your-slug.md`, set `id: PROB-NNN` to the next available ID, and replace the illustrative
-example with your problem. State who experiences the problem, when, how often, and what it costs.
+### 3.2 Create the scaffold
 
-If you only have a feature request, run:
+With the agent:
 
 ```text
-/pm discover <the user or situation behind the request>
+/pm start
 ```
 
-## 2. Attach evidence — 5 minutes
+Without the agent:
 
-Copy the right source template, rename it, update `id:`, and replace its example:
+```bash
+python3 scripts/new_artifact.py --vault . --type problem \
+  --title "Patients cannot predict imaging cost" \
+  --slug imaging-cost
+```
 
-- Verbatim complaint → [FB-001-Imaging-Cost-Feedback](99-Playbook/Templates/FB-001-Imaging-Cost-Feedback.md) into `01-Users/Feedback/`
-- Interview synthesis → [RESEARCH-001-Imaging-Cost-Transparency](99-Playbook/Templates/RESEARCH-001-Imaging-Cost-Transparency.md) into `04-Research/Users/`, with `category: user`
-- Metric or baseline → [RESEARCH-001-Imaging-Cost-Transparency](99-Playbook/Templates/RESEARCH-001-Imaging-Cost-Transparency.md) into `04-Research/Data/`, with `category: data`
+Both routes allocate the next `PROB-NNN`, set the filename, `project`, `id`, and dates, and create the section skeleton. They do not invent evidence.
 
-Delete the illustrative evidence rows from the Problem before adding your sources. If there is no
-evidence, leave the table empty, set `confidence: low`, and write `Evidence unavailable.` Do not make
-the note look stronger than it is.
+### 3.3 Fill the problem, not the solution
 
-## 3. Assess the opportunity — 7 minutes
+Open the new note and fill:
 
-Copy [OPP-001-Outpatient-Imaging-Cost](99-Playbook/Templates/OPP-001-Outpatient-Imaging-Cost.md) into `03-Opportunities/`. Rename the file to
-`OPP-NNN-your-slug.md`, set `id: OPP-NNN` to the next available ID, replace the example, and link the
-new `problem:` to your Problem note.
+- **Problem Statement** — who experiences what, when, and at what cost.
+- **User / Segment** — the affected group. Link a live persona only if one exists.
+- **JTBD** — “When ______, I want ______, so I can ______.”
+- **Evidence** — quote the source in the row. If there is no source, write `Evidence unavailable.` and leave `confidence: low`.
+- **Next evidence** — the cheapest observation that would change your confidence.
+- **Frequency / Severity** — `Unknown` is valid. Do not guess.
+- **Buyer** — `Unresolved` is valid.
 
-Answer the ten questions conservatively, then name the four risks: **value, usability, feasibility,
-business viability**. Each material risk needs an owner and a test. `unknown` is a valid rating;
-`no-go` is a valid recommendation.
+Do not add a solution column. A problem note is not a PRD.
 
-For a structured analysis, run:
+### 3.4 Check it
+
+```bash
+python3 scripts/validate_vault.py
+```
+
+Then run:
 
 ```text
-/pm analyze OPP-001
+/pm status
 ```
 
-Replace the ID with yours.
+The report should now show one live problem. If it does not, check that the note has `project: pm-harness` and `type: problem`.
 
-## 4. Challenge it — 5 minutes
-
-```text
-/pm challenge OPP-001
-```
-
-Expect objections: unsupported assumptions, contradictory evidence, alternative explanations, and
-the cheapest way to discover you are wrong. A challenge that validates everything has not done its job.
-
-## 5. Design the smallest experiment — 5 minutes
-
-If a material uncertainty remains, copy [EXP-001-Comprehension-Test](99-Playbook/Templates/EXP-001-Comprehension-Test.md) into `07-Delivery/Experiments/`.
-Rename the file to `EXP-NNN-your-slug.md`, set `id: EXP-NNN`, replace the example, and link the new
-`opportunity:` to your Opportunity note.
-
-Name **one** risk being retired. Pre-register success, failure and kill criteria before seeing data.
-Choose the cheapest test that could change the decision: interviews, a prototype, concierge run,
-fake door, or a short pilot.
-
-Do not write a PRD merely because you have a promising idea.
-
-## 6. Link the reasoning — 3 minutes
-
-Open [Discovery Map](03-Opportunities/Discovery%20Map.md) and link the existing notes:
-
-```text
-Desired outcome
-└── PROB-NNN
-    └── OPP-NNN
-        ├── CAND-001 → EXP-NNN
-        └── CAND-002
-```
-
-The map is a view, not another source of truth. If a solution exists only in the map, create its
-canonical artifact or remove it.
-
-## 7. Decide only when evidence supports it
-
-A significant choice becomes a [DEC-001](99-Playbook/Templates/DEC-001-Build-Partner-Defer.md) record with options,
-tradeoffs, reversibility, an expected outcome and a review date. The agent proposes; the human accepts.
-
-Only then consider a solution brief through `/pm prd OPP-001`. If the validation gate is not met,
-the refusal is the harness working correctly.
+---
 
 ## What “good” looks like
 
-- [ ] Problem contains no embedded solution
-- [ ] Claims are linked to evidence or explicitly marked unknown
-- [ ] Opportunity has all four risks and a possible no-go
-- [ ] Experiment retires one primary named risk, with secondary observations kept separate
-- [ ] Discovery Map links canonical notes
-- [ ] Decision and solution brief wait until justified
+- [ ] The Dashboard renders.
+- [ ] `/pm doctor` passes, or every failure has a named next action.
+- [ ] One real `PROB-NNN` note exists.
+- [ ] The problem contains no embedded solution.
+- [ ] Every claim is linked to evidence or marked `Evidence unavailable.`
+- [ ] No PRD or decision has been written yet.
 
-## Mature-product shortcut
+The last point is deliberate. A PRD without a baseline, a challenge, and evidence is the failure the harness exists to prevent.
 
-If the product already has a real definition, goals, and metrics, do not manufacture a discovery
-exercise. Confirm [Product](00-Product/Product.md), [Goals](00-Product/Goals.md), and
-[Metrics](00-Product/Metrics.md) are filled with real information, run `/pm status`, then use
-this guide only for the next uncertain opportunity.
+---
+
+## If you get stuck
+
+| Symptom | Fix |
+|---|---|
+| `/pm` unknown | Install the skill with the command in Stage 2; start a new chat |
+| `/pm` appears twice | Remove any bundle named `pm`; keep only the skill |
+| Tables render as text | Enable Dataview in the vault that contains the harness |
+| Tables are empty | Expected on a fresh vault; create one problem |
+| Tables show other projects | Add `project: pm-harness` to the note; check the query |
+| Validator fails on a link | Fix the relative Markdown path in the note it names |
+| Compliance work blocked | `COMP-003` is `draft` or `Unassigned`; complete it before health data |
+| Agent fills product strategy | Stop; `00-Product` is human-approved only |
+
+---
+
+## Where to go next
+
+| Need | Page |
+|---|---|
+| Setup, commands, troubleshooting | [Agent Manual](99-Playbook/Agent-Manual.md) |
+| Guided discovery-to-decision lab | [Agent Walkthrough](99-Playbook/Agent-Walkthrough.md) |
+| Canonical chain and gates | [Discovery to Delivery](99-Playbook/Discovery-to-Delivery.md) |
+| Choose a playbook | [README](README.md#choose-your-playbook) |
+| Product spine | [Product](00-Product/Product.md) |
+| Compliance rail | [Compliance Scope](11-Compliance/COMP-003-Compliance-Scope.md) |

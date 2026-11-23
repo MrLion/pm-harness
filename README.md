@@ -36,49 +36,21 @@ The Dashboard uses `FROM ""` and type filters, so it does not need a folder pref
 folder-scoped queries can use a prefix, but the standard tables do not. A fresh clone uses a normal
 `.git` directory; the external git pointer is the maintainer's macOS/iCloud setup only.
 
-## Start in five minutes
+## Start here
 
-1. Open the folder that contains the harness in Obsidian. Any local or synced folder works.
-2. Enable **Dataview** in that vault: Settings → Community plugins.
-3. Open **[Dashboard](Dashboard.md)**. Empty tables are normal before any artifacts exist.
-4. Choose one playbook below and follow its flow.
+Follow [START-HERE](START-HERE.md). It is the single first-run path:
 
-No paid Obsidian features or GitHub account are required.
+| Stage | Outcome | Time |
+|---|---|---|
+| 1 | See the Dashboard render | 5 minutes |
+| 2 | See `/pm doctor` and `/pm status` work | 10 minutes |
+| 3 | Produce one real problem note | 15 minutes |
 
-## Agent layer
+The vault renders without the agent. The `/pm` layer is optional and profile-local; its setup,
+validation, and troubleshooting live in the [Agent Manual](99-Playbook/Agent-Manual.md), not in this
+entry point.
 
-The `/pm` commands are a separate agent layer, not part of the vault. The vault renders without
-them. `/pm` is the `pm` skill, so the desktop and the classic CLI expose one command, not two.
-
-- Source: [`agent/`](agent/README.md)
-- Skill: `$HERMES_HOME/skills/productivity/pm/`
-- Smoke test: `/pm status`
-- Expected result: product health, the top problems and opportunities, and one recommended next action
-
-If the skill is missing, the vault still works; only the command layer is unavailable.
-
-A fresh clone includes the source in `agent/`, but it is not loaded until you install it. Run:
-
-```bash
-python3 -m pip install -r scripts/requirements.txt
-python3 scripts/install_agent_layer.py --vault . --hermes-home "$HERMES_HOME"
-```
-
-Then test `/pm status`. See https://hermes-agent.nousresearch.com/docs/.
-
-## Validate
-
-```bash
-python3 -m pip install -r scripts/requirements.txt
-python3 scripts/validate_vault.py
-```
-
-The validator checks relative Markdown links and anchors, frontmatter, ID uniqueness, filename/ID
-consistency, and product-template fill markers. It runs in CI on every push and pull request.
-
-Full setup and operating guide: [Agent-Manual](99-Playbook/Agent-Manual.md). Guided lab:
-[Agent Walkthrough](99-Playbook/Agent-Walkthrough.md). Value estimate:
-[Harness Value](99-Playbook/Harness-Value.md).
+For a guided discovery-to-decision lab, use the [Agent Walkthrough](99-Playbook/Agent-Walkthrough.md).
 
 ## Choose your playbook
 

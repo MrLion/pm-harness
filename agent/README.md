@@ -25,10 +25,12 @@ The installer copies the skill, refuses to run if the target does not contain
 Start a new Hermes chat and run:
 
 ```text
+/pm doctor
 /pm status
 ```
 
-Expected result: a read-only status report, not an error.
+`/pm doctor` checks the vault, skill, Dataview, git, and first-problem state before you rely on the
+command. Expected result: a status report, not an error.
 
 ## Notes
 
