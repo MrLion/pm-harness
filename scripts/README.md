@@ -4,7 +4,7 @@
 |---|---|
 | `doctor.py` | Check vault wiring, skill install, Dataview, git, and the first-problem state |
 | `new_artifact.py` | Allocate the next `PROB-NNN` and create a blank problem scaffold |
-| `validate_vault.py` | Validate links, anchors, frontmatter, IDs, template fill markers, and gates |
+| `validate_vault.py` | Validate links, anchors, frontmatter, IDs, template fill markers, gates, and template-as-evidence citations |
 | `install_agent_layer.py` | Install the `pm` skill into a Hermes profile |
 
 ## Doctor

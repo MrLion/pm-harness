@@ -1,5 +1,10 @@
 # Templates
 
+> [!WARNING] Illustrative, not evidence
+> The product templates below contain a worked HDHP imaging case. Do not cite a template in an
+> Evidence row, and do not treat its figures as product evidence. Copy the structure, replace the
+> case, and use live `PROB-`, `OPP-`, or `RESEARCH-` notes for evidence.
+
 Product-lifecycle templates have four layers: **the artifact structure** → **the source's field
 definition** (quoted, with attribution) → **the checklist criteria** used to judge a filled note →
 **a worked example**. The example is the fictional HDHP outpatient-imaging scenario used consistently

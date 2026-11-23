@@ -20,6 +20,9 @@ example: true
 case_id: CASE-001
 ---
 
+> [!WARNING] Illustrative example — not evidence
+> Do not cite this note in an Evidence row or treat its figures as product evidence. Copy the structure and replace the case.
+
 # Experiment — can patients understand an imaging estimate?
 
 ## Journey

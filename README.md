@@ -1,13 +1,17 @@
 # PM Playbook
 
-**Version:** 0.2.0 · [Changelog](CHANGELOG.md) · [Versioning](VERSIONING.md)
+**Version:** 0.2.1 · [Changelog](CHANGELOG.md) · [Versioning](VERSIONING.md)
+
+**Status:** early, single-maintainer, and not production-critical. Borrow the ideas; do not depend on this repository for consequential work without your own review.
 
 > [!NOTE] For humans
 > This is the human entry point: where to start, which playbook to choose, and where artifacts go. Agents start at [PM](99-Playbook/PM.md) and [Rules](99-Playbook/Rules.md); technical setup is in [Architecture](99-Playbook/Architecture.md).
+>
+> **No-PHI by design.** This vault is a planning and reasoning surface, not a HIPAA-compliant system. Do not put PII, PHI, ePHI, or identifiable patient data in it, including while a compliance scope is approved. The compliance rail is a planning gate, not a technical control on iCloud, Obsidian, or git.
 
 **Obsidian is the workspace. `/pm` is the reasoning layer. Git is the audit trail.**
 
-This playbook supports four ways of working, but they answer different questions:
+This playbook supports two product loops and two operating-model transitions. They answer different questions:
 
 - **Product lifecycle:** are we creating a new product, or improving an existing one?
 - **Operating model:** are we changing a product, a portfolio, or how the organization funds and staffs product work?
@@ -72,11 +76,19 @@ change funding, team topology, governance, and metrics before product discovery 
 If you are unsure, start with the product-lifecycle question. Use project-to-product only when
 funding or team structure blocks durable product work.
 
+**Solo operator default:** start with [Outcome-Led-1-to-N](99-Playbook/Playbooks/Outcome-Led-1-to-N.md).
+Skip `09-Transformation/` and `10-Operating-Model/` unless you are actually changing funding, team
+topology, or governance. The other folders can stay empty; empty is a valid state.
+
 ## Compliance rail
 
 Every playbook runs with a Tier 1 health-data compliance rail. Before handling PII, PHI, ePHI, or
 vendor data, start with the live [Compliance Scope](11-Compliance/COMP-003-Compliance-Scope.md). If its status is
 `draft` or its owner is `Unassigned`, stop and complete it before handling data.
+
+**The vault is no-PHI by design.** A `Compliance Scope` status is a planning gate, not a technical
+control; it cannot prevent data from syncing to iCloud or entering git. Do not treat an `approved`
+scope as permission to store patient data here.
 
 Compliance is not a fifth loop. It is a constraint that can stop or reshape any stage. Tier 2 —
 ISO 13485, ISO 14971, IEC 62304, and device QMS — applies only when the product is a medical device
@@ -193,6 +205,11 @@ Replace `OPP-001` with the actual ID of your note.
 | Monthly learning and mistakes | `08-Reviews` |
 
 Templates live in `99-Playbook/Templates/`; the index is [_Templates](99-Playbook/Templates/_Templates.md).
+
+**Templates are illustrative, not evidence.** The product templates contain a worked HDHP imaging
+case so the chain is visible. Never cite a template in an Evidence row or treat its figures as
+product evidence. Copy the structure, replace the case, and use a live `PROB-`, `OPP-`, or
+`RESEARCH-` note for evidence.
 
 ## Creating notes correctly
 

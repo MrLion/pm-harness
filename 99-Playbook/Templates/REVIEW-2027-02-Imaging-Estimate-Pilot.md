@@ -13,6 +13,9 @@ case_id: CASE-001
 gate: REL-001 conditional; pilot not run
 ---
 
+> [!WARNING] Illustrative example — not evidence
+> Do not cite this note in an Evidence row or treat its figures as product evidence. Copy the structure and replace the case.
+
 # Review — imaging estimate pilot
 
 > [!WARNING] Simulated future review

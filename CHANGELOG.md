@@ -7,6 +7,22 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-11-23
+
+### Fixed
+
+- README now describes **two product loops and two operating-model transitions**, not “four ways of
+  working”, and names Outcome-led 1→N as the solo-operator default.
+- README now states the maturity limit and the no-PHI rule: the vault is a planning surface, not a
+  HIPAA-compliant system.
+- `START-HERE.md` now treats the vault as no-PHI by design, including when a compliance scope is
+  approved.
+- Every filled product template carries a visible “illustrative example — not evidence” warning;
+  `_Templates` repeats the rule.
+- `validate_vault.py` now rejects a live Evidence row that links to `99-Playbook/Templates/`.
+- Re-ran the PRD refusal test in a disposable copy: `/pm prd` refused a thin opportunity on five
+  unmet preconditions and wrote no file.
+
 ## [0.2.0] - 2026-11-23
 
 ### Notable

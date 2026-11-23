@@ -13,7 +13,9 @@ The harness does not require a filled product or a finished strategy to begin di
 2. Enable **Dataview**: Settings → Community plugins.
 3. Open [Dashboard](Dashboard.md). Empty tables are expected.
 
-If the problem involves PII, PHI, ePHI, or vendor data, stop and read the live [Compliance Scope](11-Compliance/COMP-003-Compliance-Scope.md). A `draft` scope or `Unassigned` owner blocks health-data work.
+**No-PHI by design.** Do not put PII, PHI, ePHI, or identifiable patient data in this vault, even if the compliance scope is approved. The vault is not a HIPAA-compliant system.
+
+If the problem involves health data or a vendor, read the live [Compliance Scope](11-Compliance/COMP-003-Compliance-Scope.md). A `draft` scope or `Unassigned` owner blocks health-data work; an approved scope is still only a planning gate, not a technical control.
 
 ---
 

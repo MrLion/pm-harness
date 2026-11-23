@@ -16,6 +16,9 @@ source: "https://romanpichler.com/blog/how-to-choose-the-right-kpis-for-your-pro
 example: true
 ---
 
+> [!WARNING] Illustrative example — not evidence
+> Do not cite this note in an Evidence row or treat its figures as product evidence. Copy the structure and replace the case.
+
 # Metrics — estimate coverage and reconciliation
 
 ## Primary coverage metric

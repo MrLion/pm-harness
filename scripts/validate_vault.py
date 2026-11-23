@@ -10,6 +10,7 @@ Checks:
 - the live compliance gate is visibly open when it is still draft
 - accepted decisions with an overdue review are reported
 - product templates contain no unresolved [FILL] markers
+- live evidence rows do not cite a template as a source
 
 The validator does not judge product quality. It only checks the contract the
 vault depends on. Warnings are informational; errors exit 1.
@@ -216,6 +217,37 @@ def check_product_templates(root: Path, files: list[Path]) -> list[str]:
     return errors
 
 
+def check_template_evidence(root: Path, files: list[Path]) -> list[str]:
+    """Reject live notes that cite a template as evidence."""
+    errors: list[str] = []
+    for path in files:
+        if not is_content_note(path, root):
+            continue
+        try:
+            data, text = read_frontmatter(path)
+        except ValueError:
+            continue
+        if data.get("example") is True:
+            continue
+        in_evidence = False
+        for line in text.splitlines():
+            if re.match(r"^##\s+Evidence\b", line, re.IGNORECASE):
+                in_evidence = True
+                continue
+            if in_evidence and re.match(r"^##\s+", line):
+                in_evidence = False
+            if not in_evidence:
+                continue
+            for match in LINK_RE.finditer(strip_code(line)):
+                target = match.group(2).strip()
+                if "Templates/" in target:
+                    errors.append(
+                        f"{path}: evidence row links to a template: {target} "
+                        "(use a live RESEARCH-, PROB-, or OPP- note)"
+                    )
+    return errors
+
+
 def check_orphans(root: Path, files: list[Path], inbound: dict[Path, int]) -> list[str]:
     warnings: list[str] = []
     for path in files:
@@ -262,6 +294,7 @@ def main() -> int:
     link_errors, link_warnings, inbound = check_links(root, files)
     fm_errors, fm_warnings, ids = check_frontmatter(root, files)
     template_errors = check_product_templates(root, files)
+    evidence_errors = check_template_evidence(root, files)
     orphan_warnings = check_orphans(root, files, inbound)
 
     duplicate_errors = [
@@ -269,7 +302,7 @@ def main() -> int:
         for note_id, paths in ids.items()
         if len(paths) > 1
     ]
-    errors = link_errors + fm_errors + template_errors + duplicate_errors
+    errors = link_errors + fm_errors + template_errors + evidence_errors + duplicate_errors
     warnings = link_warnings + fm_warnings + orphan_warnings
 
     if args.json:

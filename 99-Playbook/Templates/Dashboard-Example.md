@@ -8,6 +8,9 @@ created: 2026-11-08
 updated: 2026-11-08
 ---
 
+> [!WARNING] Illustrative example — not evidence
+> Do not cite this note in an Evidence row or treat its figures as product evidence. Copy the structure and replace the case.
+
 # Example Dashboard — pre-filled template data
 
 This dashboard reads `99-Playbook/Templates` with `FROM ""` plus a folder filter, so it works in a nested or root vault.

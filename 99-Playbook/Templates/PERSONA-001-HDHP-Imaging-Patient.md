@@ -14,6 +14,9 @@ example: true
 case_id: CASE-001
 ---
 
+> [!WARNING] Illustrative example — not evidence
+> Do not cite this note in an Evidence row or treat its figures as product evidence. Copy the structure and replace the case.
+
 # Persona — cost-conscious HDHP adult choosing imaging
 
 > Evidence rule: `evidence_count: 0` means this is a modelled persona, not a real person.
