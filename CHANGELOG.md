@@ -7,6 +7,17 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-23
+
+### Notable
+
+- Human onboarding is now a designed path, not a collection of setup docs: `/pm doctor` checks the
+  environment, `/pm start` creates the first problem scaffold, and `START-HERE.md` walks the operator
+  through vault → agent → one real problem in about 30 minutes.
+- The repository still validates in CI, and the onboarding flow was exercised end-to-end in a
+  disposable copy before release.
+- One `/pm` command remains: the skill, not a same-name bundle.
+
 ### Added
 
 - Repository copy of the agent layer under `agent/`: the `pm` skill, its references and checker.
